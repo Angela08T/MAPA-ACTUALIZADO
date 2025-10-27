@@ -1,0 +1,40 @@
+/* Estilos específicos para la capa de mapa de calor */
+.capa-mapa-calor-incidencias {
+  position: relative;
+}
+
+/* Animaciones para transiciones suaves */
+.capa-mapa-calor-incidencias * {
+  transition: all 0.3s ease;
+}
+
+/* Estilos para el gradiente personalizado del mapa de calor */
+.heatmap-gradient-custom {
+  background: linear-gradient(
+    to right,
+    rgba(0, 255, 255, 0) 0%,
+    rgba(0, 255, 255, 0.2) 10%,
+    rgba(0, 191, 255, 0.4) 20%,
+    rgba(0, 127, 255, 0.6) 40%,
+    rgba(0, 63, 255, 0.7) 60%,
+    rgba(0, 0, 255, 0.8) 70%,
+    rgba(63, 0, 191, 0.85) 80%,
+    rgba(127, 0, 127, 0.9) 90%,
+    rgba(191, 0, 63, 0.95) 95%,
+    rgba(255, 0, 0, 1) 100%
+  );
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .capa-mapa-calor-incidencias {
+    font-size: 14px;
+  }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .capa-mapa-calor-incidencias * {
+    transition: none;
+  }
+}

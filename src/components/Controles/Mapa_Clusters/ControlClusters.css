@@ -1,0 +1,255 @@
+.control-clusters {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(200, 200, 200, 0.5);
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  transform-origin: bottom;
+}
+
+/* Posición para modo Leaflet (comportamiento por defecto) */
+.control-clusters.leaflet-mode {
+  bottom: 20px;
+  right: 10px;
+}
+
+/* Posición para modo Google Maps - evitar controles de Google */
+.control-clusters.google-mode {
+  bottom: 10px; /* Alejado de los controles de Street View y otros de Google Maps */
+  right: 60px;
+}
+
+.control-clusters.collapsed {
+  height: auto;
+}
+
+.control-clusters-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 12px 16px;
+  margin: 0;
+  cursor: pointer;
+  user-select: none;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-clusters-header h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.collapse-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.collapse-btn:hover {
+  opacity: 1;
+}
+
+.control-clusters-content {
+  padding: 16px;
+  transition: all 0.3s ease;
+  opacity: 1;
+  transform: translateY(0);
+  transform-origin: bottom;
+  max-height: 500px;
+  overflow: hidden;
+}
+
+.control-clusters-content.hidden {
+  padding: 0;
+  opacity: 0;
+  transform: translateY(10px);
+  max-height: 0;
+}
+
+.radio-control {
+  margin-bottom: 20px;
+}
+
+.radio-control label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.slider-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.radio-slider {
+  flex: 1;
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+  outline: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+.radio-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #667eea;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.radio-slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #667eea;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.radio-value {
+  font-weight: 600;
+  font-size: 14px;
+  color: #667eea;
+  min-width: 35px;
+  text-align: center;
+}
+
+.estadisticas {
+  margin-bottom: 20px;
+}
+
+.estadisticas h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  flex: 1;
+}
+
+.stat-value {
+  font-size: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+.leyenda h4 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #333;
+  font-weight: 600;
+}
+
+.leyenda-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 0;
+  font-size: 12px;
+  color: #666;
+}
+
+.color-box {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.color-box.amarillo {
+  background-color: #FFD700;
+}
+
+.color-box.naranja {
+  background-color: #FF8C00;
+}
+
+.color-box.rojo {
+  background-color: #FF4500;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .control-clusters {
+    width: calc(100% - 20px);
+    left: 10px;
+    bottom: 10px;
+    max-width: 300px;
+  }
+  
+  .control-clusters-content {
+    padding: 12px;
+  }
+  
+  .slider-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .radio-value {
+    align-self: flex-end;
+  }
+}
+
+/* Animaciones */
+.control-clusters {
+  animation: slideUp 0.3s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+} 

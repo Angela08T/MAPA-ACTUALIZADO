@@ -1,0 +1,143 @@
+/* Estilos para InfoWindows de Google Maps */
+
+/* Botón de cerrar personalizado */
+.gm-style-iw button.close-btn {
+  position: absolute !important;
+  top: -5px !important;
+  right: -5px !important;
+  background: #ff4444 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 50% !important;
+  width: 24px !important;
+  height: 24px !important;
+  cursor: pointer !important;
+  font-size: 14px !important;
+  font-weight: bold !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2) !important;
+  z-index: 1000 !important;
+  transition: all 0.2s ease !important;
+}
+
+.gm-style-iw button.close-btn:hover {
+  background: #cc0000 !important;
+  transform: scale(1.1) !important;
+}
+
+/* Botón de seguimiento */
+.seguimiento-btn {
+  background: rgba(16, 185, 129, 0.1) !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  font-size: 11px !important;
+  color: #10b981 !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  cursor: pointer !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+  transition: all 0.2s ease !important;
+  margin-top: 8px !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.seguimiento-btn:hover {
+  background: rgba(16, 185, 129, 0.2) !important;
+  border-color: rgba(16, 185, 129, 0.5) !important;
+  transform: translateY(-1px) !important;
+}
+
+/* Contenedor del InfoWindow */
+.gm-style-iw-d {
+  overflow: visible !important;
+}
+
+.gm-style-iw-c {
+  padding: 0 !important;
+}
+
+/* Estilos para el contenido del InfoWindow */
+.info-window-content {
+  font-size: 13px !important;
+  position: relative !important;
+  min-width: 250px !important;
+  padding-right: 15px !important;
+}
+
+.info-window-circle {
+  font-size: 12px !important;
+  position: relative !important;
+  min-width: 200px !important;
+  padding-right: 15px !important;
+}
+
+/* Indicadores de estado */
+.camara-seleccionada-indicator {
+  background: rgba(102, 126, 234, 0.2) !important;
+  padding: 6px 10px !important;
+  border-radius: 6px !important;
+  font-size: 12px !important;
+  color: #667eea !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  margin-top: 8px !important;
+}
+
+.seguimiento-info {
+  background: rgba(16, 185, 129, 0.1) !important;
+  padding: 4px 8px !important;
+  border-radius: 4px !important;
+  font-size: 10px !important;
+  color: #10b981 !important;
+  text-align: center !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+  margin-top: 8px !important;
+}
+
+/* Estilos para instrucciones de Ctrl+clic */
+.ctrl-click-instruction {
+  background: rgba(16, 185, 129, 0.1) !important;
+  padding: 6px 8px !important;
+  border-radius: 4px !important;
+  font-size: 11px !important;
+  color: #10b981 !important;
+  font-weight: bold !important;
+  text-align: center !important;
+  border: 1px solid rgba(16, 185, 129, 0.3) !important;
+  line-height: 1.3 !important;
+  margin-top: 8px !important;
+}
+
+.ctrl-click-instruction strong {
+  color: #047857 !important;
+}
+
+.ctrl-click-instruction span {
+  font-size: 9px !important;
+  opacity: 0.8 !important;
+  font-weight: normal !important;
+}
+
+/* Efecto hover para marcadores en seguimiento */
+.gm-style-iw .seguimiento-marker-info {
+  transition: all 0.2s ease !important;
+}
+
+.gm-style-iw .seguimiento-marker-info:hover {
+  background: rgba(16, 185, 129, 0.15) !important;
+}
+
+/* Indicador visual para Ctrl+clic */
+.ctrl-indicator {
+  display: inline-block !important;
+  background: #047857 !important;
+  color: white !important;
+  padding: 1px 4px !important;
+  border-radius: 3px !important;
+  font-size: 9px !important;
+  font-weight: bold !important;
+  margin-right: 4px !important;
+}

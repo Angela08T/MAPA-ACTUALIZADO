@@ -1,0 +1,369 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9665872017738,
+          -12.01387150045622
+        ]
+      },
+      "properties": {
+        "name": "10",
+        "description": "P.1 C. SANTA ROSA DE CAMPOY\nRSG N° - 0121-14\n(03) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.96895337263545,
+          -12.01348948431283
+        ]
+      },
+      "properties": {
+        "name": "26",
+        "description": "P.2 SANTA ROSA DE CAMPOY\nRSG N° 121-14\n(03 UND. ESTAC.)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.96558917598298,
+          -12.01594985919468
+        ]
+      },
+      "properties": {
+        "name": "9",
+        "description": "P.3 C. SANTA ROSA DE CAMPOY\nRSG N° - 076-16\n(03) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.96444443809403,
+          -12.01210017507957
+        ]
+      },
+      "properties": {
+        "name": "4",
+        "description": "P.4 C. SANTA ROSA DE CAMPOY\nRSG N° - 076-16\n(03) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.01048946164413,
+          -12.02516559459498
+        ]
+      },
+      "properties": {
+        "name": "12",
+        "description": "P.1. ESTAC. SAN MARTIN\nEXPRESS SA\nRSG N° 140-17\n(03 UND.)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.01165131043692,
+          -12.02801350791006
+        ]
+      },
+      "properties": {
+        "name": "29",
+        "description": "P.2 E. SAN MARTIN EXPRESS S.A.\nRSG N° 140-17\n(03 UND. ESTAC.)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00789661997685,
+          -12.02418351071508
+        ]
+      },
+      "properties": {
+        "name": "28",
+        "description": "P.3. E. SAN MARTIN EXPRESS S.A.\nRSG N° 140-17\n(03 UND. ESTAC.)"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.99422884811509,
+          -12.00996442513645
+        ]
+      },
+      "properties": {
+        "name": "15",
+        "description": "P.1 A.M. VILLA EXPRESS\nRSG N° - 0031-16\n(03) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00982641421714,
+          -11.96957703314901
+        ]
+      },
+      "properties": {
+        "name": "1",
+        "description": "P.1 A.M. NUEVA LIBERACIÓN\nRSG N° - 046-17\n(02) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00508774946283,
+          -11.96792277234717
+        ]
+      },
+      "properties": {
+        "name": "5",
+        "description": "P.1 E.T. TO .PER. S.A.\nRSG N° - 172-15\n(02) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00592635916779,
+          -11.96999044031206
+        ]
+      },
+      "properties": {
+        "name": "3",
+        "description": "P.2 E.T. TO .PER. S.A.\nRSG N° - 172-15\n(02) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00630149873624,
+          -11.96759498005959
+        ]
+      },
+      "properties": {
+        "name": "6",
+        "description": "P.3 E.T. TO .PER. S.A.\nRSG N° - 172-15\n(02) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00538559889485,
+          -11.96833768549558
+        ]
+      },
+      "properties": {
+        "name": "4",
+        "description": "P.4 E.T. TO .PER. S.A.\nRSG N° - 172-15\n(02) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00850030503666,
+          -11.96839388880836
+        ]
+      },
+      "properties": {
+        "name": "2",
+        "description": "P.5 E.T. TO .PER. S.A.\nRSG N° - 172-15\n(02) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.0084815128476,
+          -11.97038849345873
+        ]
+      },
+      "properties": {
+        "name": "2",
+        "description": "P.1 A. T. V. M. LOS CHASQUIS SJL\nRSG N° - 079-16\n(02) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00343087694107,
+          -11.95771746091675
+        ]
+      },
+      "properties": {
+        "name": "9",
+        "description": "P.1 A.M. JUNTA VECINAL HUASCAR\nRSG N° - 095-16\n(02) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -77.00560427783826,
+          -11.96013710421823
+        ]
+      },
+      "properties": {
+        "name": "11",
+        "description": "P.2 A.M. JUNTA VECINAL HUASCAR\nRSG N° 095-16\n(02) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.9916129841711,
+          -11.9789474402355
+        ]
+      },
+      "properties": {
+        "name": "2",
+        "description": "P.1 EMUJUPA II S.R.L.\nRSG N° - 0168-17\n(02) UND. ESTAC."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.98743329148535,
+          -11.97762371067742
+        ]
+      },
+      "properties": {
+        "name": "2",
+        "description": "P.2 ETMUJUPA II SRL\nRSG N° - 0168-17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.97785633393337,
+          -11.98120062986968
+        ]
+      },
+      "properties": {
+        "name": "5",
+        "description": "P.2 ETMUJUPA II SRL\nRSG N° - 0168-17"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.98802305809912,
+          -11.96112908287708
+        ]
+      },
+      "properties": {
+        "name": "4",
+        "description": "P.1 E.T. 5 DE NOVIEMBRE\nRSG N° - 0112-14"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.98285072786432,
+          -11.95873047378307
+        ]
+      },
+      "properties": {
+        "name": "10",
+        "description": "P.1 A.M. VIRGEN DEL CARMEN MARISCAL CACERES\nRSG N° - 0117-16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.98455534581882,
+          -11.95178773455878
+        ]
+      },
+      "properties": {
+        "name": "8",
+        "description": "P.2 A.M. VIRGEN DEL CARMEN MARISCAL CACERES\nRSG N° - 0117-16"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.99852795445986,
+          -11.92964599776348
+        ]
+      },
+      "properties": {
+        "name": "19",
+        "description": "P. 1 E.T.T. TIBACA\nRSG N° - 037-15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.98773383393015,
+          -11.93084801897322
+        ]
+      },
+      "properties": {
+        "name": "29",
+        "description": "P. 2 E.T. Y TURISMO TIBAGA SAC\nRSG N° - 037-15"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -76.98485645172315,
+          -11.94136455707539
+        ]
+      },
+      "properties": {
+        "name": "5",
+        "description": "P. 3 E.T.T. TIBACA\nRSG N° - 037-15"
+      }
+    }
+  ]
+}

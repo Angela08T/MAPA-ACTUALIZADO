@@ -1,0 +1,63 @@
+/* Ocultar botón de cerrar predeterminado de Leaflet en popups del ubicador */
+.leaflet-popup-close-button {
+  display: none !important;
+}
+
+/* Ocultar botón de cerrar predeterminado de Google Maps */
+.gm-ui-hover-effect {
+  display: none !important;
+}
+
+/* Estilo adicional para el popup personalizado */
+.popup-ubicador {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.popup-ubicador .close-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #999;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #999;
+  padding: 0;
+  margin: 0;
+  z-index: 1000;
+  line-height: 1;
+  transition: color 0.2s ease;
+}
+
+.popup-ubicador .close-btn:hover {
+  color: #e74c3c;
+}
+
+/* Interceptor de clicks para ubicador de puntos */
+#ubicador-click-interceptor {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  z-index: 400 !important;
+  cursor: crosshair !important;
+  pointer-events: auto !important;
+  background: transparent !important;
+}
+
+/* Deshabilitar interactividad de jurisdicciones cuando ubicador está activo */
+.leaflet-interactive.jurisdiccion-no-interactiva {
+  pointer-events: none !important;
+  cursor: crosshair !important;
+}

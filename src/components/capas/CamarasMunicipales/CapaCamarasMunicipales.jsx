@@ -1,0 +1,483 @@
+import { useEffect, useState, useRef } from "react";
+import { Marker, Popup, LayerGroup, Circle } from "react-leaflet";
+import { useMap } from "react-leaflet";
+import "./CapaCamarasMunicipales.css";
+import "./LocationCopyPopup.css";
+import { useMapLocationCopy } from "../../../hooks/useMapLocationCopy";
+
+import L from "leaflet";
+
+// Función para crear iconos según el tipo de cámara
+const crearIconoCamara = (tipo) => {
+  let iconUrl;
+  switch (tipo) {
+    case "TIPO I":
+      iconUrl = "/icon/camera.png";
+      break;
+    case "TIPO II":
+      iconUrl = "/icon/camera2.png";
+      break;
+    case "TIPO III":
+      iconUrl = "/icon/camera3.png";
+      break;
+    default:
+      iconUrl = "/icon/camera.png"; // Fallback por defecto
+  }
+
+  return new L.Icon({
+    iconUrl: iconUrl,
+    iconSize: [28, 28],
+    iconAnchor: [14, 14], // Centrado: la mitad del ancho y alto
+    popupAnchor: [0, -14], // Popup aparece arriba del centro del icono
+  });
+};
+
+// Crear un icono de prueba usando un div HTML
+const iconoCamaraSeleccionada = new L.DivIcon({
+  html: '<div style="background: red; width: 30px; height: 30px; border-radius: 50%; border: 3px solid white; display: flex; align-items: center; justify-content: center; font-size: 16px;">📷</div>',
+  iconSize: [30, 30],
+  iconAnchor: [15, 15],
+  popupAnchor: [0, -15],
+  className: 'camara-seleccionada-icon'
+});
+
+const CapaCamarasMunicipales = ({ visible, camaraSeleccionada, camarasFiltradas, seguimientoCamara, limpiarSeguimiento }) => {
+  const [camaras, setCamaras] = useState([]);
+  const [seguimientoActivo, setSeguimientoActivo] = useState(false);
+  const [circuloSeguimiento, setCirculoSeguimiento] = useState(null);
+  const [circulosAnteriores, setCirculosAnteriores] = useState([]);
+  const [camarasCercanas, setCamarasCercanas] = useState([]);
+  const [historialSeguimiento, setHistorialSeguimiento] = useState([]);
+  const map = useMap();
+  const markersRef = useRef({});
+
+  // Usar el hook para habilitar la copia de ubicaciones
+  useMapLocationCopy();
+
+  useEffect(() => {
+    fetch("/data/610_updated.geojson")
+      .then((res) => res.json())
+      .then((data) => setCamaras(data.features || []))
+      .catch((err) =>
+        console.error("Error cargando cámaras municipales:", err)
+      );
+  }, []);
+
+  // Efecto para navegar a la cámara seleccionada
+  useEffect(() => {
+    if (camaraSeleccionada && map) {
+      const coords = camaraSeleccionada.geometry?.coordinates || [camaraSeleccionada.lng, camaraSeleccionada.lat];
+      if (coords && coords.length >= 2) {
+        const [lng, lat] = coords;
+
+        // Navegación suave a la cámara seleccionada
+        map.flyTo([lat, lng], 18, {
+          animate: true,
+          duration: 1.5,
+          easeLinearity: 0.25
+        });
+
+        // Abrir popup después de la navegación
+        setTimeout(() => {
+          const markerId = `marker-${camaraSeleccionada.id}`;
+          const marker = markersRef.current[markerId];
+          if (marker) {
+            marker.openPopup();
+          }
+        }, 1600);
+      }
+    }
+  }, [camaraSeleccionada, map]);
+
+  // Efecto para manejar el seguimiento de cámaras cercanas
+  useEffect(() => {
+    if (seguimientoCamara && map && camaras.length > 0) {
+      iniciarSeguimientoCamaras(seguimientoCamara);
+    }
+  }, [seguimientoCamara, map, camaras]);
+
+  // Efecto para limpiar seguimiento cuando se solicita
+  useEffect(() => {
+    if (limpiarSeguimiento && map) {
+      limpiarTodoSeguimiento();
+    }
+  }, [limpiarSeguimiento, map]);
+
+  const iniciarSeguimientoCamaras = (camaraCentral) => {
+    if (!camaraCentral || !map) return;
+
+    // Guardar el círculo anterior en el historial si existe
+    if (circuloSeguimiento) {
+      setCirculosAnteriores(prev => [...prev, circuloSeguimiento]);
+      // Cambiar el estilo del círculo anterior para que sea menos prominente
+      circuloSeguimiento.setStyle({
+        color: '#9ca3af',
+        fillColor: '#9ca3af',
+        fillOpacity: 0.05,
+        weight: 1,
+        dashArray: "10 10"
+      });
+    }
+
+    const lat = camaraCentral.lat;
+    const lng = camaraCentral.lng;
+    const latlng = L.latLng(lat, lng);
+
+    console.log('🎯 Iniciando seguimiento para cámara:', camaraCentral.name);
+
+    // Calcular distancias a todas las cámaras
+    const camarasConDistancia = camaras.map((feature, idx) => {
+      const coords = feature.geometry?.coordinates;
+      if (!coords || coords.length < 2) return null;
+
+      const [camaraLng, camaraLat] = coords;
+      const camaraLatLng = L.latLng(camaraLat, camaraLng);
+      const distance = latlng.distanceTo(camaraLatLng);
+
+      return {
+        feature,
+        camaraLatLng,
+        distance,
+        idx,
+        properties: feature.properties
+      };
+    }).filter(item => item !== null);
+
+    // Ordenar por distancia y tomar las 6 más cercanas
+    const camarasOrdenadas = camarasConDistancia.sort((a, b) => a.distance - b.distance);
+    const camarasCercanas = camarasOrdenadas.slice(0, 6); // Incluye la cámara central
+
+    // Calcular el radio máximo (distancia a la cámara más lejana de las seleccionadas)
+    const radioMaximo = camarasCercanas[camarasCercanas.length - 1].distance;
+
+    // Crear círculo de seguimiento con colores variados
+    const coloresSeguimiento = ['#10b981', '#059669', '#047857', '#065f46', '#0891b2', '#0e7490'];
+    const colorAleatorio = coloresSeguimiento[Math.floor(Math.random() * coloresSeguimiento.length)];
+
+    const nuevoCirculo = L.circle(latlng, {
+      color: colorAleatorio,
+      fillColor: colorAleatorio,
+      fillOpacity: 0.2,
+      radius: radioMaximo,
+      weight: 3,
+      dashArray: "5 5"
+    });
+
+    // Agregar tooltip al círculo con información
+    nuevoCirculo.bindTooltip(`📍 ${camaraCentral.name}<br/>Radio: ${(radioMaximo / 1000).toFixed(2)}km<br/>Cámaras: ${camarasCercanas.length}`, {
+      permanent: false,
+      direction: 'center',
+      className: 'seguimiento-tooltip'
+    });
+
+    nuevoCirculo.addTo(map);
+    setCirculoSeguimiento(nuevoCirculo);
+
+    // Filtrar todas las cámaras dentro del círculo
+    const camarasDentroDelCirculo = camarasConDistancia.filter(item =>
+      item.distance <= radioMaximo
+    );
+
+    setCamarasCercanas(camarasDentroDelCirculo);
+    setSeguimientoActivo(true);
+
+    // Agregar al historial de seguimiento
+    setHistorialSeguimiento(prev => [...prev, {
+      camara: camaraCentral,
+      timestamp: new Date(),
+      radio: radioMaximo,
+      camarasEncontradas: camarasDentroDelCirculo.length
+    }]);
+
+    // Navegar al área de seguimiento
+    map.flyTo(latlng, 17, {
+      animate: true,
+      duration: 1.2,
+      easeLinearity: 0.25
+    });
+
+    console.log(`📍 Seguimiento activado: ${camarasDentroDelCirculo.length} cámaras en un radio de ${(radioMaximo / 1000).toFixed(2)}km`);
+  };
+
+  const limpiarTodoSeguimiento = () => {
+    // Limpiar círculo actual
+    if (circuloSeguimiento) {
+      map.removeLayer(circuloSeguimiento);
+      setCirculoSeguimiento(null);
+    }
+
+    // Limpiar círculos anteriores
+    circulosAnteriores.forEach(circulo => {
+      if (map.hasLayer(circulo)) {
+        map.removeLayer(circulo);
+      }
+    });
+    setCirculosAnteriores([]);
+
+    // Resetear estados
+    setSeguimientoActivo(false);
+    setCamarasCercanas([]);
+    setHistorialSeguimiento([]);
+
+    console.log('🧹 Seguimiento limpiado');
+  };
+
+  // Efecto para limpiar seguimiento cuando se cambian los filtros
+  useEffect(() => {
+    if (camarasFiltradas && camarasFiltradas.length >= 0 && seguimientoActivo) {
+      // Si se aplican filtros mientras hay seguimiento activo, limpiar seguimiento
+      limpiarTodoSeguimiento();
+    }
+  }, [camarasFiltradas]);
+
+  if (!visible) return null;
+
+  // Determinar qué cámaras mostrar (seguimiento, filtradas o todas)
+  let camarasAMostrar;
+
+  if (seguimientoActivo && camarasCercanas.length > 0) {
+    // Mostrar solo las cámaras del seguimiento
+    camarasAMostrar = camarasCercanas.map(item => item.feature);
+  } else if (camarasFiltradas && camarasFiltradas.length >= 0) {
+    // Mostrar cámaras filtradas
+    camarasAMostrar = camaras.filter((feature, idx) =>
+      camarasFiltradas.some(cf => cf.name === feature.properties?.name)
+    );
+  } else {
+    // Mostrar todas las cámaras
+    camarasAMostrar = camaras;
+  }
+
+  return (
+    <LayerGroup>
+      {camarasAMostrar.map((feature, idx) => {
+        const coords = feature.geometry?.coordinates;
+        const props = feature.properties;
+        if (!coords || coords.length < 2) return null;
+
+        // En GeoJSON, las coordenadas están como [lng, lat]
+        const [lng, lat] = coords;
+        const markerId = `marker-${idx}`;
+
+        // Determinar si esta cámara está seleccionada
+        const esSeleccionada = camaraSeleccionada &&
+          (camaraSeleccionada.name === props.name || camaraSeleccionada.id === idx);
+
+        // Debug log
+        if (esSeleccionada) {
+          console.log('🎯 Cámara seleccionada encontrada:', {
+            name: props.name,
+            originalCoords: coords,
+            leafletPosition: [lat, lng],
+            camaraSeleccionada: camaraSeleccionada,
+            iconoUsado: esSeleccionada ? 'iconoCamaraSeleccionada' : `iconoCamara-${props.tipo}`
+          });
+        }
+
+
+
+        // Determinar colores según el tipo de cámara
+        let circleColors;
+        if (esSeleccionada) {
+          // Si está seleccionada, usar colores de selección
+          circleColors = {
+            color: "#667eea",
+            fillColor: "#667eea"
+          };
+        } else {
+          // Colores según el tipo de cámara
+          switch (props.tipo) {
+            case "TIPO II":
+              circleColors = {
+                color: "#6c5ce7",
+                fillColor: "#44d500"
+              };
+              break;
+            case "TIPO III":
+              circleColors = {
+                color: "#1e47d1",
+                fillColor: "#1a68ff"
+              };
+              break;
+            default: // TIPO I y otros
+              circleColors = {
+                color: "#6c5ce7",
+                fillColor: "#a29bfe"
+              };
+          }
+        }
+
+        const elementos = [
+          // Primero renderizar el círculo (abajo)
+          <Circle
+            key={`circle-${idx}`}
+            center={[lat, lng]}
+            radius={120}
+            pathOptions={{
+              color: circleColors.color,
+              fillColor: circleColors.fillColor,
+              fillOpacity: esSeleccionada ? 0.5 : 0.25,
+              weight: esSeleccionada ? 2 : 1,
+              dashArray: esSeleccionada ? "2 2" : "4 4"
+            }}
+          />
+        ];
+
+        // Solo renderizar el marcador normal si NO está seleccionada
+        if (!esSeleccionada) {
+          // Determinar si esta cámara está en modo seguimiento
+          const enSeguimiento = seguimientoActivo && camarasCercanas.some(item =>
+            item.properties?.name === props.name
+          );
+
+          // Calcular información de distancia si está en seguimiento
+          let infoDistancia = '';
+          if (enSeguimiento && circuloSeguimiento) {
+            const centroCirculo = circuloSeguimiento.getLatLng();
+            const distancia = L.latLng(lat, lng).distanceTo(centroCirculo);
+            const distanciaKm = (distancia / 1000).toFixed(2);
+            infoDistancia = ` (${distanciaKm}km)`;
+          }
+
+          elementos.push(
+            <Marker
+              key={markerId}
+              position={[lat, lng]}
+              icon={crearIconoCamara(props.tipo)}
+              zIndexOffset={enSeguimiento ? 1500 : 1000}
+              ref={(ref) => {
+                if (ref) {
+                  markersRef.current[markerId] = ref;
+                }
+              }}
+              eventHandlers={{
+                click: () => {
+                  if (enSeguimiento) {
+                    // Si está en modo seguimiento, crear nuevo círculo centrado en esta cámara
+                    const camaraData = {
+                      name: props.name,
+                      lat: lat,
+                      lng: lng,
+                      direccion: props.direccion,
+                      tipo: props.tipo,
+                      jurisdiccion: props.jurisdiccion,
+                      megafono: props.megafono,
+                      boton: props.boton
+                    };
+                    iniciarSeguimientoCamaras(camaraData);
+                  }
+                }
+              }}
+            >
+              <Popup>
+                <div style={{ fontSize: "13px" }}>
+                  <strong>📍 {props.name}{infoDistancia}</strong><br />
+                  Dirección: {props.direccion}<br />
+                  Tipo: {props.tipo}<br />
+                  Jurisdicción: {props.jurisdiccion}<br />
+                  Megáfono: {props.megafono ? "✅" : "❌"}<br />
+                  Botón de pánico: {props.boton ? "✅" : "❌"}
+                  {enSeguimiento && (
+                    <>
+                      <br /><br />
+                      <div style={{
+                        background: 'rgba(16, 185, 129, 0.1)',
+                        padding: '4px 8px',
+                        borderRadius: '4px',
+                        fontSize: '11px',
+                        color: '#10b981',
+                        fontWeight: 'bold',
+                        textAlign: 'center'
+                      }}>
+                        🎯 Clic para nuevo seguimiento
+                      </div>
+                    </>
+                  )}
+                </div>
+              </Popup>
+            </Marker>
+          );
+        }
+
+        // Si está seleccionada, agregar el marcador de cámara seleccionada en la posición correcta
+        if (esSeleccionada) {
+          // Determinar el icono según el tipo de cámara
+          let iconUrl;
+          switch (props.tipo) {
+            case "TIPO I":
+              iconUrl = "/icon/camera.png";
+              break;
+            case "TIPO II":
+              iconUrl = "/icon/camera2.png";
+              break;
+            case "TIPO III":
+              iconUrl = "/icon/camera3.png";
+              break;
+            default:
+              iconUrl = "/icon/camera.png"; // Fallback por defecto
+          }
+
+          // Usar un DivIcon con la imagen de la cámara según su tipo
+          const iconoCamaraSeleccionadaCustom = new L.DivIcon({
+            html: `<div style="
+              width: 40px; 
+              height: 40px; 
+              background-image: url('${iconUrl}'); 
+              background-size: contain; 
+              background-repeat: no-repeat; 
+              background-position: center;
+              filter: drop-shadow(0 0 8px rgba(102, 126, 234, 0.8));
+              animation: pulse-camara 2s infinite;
+            "></div>`,
+            iconSize: [40, 40],
+            iconAnchor: [20, 20], // Centrado perfectamente
+            popupAnchor: [0, -20],
+            className: 'camara-seleccionada-custom'
+          });
+
+          elementos.push(
+            <Marker
+              key={`selected-marker-${idx}`}
+              position={[lat, lng]}
+              icon={iconoCamaraSeleccionadaCustom}
+              zIndexOffset={2000}
+              ref={(ref) => {
+                if (ref) {
+                  markersRef.current[markerId] = ref;
+                }
+              }}
+            >
+              <Popup>
+                <div style={{ fontSize: "13px" }}>
+                  <strong>📍 {props.name} (SELECCIONADA)</strong><br />
+                  Dirección: {props.direccion}<br />
+                  Tipo: {props.tipo}<br />
+                  Jurisdicción: {props.jurisdiccion}<br />
+                  Megáfono: {props.megafono ? "✅" : "❌"}<br />
+                  Botón de pánico: {props.boton ? "✅" : "❌"}
+                  <br /><br />
+                  <div style={{
+                    background: 'rgba(102, 126, 234, 0.2)',
+                    padding: '6px 10px',
+                    borderRadius: '6px',
+                    fontSize: '12px',
+                    color: '#667eea',
+                    fontWeight: 'bold',
+                    textAlign: 'center'
+                  }}>
+                    🎯 CÁMARA SELECCIONADA
+                  </div>
+                </div>
+              </Popup>
+            </Marker>
+          );
+        }
+
+        return elementos;
+
+      }).flat()}
+    </LayerGroup>
+  );
+};
+
+export default CapaCamarasMunicipales;

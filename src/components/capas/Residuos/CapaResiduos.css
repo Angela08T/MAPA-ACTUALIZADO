@@ -1,0 +1,114 @@
+/* Estilos para los marcadores de residuos con iconos de Lucide */
+.custom-lucide-residuos {
+  background: none !important;
+  border: none !important;
+}
+
+.lucide-residuos-marker {
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.lucide-residuos-marker:hover {
+  filter: drop-shadow(0 4px 8px rgba(0,0,0,0.3));
+}
+
+/* Animación de aparición suave para los marcadores */
+.leaflet-marker-icon.custom-lucide-residuos {
+  animation: markerFadeIn 0.5s ease-out;
+}
+
+@keyframes markerFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Estilos para los tooltips mejorados */
+.leaflet-tooltip.residuos-tooltip {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 2px solid #198754;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  font-weight: bold;
+  padding: 6px 10px;
+}
+
+.leaflet-tooltip.residuos-tooltip.amarillo {
+  border-color: #fd7e14;
+}
+
+/* Estilos para los popups mejorados */
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.residuos-popup {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+}
+
+.residuos-popup .header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.residuos-popup .divider {
+  height: 1px;
+  margin: 8px 0;
+  opacity: 0.3;
+}
+
+.residuos-popup .info-row {
+  margin-bottom: 6px;
+  font-size: 13px;
+}
+
+.residuos-popup .label {
+  font-weight: 600;
+  color: #333;
+}
+
+.residuos-popup .badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-left: 6px;
+}
+
+.residuos-popup .coordinates {
+  font-size: 11px;
+  color: #666;
+  background: rgba(0,0,0,0.05);
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-top: 6px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 480px) {
+  .residuos-popup {
+    max-width: 250px !important;
+  }
+  
+  .residuos-popup .header {
+    font-size: 14px;
+  }
+  
+  .residuos-popup .info-row {
+    font-size: 12px;
+  }
+} 

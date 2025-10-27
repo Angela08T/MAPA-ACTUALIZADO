@@ -1,0 +1,332 @@
+.filtro-panel {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 33%;
+  max-width: 420px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 14px 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  backdrop-filter: blur(6px);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+/* Estado colapsado */
+.filtro-panel.collapsed {
+  gap: 0;
+  padding-bottom: 14px;
+}
+
+/* Header del filtro */
+.filtros-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  padding: 2px 0;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.filtros-header:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 2px 8px;
+}
+
+.filtros-titulo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Botón de colapsar */
+.collapse-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  color: #666;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+}
+
+.collapse-btn:hover {
+  color: #333;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Contenido que se puede colapsar */
+.filtros-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  opacity: 1;
+  max-height: 1000px;
+  transform: scaleY(1);
+  transform-origin: top;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filtro-panel.collapsed .filtros-content {
+  opacity: 0;
+  max-height: 0;
+  transform: scaleY(0);
+  margin-top: -14px;
+}
+
+/* Contadores de incidentes */
+.contadores-panel {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 10px;
+  border-radius: 10px;
+  color: white;
+  gap: 10px;
+}
+
+.contador-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+  text-align: center;
+}
+
+.contador-item svg {
+  margin-bottom: 4px;
+}
+
+/* Números y etiquetas */
+.contador-numero {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.contador-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  margin-top: 2px;
+  opacity: 0.9;
+}
+
+/* Fila de filtros */
+.filtros-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.filtros-row label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  color: #333;
+  min-width: 100px;
+  flex: 1;
+}
+
+.filtros-row select {
+  padding: 5px 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 13px;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.filtros-row select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+/* Acciones (botón limpiar) */
+.filtros-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Botón de limpiar */
+.reset-btn {
+  background: #ff4757;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.reset-btn:hover {
+  background: #ff2f40;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(255, 71, 87, 0.3);
+}
+
+.reset-btn:active {
+  transform: translateY(0);
+}
+
+/* Animación suave para el cambio de tamaño del panel */
+.filtro-panel {
+  max-height: fit-content;
+}
+
+/* Indicador visual cuando está colapsado */
+.filtro-panel.collapsed::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 3px;
+  background: linear-gradient(90deg, #667eea, #764ba2);
+  border-radius: 2px;
+  opacity: 0.7;
+}
+
+/* Responsive para pantallas pequeñas */
+@media screen and (max-width: 768px) {
+  .filtro-panel {
+    width: calc(100% - 20px);
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: none;
+  }
+
+  .filtros-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filtros-row label {
+    min-width: auto;
+  }
+
+  .contadores-panel {
+    padding: 12px 8px;
+  }
+
+  .contador-item {
+    min-width: 70px;
+  }
+
+  .contador-numero {
+    font-size: 20px;
+  }
+
+  .contador-label {
+    font-size: 10px;
+  }
+
+  /* En móvil, hacer el header más prominente */
+  .filtros-header {
+    padding: 4px 0;
+  }
+
+  .filtros-header:hover {
+    padding: 4px 8px;
+  }
+
+  .filtros-titulo {
+    font-size: 14px;
+  }
+}
+
+/* Para pantallas muy pequeñas */
+@media screen and (max-width: 480px) {
+  .filtro-panel {
+    bottom: 5px;
+    left: 5px;
+    width: calc(100% - 10px);
+    padding: 12px;
+  }
+
+  .contadores-panel {
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .contador-item {
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .contador-item:last-child {
+    border-bottom: none;
+  }
+
+  .contador-item svg {
+    margin-bottom: 0;
+  }
+
+  .contador-numero {
+    font-size: 18px;
+  }
+}
+
+/* Mejoras de accesibilidad */
+@media (prefers-reduced-motion: reduce) {
+  .filtro-panel,
+  .filtros-content,
+  .collapse-btn,
+  .reset-btn {
+    transition: none;
+  }
+}
+
+/* Tema oscuro (opcional) */
+@media (prefers-color-scheme: dark) {
+  .filtro-panel {
+    background-color: rgba(30, 30, 30, 0.95);
+  }
+  
+  .filtros-titulo {
+    color: #fff;
+  }
+  
+  .filtros-row label {
+    color: #fff;
+  }
+  
+  .filtros-row select {
+    background: #444;
+    color: #fff;
+    border-color: #666;
+  }
+  
+  .collapse-btn {
+    color: #ccc;
+  }
+  
+  .collapse-btn:hover {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}

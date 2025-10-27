@@ -1,0 +1,832 @@
+/* Control de Cámaras - Diseño Moderno y Compacto */
+.control-camaras {
+  position: absolute;
+  top: 90px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  z-index: 5000;
+  width: 320px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.control-camaras.google-mode {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.control-camaras.collapsed {
+  max-height: 52px;
+}
+
+/* Header Moderno */
+.control-camaras-header {
+  padding: 14px 18px;
+  cursor: pointer;
+  user-select: none;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  border-radius: 12px 12px 0 0;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.control-camaras-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.control-camaras-header:hover::before {
+  opacity: 1;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.header-content h3 {
+  margin: 0;
+  font-size: 18px !important;
+  font-weight: 600;
+  color: white !important;
+  letter-spacing: -0.02em;
+}
+
+.collapse-btn {
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.2s ease;
+  backdrop-filter: blur(10px);
+}
+
+.collapse-btn:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: scale(1.05);
+}
+
+/* Content Moderno */
+.control-camaras-content {
+  padding: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.control-camaras-content.hidden {
+  display: none;
+}
+
+/* Búsqueda Principal */
+.busqueda-principal {
+  margin-bottom: 18px;
+}
+
+.input-group {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  flex: 1;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #6b7280;
+  z-index: 1;
+}
+
+.busqueda-input {
+  width: 100%;
+  padding: 12px 16px 12px 35px;
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+  color: #374151;
+}
+
+.busqueda-input:focus {
+  outline: none;
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+  background: white;
+}
+
+.busqueda-input:disabled {
+  background: #f9fafb;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.busqueda-input::placeholder {
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.btn-buscar {
+  padding: 12px;
+  background: 'linear-gradient(135deg, #667eea, #764ba2)';
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 35px;
+  max-width: fit-content;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
+.btn-buscar:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+}
+
+.btn-buscar:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.ultima-busqueda {
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: rgba(99, 102, 241, 0.05);
+  border-radius: 8px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.busqueda-label {
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.busqueda-valor {
+  color: #6366f1;
+  font-weight: 600;
+}
+
+/* Filtros Compactos */
+.filtros-compactos {
+  margin-bottom: 18px;
+}
+
+/* Título de filtros para los filtros compactos (megáfono y botón) */
+.filtros-compactos .filtros-titulo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.filtros-botones {
+  display: flex;
+  gap: 8px;
+}
+
+.filtro-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 12px;
+  background: rgba(243, 244, 246, 0.8);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.filtro-btn:hover {
+  background: rgba(229, 231, 235, 0.8);
+  color: #374151;
+}
+
+.filtro-btn.activo {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: #6366f1;
+  color: #6366f1;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.15);
+}
+
+.filtro-count {
+  background: #6366f1;
+  color: white;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 18px;
+  text-align: center;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .control-camaras {
+    left: 5px;
+    right: 5px;
+    min-width: auto;
+    max-width: none;
+  }
+  
+  .estadisticas {
+    grid-template-columns: 1fr;
+  }
+  
+  .camara-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .camara-caracteristicas {
+    align-self: flex-start;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.control-camaras {
+  animation: fadeIn 0.3s ease;
+}
+
+/* Modo Google Maps */
+.control-camaras.google-mode .control-camaras-header {
+  background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+}
+
+.control-camaras.google-mode .control-camaras-header:hover {
+  background: linear-gradient(135deg, #3367d6 0%, #2d8f47 100%);
+}/* 
+Estados */
+.estado-carga {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e5e7eb;
+  border-top: 2px solid #6366f1;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.mensaje-error {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: rgba(239, 68, 68, 0.05);
+  border: 1px solid rgba(239, 68, 68, 0.2);
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.error-icon {
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.error-texto {
+  font-size: 13px;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+/* Estadísticas Compactas */
+.stats-compactas {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 16px;
+  padding: 12px;
+  background: rgba(243, 244, 246, 0.5);
+  border-radius: 8px;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.stat-item.activo {
+  background: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.stat-numero {
+  font-size: 18px;
+  font-weight: 700;
+  color: #374151;
+  line-height: 1;
+}
+
+.stat-item.activo .stat-numero {
+  color: #6366f1;
+}
+
+.stat-label {
+  font-size: 11px;
+  color: #6b7280;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.stat-item.activo .stat-label {
+  color: #6366f1;
+}
+
+/* Acciones Container */
+.acciones-container {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.btn-limpiar-todo {
+  flex: 1;
+  padding: 10px 16px;
+  background: rgba(107, 114, 128, 0.1);
+  border: 1px solid rgba(107, 114, 128, 0.2);
+  border-radius: 8px;
+  color: #6b7280;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-limpiar-todo:hover {
+  background: rgba(107, 114, 128, 0.15);
+  color: #374151;
+  transform: translateY(-1px);
+}
+
+.btn-seguimiento {
+  flex: 1;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+}
+
+.btn-seguimiento:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.4);
+}
+
+.btn-seguimiento:active {
+  transform: translateY(0);
+}
+
+/* Instrucciones */
+.instrucciones {
+  padding: 16px;
+  background: rgba(249, 250, 251, 0.8);
+  border-radius: 8px;
+  border: 1px dashed rgba(209, 213, 219, 0.8);
+}
+
+.instruccion-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.instruccion-item:last-child {
+  margin-bottom: 0;
+}
+
+.instruccion-numero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: #6366f1;
+  color: white;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .control-camaras {
+    left: 5px;
+    right: 5px;
+    width: auto;
+  }
+  
+  .filtros-botones {
+    flex-direction: column;
+  }
+  
+  .stats-compactas {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .stat-item {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.control-camaras {
+  animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.instruccion-item {
+  animation: slideIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.instruccion-item:nth-child(1) { animation-delay: 0.1s; }
+.instruccion-item:nth-child(2) { animation-delay: 0.2s; }
+.instruccion-item:nth-child(3) { animation-delay: 0.3s; }
+
+/* Modo Google Maps */
+.control-camaras.google-mode .control-camaras-header {
+  background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+}
+
+.control-camaras.google-mode .btn-buscar {
+  background: linear-gradient(135deg, #4285f4 0%, #34a853 100%);
+  box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+}
+
+.control-camaras.google-mode .btn-buscar:hover:not(:disabled) {
+  box-shadow: 0 6px 20px rgba(66, 133, 244, 0.4);
+}
+
+.control-camaras.google-mode .filtro-btn.activo {
+  border-color: #4285f4;
+  color: #4285f4;
+  background: rgba(66, 133, 244, 0.1);
+}
+
+.control-camaras.google-mode .filtro-count {
+  background: #4285f4;
+}
+
+.control-camaras.google-mode .stat-item.activo .stat-numero,
+.control-camaras.google-mode .stat-item.activo .stat-label {
+  color: #4285f4;
+}
+
+.control-camaras.google-mode .instruccion-numero {
+  background: #4285f4;
+}
+
+.control-camaras.google-mode .btn-seguimiento {
+  background: linear-gradient(135deg, #34a853 0%, #137333 100%);
+  box-shadow: 0 2px 8px rgba(52, 168, 83, 0.3);
+}
+
+.control-camaras.google-mode .btn-seguimiento:hover {
+  background: linear-gradient(135deg, #137333 0%, #0d652d 100%);
+  box-shadow: 0 4px 12px rgba(52, 168, 83, 0.4);
+}
+/* Seguimiento activo */
+.seguimiento-activo {
+  margin-bottom: 16px;
+}
+
+.btn-limpiar-seguimiento {
+  width: 100%;
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #eb5050 0%, #dc2626 100%);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(239, 68, 68, 0.3);
+}
+
+.btn-limpiar-seguimiento:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(239, 68, 68, 0.4);
+}
+
+.btn-limpiar-seguimiento:active {
+  transform: translateY(0);
+}
+
+/* Modo Google Maps */
+.control-camaras.google-mode .btn-limpiar-seguimiento {
+  background: linear-gradient(135deg, #ea4335 0%, #d33b2c 100%);
+  box-shadow: 0 2px 8px rgba(234, 67, 53, 0.3);
+}
+
+.control-camaras.google-mode .btn-limpiar-seguimiento:hover {
+  background: linear-gradient(135deg, #d33b2c 0%, #b52d20 100%);
+  box-shadow: 0 4px 12px rgba(234, 67, 53, 0.4);
+}
+
+/* Filtro de Jurisdicciones */
+.filtro-jurisdicciones {
+  margin-bottom: 18px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(229, 231, 235, 0.8);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filtro-jurisdicciones.collapsed {
+  margin-bottom: 12px;
+}
+
+.filtros-titulo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.titulo-left {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.collapse-jurisdicciones-btn {
+  background: rgba(243, 244, 246, 0.8);
+  border: 1px solid rgba(209, 213, 219, 0.5);
+  border-radius: 6px;
+  padding: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  min-width: 24px;
+  height: 24px;
+}
+
+.collapse-jurisdicciones-btn:hover {
+  background: rgba(229, 231, 235, 0.8);
+  color: #374151;
+  transform: scale(1.05);
+  border-color: rgba(156, 163, 175, 0.8);
+}
+
+.collapse-jurisdicciones-btn:active {
+  transform: scale(0.95);
+}
+
+.jurisdicciones-container {
+  max-height: 200px;
+  overflow-y: auto;
+  padding: 8px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.jurisdicciones-container.hidden {
+  display: none;
+  opacity: 0;
+  transform: translateY(-10px);
+  max-height: 0;
+  padding: 0;
+}
+
+.jurisdicciones-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.jurisdicciones-container::-webkit-scrollbar-track {
+  background: rgba(243, 244, 246, 0.5);
+  border-radius: 2px;
+}
+
+.jurisdicciones-container::-webkit-scrollbar-thumb {
+  background: rgba(156, 163, 175, 0.5);
+  border-radius: 2px;
+}
+
+.jurisdicciones-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(156, 163, 175, 0.8);
+}
+
+.jurisdiccion-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 13px;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid transparent;
+}
+
+.jurisdiccion-checkbox:hover {
+  background: rgba(243, 244, 246, 0.8);
+  border-color: rgba(209, 213, 219, 0.5);
+  transform: translateX(2px);
+}
+
+.jurisdiccion-checkbox input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-custom {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #d1d5db;
+  border-radius: 4px;
+  position: relative;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+  background: white;
+}
+
+.jurisdiccion-checkbox input[type="checkbox"]:checked + .checkbox-custom {
+  background: #6366f1;
+  border-color: #6366f1;
+  transform: scale(1.1);
+}
+
+.jurisdiccion-checkbox input[type="checkbox"]:checked + .checkbox-custom::after {
+  content: '✓';
+  position: absolute;
+  top: -1px;
+  left: 2px;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.jurisdiccion-nombre {
+  flex: 1;
+  font-weight: 500;
+  color: #374151;
+}
+
+.jurisdiccion-count {
+  color: #6b7280;
+  font-size: 11px;
+  font-weight: 500;
+  background: rgba(243, 244, 246, 0.8);
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* Modo Google Maps para jurisdicciones */
+.control-camaras.google-mode .jurisdiccion-checkbox input[type="checkbox"]:checked + .checkbox-custom {
+  background: #4285f4;
+  border-color: #4285f4;
+}
+
+.control-camaras.google-mode .jurisdiccion-checkbox:hover {
+  border-color: rgba(66, 133, 244, 0.2);
+}
+
+.control-camaras.google-mode .collapse-jurisdicciones-btn {
+  background: rgba(66, 133, 244, 0.1);
+  border-color: rgba(66, 133, 244, 0.3);
+  color: #4285f4;
+}
+
+.control-camaras.google-mode .collapse-jurisdicciones-btn:hover {
+  background: rgba(66, 133, 244, 0.2);
+  border-color: rgba(66, 133, 244, 0.5);
+  color: #3367d6;
+}
+
+/* Responsive para jurisdicciones */
+@media (max-width: 768px) {
+  .jurisdicciones-container {
+    max-height: 150px;
+  }
+  
+  .jurisdiccion-checkbox {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+  
+  .checkbox-custom {
+    width: 14px;
+    height: 14px;
+  }
+}

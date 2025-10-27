@@ -1,0 +1,283 @@
+.control-marcador-puntos {
+  position: fixed;
+  top: 450px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  min-width: 350px;
+  max-width: 600px;
+  max-height: 55vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 10000;
+  border: 1px solid rgba(200, 200, 200, 0.6);
+  transition: all 0.3s ease;
+}
+
+.control-marcador-puntos.google-mode {
+  background: rgba(255, 255, 255, 0.98);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.control-marcador-puntos.collapsed {
+  max-height: 60px;
+}
+
+.control-marcador-header {
+  padding: 8px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  cursor: pointer;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-content h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.collapse-btn {
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.collapse-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.control-marcador-content {
+  padding: 20px;
+  transition: all 0.3s ease;
+  max-height: calc(70vh - 60px);
+  overflow-y: auto;
+}
+
+.control-marcador-content.hidden {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+}
+
+/* Controles principales */
+.marcador-controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.btn-toggle-marcador {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 2px solid #667eea;
+  background: white;
+  color: #667eea;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+
+
+.btn-toggle-marcador:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.btn-toggle-marcador.active {
+  background: #667eea;
+  color: white;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.btn-exportar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 2px solid #27ae60;
+  background: white;
+  color: #27ae60;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+
+.btn-exportar:hover {
+  background: #27ae60;
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* Instrucciones */
+.instrucciones {
+  margin-bottom: 8px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.instruccion-activa {
+  /* background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); */
+  color: #27ae60;
+  margin: 0;
+  font-weight: 500;
+}
+
+.instruccion-inactiva {
+  /* background: #f8f9fa; */
+  color: #6c757d;
+  margin: 0;
+  /* border: 1px solid #e9ecef; */
+}
+
+/* Tabla de puntos */
+.tabla-puntos {
+  margin-top: 16px;
+}
+
+.tabla-puntos h4 {
+  margin: 0 0 12px 0;
+  color: #2c3e50;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.tabla-container {
+  max-height: 250px;
+  overflow-y: auto;
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+}
+
+.tabla-container table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.tabla-container th {
+  background: #f8f9fa;
+  padding: 10px 8px;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 1px solid #dee2e6;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tabla-container td {
+  padding: 8px;
+  border-bottom: 1px solid #f1f3f4;
+  vertical-align: middle;
+}
+
+.tabla-container tr:hover {
+  background-color: #f8f9fa;
+}
+
+.direccion-cell {
+  max-width: 200px;
+  width: 180px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-break: break-all;
+}
+
+.btn-eliminar {
+  background: none;
+  border: none;
+  color: #dc3545;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-eliminar:hover {
+  background: #dc3545;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Sin puntos */
+.sin-puntos {
+  text-align: center;
+  padding: 20px;
+  color: #6c757d;
+  font-style: italic;
+}
+
+/* Scrollbar personalizada */
+.control-marcador-content::-webkit-scrollbar,
+.tabla-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.control-marcador-content::-webkit-scrollbar-track,
+.tabla-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.control-marcador-content::-webkit-scrollbar-thumb,
+.tabla-container::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.control-marcador-content::-webkit-scrollbar-thumb:hover,
+.tabla-container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .control-marcador-puntos {
+    right: 10px;
+    left: 10px;
+    min-width: auto;
+    max-width: none;
+  }
+  
+  .marcador-controls {
+    flex-direction: column;
+  }
+  
+  .btn-toggle-marcador,
+  .btn-exportar {
+    width: 100%;
+    justify-content: center;
+  }
+} 

@@ -1,0 +1,5996 @@
+[
+ {
+  "Latitud": -12.0242304,
+  "Longitud": -76.987855,
+  "Dirección": "AV. GRAN CHIMU N° 1450 MZ. J-6 LT. 4 URB. ZARATE",
+  "GIro": "PASTELERIA"
+ },
+ {
+  "Latitud": -11.9479686,
+  "Longitud": -76.985124,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA N° 5186 MZ J1 LT 30 - PROGRAMA CIUDAD MARISCAL CACERES (3ER PISO)",
+  "GIro": "ACADEMIA DE FUTBOL"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "MZ 17 LT 1 SUB-LOTE 1M PARC. SEMI R CANTO GRANDE",
+  "GIro": "CONFECCION DE PRENDAS DE VESTIR (SERVICIOS EN GENERAL Y TEJEDURIA)"
+ },
+ {
+  "Latitud": -12.0259895,
+  "Longitud": -77.0018793999999,
+  "Dirección": "AV PIRAMIDE DEL SOL N° 319 - URB ZARATE",
+  "GIro": "RESTAURANT, CEVICHERIA, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -13.1638737,
+  "Longitud": -74.2235640999999,
+  "Dirección": "JR. CARLOS I N° 111 MZ. C LT. 18 - APV AYACUCHO",
+  "GIro": "ABARROTES, VERDURAS, GASEOSAS Y LICORES"
+ },
+ {
+  "Latitud": -11.9684342,
+  "Longitud": -76.9938217,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA NRO: 3723 MZ. F LT. 15 APV LOS ALAMOS DE CANTO GRANDE",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "JR. ARNALDO MARQUEZ MZ. J-2 LT. 25 PROGRAMA CIUDAD MARISCAL CACERES 4TO PISO",
+  "GIro": "INSTRUCCION PARA ADULTO DE CLASES (ESCUELA DE CONDUCTORES)"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "SV, N° 776 MZ. A LT. 23 - URB. CANTO GRANDE",
+  "GIro": "EDUCACION INICIAL, PRIMARIA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. SAN MARTIN DE PORRES N° 577-583, MZ I LT 16 - PARC. SEM. R CANTO GRANDE UNIDAD 12",
+  "GIro": "VENTA DE ARTICULOS USADOS"
+ },
+ {
+  "Latitud": -12.024793,
+  "Longitud": -76.998328,
+  "Dirección": "AV. GRAN CHIMU N° 909 - URB. ZARATE",
+  "GIro": "PELUQUERIA"
+ },
+ {
+  "Latitud": -12.0133953,
+  "Longitud": -77.0034773,
+  "Dirección": "AV. LOS TUSILAGOS OESTE NRO: 129 MZ. U LT. 26 URB. LOS JARDINES DE SAN JUAN",
+  "GIro": "BAZAR Y REGALOS, VENTA DE PRODUCTOS DIVERSOS, PIÑATERIA"
+ },
+ {
+  "Latitud": -12.027313,
+  "Longitud": -77.0074906999999,
+  "Dirección": "AV. GRAN CHIMU N° 391 - URB. ZARATE",
+  "GIro": "BOTICA - PERFUMERIA"
+ },
+ {
+  "Latitud": -12.0240876,
+  "Longitud": -76.9887392999999,
+  "Dirección": "AV. GRAN CHIMU N° 1399 MZ. D6 LT. 19 - URB. ZARATE",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -12.004315,
+  "Longitud": -77.0122961,
+  "Dirección": "AV FLORES DE PRIMAVERA N° 1495 - COOP LAS FLORES",
+  "GIro": "VENTA DE ABARROTES"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "AV. CANTO GRANTO N° 2912 - MZ. A LT. 13 - URB. CANTO GRANDE",
+  "GIro": "FERRETERIA, VENTA DE MATERIALES DE CONSTRUCCION"
+ },
+ {
+  "Latitud": -12.0038589,
+  "Longitud": -77.0016663,
+  "Dirección": "AV JARDINES ESTE N° 542 MZ S-3 LT 07 - APV INCA MANCO CAPAC",
+  "GIro": "RESTAURANT, CEVICHERIA, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -11.9853337,
+  "Longitud": -77.0072545,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2769 MZ. K-1 LT. 36A - URB SAN CARLOS",
+  "GIro": "VENTA DE REPUESTOS AUTOMOTRICES"
+ },
+ {
+  "Latitud": -9.189967,
+  "Longitud": -75.015152,
+  "Dirección": "SV. MZ. 12 LT. PP. JJ. ARRIVA PERU",
+  "GIro": "REPARACION DE ELECTRODOMESTICOS (COCINAS, REFRIGERADORAS, TERMAS Y SIMILARES)"
+ },
+ {
+  "Latitud": -12.0020281,
+  "Longitud": -76.9963995999999,
+  "Dirección": "AV. LOS JARDINES ESTE NRO: 852 SECCION 05 UNI. INMOB. N° 05 MZ. Ñ-V LT. 23 TDA 4 APV INCA MANCO CAPAC",
+  "GIro": "BOTICA, BAZAR"
+ },
+ {
+  "Latitud": -12.0030282,
+  "Longitud": -77.0006162999999,
+  "Dirección": "AV. JARDINES ESTE N° 559 MZ. T-3 LT. 36 - 1ER PISO - APV INCA MANCO CAPAC",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -11.9475252,
+  "Longitud": -76.9800990999999,
+  "Dirección": "JR. LAS CANTERAS MZ. A2 LT. 1 PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "PRESTACION DE CONSULTORIA Y ASESORAMIENTO EN GENERAL"
+ },
+ {
+  "Latitud": -11.9967066,
+  "Longitud": -77.0005147999999,
+  "Dirección": "AV. SANTA ROSA DE LIMA NRO: 2068 APV INCA MANCO CAPAC",
+  "GIro": "BAZAR, PERFUMERIA"
+ },
+ {
+  "Latitud": -11.997485,
+  "Longitud": -77.0003437,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 2034 MZ. A-5 LT. 23 - APV INCA MANCO CAPAC",
+  "GIro": "BOTICA Y AFINES"
+ },
+ {
+  "Latitud": -12.0014513,
+  "Longitud": -76.9997465,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 1733 - APV INCA MANCO CAPAC",
+  "GIro": "SERVICIOS FOTOGRAFICOS"
+ },
+ {
+  "Latitud": -11.9673768,
+  "Longitud": -76.9953695,
+  "Dirección": "AV. SANTA ROSA MZ. G LT. 15 - APV LOS ALAMOS DE CANTO GRANDE",
+  "GIro": "LAVANDERIA"
+ },
+ {
+  "Latitud": -11.9992859,
+  "Longitud": -77.0088028999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2024A MZ. F LT. 4A - APV SAN HILARION",
+  "GIro": "POLICLINICO"
+ },
+ {
+  "Latitud": -11.8829119,
+  "Longitud": -77.1322941,
+  "Dirección": "MZ. H-4 LT. 18 AA.HH. JOSE CARLOS MARIATEGUI",
+  "GIro": "POLLERIA"
+ },
+ {
+  "Latitud": -17.0158016,
+  "Longitud": -72.0031108,
+  "Dirección": "MZ F LT 12 ASOC. LOS PINOS",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -12.0384827,
+  "Longitud": -76.9570093,
+  "Dirección": "JR INTERMEDIO MZ G-3 LT 5 - PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "ARTESANIAS"
+ },
+ {
+  "Latitud": -12.0242452,
+  "Longitud": -76.9888659,
+  "Dirección": "AV GRAN CHIMU N° 1400 - URB ZARATE",
+  "GIro": "VENTA DE EMBUTIDOS, OTROS PRODUCTOS LACTEOS"
+ },
+ {
+  "Latitud": -12.0176463,
+  "Longitud": -77.0115452,
+  "Dirección": "JR LOS ALCAPARRAS N° 548 MZ 18 LT 15 - COOP LAS FLORES DE PRIMAVERA",
+  "GIro": "VENTA DE PASTELES Y TORTAS"
+ },
+ {
+  "Latitud": -12.0047984,
+  "Longitud": -77.0062093,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA N° 1730 - URB FLORES 78",
+  "GIro": "RESTAURANT, POLLERIA"
+ },
+ {
+  "Latitud": -12.0756385,
+  "Longitud": -76.9110056,
+  "Dirección": "AV. EL PARQUE MZ. C LT. 15-A APV. LA PLANICIE",
+  "GIro": "FUENTE DE SODA"
+ },
+ {
+  "Latitud": -12.024433,
+  "Longitud": -76.9964926,
+  "Dirección": "AV. GRAN CHIMU N° 1003 - URB ZARATE",
+  "GIro": "OFICINAS ADMINISTRATIVA DE SERVICIOS INDUSTRIALES"
+ },
+ {
+  "Latitud": -12.0175937,
+  "Longitud": -76.9986170999999,
+  "Dirección": "AV PORTADA DEL SOL N° 886 MZ 4 LT 1-C - URB ZARATE",
+  "GIro": "CONTRATISTAS GENERALES (OFICINA ADMINISTRATIVA)"
+ },
+ {
+  "Latitud": -12.0248427,
+  "Longitud": -77.0022518999999,
+  "Dirección": "AV. PIRAMIDE DEL SOL N° 449-A MZ. B-2 LT. 7 - URB. ZARATE",
+  "GIro": "AGENCIA DE VIAJES"
+ },
+ {
+  "Latitud": -12.024433,
+  "Longitud": -76.9964926,
+  "Dirección": "AV. GRAN CHIMU N° 1003 MZ. 1-5 LT. 12 - URB. ZARATE",
+  "GIro": "COMERC. REPR. DE EQUIPO INFOR. Y SUMIN. ALQ. DE COMP. FOTOCOPIAS, ASESORIA Y REG. VENTA DE SOAT"
+ },
+ {
+  "Latitud": -12.024316,
+  "Longitud": -76.9942205999999,
+  "Dirección": "AV. GRAN CHIMU NRO: 1081 URB. ZARATE",
+  "GIro": "BARBERIA, VENTA DE PRODUCTOS DE BELLEZA"
+ },
+ {
+  "Latitud": -13.1547062,
+  "Longitud": -72.5254412,
+  "Dirección": "AV. CANTO GRANDE NRO: 633 APV. MACCHU PICCHU",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. CANTO GRANDE NRO: 2838A PARC. SEMI R. CANTO GRANDE",
+  "GIro": "JUGUERIA, CAFETERIA, PASTELERIA (VENTA)"
+ },
+ {
+  "Latitud": -12.0984181,
+  "Longitud": -76.9625344,
+  "Dirección": "AV. SAN MARTIN MZ. K LT. 23 - COOP. VIVI. VALLE DE SARON",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.8201806,
+  "Longitud": -75.3936808,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N°2345 MZ. B LT. 37 COOP. EL MANTARO",
+  "GIro": "VENTA DE REPUESTOS PARA MOTOCICLETAS"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. J-15 LT. 13 - PROGRAMA CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "VENTA DE ARTICULOS DESCARTABLES"
+ },
+ {
+  "Latitud": -11.9547521,
+  "Longitud": -76.9824172,
+  "Dirección": "JR. CIRCUVALACION MZ. B-13 - PROGRAMA CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "CASA DE JUEGOS DE AZAR Y APUESTAS DEPORTIVAS"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "SV. UNI. INMOB. N° MZ C-10 LT. 1 PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "RESTAURANT, CHIFA"
+ },
+ {
+  "Latitud": -12.0160002,
+  "Longitud": -76.9991971,
+  "Dirección": "AV. LURIGANCHO N° 993-997-999-999A MODULO N° MOTOR-15 (2 SOTANO) URB. ZARATE INDUSTRIAL (C.C. MALL AVENTURA)",
+  "GIro": "VENTA DE VEHICULOS AUTOMOTORES DE PASAJEROS - ACTIVIDADES DE DEMOSTRACION Y EXHIBICION"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. CANTO GRANDE N° 3635 MZ. H LT. 29 - COOP. VIVI CANTO GRANDE",
+  "GIro": "RESTAURANT, PARRILLADAS, POLLERIA"
+ },
+ {
+  "Latitud": -12.0161829,
+  "Longitud": -76.9991453,
+  "Dirección": "AV. LURIGANCHO N° 997-999 MZ. A - LOCAL RE-300 - URB. ZARATE INDUSTRIAL",
+  "GIro": "RESTAURANT, VIDEO PUB, KARAOKE"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "MZ  GLT 01 - URB COUNTRY CLUB CANTO GRANDE",
+  "GIro": "PANADERIA Y PASTELERIA"
+ },
+ {
+  "Latitud": -11.8847064,
+  "Longitud": -77.0761564,
+  "Dirección": "AV. SAN MARTIN P. ESTE N° MZ. C LT. 18 - APV LOS PINOS",
+  "GIro": "PANADERIA PASTELERIA BODEGA"
+ },
+ {
+  "Latitud": -11.9994705,
+  "Longitud": -77.0138334,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1766 MZ. O-1 LT. 17 APV SAN HILARION",
+  "GIro": "POLLERIA"
+ },
+ {
+  "Latitud": 42.4302843,
+  "Longitud": 18.859056,
+  "Dirección": "SV. MZ. P1 SUB LOTE 23A AA. HH. ENRIQUE MONTENEGRO",
+  "GIro": "OFICINA ADMINISTRATIVA"
+ },
+ {
+  "Latitud": -11.9976732,
+  "Longitud": -77.0004058,
+  "Dirección": "AV SANTA ROSA DE LIMA N° 2024 - APV INCA MANCO CAPAC",
+  "GIro": "ELAB. DE ALIMENTOS PARA EL DESAYUNO"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ C-04 LT 18 Y 19 - PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "EDUCACION INICIAL"
+ },
+ {
+  "Latitud": -12.0235458,
+  "Longitud": -77.0126564,
+  "Dirección": "AV. FLORES DE PRIMAVERA NRO: 363 COOP. LAS FLORES",
+  "GIro": "BOTICA, PERFUMERIA, BAZAR"
+ },
+ {
+  "Latitud": -11.9613649,
+  "Longitud": -76.9829396,
+  "Dirección": "AV. HEROES DEL CENEPA NRO: 345 UNI. INMOB. 1 PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "FRUTERIA"
+ },
+ {
+  "Latitud": -12.0258269,
+  "Longitud": -77.0027250999999,
+  "Dirección": "AV. GRAN CHIMU NRO: 681 - PRIMER PISO URB. ZARATE",
+  "GIro": "PERFUMERIA, PRODUCTOS DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9871258,
+  "Longitud": -77.0053459,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2771, 2771A MZ. K1 LT. 363 URB. SAN CARLOS COMUNA 12",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -12.0039276,
+  "Longitud": -77.0068309,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA NRO: 1772 UNI. INMOB. N°2 MZ. G LT. 25 URB. FLORES 78",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -12.0043488,
+  "Longitud": -77.0065506999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1748 MZ. G 1ER PISO - URB. FLORES 78",
+  "GIro": "CENTRO DE TERAPIA Y REHABILITACION FISICA"
+ },
+ {
+  "Latitud": -12.0036335,
+  "Longitud": -77.0007699,
+  "Dirección": "AV. JARDINES ESTE N°576 MZ. S-III LT. 13 APV. INCA MANCO CAPAC",
+  "GIro": "RESTAURANT - POLLERIA"
+ },
+ {
+  "Latitud": -12.0297275,
+  "Longitud": -77.016182,
+  "Dirección": "JR. CAJAMARCA SEC INMOB 1 MZ. B2 LT. 27 - URB. CAJA DE AGUA",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0146762,
+  "Longitud": -76.9967071,
+  "Dirección": "SV. MZ. C LT. 01 URB. HORIZONTE DE ZARATE",
+  "GIro": "VENTA DE ROPA Y PRODUCTOS DE BELLEZA"
+ },
+ {
+  "Latitud": -5.577718,
+  "Longitud": -80.8252972,
+  "Dirección": "SV. MZ. D LT. 4 AA. HH. 2 DE SETIEMBRE",
+  "GIro": "SERVICIOS POSTALES NACIONALES, RECOLECCION DE CORRESPONDENCIA Y PAQUETES EN OFICINA DE CORREO"
+ },
+ {
+  "Latitud": -12.0253496,
+  "Longitud": -76.9995424,
+  "Dirección": "AV. GRAN CHIMU NRO: 838 MZ. B-4 LT. 9 URB. ZARATE",
+  "GIro": "CHIFA, POLLOS A LA BRASA (POLLERIA), RESTAURANTE (VENTA DE LICOR COMO COMPLEMENTO DE COMIDAS)"
+ },
+ {
+  "Latitud": -12.0286184,
+  "Longitud": -77.0112173,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA NRO: 172 URB. CAJA DE AGUA",
+  "GIro": "FUENTE DE SODA"
+ },
+ {
+  "Latitud": -12.0277114,
+  "Longitud": -77.0084759,
+  "Dirección": "AV. GRAN CHIMU NRO: 356 2DO. Y 3CER PISO URB. ZARATE",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -11.9983769,
+  "Longitud": -77.0139279,
+  "Dirección": "AV. LOS POSTES OESTE N° 380 MZ. L LT. 42 - APV SAN HILARION",
+  "GIro": "VENTA DE LUBRICANTES Y ACCESORIOS PARA VEHICULOS MENORES"
+ },
+ {
+  "Latitud": -12.0287694,
+  "Longitud": -77.0113228,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA NRO: 164 MZ. H LT. 04 - URB. CAJA DE AGUA",
+  "GIro": "VENTA DE INSTRUMENTOS QUIRURGICOS"
+ },
+ {
+  "Latitud": -12.0242139,
+  "Longitud": -76.9902453999999,
+  "Dirección": "AV. GRAN CHIMU N° 1303 URB. ZARATE",
+  "GIro": "AVICOLA"
+ },
+ {
+  "Latitud": -11.9982217,
+  "Longitud": -77.0000326999999,
+  "Dirección": "JR. LOS JASPES NRO: 1968 2DO PISO APV INCA MANCO CAPAC",
+  "GIro": "CASA NATURISTA"
+ },
+ {
+  "Latitud": -12.0107205,
+  "Longitud": -77.0115564,
+  "Dirección": "AV. FLORES DE PRIMAVERA NRO: 1119-1121 COOP. LAS FLORES",
+  "GIro": "RESTAURANT, CEVICHERIA"
+ },
+ {
+  "Latitud": -12.0063286,
+  "Longitud": -77.0061884,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1699 2DO PISO OFICINA 204-205 - URB. LAS FLORES DE LIMA",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -12.0167569,
+  "Longitud": -77.0000769,
+  "Dirección": "AV. LURIGANCHO NRO: 997-999 MC-300 \/ AM MC-300 (PISO 3) URB. ZARATE INDUSTRIAL",
+  "GIro": "JUGUERIA, DULCERIA, HELADERIA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. EL BOSQUE MZ. A LT. SUB LOTE 1-B, UNI. INMOB. 4 TIENDA 106 PARC SEMI R. CANTO GRANDE",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -11.9957821,
+  "Longitud": -77.0111048,
+  "Dirección": "AV 13 DE ENERO N° 2067 - APV SAN HILARION",
+  "GIro": "CONTRATISTAS GENERALES (OFICINA ADMINISTRATIVA)"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV SANTA ROSA DE LIMA N° 570 MZ D-1 LT 01 SUBLOTE 01 - URB UNIDAD 12 DE CANTO GRANDE",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -12.0232145,
+  "Longitud": -76.9776275,
+  "Dirección": "AV CIRCUNVALACION MZ F LT 7 - COOP DANIEL ALCIDES CARRION",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -11.9992551,
+  "Longitud": -76.999534,
+  "Dirección": "JR. EL MARMOL 727 - 729 MZ. Z-IV LT. 30 APV. INCA MANCO CAPAC",
+  "GIro": "BODEGA, VENTA DE VIVERES Y BEBIDAS"
+ },
+ {
+  "Latitud": -12.0066284,
+  "Longitud": -77.0059347999999,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA N° 1673 MZ T LT 4 - 1ER PISO - URB LAS FLORES DE LIMA",
+  "GIro": "CASA DE CAMBIO"
+ },
+ {
+  "Latitud": -12.0074273,
+  "Longitud": -77.0116699,
+  "Dirección": "JR. VERDOLAGAS, LAS N° 649 MZ. 97 LT. 6 - 1ER PISO - COOP. LAS FLORES",
+  "GIro": "VENTA DE ARTICULOS DE FERRETERIA"
+ },
+ {
+  "Latitud": -12.0066876,
+  "Longitud": -77.0110703,
+  "Dirección": "AV. FLORES DE PRIMAVERA N°1400 MZ. E LT. 01 - APV. SAN HILARION",
+  "GIro": "JUEGOS DE AZAR - APUESTAS DEPORTIVAS"
+ },
+ {
+  "Latitud": -12.0183453,
+  "Longitud": -77.0121044999999,
+  "Dirección": "AV. FLORES DE PRIMAVERA NRO: 618 COOP. LAS FLORES",
+  "GIro": "CONTRATISTA GENERALES"
+ },
+ {
+  "Latitud": -12.0154177,
+  "Longitud": -77.0021979,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N°1177 MZ. X LT. 7 - URB. JARDINES DE SAN JUAN",
+  "GIro": "CONSULTORIO VETERINARIO, VENTA DE PRODUCTOS VETERINARIOS"
+ },
+ {
+  "Latitud": -12.024216,
+  "Longitud": -76.9907207999999,
+  "Dirección": "AV. GRAN CHIMU N°1253 MZ. E-6 LT. 17 SECCION 4 - PRIMER PISO URB. ZARATE",
+  "GIro": "BARBERIA"
+ },
+ {
+  "Latitud": 9.9098312,
+  "Longitud": -68.2772875,
+  "Dirección": "SV. NRO: 137 MZ. K LT. 33 URB. CAJA DE AGUA",
+  "GIro": "BARBERIA"
+ },
+ {
+  "Latitud": -12.0020775,
+  "Longitud": -76.9966391999999,
+  "Dirección": "AV. JARDINES ESTE N°840 Ñ-V LT. 23 - APV. INCA MANCO CAPAC",
+  "GIro": "RESTAURANT, PIZZERIA"
+ },
+ {
+  "Latitud": -12.0106226,
+  "Longitud": -76.981605,
+  "Dirección": "AV. LOMAS, LAS MZ. P-1 LT. 32 - URB. MANGOMARCA ALTA",
+  "GIro": "ABARROTES, GASEOSAS, ARTICULOS DE LIBRERIA, BAZAR Y LICORES ENVASADOS"
+ },
+ {
+  "Latitud": -12.0169302,
+  "Longitud": -76.9851877,
+  "Dirección": "SV. MZ. F LT. 50 - URB. MANGOMARCA BAJA",
+  "GIro": "VENTA DE VIDRIOS Y ARTICULOS DE VIDRIO - VIDRIERIA"
+ },
+ {
+  "Latitud": -12.0169302,
+  "Longitud": -76.9851877,
+  "Dirección": "SV. MZ. F LT. 50 - URB. MANGOMARCA BAJA",
+  "GIro": "VENTA DE VIDRIOS Y ARTICULOS DE VIDRIO - VIDRIERIA"
+ },
+ {
+  "Latitud": -12.0038589,
+  "Longitud": -77.0016663,
+  "Dirección": "AV. LOS JARDINES ESTE NRO: 520 APV. INCA MANCO CAPAC",
+  "GIro": "RESTAURANTE PIZZERIA"
+ },
+ {
+  "Latitud": -11.9940467,
+  "Longitud": -77.0039062,
+  "Dirección": "AV. SANTA ROSA DE LIMA NORTE N°2193 MZ. F- 1 LT. 13 - 1ER PISO -  URB. LA HUAYRONA",
+  "GIro": "BODEGA BAZAR LIBRERIA"
+ },
+ {
+  "Latitud": -11.9815915,
+  "Longitud": -77.0055337,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA MZ. A LT. 1 ASOC. LOS PINOS",
+  "GIro": "BOTICA BAZAR Y REGALOS"
+ },
+ {
+  "Latitud": -11.9745478,
+  "Longitud": -77.0053459,
+  "Dirección": "JR. ANDRES RAZURI MZ. 6 LT. 20 URB. SAN RAFAEL DE CANTO GRANDE",
+  "GIro": "ELABORACION DE GOLOSINAS A NIVEL ARTESANAL"
+ },
+ {
+  "Latitud": -11.9974329,
+  "Longitud": -77.0085933,
+  "Dirección": "JR LOS ZAFIROS N° 2074 MZ G LT 26 - SAN HILARION",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -11.9475252,
+  "Longitud": -76.9800990999999,
+  "Dirección": "AV. CENTRAL MZ F-5 LT 02-03 PROGRAMA MARISCAL CACERES CIUDAD",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0982665,
+  "Longitud": -76.9625812,
+  "Dirección": "MZ. M LT. 05 AA.HH. JESUS OROPEZA CHONTA",
+  "GIro": "VENTA DE ARTICULOS OPTICOS"
+ },
+ {
+  "Latitud": -13.4015557,
+  "Longitud": -76.1214854999999,
+  "Dirección": "AV AMPLIACION MZ U-3 LT 18 - AA.HH. JOSE CARLOS MARIATEGUI",
+  "GIro": "PRESTACION DE CONSULTORIA Y ASESORAMIENTO EN GENERAL (OFICINA ADMINISTRATIVA)"
+ },
+ {
+  "Latitud": -12.0066104,
+  "Longitud": -77.0059969,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA N° 1675-A MZ T LT 4 - 1ER PISO - URB LAS FLORES DE LIMA",
+  "GIro": "CASA DE CAMBIO"
+ },
+ {
+  "Latitud": -11.9815915,
+  "Longitud": -77.0055337,
+  "Dirección": "AV, PROCERES DE LA INDEPENDENCIA MZ. A LT. 1 ASOC. LOS PINOS",
+  "GIro": "BOTICA BAZAR Y REGALOS"
+ },
+ {
+  "Latitud": -12.0221653,
+  "Longitud": -76.9974396,
+  "Dirección": "AV. PORTADA DEL SOL MZ. C-3 LT. 4,5 - URB. ZARATE",
+  "GIro": "ALQUILER DE TOLDOS Y ANDAMIOS, SERVICIO DE CORTE Y DOBLES METALICOS"
+ },
+ {
+  "Latitud": -17.0158016,
+  "Longitud": -72.0031108,
+  "Dirección": "SV. MZ. D-1 LT. 10 ASOC. LOS PINOS",
+  "GIro": "SERVICIOS POSTALES NACIONALES,SERVICIOS POSTALES INTERNACIONALES, CASA DE CAMBIO"
+ },
+ {
+  "Latitud": 51.919438,
+  "Longitud": 19.145136,
+  "Dirección": "AV. PEPUBLICA DE POLONIA MZ. G-1 LT. 10 ASOC. LOS PINOS",
+  "GIro": "SERVICIOS DE PUBLICIDAD"
+ },
+ {
+  "Latitud": -12.0400951,
+  "Longitud": -76.9188401,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA MZ. B-1 LT. 14 ASOC. LOS PINOS",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -11.9815915,
+  "Longitud": -77.0055337,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA MZ. A - URB. LOS PINOS",
+  "GIro": "BAZAR"
+ },
+ {
+  "Latitud": -12.0162775,
+  "Longitud": -76.9882588999999,
+  "Dirección": "JR. TEMPLO DEL SOL N° 585 MZ. Z LT. 03 - URB. MANGOMARCA",
+  "GIro": "ENSEÑANZA PRE ESCOLAR, PRIMARIA SECUNDARIA PRIVADA"
+ },
+ {
+  "Latitud": -12.0273229,
+  "Longitud": -77.0076342999999,
+  "Dirección": "AV. GRAN CHIMU N° 383 MZ. G LT. 29 URB. ZARATE",
+  "GIro": "RESTAURANT, POLLERIA, FUENTE DE SODA LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -11.9741334,
+  "Longitud": -77.0015465,
+  "Dirección": "AV. REPUBLICA DE POLONIA MZ. F-1 LT. 9 APV. LOS PINOS",
+  "GIro": "GUARDERIA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2900-2902 MZ. J LT. 14-1 - ASOC. PROP. CANTO GRANDE",
+  "GIro": "VENTA DE MUEBLES DE OFICINA Y HOGAR"
+ },
+ {
+  "Latitud": -12.0198361,
+  "Longitud": -76.9926517,
+  "Dirección": "AV. SANTUARION°1212 - 1220 URB. ZARATE INDUSTRIAL",
+  "GIro": "CONFECCION DE PRENDAS DE VESTIR PARA BEBE, NIÑOS, DAMAS Y CABALLERO Y FABRICA DE TELAS DE ASBESTO"
+ },
+ {
+  "Latitud": 25.9564812,
+  "Longitud": -80.1392121,
+  "Dirección": "AV. LURIGANCHO N°997-999 BOD-04, MALL AVENTURA",
+  "GIro": "ALMACEN PARA MERCANCIAS VARIAS"
+ },
+ {
+  "Latitud": -12.0122228,
+  "Longitud": -77.0115402,
+  "Dirección": "AV. LAS FLORES DE PRIMAVERA MZ. 84 SUB LOTE 26A URB. LAS FLORES",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -11.9939761,
+  "Longitud": -77.0149208,
+  "Dirección": "AV. CANTO GRANDE N°2230 MZ. N LT. 34 - URB. SAN IGNACIO",
+  "GIro": "CONSULTORIO DENTAL"
+ },
+ {
+  "Latitud": -12.0171977,
+  "Longitud": -76.9994629999999,
+  "Dirección": "AV. LURIGANCHO NRO: 980 URB. AZCARRUNZ",
+  "GIro": "PERFUMERIA"
+ },
+ {
+  "Latitud": -12.0242585,
+  "Longitud": -76.9966598,
+  "Dirección": "AV. PORTADA DEL SOL 432 URBANIZACION ZARATE",
+  "GIro": "VENTA DE ARTICULOS DE FERRETERIA"
+ },
+ {
+  "Latitud": -12.0250586,
+  "Longitud": -76.9988037999999,
+  "Dirección": "AV. GRAN CHIMU N°878 - URB. ZARATE",
+  "GIro": "VENTA DE GOLOSINAS"
+ },
+ {
+  "Latitud": -11.99764,
+  "Longitud": -77.0103932999999,
+  "Dirección": "AV. LO S POSTES OESTE NRO: 127 APV. SAN HILARION",
+  "GIro": "LIBRERIAS, FOTOCOPIADORAS Y TIPEOS EN COMPUTADORA"
+ },
+ {
+  "Latitud": -11.9827602,
+  "Longitud": -77.0137713,
+  "Dirección": "AV. CANTO GRANDE N°2749 MZ. A LT. 09 - APV. SANTA ELIZABETH",
+  "GIro": "RESTAURANT, POLLERIA , CHIFA. LICORES COMO COMPEMENTO"
+ },
+ {
+  "Latitud": -12.1478072,
+  "Longitud": -76.950541,
+  "Dirección": "SV. MZ. C LT. 5 URB. SAN GABRIEL",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -12.0255698,
+  "Longitud": -77.0009541,
+  "Dirección": "AV. GRAN CHIMU N°762 - URB. ZARATE",
+  "GIro": "VENTA DE ARTICULOS OPTICOS"
+ },
+ {
+  "Latitud": -11.9985388,
+  "Longitud": -77.0007323,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 1901 MZ. L-4 LT. 39 - APV. INCA MANCO CAPAC",
+  "GIro": "BOTICA, BAZAR, PERFUMERIA"
+ },
+ {
+  "Latitud": -12.0051129,
+  "Longitud": -77.0060537999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1722-A TDA 2 - URB. LAS FLORES 78",
+  "GIro": "VENTA DE PRENDAS DE VESTIR"
+ },
+ {
+  "Latitud": -11.9886157,
+  "Longitud": -77.0041705,
+  "Dirección": "AV. 13 DE ENERO NRO: 2560 URB. SAN CARLOS",
+  "GIro": "BODEGA, LIBRERIA, FOTOCOPIADORA"
+ },
+ {
+  "Latitud": -12.0034811,
+  "Longitud": -77.0025215,
+  "Dirección": "AV. 13 DE ENERO N° 1706A MZ. T-III LT. 1 - APV. INCA MANCO CAPAC",
+  "GIro": "VATERINARIA"
+ },
+ {
+  "Latitud": -12.025372,
+  "Longitud": -77.0002757,
+  "Dirección": "JIRON CHINCHAYSUYO NRO: 368 URB. ZARATE",
+  "GIro": "CASA DE CAMBIO, RECOLECCION DE CORRESPONDENCIA Y PAQUETES EN OFICINA DE CORREO"
+ },
+ {
+  "Latitud": -12.022686,
+  "Longitud": -77.0013185999999,
+  "Dirección": "JR. CAJAMARQUILLA N°724 MZ. 3 LT. 27 - URB. ZARATE",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -12.0251474,
+  "Longitud": -76.9887143,
+  "Dirección": "JR. HARAVICU NRO: 300 URB. ZARATE",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -12.0091522,
+  "Longitud": -76.9981469,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N°1742 MZ. G LT. 16 - URB. LA BASILIA",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV CANTO GRANDE MZ A LT SUB 1-1B - PARC SEMI RUSTICA CANTO GRANDE",
+  "GIro": "MADERERA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "SV MZ U 10 LT 3 - PROG CIUDAD MARISCAL CACERES",
+  "GIro": "PRESTACION DE CONSULTORIA Y ASESORAMIENTO EN GENERAL  (OFICINA ADMINISTRATIVA)"
+ },
+ {
+  "Latitud": -11.9756255,
+  "Longitud": -77.0005934,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA N° 3376-A (1ER Y 2DO PISO) MZ H LT 10 - APV CANTO REY",
+  "GIro": "POLLERIA, RESTAURANT, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -11.9987699,
+  "Longitud": -77.0003067,
+  "Dirección": "AV LOS JARIDNES ESTE MZ S LT 9-A - APV INCA MANCO CAPAC",
+  "GIro": "SALON DE BELLEZA, VENTA DE PRODUCTOS DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0238762,
+  "Longitud": -76.9731272,
+  "Dirección": "MZ A LT 3 SUBLOETE A2 Y LT 4 SUB LOTE A2-3 - LOTIZACION CAMPOY",
+  "GIro": "CENTRO DE ESPARCIMIENTO SOCIAL CULTURAL Y DEPORTIVO"
+ },
+ {
+  "Latitud": -12.012614,
+  "Longitud": -76.9861013,
+  "Dirección": "JR KOTOSH N° 1063 - URB MANGOMARCA",
+  "GIro": "LAVANDERIA"
+ },
+ {
+  "Latitud": -12.03039,
+  "Longitud": -76.9522598,
+  "Dirección": "SV. MZ. N LT. 1 URB. SAN CARLOS",
+  "GIro": "POLLOS A LA BRASA (POLLERIA)"
+ },
+ {
+  "Latitud": 19.462881,
+  "Longitud": -102.0668294,
+  "Dirección": "JR. LOS ZAFIROS N° 1715 DPTO A-B MZ. H LT. 12 URB. LA BASILIA",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0238183,
+  "Longitud": -76.9869772,
+  "Dirección": "AV. GRAN CHIMU N°1539 - URB. ZARATE",
+  "GIro": "LICORERIA - SIN CONSUMO"
+ },
+ {
+  "Latitud": -12.0148844,
+  "Longitud": -76.9965884,
+  "Dirección": "AV. LAS AGUILAS N°1123 URB. RESIDENCIAL HORIZONTE DE ZARATE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0271101,
+  "Longitud": -77.0015293,
+  "Dirección": "AV. PIRAMIDE DEL SOL N° 201 URB. ZARATE",
+  "GIro": "BODEGA LIBRERIA BAZAR"
+ },
+ {
+  "Latitud": -12.0250351,
+  "Longitud": -76.9887258,
+  "Dirección": "JR. HARAVICU NRO: 324 URB. ZARATE",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0249607,
+  "Longitud": -76.9991324,
+  "Dirección": "AV. GRAN CHIMU N° 861 MZ. S-3 LT. 31 - URB. ZARATE",
+  "GIro": "BAZAR, ARTICULOS PARA EL HOGAR"
+ },
+ {
+  "Latitud": -12.014948,
+  "Longitud": -76.9868747,
+  "Dirección": "AV. LAS LOMAS N° 1084",
+  "GIro": "PANADERIA, PASTELERIA"
+ },
+ {
+  "Latitud": -12.0166931,
+  "Longitud": -76.9990274,
+  "Dirección": "AV. LURIGANCHO NRO: 993-997-999 A TIENDA B-2028\/B-2030 2DO PISO",
+  "GIro": "VENTA DE PRENDAS DE VESTIR, VENTA DE ARTICULO DE CUERO Y ACCESORIOS"
+ },
+ {
+  "Latitud": -11.9475252,
+  "Longitud": -76.9800990999999,
+  "Dirección": "SV. MZ. C5 LT. 1ER PISO - PROGRAMA CIUDAD MARISCAL CACERES SECTOR 1 - 2DA ETAPA",
+  "GIro": "BOTICA - BAZAR - PERFUMERIA"
+ },
+ {
+  "Latitud": -11.9990357,
+  "Longitud": -77.0087401,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2028 MZ. F LT. 05-A - APV. SAN HILARION",
+  "GIro": "OFICINA ADMINISTRATIVA DE ESCUELA DE CONDUCTORES"
+ },
+ {
+  "Latitud": -12.003246,
+  "Longitud": -77.0072706999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1800 MZ. F LT. 15 URB. FLORES 78",
+  "GIro": "FERRETERIA, VENTA DE MATERIALES DE CONSTRUCCION"
+ },
+ {
+  "Latitud": -11.9997737,
+  "Longitud": -77.0090708,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2001 MZ. A LT. 29-B - APV. SAN HILARION",
+  "GIro": "VENTA DE ELECTRODOMESTICOS"
+ },
+ {
+  "Latitud": -11.9971979,
+  "Longitud": -77.0098875,
+  "Dirección": "AV. LOS POSTES ESTE MZ. H LT. 13 - APV. SAN HILARION",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -11.9929914,
+  "Longitud": -77.0105087,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2308 PISO 1° Y 2° LT. 2 - COOP. EL MANTARO",
+  "GIro": "CENTRO MEDICO"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "SV. MZ. A LT. 2 PP. JJ. CRUZ DE MOTUPE",
+  "GIro": "SALON DE BELLEZA, VENTA DE PRODUCTOS DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "JR. INTERMEDIO MZ. P15 LT. 5 PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "RESTAURANT, CEVICHERIA"
+ },
+ {
+  "Latitud": -11.9927245,
+  "Longitud": -77.0096176999999,
+  "Dirección": "AV. SAN HILARION ESTE N°187 MZ. Y-1 - APV. JORGE BASADRE",
+  "GIro": "RESTAURANT - CEVICHERIA"
+ },
+ {
+  "Latitud": -12.024129,
+  "Longitud": -76.9887522,
+  "Dirección": "AV. GRAN CHIMU N° 1397 MZ. D-6 LT. 19 URB. ZARATE",
+  "GIro": "VENTA DE PRODUCTOS DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9772331,
+  "Longitud": -77.0006985999999,
+  "Dirección": "AV. CANTO REY MZ. B LT. 11 - 1ER PISO - APV. GARAGAY",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. CANTO GRANDE N° 2309 UNIDAD 44- C - URB. QUINTA SAN FERNANDO",
+  "GIro": "HELADERIA, SNACK, DULCERIA"
+ },
+ {
+  "Latitud": -11.9886777,
+  "Longitud": -77.0025809,
+  "Dirección": "JR. PIEDRA LUNA NRO: 2488 URB. SAN GABRIEL",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -12.0250169,
+  "Longitud": -77.0005991,
+  "Dirección": "JR. CHINCHAYSUYO NRO: 391 URB. ZARATE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0238762,
+  "Longitud": -76.9731272,
+  "Dirección": "CALLE LOS PINOS MZ. S LT. 03 URB. LOTIZACION CAMPOY",
+  "GIro": "VENTA DE COMIDAS AL PASO"
+ },
+ {
+  "Latitud": -11.9940467,
+  "Longitud": -77.0039062,
+  "Dirección": "JR. LAS ADAMANTINAS N° 2101-A MZ. S-1 LT. 03 - COOP. LA HUAYRONA",
+  "GIro": "BOTICA BAZAR PERFUMERIA"
+ },
+ {
+  "Latitud": -11.9957821,
+  "Longitud": -77.0111048,
+  "Dirección": "AV. 13 DE ENERO N° 2075 MZ. I - APV. SAN HILARION",
+  "GIro": "BOTICA, BAZAR, PERFUMERIA"
+ },
+ {
+  "Latitud": -12.0237972,
+  "Longitud": -76.997427,
+  "Dirección": "JR. MASCAYPACHA, LA N°638-640 MZ. K LT. 42 - URB. ZARATE",
+  "GIro": "BAZAR, BODEGA, LICORES ENVASADOS"
+ },
+ {
+  "Latitud": -11.9766008,
+  "Longitud": -77.0019976999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA NRO: 3312 MZ. G LT. 07 3CER. PISO LUGAR: APV. GARAGAY",
+  "GIro": "CONSULTORIO DE MEDICINA GENERAL"
+ },
+ {
+  "Latitud": -12.0148123,
+  "Longitud": -76.9965336,
+  "Dirección": "JR. LOS URUBUES MZ. R LT. 51 URB. HORIZONTE DE ZARATE",
+  "GIro": "BAZAR"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "SV. MZ. D LT. 24 - 1ER PISO - APV. LOS GIRASOLES DE CAMPOY",
+  "GIro": "BODEGA - BAZAR - LIBRERIA"
+ },
+ {
+  "Latitud": -12.0147298,
+  "Longitud": -76.9829496999999,
+  "Dirección": "JR. HATUN COLLA N° 1939 MZ. M LT. 08 - URB. MANGOMARCA BAJA",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -11.8653813,
+  "Longitud": -77.0142627,
+  "Dirección": "CALLE LOS PINOS MZ. D LT. 28 - APV. LOS AMAUTAS",
+  "GIro": "BODEGA BAZAR"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "SV. MZ. I LT. LT. 7 UPCV. SAN MIGUEL DE PALLANCHACRA LTDA. 50 - LIMA IV",
+  "GIro": "VENTA DE ALIMENTOS BALANCEADOS"
+ },
+ {
+  "Latitud": -7.4188494,
+  "Longitud": -77.010385,
+  "Dirección": "AV. HEROES DEL CANEPA MZ. B20 LT. 15 INR. A PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "VENTA DE ALIMENTOS (ANIMALES) BAZAR"
+ },
+ {
+  "Latitud": -12.0146762,
+  "Longitud": -76.9967071,
+  "Dirección": "MZ. G LT. 25 - URB. RESIDENCIAL HORIZONTE DE ZARATE",
+  "GIro": "BODEGA, LICORES PARA LLEVAR"
+ },
+ {
+  "Latitud": -12.1709308,
+  "Longitud": -77.0063796,
+  "Dirección": "AV EL SOL N° 242 - URB SAN CARLOS",
+  "GIro": "RESTAURANT, CEVICHERIA"
+ },
+ {
+  "Latitud": -12.0166931,
+  "Longitud": -76.9990274,
+  "Dirección": "AV. LURIGANCHO N° 993-997-999-999A TIENDA B-2028 \/ B-2030 2DO. PISO -URB. ZARATE INDUSTRIAL",
+  "GIro": "VENTA DE PRENDAS DE VESTIMENTA, ARTICULOS DE CUERO Y ACCESORIOS"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "SV MZ E-8 - PROGRAMA CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "ACADEMIA PRE UNIVERSITARIA"
+ },
+ {
+  "Latitud": -12.0103358,
+  "Longitud": -76.9808985,
+  "Dirección": "AV LAS LOMAS N° 1600 - URB MANGOMARCA",
+  "GIro": "ROTULADO, ESTAMPADO, IMPRESION"
+ },
+ {
+  "Latitud": -12.0182037,
+  "Longitud": -76.9984774,
+  "Dirección": "AV. PORTADA DEL SOL N° 864 - URB. ZARATE",
+  "GIro": "LENOCINIO, NIGHT CLUB, BAR, DISCOTECA Y ESTACIONAMIENTO"
+ },
+ {
+  "Latitud": -12.0151348,
+  "Longitud": -76.9987408,
+  "Dirección": "JR. LOS RUISEÑORES NRO: 954 MZ. C LT. 10 URB. HORINZONTE DE ZARATE",
+  "GIro": "VENTA DE MUEBLES, ARTICULOS PARA EL HOGAR"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. LOS CIRUELOS N° 350 MZ. G LT. 23 PARC. SEMIRUSTICA CANTO GRANDE",
+  "GIro": "CLUB DEPORTIVO"
+ },
+ {
+  "Latitud": -12.0233768,
+  "Longitud": -76.9859415,
+  "Dirección": "AV. GRAN PAJATEN NRO: 344 UNI. INMOB. 2DO PISO URB. ZARATE",
+  "GIro": "CONTRATISTAS GENERALES (OFICINA ADMINISTRATIVA)"
+ },
+ {
+  "Latitud": -11.9988367,
+  "Longitud": -77.0087289,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2032 MZ. F-2 LT. 6-A APV. SAN HILARION",
+  "GIro": "VENTA DE MUEBLES"
+ },
+ {
+  "Latitud": -12.0275802,
+  "Longitud": -77.0080902999999,
+  "Dirección": "AV. GRAN CHIMU N° 378 - URB. ZARATE",
+  "GIro": "SERVICIO DE MASAJES Y TERAPIA"
+ },
+ {
+  "Latitud": -12.0250564,
+  "Longitud": -76.9911906999999,
+  "Dirección": "AV LAS LOMAS N° 288 - URB ZARATE",
+  "GIro": "SERV. DE MASAJES FACIALES ARREGLO Y PIES PODOLOGIA"
+ },
+ {
+  "Latitud": -12.0022228,
+  "Longitud": -77.0036677,
+  "Dirección": "AV 13 DE ENERO N° 1783A - URB LA BASILIA",
+  "GIro": "LABORATORIO CLINICO"
+ },
+ {
+  "Latitud": -13.1638737,
+  "Longitud": -74.2235640999999,
+  "Dirección": "SV MZ LT 01 - APV AYACUCHO",
+  "GIro": "OPTICA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. J2 LT. 1 PROGRAMA CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "VENTA DE MENU-CHIFA (SIN VENTA DE LICOR)"
+ },
+ {
+  "Latitud": -12.0083631,
+  "Longitud": -77.0106441,
+  "Dirección": "AV LOS JARDINES OESTE MZ K LT 07 - URB LAS FLORES",
+  "GIro": "RESTAURANT, PARRILLAS, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.005352,
+  "Longitud": -77.001409,
+  "Dirección": "AV 13 DE ENERO N° 1630 MZ R-3 LT 3B - APV INCA MANCO CAPAC",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS SERVICIO"
+ },
+ {
+  "Latitud": -11.9951487,
+  "Longitud": -77.0093555,
+  "Dirección": "JR. LOS ZAFIROS N° S\/N MZ. Z LT. 22 - APV. JORGE BASADRE",
+  "GIro": "PRESTACION DE SERVICIOS DE BORDADO"
+ },
+ {
+  "Latitud": -12.029477,
+  "Longitud": -77.0106193,
+  "Dirección": "JR. LOS AMAUTAS N° 171 MZ N-1 LT. 25 URB. ZARATE",
+  "GIro": "OFICINA ADMINISTRATIVA DE ARQUITECTURA E INGENIERIA Y OBRAS CIVILES"
+ },
+ {
+  "Latitud": -12.0054768,
+  "Longitud": -77.0067254,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1719-1717 MZ. W LT. 42B ESQ. RIMARINAS 110 URB. SAN HILARION",
+  "GIro": "RESTAURANT LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. CANTO GRANDE N° 3630 MZ. B LT. 1 URB. UNIDAD 6 DE CANTO GRANDE",
+  "GIro": "RESTAURANT Y VENTA DE COMIDAS RAPIDAS"
+ },
+ {
+  "Latitud": -12.0731775,
+  "Longitud": -76.9457152,
+  "Dirección": "SV. MZ. A LT.23 URB. CAMPOY",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -11.9963721,
+  "Longitud": -77.0004545,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 2088 MZ. T-4 LT. 2\" - APV. INCA MANCO CAPAC",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -12.0006059,
+  "Longitud": -77.0082479,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1954 MZ. M\" LT. 1A - APV. SAN HILARION",
+  "GIro": "VENTA DE ACABADOS DE CONSTRUCCION"
+ },
+ {
+  "Latitud": -12.0006059,
+  "Longitud": -77.0082479,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1954-1964 MZ. M\" LT. 1A - APV. SAN HILARION",
+  "GIro": "VENTA DE SANITARIOS \/ MAYOLICAS"
+ },
+ {
+  "Latitud": -12.0036024,
+  "Longitud": -77.0069431,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1766 MZ. G LT. 22 URB. FLORES 78",
+  "GIro": "VENTA DE MANGUERAS Y AUTOPARTES (VENTA DE REPUESTOS PARA VEHICULOS)"
+ },
+ {
+  "Latitud": -12.0160484,
+  "Longitud": -76.9664664,
+  "Dirección": "MZ.A LT. SUB 5B - CUADRA 1 - APV COMPRADORES DE CAMPOY",
+  "GIro": "ENSEÑANZA PRE ESCOLAR Y PRIMARIA PRIVADA"
+ },
+ {
+  "Latitud": -12.026079,
+  "Longitud": -76.9914819999999,
+  "Dirección": "AV LAS LOMAS N° 159 MZ Q-5 LT 24 - URB ZARATE",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -12.02049,
+  "Longitud": -76.9609799999999,
+  "Dirección": "CALLE 8 MZ. S LT. 4TA - URB. CAMPOY",
+  "GIro": "TEJEDERIA, SEVICIOS, TEÑIDO DE TELA Y OFICINA ADMINISTRATIVA"
+ },
+ {
+  "Latitud": 18.5614801,
+  "Longitud": -69.9476327,
+  "Dirección": "CALLE 8 MZ. 5 LT. 4-A URB. CAMPOY",
+  "GIro": "TINTORERIA, LAVANDERIA Y OFICINA ADMINISTRATIVA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "MZ. D LT. 07 URB. CANTO GRANDE",
+  "GIro": "VENTA DE ARREGLOS DE CONDTRUCCION"
+ },
+ {
+  "Latitud": -11.9940467,
+  "Longitud": -77.0039062,
+  "Dirección": "AV. SANTA ROSA DE LIMA NORTE N° 2179 (2173 AL 2199) MZ. F-1 LT. 13 URB. LA HUAYRONA",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -11.9632024,
+  "Longitud": -76.989507,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N°4124 MZ. F-1 LT. 10 APV. RAMON CASTILLO 1ER Y 2DO PISO",
+  "GIro": "POLICLINICO"
+ },
+ {
+  "Latitud": -12.0261044,
+  "Longitud": -77.001609,
+  "Dirección": "AV PIRAMIDE DEL SOL N° 300 MZ A-4 LT 34 - URB ZARATE",
+  "GIro": "FUENTE DE SODA, RESTAURANT"
+ },
+ {
+  "Latitud": -12.0259837,
+  "Longitud": -77.0016562,
+  "Dirección": "JR PIRAMIDE DEL SOL N° 348 - URB ZARATE",
+  "GIro": "FUENTE DE SODA"
+ },
+ {
+  "Latitud": -11.9959547,
+  "Longitud": -77.0103699,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2175 MZ W LT 18 - APV SAN HILARION",
+  "GIro": "ACADEMIA PREUNIVERSITARIA"
+ },
+ {
+  "Latitud": -12.0097108,
+  "Longitud": -77.0109169999999,
+  "Dirección": "AV FLORES DE PRIMAVERA N° 1214 UNI. INMOB. B - COOP LAS FLORES (2DO PISO)",
+  "GIro": "RESTAURANT (VENTA DE LICOR COMO COMPLEMENTO DE COMIDAS)"
+ },
+ {
+  "Latitud": -15.4810701,
+  "Longitud": -70.1118474,
+  "Dirección": "JR SANTA LUISA N° 683-685 MZ S LT 09 - URB AZCARRUNZ",
+  "GIro": "LAVANDERIA-TINTORERIA"
+ },
+ {
+  "Latitud": -12.0237972,
+  "Longitud": -76.997427,
+  "Dirección": "AV. GRAN CHIMU N° 384-A DPTO. 401 (4TO PISO) MZ. 01 LT. 19 Y 20 URB. ZARATE",
+  "GIro": "CENTRO DE LLAMADAS"
+ },
+ {
+  "Latitud": -12.0274249,
+  "Longitud": -77.0066159,
+  "Dirección": "AV. GRAN CHIMU N°438 - URB. ZARATE",
+  "GIro": "BOTICA PERFUMERIA BAZAR"
+ },
+ {
+  "Latitud": -11.9720414,
+  "Longitud": -77.0066126,
+  "Dirección": "AV. CANTO GRANDE N°3510 - URB. SAN RAFAEL",
+  "GIro": "AGENCIA BANCARIA"
+ },
+ {
+  "Latitud": -12.0169302,
+  "Longitud": -76.9851877,
+  "Dirección": "AV. LOMAS, LAS N° 1435 MZ. P-1 LT. 21 URB. MANGOMARCA",
+  "GIro": "LOCUTORIO LIBRERIA BAZAR"
+ },
+ {
+  "Latitud": -11.9700071,
+  "Longitud": -76.9990862,
+  "Dirección": "AV. REPUBLICA DE POLONIA NRO: 899 URB. LOS JARMINES",
+  "GIro": "BAZAR PERFUMERIA"
+ },
+ {
+  "Latitud": -12.0216775,
+  "Longitud": -76.9587464999999,
+  "Dirección": "SV. CDRA. 1 AA. HH. ZONA RUSTICA DE CAMPOY",
+  "GIro": "BODEGA BAZAR"
+ },
+ {
+  "Latitud": -12.0239949,
+  "Longitud": -76.9756474,
+  "Dirección": "SV. MZ. E LT. 3 - ASOC. VIV. MONTERRICO DE CAMPOY",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0235212,
+  "Longitud": -76.9659833,
+  "Dirección": "AV. PRINCIPAL MZ. B LT. 12 APV ASOC. VIV. URBANIZ. CAMPOY",
+  "GIro": "VENTA DE RESPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -12.0134095,
+  "Longitud": -77.0040679,
+  "Dirección": "AV. LOS TUSILAGOS OESTE NRO: 149 URB. LOS JARDINES DE SAN JUAN",
+  "GIro": "SALONES DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0112263,
+  "Longitud": -77.0125444999999,
+  "Dirección": "JR. TUSILAGOS, LOS N° 516  - URB. LAS FLORES DE LIMA",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -11.9994027,
+  "Longitud": -77.0094153,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2023-A MZ. A-2 LT. 28 - APV. SAN HILARION",
+  "GIro": "VENTA DE CERAMICA"
+ },
+ {
+  "Latitud": -12.0033058,
+  "Longitud": -77.0080679,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N°1791 MZ. W LT. 30-B - APV. SAN HILARION",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -12.0039276,
+  "Longitud": -77.0068309,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA NRO: 1772 UNI. INMOB. N° 2 MZ. G LT. 25 1MER PISO URB. FLORES 78",
+  "GIro": "SERV. DE MASAJES FACIALES ARREGLO DE MANOS Y PIES PODOLOGIA"
+ },
+ {
+  "Latitud": -12.0252707,
+  "Longitud": -76.9820552,
+  "Dirección": "AV. MALECON CHECA EGUIGUREN MIGUEL MZ. A1-C LT.4 URB. ZARATE",
+  "GIro": "OFICINA ADMINISTRATIVA"
+ },
+ {
+  "Latitud": -12.1723321,
+  "Longitud": -77.0052573,
+  "Dirección": "AV. EL SOL N° 466 MZ. E-1 LT. 24 - URB. SAN CARLOS",
+  "GIro": "VENTA DE TELAS PARA TAPICERIA"
+ },
+ {
+  "Latitud": -11.9673969,
+  "Longitud": -76.996935,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA MZ. B LT. 06 - APV. LOS PINOS - 1ER PISO",
+  "GIro": "VENTA DE ARTICULOS PARA EL HOGAR"
+ },
+ {
+  "Latitud": -12.025563,
+  "Longitud": -77.0006356999999,
+  "Dirección": "AV. GRAN CHIMU NRO: 784 MZ. A-4 LT. URB. ZARATE",
+  "GIro": "VENTA DE PRODUCTOS DIVERSOS PARA EL HOGAR, VENTA DE GOLOSINAS Y CONFITERIA , VENTA DE ELECTRODOMESTICOS, VENTA DE JUGUETES"
+ },
+ {
+  "Latitud": -12.0146762,
+  "Longitud": -76.9967071,
+  "Dirección": "JR. LOS CISNES NRO: 512 URB. HORIZONTE DE ZARATE",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0232957,
+  "Longitud": -77.0017458,
+  "Dirección": "AV. PIRAMIDE DEL SOL N° 552 MZ. M LT. 10 URB. ZARATE",
+  "GIro": "AGENCIA DE VIAJES Y TURISMO"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV LOS CIRUELOS N° 942 MZ Q LT 1 - PARC SEM R CANTO GRANDE UNIDAD 12",
+  "GIro": "CAMPO DEPORTIVO"
+ },
+ {
+  "Latitud": -12.0148926,
+  "Longitud": -76.9968006,
+  "Dirección": "AV. LAS AGUILAS N°1109 SECCION 01 URB. HORIZONTE DE ZARATE",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": 47.574064,
+  "Longitud": -70.398597,
+  "Dirección": "JR ENELDOS LOS N° 100 MZ Z LT 27-A - APV SAN HILARION",
+  "GIro": "HOSPEDAJE"
+ },
+ {
+  "Latitud": -12.0273377,
+  "Longitud": -77.0083715999999,
+  "Dirección": "AV. GRAN CHIMU 333 UND. INMOB. N°01 MZ. G1 LT. 42 - URB. ZARATE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0220835,
+  "Longitud": -76.9980618,
+  "Dirección": "JR. TUPAYAURI N° 659 MZ. D3 LT. 21 - URB ZARATE",
+  "GIro": "CONFITERIA NIVEL ARTESANAL"
+ },
+ {
+  "Latitud": -11.998647,
+  "Longitud": -77.0147776,
+  "Dirección": "AV. LOS POSTES N° 418 MZ. D LT. 18 - APV. SAN HILARION",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0128125,
+  "Longitud": -77.0056968,
+  "Dirección": "AV. TUSILAGOS, LOS N° 288 MZ. Y LT. 3 - 1ER PISO - APV. URBANIZADORA AZCARRUNZ",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -11.9940467,
+  "Longitud": -77.0039062,
+  "Dirección": "AV. POSTES ESTE, LOS N° 549 MZ. H-1 LT. 31 - COOP. LA HUAYRONA",
+  "GIro": "VENTA DE LUBRICANTES"
+ },
+ {
+  "Latitud": -12.0094484,
+  "Longitud": -77.0109129,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1230 DPTO. 1236 MZ. J LT. 4 - URB. LAS FLORES DE LIMA",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -12.0066104,
+  "Longitud": -77.0059969,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N°1675 URB. LA FLORES DE LIMA 2DO PISO",
+  "GIro": "CLINICA DENTAL"
+ },
+ {
+  "Latitud": -12.1750078,
+  "Longitud": -77.0003604,
+  "Dirección": "AV. EL SOL MZ. Q-1 LT. L-13 URB. SAN CARLOS",
+  "GIro": "FOTOCOPIADORAS Y TIPEOS EN COMPUTADORA (PLOTEOS Y CORTE LASER)"
+ },
+ {
+  "Latitud": -12.0259292,
+  "Longitud": -77.0027398,
+  "Dirección": "AV. GRAN CHIMU N°679-A MZ. F-2 LT. 030 - URB. ZARATE",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -12.0272279,
+  "Longitud": -77.0066064,
+  "Dirección": "AV. GRAN CHIMU NRO: 439 MZ. F-1 URB. ZARATE",
+  "GIro": "BAZAR, ZAPATERIA, VENTA DE PRENDAS DE VESTIR"
+ },
+ {
+  "Latitud": -12.0294233,
+  "Longitud": -77.0109997,
+  "Dirección": "AV. GRAN CHIMU N° 178 MZ N-1 LT. 15 - URB. ZARATE",
+  "GIro": "RESTAURANT CEVICHERIA LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -11.9654158,
+  "Longitud": -77.0883697,
+  "Dirección": "JR. MARTE MZ. C LT. 23 - URB. GANIMEDES",
+  "GIro": "VENTA DE MENU"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "SV. MZ. I LT. 6 COOP. VIV. SAN MIGUEL DE PALLANCHACRA",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -11.9768044,
+  "Longitud": -76.9988015,
+  "Dirección": "AV. CANTO REY MZ. A LT. 13 - APV CANTO REY",
+  "GIro": "HOSTAL, COCHERA"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "SV. GRUPO 6 MZ. Q LT. 2 - PUE. JOVEN CRUZ DE MOTUPE",
+  "GIro": "COMPRA, VENTA DE PERFILES Y SERVICIO"
+ },
+ {
+  "Latitud": -12.0160787,
+  "Longitud": -76.9978211,
+  "Dirección": "JR. TORDOS, LOS S\/N MZ. H LT. 36-37 URB. RESIDENCIAL HORIZONTE DE ZARATE",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0193721,
+  "Longitud": -77.0005355,
+  "Dirección": "JR. SAN AURELIO N°853 - 863 MZ. F LT. 23 URB. AZCARRUNZ",
+  "GIro": "AVICOLA, CARNICERIA, VENTA DE EMBUTIDOS, VERDULERIA, OFICINA ADMINISTRATIVA"
+ },
+ {
+  "Latitud": -11.9673969,
+  "Longitud": -76.996935,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA MZ. A LT. 1 APV. LOS PINOS",
+  "GIro": "RESTAURANT, POLLERIA, LICORES COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "SV MZ J19 LT 3 - PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -11.9940467,
+  "Longitud": -77.0039062,
+  "Dirección": "JR. AGUA MARINA N° 485 COOP. LA HUAYRONA",
+  "GIro": "ACADEMIA DE KARATE"
+ },
+ {
+  "Latitud": -12.0042389,
+  "Longitud": -76.9981694,
+  "Dirección": "AV. SANTA ROSA N° 1618 MZ. L-5 LT. 2 URB. VILLA FLORES",
+  "GIro": "RESTAURANT, CEVICHERIA, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -11.9820156,
+  "Longitud": -77.0055026,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2950 MZ. J LT. 16 URB. CANTO GRANDE",
+  "GIro": "VENTA DE SANITARIOS Y MAYOLICAS, ALMACEN PARA MERCANCIAS VARIAS , PLAYA DE ESTACIONAMIENTO"
+ },
+ {
+  "Latitud": -12.00053,
+  "Longitud": -77.00448,
+  "Dirección": "AV 13 DE ENERO ,Z F LT 30 - APV INCA MANCO CAPAC",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -11.9777474,
+  "Longitud": -77.0139841,
+  "Dirección": "AV. EUCALIPTPS, LOS N°256 MZ. C LT. 20 - URB. CANTO BELLO",
+  "GIro": "FABRICA DE EMBUTIDOS - ELABORACION DE ALIMENTOS"
+ },
+ {
+  "Latitud": -9.189967,
+  "Longitud": -75.015152,
+  "Dirección": "MZ. 35 LT. PUE. JOVEN ARRIVA PERU",
+  "GIro": "EDUCACION INICIAL, PRIMARIA Y SECUNDARIA"
+ },
+ {
+  "Latitud": -12.0227174,
+  "Longitud": -76.9886973999999,
+  "Dirección": "JR. CAJAMARQUILLA N°1439 - URB. ZARATE",
+  "GIro": "MADERERAS, FERRETERIA"
+ },
+ {
+  "Latitud": 23.078085,
+  "Longitud": 72.562011,
+  "Dirección": "SV. MZ. E LT. 16 - PROGRAMA CIUDAD MARISCAL CACERES SECTOR IV -  18A",
+  "GIro": "PANADERIA, PASTELERIA, BODEGA, NIVEL ARTESANAL"
+ },
+ {
+  "Latitud": 41.4036299,
+  "Longitud": 2.1743558,
+  "Dirección": "MZ. K LT. 11 URPOCOV SAGRADA FAMILIA",
+  "GIro": "ENSEÑANZA PREESCOLAR Y PRIMARIA PRIVADA"
+ },
+ {
+  "Latitud": -12.0261396,
+  "Longitud": -77.0017995,
+  "Dirección": "AV. PIRAMIDE DEL SOL N° 301 URB. ZARATE",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": 38.440429,
+  "Longitud": -122.7140548,
+  "Dirección": "PJ. QUIPUCAMAYOC N° 101 - URB. SANTA ROSA",
+  "GIro": "BAZAR, LIBRERIA, FOTOCOPIAS, IMPRESIONES ( ACTIVIDAD A DESARROLLARSE A NIVEL ARTESANAL MAXIMO TRES PERSONAS )"
+ },
+ {
+  "Latitud": -12.0146762,
+  "Longitud": -76.9967071,
+  "Dirección": "SV. MZ. G LT. 28 - URB. RESIDENCIAL HORIZONTE DE ZARATE",
+  "GIro": "TIENDA DE ABARROTES BEBIDAS GASEOSA VERDURAS FRUTAS"
+ },
+ {
+  "Latitud": -11.999817,
+  "Longitud": -77.0079497,
+  "Dirección": "JR. ZAFIROS, LOS N°1732 - URB. FLORES 78",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0274387,
+  "Longitud": -77.0084382,
+  "Dirección": "AV. GRAN CHIMU N°327 MZ. G-1 LT. 44 - URB. ZARATE",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -12.0271099,
+  "Longitud": -77.0015239,
+  "Dirección": "AV. PIRAMIDE DEL SOL NRO. 199 URB. ZARATE",
+  "GIro": "HELADERIA"
+ },
+ {
+  "Latitud": -12.0271099,
+  "Longitud": -77.0015239,
+  "Dirección": "AV. PIRAMIDE DEL SOL NRO. 199 URB. ZARATE",
+  "GIro": "HELADERIA"
+ },
+ {
+  "Latitud": -12.0029023,
+  "Longitud": -76.9984533,
+  "Dirección": "JR. LOS JASPES NRO: 1963 TERCER PISO APV. INCA MANCO CAPAC",
+  "GIro": "CASA NATURA"
+ },
+ {
+  "Latitud": -11.9989593,
+  "Longitud": -77.000277,
+  "Dirección": "AV. SANTA ROSA DE LIMA NRO: 1944-A APV INCA MANCO CAPAC",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9987699,
+  "Longitud": -77.0003067,
+  "Dirección": "JR. GRAFITOS, LOS N°717 -  APV INCA MANCO CAPAC",
+  "GIro": "BODEGA BAZAR"
+ },
+ {
+  "Latitud": -12.0239126,
+  "Longitud": -76.9877688,
+  "Dirección": "AV GRAN CHIMU N° 1477 - URB ZARATE",
+  "GIro": "CHIFA, LICOR COMO COMPLEMENTO, RESTAURANT"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "MZ. J LT. 01 SECCION 02 1ER. PISO PP.JJ. CRUZ DE MOTUPE",
+  "GIro": "BAZAR, REGALOS, VENTA DE JUGUETES"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV CANTO GRANDE N° 3650 MZ A LT 27 - URB UNIDAD 6 DE CANTO GRANDE",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -12.0237972,
+  "Longitud": -76.997427,
+  "Dirección": "SV MZ N-1 LT 31, 32 Y 33 - URB ZARATE",
+  "GIro": "PRESTACION DE CONSULTORIA Y ASESORAMIENTO EN GENERAL"
+ },
+ {
+  "Latitud": -11.9980345,
+  "Longitud": -77.0103001,
+  "Dirección": "JR PELITRES MZ W LT 19 - URB SAN HILARION SEGUNDA ETAPA",
+  "GIro": "VENTA DE OTROS PRODUCTOS N.E. (DISTRIBUCION Y ELABORACION DE ALIMENTOS PARA ANIMALES) UNI. INMOB. 1, 2 Y 3 (1ER Y 2DO PISO)"
+ },
+ {
+  "Latitud": -12.0203063,
+  "Longitud": -77.0000704999999,
+  "Dirección": "JR. MERCEDES, LAS N°1015 MZ. D LT. 3 - 1ER PISO - URB. AZCARRUNZ",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "SV. MZ. I LT. 15 SUB- LOTE 15A URB. CANTO GRANDE",
+  "GIro": "VENTA DE JUGUETES, LIBRERIA, BAZAR, VENTA DE UTENSILIOS PARA EL HOGAR"
+ },
+ {
+  "Latitud": -11.9965303,
+  "Longitud": -77.0003859999999,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 2076 DOTO. 2078 MZ. T-4 LT. 02 - APV. INCA MANCO CAPAC",
+  "GIro": "FERRETERIA EN GENERAL"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "SV. MZ. F LT. 13 APV. LOS ALAMOS DE CANTO GRANDE",
+  "GIro": "FERRETERIA ( SUJETO A QUEJA VECINAL Y\/O RUIDOS MOLESTOS )"
+ },
+ {
+  "Latitud": -34.5867976,
+  "Longitud": -58.3863909,
+  "Dirección": "SV. MZ. A LT. 2 APV. BUENOS AIRES",
+  "GIro": "AGENCIA DE VIAJES Y TURISMO"
+ },
+ {
+  "Latitud": -12.2048617,
+  "Longitud": -76.9772768999999,
+  "Dirección": "MZ. A LT. 01 AA.HH. ANDRES AVELINO CACERES",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS Y SERVICIO"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "JR. DE LA TORRE UGARTE , JOSE N°291-293 MZ. H-7 LT. 24 - URB. SAN RAFAEL DE CANTO GRANDE",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -11.9597381,
+  "Longitud": -76.9879552,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 4255 MZ. 0-6 LT. 37 - PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "RESTAURANT, CHIFA"
+ },
+ {
+  "Latitud": -11.991848300000001,
+  "Longitud": -77.0149221,
+  "Dirección": "AV. CANTO GRANDE MZ. N LT. 6 AA.HH. JESUS OROPEZA CHONTA",
+  "GIro": "POLICLINICO"
+ },
+ {
+  "Latitud": -0.1878402,
+  "Longitud": -78.5048051,
+  "Dirección": "AV. DOMINGO ESPINAR NO. 4304-A CIUDAD MARISCAL CACERES",
+  "GIro": "FUENTE DE SODA, JUGUERIA"
+ },
+ {
+  "Latitud": -11.9977235,
+  "Longitud": -77.0106787,
+  "Dirección": "AV. LOS POSTES OESTE N°147 151 MZ. E LT. 08 - URB. SAN HILARION",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -11.9547253,
+  "Longitud": -77.0778636,
+  "Dirección": "AV. SAN MARTIN DE PORRES LT. MCDS ESQ.C\/ AV. CTO. GRANDE PP.JJ. UPIS HUASCAR",
+  "GIro": "VENTA DE HUEVOS (EN PUESTO DE MERCADO)"
+ },
+ {
+  "Latitud": -5.1928153,
+  "Longitud": -80.6038798,
+  "Dirección": "SV. MZ. C-1 LT. 47 ASOC. LOS PINOS",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9671801,
+  "Longitud": -77.0033696,
+  "Dirección": "AV. CANTO GRANDE N°3750 MZ. B LT. 05 - AA.HH. JESUS OROPEZA CHONTA",
+  "GIro": "CONSULTORIO MEDICO"
+ },
+ {
+  "Latitud": 34.0549076,
+  "Longitud": -118.242643,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA NRO: 2590 SECCION N°2 COOP. VIV. LOS ANGELES",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS (PROHIBIDO EL USO DE LA VIA PUBLICA)"
+ },
+ {
+  "Latitud": -11.9894803,
+  "Longitud": -77.0197838,
+  "Dirección": "SV. MZ. A LT. 10-A AA.HH. EL HERALDO",
+  "GIro": "FERRETERIA (PROHIBIDO EL USO DEL RETIRO MUNICIPAL NI DE LA VIA PUBLICA) SUJETO A QUEJA VECINAL"
+ },
+ {
+  "Latitud": 0.970580599999999,
+  "Longitud": -79.653001,
+  "Dirección": "JR. ESMERALDAS, LAS N° 2232 MZ. A-1 LT. 26 - COOP. LA HUAYRONA",
+  "GIro": "BODEGA, BAZAR, LICOR PARA LLEVAR"
+ },
+ {
+  "Latitud": -12.0255577,
+  "Longitud": -77.0007359,
+  "Dirección": "AV. GRAN CHIMU N° 780 - URB. ZARATE",
+  "GIro": "BAZAR Y VENTA DE REGALOS"
+ },
+ {
+  "Latitud": -12.0039875,
+  "Longitud": -77.0029816,
+  "Dirección": "AV. JARDINES ESTE NRO: 373 - 375 MZ. 05 LT. 04 - URB. LA BASILIA",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9966116,
+  "Longitud": -77.006281,
+  "Dirección": "AV. POSTES ESTE, LOS N° 328 MZ. 1-2 LT. 16 - APV. SAN HILARION",
+  "GIro": "RESTAURANT CEBICHERIA"
+ },
+ {
+  "Latitud": -11.9795551,
+  "Longitud": -77.0047289,
+  "Dirección": "AV. WIESSE DPTO. 11 MZ. Q LT. BLOCK - URB. CANTO GRANDE",
+  "GIro": "CASA DE CAMBIO"
+ },
+ {
+  "Latitud": -12.0193459,
+  "Longitud": -77.0125078,
+  "Dirección": "AV. FLORES DE PRIMAVERA NRO: 575 COOP. LAS FLORES",
+  "GIro": "RESTAURANTE (VENTA DE LICOR COMO COMPLEMENTO DE COMIDAS)"
+ },
+ {
+  "Latitud": -11.9815915,
+  "Longitud": -77.0055337,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA ALT. ESTACION LOS JARDINES MODULO 1",
+  "GIro": "VENTA DE APARATOS TELEFONICOS"
+ },
+ {
+  "Latitud": -12.0093579,
+  "Longitud": -77.0108829999999,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1246 MZ. J LT. 06 - URB. LAS FLORES DE LIMA",
+  "GIro": "VENTA DE MUEBLES (PROHIBIDO EL USO DE LA VIA PUBLICA Y\/O RETIRO MUNICIPAL)"
+ },
+ {
+  "Latitud": -11.9964375,
+  "Longitud": -77.0117846,
+  "Dirección": "JR ZABILAS Y JR LOS HUERTOS N° 277 MZ W LT 13 - APV SAN HILARION",
+  "GIro": "MERCADO DE ABASTOS"
+ },
+ {
+  "Latitud": -11.9913426,
+  "Longitud": -77.0523055,
+  "Dirección": "JR. AMAUTAS, LOS N° 469 MZ. R-1 LT. 22 URB. ZARATE",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -11.9746217,
+  "Longitud": -77.008597,
+  "Dirección": "AV CANTO GRANDE N° 3265-3273 MZ B-1 LT 44 - URB CANTO NUEVO",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -11.988177,
+  "Longitud": -76.9986732,
+  "Dirección": "AV EL SOL MZ P LT 18 - SEGUNDO PISO - URB SAN GABRIEL",
+  "GIro": "PRESTACION DE CONSULTORIA Y ASESORAMIENTO EN GENERAL, VENTA DE OTROS PRODUCTOS N.E. (EXHIBICION DE PURIFICACION DE AGUA Y HIELO)"
+ },
+ {
+  "Latitud": -12.026149,
+  "Longitud": -77.0172458,
+  "Dirección": "AV. LIMA N°389 URB. CAJA DE AGUA",
+  "GIro": "LIBRERIA, BAZAR"
+ },
+ {
+  "Latitud": -11.9755804,
+  "Longitud": -77.0141079,
+  "Dirección": "AV. LOS EUCALIPTOS N° 433 URB. CANTO BELLO",
+  "GIro": "PRESTACION DE SERVICIOS PROFECIONALES (ELECTRICO)"
+ },
+ {
+  "Latitud": -14.0854721,
+  "Longitud": -75.7432929,
+  "Dirección": "SV. MZ. LL LT. 02 UNI. INMOB. N° 02 PISO 2 URB. SAN CARLOS",
+  "GIro": "SERVICIOS DE LIMPIEZA INDUSTRIAL Y FUMIGACION"
+ },
+ {
+  "Latitud": -12.0359124,
+  "Longitud": -76.9575092,
+  "Dirección": "CALLE RIO HUALLAGA MZ. T LT. 42 APV. CARAGAY (2° PISO)",
+  "GIro": "CONSULTORIO DENTAL Y VENTA DE ARTICULOS MEDICOS DENTALES"
+ },
+ {
+  "Latitud": -11.9929951,
+  "Longitud": -77.1102224999999,
+  "Dirección": "AV. SAN MARTIN DE PORRES N° S\/N MZ. C LT. 10-A - APV. LOS PINOS",
+  "GIro": "CONSULTORIO MEDICO"
+ },
+ {
+  "Latitud": -12.0238924,
+  "Longitud": -77.0080019999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA NRO: 438 URB. CHACARILLA DE OTERO",
+  "GIro": "BOTICA BAZAR"
+ },
+ {
+  "Latitud": -11.9951056,
+  "Longitud": -77.009996,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA NRO: 2184 URB. SAN HILARION",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS (LLANTAS NUEVAS Y USADAS)"
+ },
+ {
+  "Latitud": -12.0111192,
+  "Longitud": -77.0030436999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1411 MZ. K LT. 03 - URB. LOS JARDINES",
+  "GIro": "LICORERIA (SIN CONSUMO)"
+ },
+ {
+  "Latitud": -12.0169302,
+  "Longitud": -76.9851877,
+  "Dirección": "JR. TEMPLO DE SOL N° 424 - URB. MANGOMARCA",
+  "GIro": "CENTRO EDUCATIVO NIVEL INICIAL"
+ },
+ {
+  "Latitud": -11.9927647,
+  "Longitud": -77.0516332,
+  "Dirección": "JR. AMAUTAS, LOS N° 823 MZ. B-4 LT. 27 - URB. ZARATE",
+  "GIro": "CENTRO EDUCATIVO INICIAL"
+ },
+ {
+  "Latitud": -11.9745478,
+  "Longitud": -77.0053459,
+  "Dirección": "CL. MILLER, MARISCAL N° 137- 139 MZ. B LT. 27 - URB. SAN RAFAEL DE CANTO GRANDE",
+  "GIro": "CENTRO EDUCATIVO PRIMARIA"
+ },
+ {
+  "Latitud": -11.9792092,
+  "Longitud": -77.0113001,
+  "Dirección": "AV. CANTO GRANDE MZ. A LOTE 26 URB. CANTO GRANDE",
+  "GIro": "CLUB DEPORTIVO"
+ },
+ {
+  "Latitud": -12.0151191,
+  "Longitud": -76.9931701,
+  "Dirección": "AV. REGADORES, LOS MZ. B LT. 13 - URB. ZARATE",
+  "GIro": "TALLER DE MECANICA"
+ },
+ {
+  "Latitud": -11.9929951,
+  "Longitud": -77.1102224999999,
+  "Dirección": "AV. SAN MARTIN DE PORRES N°S\/N MZ. C LT. 10A - APV. LOS PINOS",
+  "GIro": "15.00"
+ },
+ {
+  "Latitud": 32.3824017,
+  "Longitud": -117.0518946,
+  "Dirección": "SV. N° 156 DPTO. 162 MZ. I URB. JARDINES DE SAN JUAN",
+  "GIro": "PELUQUERIA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. M9 LT. 22 - PROGRAMA CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "VETERINARIA Y VENTA DE PRODUCTOS VETERINARIOS"
+ },
+ {
+  "Latitud": -12.006051,
+  "Longitud": -77.0053251,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1698 - URB. LAS FLORES 81",
+  "GIro": "SERVICIO DE COMIDA RAPIDA"
+ },
+ {
+  "Latitud": -12.0259587,
+  "Longitud": -76.9983503999999,
+  "Dirección": "JR. CHAVIN DE HUANTAR NRO: 871 MZ. D- 4 LT. 14 URB. ZARATE",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -11.9957821,
+  "Longitud": -77.0111048,
+  "Dirección": "JR HUERTOS, LOS N° 1975 MZ. V LT. 24 - APV SAN HILARION",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -11.9941157,
+  "Longitud": -77.0102515999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA NRO: 2246 - APV. SAN HILARION",
+  "GIro": "CONSULTORIOS DE MEDICOS VETERINARIOS"
+ },
+ {
+  "Latitud": -12.0123641,
+  "Longitud": -77.0093277,
+  "Dirección": "JR. LOS TUSILAGOS N° 516 - URB. LAS FLORES DE LIMA",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -11.9973929,
+  "Longitud": -77.0002842,
+  "Dirección": "AV. SANTA ROSA DE LIMA NRO: 2050 MZ. A-5 LT. 27 - APV. INCA MANCO CAPAC",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9987699,
+  "Longitud": -77.0003067,
+  "Dirección": "JR. GRANITO MZ. Z-4 LT. 05 APV. INCA MANCO CAPAC",
+  "GIro": "AVICOLA (VENTA)"
+ },
+ {
+  "Latitud": 47.574064,
+  "Longitud": -70.398597,
+  "Dirección": "SV. MZ. W LT. 30A, UNI. INMOB. N°1 PP.JJ. SAN HILARION",
+  "GIro": "VENTA DE RESPUESTO PARA VEHICULOS"
+ },
+ {
+  "Latitud": -11.972173399999999,
+  "Longitud": -76.9961447,
+  "Dirección": "AV. SAN MARTIN N° 421 MZ. N LT. 21 - URB. CANTO GRANDE",
+  "GIro": "TALLER DE MECANICA AUTOMOTRIZ - CONVERSION DE GLP\/GNV"
+ },
+ {
+  "Latitud": -12.0142052,
+  "Longitud": -77.0064369999999,
+  "Dirección": "JR. LOS PALMITOS N° 301-309 MZ. J LT. 11 URB. LAS VIOLETAS",
+  "GIro": "IGLESIA EVANGELICA"
+ },
+ {
+  "Latitud": -11.9993446,
+  "Longitud": -77.0010163,
+  "Dirección": "JR. LAS ESMERALDAS 1855-1857 APV. INCA MANCO CAPAC",
+  "GIro": "ENSEÑANZA PREESCOLAR PRIVADA"
+ },
+ {
+  "Latitud": -13.5181349,
+  "Longitud": -71.9787146,
+  "Dirección": "AV. EL SOL N° 134 MZ. G LT. 1 - APV. GANIMEDES",
+  "GIro": "ENSEÑANZA PRE ESCOLAR INICIAL, PRIMARIA, SECUNDARIA PRIVADA"
+ },
+ {
+  "Latitud": -11.9997865,
+  "Longitud": -77.0084727999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2010 MZ. F LT. 1-A - APV. SAN HILARION",
+  "GIro": "VENTA DE CERAMICOS Y ACABADOS DE CONSTRUCCION"
+ },
+ {
+  "Latitud": -12.0243698,
+  "Longitud": -76.9917706,
+  "Dirección": "AV. GRAN CHIMU N° 1199 - URB. ZARATE",
+  "GIro": "BARBERIA"
+ },
+ {
+  "Latitud": -12.0261599,
+  "Longitud": -77.003284,
+  "Dirección": "AV. GRAN CHIMU N° 625 MZ. F-2 LT. 42 - URB. ZARATE",
+  "GIro": "VENTA DE ARTICULOS OPTICOS"
+ },
+ {
+  "Latitud": -12.0248705,
+  "Longitud": -76.9986545,
+  "Dirección": "AV. GRAN CHIMU N° 889 MZ. S-3 LT. 27 - URB. ZARATE",
+  "GIro": "BAZAR, BOTICA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ.S17 LT. 49 - PROGRAMA CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "VENTA DE INSUMOS PARA PANADERIA, PASTELERIA, CONSUMO MASIVO"
+ },
+ {
+  "Latitud": -12.0259292,
+  "Longitud": -77.0027398,
+  "Dirección": "AV. GRAN CHIMU N° 679 MZ. F-2 LT. 30 - URB. ZARATE",
+  "GIro": "OPTICA"
+ },
+ {
+  "Latitud": -12.0142246,
+  "Longitud": -76.9835634,
+  "Dirección": "JR. KILKE NRO: 1962 DPTO. 1968 MZ. U LT. 22 URB. MANGOMARCA",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0245526,
+  "Longitud": -76.9966456,
+  "Dirección": "AV. GRAN CHIMU MZ. H-1 LT. 29 URB. ZARATE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0247058,
+  "Longitud": -76.9980727,
+  "Dirección": "AV. GRAN CHIMU N°921 DPTO. 1 URB. ZARATE",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -12.0139026,
+  "Longitud": -76.9969771,
+  "Dirección": "SV. MZ. R LT. 01 - URB. RESIDENCIAL HORIZONTE DE ZARATE",
+  "GIro": "BOTICA, BAZAR, VENTA DE REGALOS"
+ },
+ {
+  "Latitud": -12.0178661,
+  "Longitud": -77.0117228,
+  "Dirección": "JR. LAS ALCAPARRAS N° 553 COOP. LAS FLORES",
+  "GIro": "RESTAUTANTE, POLLERIA"
+ },
+ {
+  "Latitud": -11.97721,
+  "Longitud": -77.0136215,
+  "Dirección": "CALLE LOS NOGALES N°378 - URB. CANTO BELLO",
+  "GIro": "RESTAURANTE, SANDWICHERIA, HELADOS, LICORES COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -9.189967,
+  "Longitud": -75.015152,
+  "Dirección": "SV. MZ. 13 LT. 12 - PUE. JOVEN ARRIVA PERU",
+  "GIro": "LOCERIA Y CRISTALERIA"
+ },
+ {
+  "Latitud": -6.7828377999999905,
+  "Longitud": -79.8616883999999,
+  "Dirección": "SV. MZ. C LT. 5 AA. HH. SOMOS LIBRES",
+  "GIro": "VENTA DE VIDRIOS Y ARTICULOS DE VIDRIO - VIDRIERIA"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "SV. MZ. A LT. 06 ASOC. VIV MONTERRICO DE CAMPOY",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "SV. MZ. F LT. 5 COOP. VIV. SAN MIGUEL DE PALLANCHACRA LTDA 50",
+  "GIro": "BAZAR, REGALOS"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "SV. MZ. B LT. 22 PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "JR. ESTE MZ. J-1 LT. 5 URB. CIUDAD MARISCAL CACERES",
+  "GIro": "BARBERIA"
+ },
+ {
+  "Latitud": -11.973798,
+  "Longitud": -77.0026543,
+  "Dirección": "AV. LAS FLORES NRO: 259 UNI. INMOB. N°2 - 1MER PISO URB. LOS JAZMINES",
+  "GIro": "ESTUDIO FOTOGRAFICO"
+ },
+ {
+  "Latitud": -9.189967,
+  "Longitud": -75.015152,
+  "Dirección": "SV. MZ. 13 LT. 11 PP. JJ. ARRIBA PERU",
+  "GIro": "BAZAR"
+ },
+ {
+  "Latitud": -11.9940467,
+  "Longitud": -77.0039062,
+  "Dirección": "AV. LOS POSTES N° 299 MZ. S-1 LT. 03 COOP. LA HUAYRONA",
+  "GIro": "VENTA DE PASTELES"
+ },
+ {
+  "Latitud": -11.9957821,
+  "Longitud": -77.0111048,
+  "Dirección": "AV. PROCERES DE LA INDEPENDECIA MZ. A-2 LT. 29-A - APV SAN HILARION",
+  "GIro": "VENTA DE CERAMICOS Y MAYOLICAS"
+ },
+ {
+  "Latitud": -11.9997402,
+  "Longitud": -77.0093194,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N°2009 MZ A LT. 29-B - APV SAN HILARION",
+  "GIro": "VENTA DE CERAMICOS"
+ },
+ {
+  "Latitud": -11.9995618,
+  "Longitud": -77.0093543,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N°2011 MZ. A-2 LT. 29-A - APV. SAN HILARION",
+  "GIro": "VENTA DE CERAMICA"
+ },
+ {
+  "Latitud": -11.9968518,
+  "Longitud": -77.0072763,
+  "Dirección": "AV. LOS POSTES ESTE N°246 MZ. I LT. 06 - APV. SAN HILARION",
+  "GIro": "PELUQUERIA"
+ },
+ {
+  "Latitud": -11.9963353,
+  "Longitud": -77.0011974,
+  "Dirección": "AV. LOS POSTES ESTE NRO: 672 MZ. K-1 LT. 13 COOP. LA HUAYRONA",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -11.9959429,
+  "Longitud": -77.0045437,
+  "Dirección": "AV. LOS POSTES ESTE N°501 - COOP. LA HUAYRONA",
+  "GIro": "CONSULTORIO DENTAL"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "JR. DURAZNOS, LOS MZ. I LT. 6-7-23 - URB. CANTO GRANDE",
+  "GIro": "BODEGA BAZAR"
+ },
+ {
+  "Latitud": -34.5867976,
+  "Longitud": -58.3863909,
+  "Dirección": "SV. MZ. A LT. 44 - APV BUENOS AIRES",
+  "GIro": "VENTA DE PASAJES"
+ },
+ {
+  "Latitud": -12.0266854,
+  "Longitud": -77.0040878,
+  "Dirección": "AV GRAN CHIMU N° 578 DPTO 201 MZ L-2 LT 26 - URB ZARATE",
+  "GIro": "RESTAURANT, POLLERIA, PARRILLADAS, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -11.9929851,
+  "Longitud": -77.0151128,
+  "Dirección": "AV. CANTO GRANDE MZ. O LT. 32 URB. SAN IGNACIO",
+  "GIro": "VENTA DE PRODUCTOS DIVERSOS PARA EL HOGAR"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "SV. MZ. M8 LT. PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "BOTICA, BAZAR"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "SV. MZ. B-17 LT. 19 - PROGRAMA CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "VENTA DE ROPA"
+ },
+ {
+  "Latitud": -11.9792092,
+  "Longitud": -77.0113001,
+  "Dirección": "AV. CANTO GRANDE MZ. K LT. 1 URB. CANTO GRANDE",
+  "GIro": "SERVICIO DE LAVADO Y LUSTRADO DE VEHICULOS"
+ },
+ {
+  "Latitud": -12.0064291,
+  "Longitud": -77.0060865,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA N° 1687 MZ T LT 01 - URB LAS FLORES DE LIMA",
+  "GIro": "CASA DE CAMBIO, VENTA DE TARJETAS, PAGO DE SERVICIOS"
+ },
+ {
+  "Latitud": -12.0298758,
+  "Longitud": -77.0107429999999,
+  "Dirección": "JR LOS AMAUTAS N° 141 MZ N-1 LT 30 - URB ZARATE",
+  "GIro": "BODEGA, BAZAR, FOTOCOPIADORA Y TIPEOS EN COMPUTADORA"
+ },
+ {
+  "Latitud": 37.7749295,
+  "Longitud": -122.4194155,
+  "Dirección": "SV. MZ. B LT. 6 AA.HH. SAN FRANCISCO DE CAMPOY",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -17.0158016,
+  "Longitud": -72.0031108,
+  "Dirección": "MZ. F LT. 41 ASOC. LOS PINOS",
+  "GIro": "CONTRATISTAS GENERALES (OFICINA ADMINISTRATIVA)"
+ },
+ {
+  "Latitud": 34.0961111,
+  "Longitud": -118.1058333,
+  "Dirección": "JR. LOS AZULEJOS MZ. B LT. 22 URB. SAN GABRIEL",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -12.0160224,
+  "Longitud": -77.0015368999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1006 MZ. B LT. 13 AA.HH. AZCARRUNZ ALTO",
+  "GIro": "VENTA DE REPUESTOS PARA MOTOCICLETAS"
+ },
+ {
+  "Latitud": -11.9745478,
+  "Longitud": -77.0053459,
+  "Dirección": "AV FLORES, LAS N° 122 MZ B LT 1 - URB SAN RAFAEL DE CANTO GRANDE",
+  "GIro": "FUENTE DE SODA"
+ },
+ {
+  "Latitud": -12.0087868,
+  "Longitud": -77.0051184,
+  "Dirección": "JR. LOS PELITRES N° 1672 URB. LAS FLORES DE LIMA",
+  "GIro": "COMIDAS RAPIDAS"
+ },
+ {
+  "Latitud": -11.9438958,
+  "Longitud": -76.9799852,
+  "Dirección": "JR. DIEGO FERRE MZ. P-2 LT. 12 PROG. CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "VENTA DE MUEBLES"
+ },
+ {
+  "Latitud": -12.0110551,
+  "Longitud": -77.003085,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N°1415 MZ. K LT. 4 - URB. JARDINES DE SAN JUAN",
+  "GIro": "SER. SAN EAM. AMBIENTAL VTA. Y RECARGA EXTINGUID Y ART. SEGURID. INDUSTRIAL"
+ },
+ {
+  "Latitud": -12.0164101,
+  "Longitud": -77.0117571999999,
+  "Dirección": "AV. FLORES DE PRIMAVERA N°772 MZ 51 LT. 10 COOP. LAS FLORES",
+  "GIro": "LICORERIA (SIN CONSUMO)"
+ },
+ {
+  "Latitud": -12.0001466,
+  "Longitud": -77.0002763,
+  "Dirección": "AV. SANTA ROSA N°1807 MZ. C-IV LT.34 - APV. INCA MANCO CAPAC",
+  "GIro": "BOTICA, BAZAR"
+ },
+ {
+  "Latitud": -12.0051066,
+  "Longitud": -76.9979911,
+  "Dirección": "AV. SANTA ROSA DE LIMA NRO: 1598 TIENDA N°4 APV. INCA MANCO CAPC",
+  "GIro": "BOTICA, BAZAR"
+ },
+ {
+  "Latitud": -12.0072236,
+  "Longitud": -77.0039113,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1632 MZ. A PAR LT. A-2 URB. LAS FLORES 81",
+  "GIro": "VENTA DE PRODUCTOS DE BELLEZA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. CANTO GRANDE NRO: 3690 - MZ. A LT. 20 - PARC. SEMI R . CANTO GRANDE",
+  "GIro": "MINI MARKET"
+ },
+ {
+  "Latitud": -12.0286428,
+  "Longitud": -77.0113011999999,
+  "Dirección": "AV. PROCERES DE INDEPENDENCIA N°170 MZ. D LT. 3 Y 4 URB. CAJA DE AGUA",
+  "GIro": "GIMNACIO"
+ },
+ {
+  "Latitud": -13.4015557,
+  "Longitud": -76.1214854999999,
+  "Dirección": "CALLE S\/N MZ. I-4 LT. 19 AA.HH. JOSE CARLOS MARIATEGUI",
+  "GIro": "GUARDERIA"
+ },
+ {
+  "Latitud": -11.9815915,
+  "Longitud": -77.0055337,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA MZ. B-1 LT. 2 ASOCIACIONLOS PINOS",
+  "GIro": "OTROS TIPOS DE ENSEÑANZA N. C. P."
+ },
+ {
+  "Latitud": -12.0023493,
+  "Longitud": -77.0012726,
+  "Dirección": "JR. LAS MICAS MZ. J LT. 15 1ER. PISO URB. LAS FLORES 78",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -11.9475252,
+  "Longitud": -76.9800990999999,
+  "Dirección": "JR. INTERMEDIO MZ. M-14 LT. 4, 5 - PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "EDUCACION INICIAL PRIMARIA SECUNDARIA"
+ },
+ {
+  "Latitud": -11.9992342,
+  "Longitud": -77.0088172,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2026 MZ. F LT. 5 APV. SAN HILARION 2DA ETAPA",
+  "GIro": "TALLER DE MECANICA"
+ },
+ {
+  "Latitud": -34.0951512,
+  "Longitud": -59.0240826,
+  "Dirección": "LOCTIZACION RUSTICA ZARATE MZ. B LT. 10-0P",
+  "GIro": "HOLTAL"
+ },
+ {
+  "Latitud": -11.9871258,
+  "Longitud": -77.0053459,
+  "Dirección": "SV. MZ. Y LT. 71, UNI. INMOB. A-PRIMER PISO URB. SAN CARLOS",
+  "GIro": "CEVICHERIA, RESTAURANTE"
+ },
+ {
+  "Latitud": -12.0076708,
+  "Longitud": -77.0090147,
+  "Dirección": "AV. JARDINES N°243 1ER PISO - URB. LAS FLORES DE LIMA",
+  "GIro": "VIDEO PUB"
+ },
+ {
+  "Latitud": 34.0549076,
+  "Longitud": -118.242643,
+  "Dirección": "AV. SANTA ROSA MZ. A LT. 3, 4  - URB. LOS ANGELES",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0241133,
+  "Longitud": -76.9892005,
+  "Dirección": "AV. GRAN CHIMU N° 1373 MZ. D-6 LT. 20 - 21 - 22 - URB. ZARATE",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. P-16 LT. 19 PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "VENTA DE MAYOLICA Y CERAMICA"
+ },
+ {
+  "Latitud": -12.0181581,
+  "Longitud": -77.0020342999999,
+  "Dirección": "AV. LURIGANCHO N° 798 URB. AZCARRUNZ",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0286676,
+  "Longitud": -77.0108917,
+  "Dirección": "AV. GRAN CHIMU N° 163 URB. ZARATE",
+  "GIro": "RESTAURANT, CEVICHERIA, LICORES COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0022576,
+  "Longitud": -76.9990095,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 1710 MZ. K-5 LT. 2 APV. INCA MANCO CAPAC",
+  "GIro": "RESTAURANT, POLLERIA LICOR COMO COMPLEMENTARIO"
+ },
+ {
+  "Latitud": -12.0277241,
+  "Longitud": -77.0089228,
+  "Dirección": "AV. GRAN CHIMU N° 334 MZ. Q LT. 6 URB. ZARATE",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -17.2046234,
+  "Longitud": -70.9308521,
+  "Dirección": "MZ. N LT. 11 APV. SAN HILARION",
+  "GIro": "PANADERIA"
+ },
+ {
+  "Latitud": -12.0088072,
+  "Longitud": -77.0051053999999,
+  "Dirección": "JR. LOS PELITRES N° 2000 MZ. A LT. 01 APV. SAN HILARION",
+  "GIro": "VENTA DE MENU"
+ },
+ {
+  "Latitud": -12.0276788,
+  "Longitud": -77.0088373,
+  "Dirección": "AV. GRAN CHIMU 336-338 URB. ZARATE",
+  "GIro": "RESTAURANT-POLLERIA"
+ },
+ {
+  "Latitud": -12.0280829,
+  "Longitud": -77.0106019,
+  "Dirección": "AV. GRAN CHIMU 199 MZ. B1 LT. 25 URB. ZARATE",
+  "GIro": "RESTAURANT, POLLOS A LA BRASA"
+ },
+ {
+  "Latitud": -12.0063962,
+  "Longitud": -77.0073041,
+  "Dirección": "AV. JARDINES OESTE N°140 MZ. V LT. 23 - APV. SAN HILARION",
+  "GIro": "OPTICA (SOLO VENTA)"
+ },
+ {
+  "Latitud": -4.91255029999999,
+  "Longitud": -80.7249065,
+  "Dirección": "AV. 13 DE ENERO 931 URB. NUEVO HORIZONTE",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ R14 LT 1 - PROGRAMA CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "RESTAURANT, POLLERIA, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0181222,
+  "Longitud": -76.9889426,
+  "Dirección": "AV LURIGANCHO N° 1349 MZ N LT 1-A - URB ZARATE INDUSTRIAL",
+  "GIro": "CONFECCION DE PRENDAS DE VESTIR Y LAVANDERIA"
+ },
+ {
+  "Latitud": -12.0220048,
+  "Longitud": -77.0039062,
+  "Dirección": "JR SAN ANTONIO N° 769 MZN LT 17 - URB AZCARRUNZ BAJO",
+  "GIro": "LAVADO, LIMPIEZA, TEÑIDO DE TELAS DE PRENDAS DE VESTIR"
+ },
+ {
+  "Latitud": -12.0237972,
+  "Longitud": -76.997427,
+  "Dirección": "JR. PETRAL, ENRIQUE MZ. A-1 LT. 4 - URB. ZARATE",
+  "GIro": "SNACK BAR"
+ },
+ {
+  "Latitud": -12.0166024,
+  "Longitud": -76.9847688999999,
+  "Dirección": "JR. KILKE N° 1802 MZ.T LT. 27 URB. MANGOMARCA BAJA",
+  "GIro": "PANADERIA, PASTELERIA, BODEGA NIVEL ARTESANAL"
+ },
+ {
+  "Latitud": -12.0098706,
+  "Longitud": -77.0113623,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1163 MZ. 83 LT. 26 - 1ER PISO - COOP. LAS FLORES",
+  "GIro": "RESTAURANT, LICORES COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0237972,
+  "Longitud": -76.997427,
+  "Dirección": "CA. PETRALL, ENRIQUE N° 120-125 MZ. A-1A LT. 5, 6, 7 Y 8 - URB. ZARATE",
+  "GIro": "HOTEL, SAUNA, SPA,  BAR, RESTAURANT."
+ },
+ {
+  "Latitud": -12.0403399,
+  "Longitud": -76.9574009999999,
+  "Dirección": "AV. PROCERES LOS MZ. 11 LT. 01 1ER. PISO APV. COM. TERRENOS DE CAMPOY",
+  "GIro": "PANADERIA PASTELERIA BODEGA"
+ },
+ {
+  "Latitud": 38.3270766,
+  "Longitud": -0.5123809,
+  "Dirección": "SV. MZ. I LT. 02 - URB. SAN GABRIEL",
+  "GIro": "BODEGA, BAZAR"
+ },
+ {
+  "Latitud": -11.9757401,
+  "Longitud": -77.0007904,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 3368 DPTO. 3370 MZ. H LT. 08 - APV. GARAGAY",
+  "GIro": "PIZZERIA, JUGUERIA Y VENTA DE MENU"
+ },
+ {
+  "Latitud": -12.0050077,
+  "Longitud": -77.0055556,
+  "Dirección": "JR. LOS ZAFIROS N° 1708 MZ. 01 LT. 17 URB. LAS FLORES 78",
+  "GIro": "CHIFA - RESTAURANT (LICOR COMO COMPLEMENTO)"
+ },
+ {
+  "Latitud": -12.9384113,
+  "Longitud": -74.2502121999999,
+  "Dirección": "SV. MZ. D LT. 20 AA. HH. HUANTA",
+  "GIro": "FERRETERIA (SUJETO A QUEJA VECINAL Y\/O RUIDOS MOLESTOS), PROHIBIDO EL USO DE LA VIA PUBLICA"
+ },
+ {
+  "Latitud": -12.016266,
+  "Longitud": -77.0025885,
+  "Dirección": "CALLE LOS MIRABLES NRO: 1239 URB. LOS JARDINES DE SAN JUAN",
+  "GIro": "LIBRERIA, BAZAR"
+ },
+ {
+  "Latitud": -11.9987187,
+  "Longitud": -77.0007013,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 1893 MZ. C-4 LT. 19 - APV. INCA MANCO CAPAC",
+  "GIro": "VENTA DE ACCESORIO\/ALIMENTOS PARA MASCOTAS Y PRODUCTOS VETERINARIOS"
+ },
+ {
+  "Latitud": -12.0243588,
+  "Longitud": -76.9900464,
+  "Dirección": "AV. GRAN CHIMU N° 1330 MZ. G LT. 15 - URB. ZARATE",
+  "GIro": "SALON DE BELLEZA Y VENTA DE PRODUCTOS DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9972863,
+  "Longitud": -77.0106045,
+  "Dirección": "AV. LOS POSTES OESTE NRO: 126 APV. SAN HILARION",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -12.0278869,
+  "Longitud": -77.0095975999999,
+  "Dirección": "AV. GRAN CHIMU N° 298 - URB. ZARATE",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -12.0141397,
+  "Longitud": -76.9969096,
+  "Dirección": "AV. 13 DE ENERO N°1038 URB. RES. HORIZONTE",
+  "GIro": "ORGANISMO SUPERVISOR DE LA INVERSION PRIVADA EN TELECOMUNICACIONES - OSIPTEL"
+ },
+ {
+  "Latitud": -11.9897962,
+  "Longitud": -77.0099013,
+  "Dirección": "AV. BASADRE, JORGE ESTE N° 129 MZ. W LT. 17 - APV. JORGE BASADRE",
+  "GIro": "RESTAURANT, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0039484,
+  "Longitud": -77.0076845999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1771-B MZ. W LT. 33A - APV. SAN HILARION",
+  "GIro": "VENTA DE REPUESTOS AUTOMOTRIZ"
+ },
+ {
+  "Latitud": -11.9969049,
+  "Longitud": -77.0053482,
+  "Dirección": "AVENIDA 13 DE ENERO N° 2073 MZ. I CDRA. 20 LADO IZQ. APV. SAN HILARION",
+  "GIro": "RECEPCION DE ENCOMIENDAS"
+ },
+ {
+  "Latitud": -11.985868,
+  "Longitud": -77.0076292999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2735 MZ. K-1 LT. 41 - URB. SAN CARLOS",
+  "GIro": "TALLER DE CONVERSION DE GLP\/GNV, VENTA DE AUTOS, LUBRICANTES Y SERVICIOS (SUJETO A QUEJA VECINAL)"
+ },
+ {
+  "Latitud": -12.0040362,
+  "Longitud": -77.0030479999999,
+  "Dirección": "AV. JARDINES ESTE N°361 MZ. 5 LT. 02 - URB. FLORES 78",
+  "GIro": "BAZAR, BOTICA, PERFUMERIA"
+ },
+ {
+  "Latitud": -12.142395,
+  "Longitud": -77.0204624,
+  "Dirección": "SV. MZ. D LT. 33 - AMPLIACION NRO: 3 URB. SAN IGNACIO - 2DO PISO",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -12.025226,
+  "Longitud": -76.9911905,
+  "Dirección": "AV. LAS LOMAS NRO: 274 URB. ZARATE",
+  "GIro": "LAVANDERIA"
+ },
+ {
+  "Latitud": 47.574064,
+  "Longitud": -70.398597,
+  "Dirección": "SV. UND. INMOB. 01 MZ A LT. 28 - APV. SAN HILARION - PRIMER PISO",
+  "GIro": "VENTA DE SANITARIOS Y MAYOLICAS"
+ },
+ {
+  "Latitud": -12.0194722,
+  "Longitud": -76.9951097,
+  "Dirección": "AV. SANTUARIO, EL N°1114 - URB. ZARATE INDUSTRIAL",
+  "GIro": "OFICINA ADMINISTRATIVA - ALMACEN"
+ },
+ {
+  "Latitud": -12.0176701,
+  "Longitud": -76.9834480999999,
+  "Dirección": "AV. EL SANTUARIO NRO: 1780 MZ. F LT. 63 URB. MANGOMARCA",
+  "GIro": "RESTAURANT, CAVICHERIA"
+ },
+ {
+  "Latitud": 34.0549076,
+  "Longitud": -118.242643,
+  "Dirección": "MZ. N LT. 15 - COOP. DE VIVIENDA LOS ANGELES",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -11.9917238,
+  "Longitud": -77.0139841,
+  "Dirección": "AV. CANTO GRANDE N°2388-2390 1° Y 2°PISO MZ.A LT. 31 - URB. SAN IGNACIO",
+  "GIro": "RESTAURANT, CHIFA, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0064107,
+  "Longitud": -77.0064123,
+  "Dirección": "AV. JARDINES OESTE N° 111 DPTO. A MZ. T LT. 49 URB. LAS FLORES DE LIMA",
+  "GIro": "ELCASA DE CAMBIO - APARATOS TELEFONICOS - ACCESORIOS DE COMPUTO"
+ },
+ {
+  "Latitud": -12.085809,
+  "Longitud": -77.0662164,
+  "Dirección": "JR. AMAZONAS NRO: 311 URB. CAJA DE AGUA",
+  "GIro": "CONSULTORIO DE MEDICOS VETERINARIOS"
+ },
+ {
+  "Latitud": -12.0038643,
+  "Longitud": -77.0125219999999,
+  "Dirección": "AV. FLORES DE PRIMAVERA N°1501 COOP. LAS FLORES",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -11.9870053,
+  "Longitud": -77.0074755,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA NRO: 2724 URB. SAN CARLOS",
+  "GIro": "CASA DE CAMBIO"
+ },
+ {
+  "Latitud": -11.9214527,
+  "Longitud": -77.04303,
+  "Dirección": "SV. N°2358 MZ. H LT. 9 - URB. SAN CARLOS",
+  "GIro": "VENTA DE AUTOPARTES, PIEZAS, ACCESORIOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -12.0172334,
+  "Longitud": -77.0122447999999,
+  "Dirección": "AV. FLORES DE PRIMAVERA NRO: 681 COOP. LAS FLORES",
+  "GIro": "FUENTE DE SOSA, CAFETERIA"
+ },
+ {
+  "Latitud": -12.0181041,
+  "Longitud": -77.0100461,
+  "Dirección": "JR. LAS ALCAPARRAS NRO: 453 MZ. 45 LT. 08 COOP. LAS FLORES",
+  "GIro": "BAZAR, VENTA DE ALIMENTOS (ANIMALES)"
+ },
+ {
+  "Latitud": -11.9969787,
+  "Longitud": -77.0007736,
+  "Dirección": "AV. SANTA ROSA DE LIMA 2067 - APV. INCA MANCO CAPAC",
+  "GIro": "BOTICA, BAZAR"
+ },
+ {
+  "Latitud": -12.0004485,
+  "Longitud": -77.0010389999999,
+  "Dirección": "SV. MZ. B LT. 10 APV. INCA MANCO CAPAC",
+  "GIro": "RESTAURANT, POLLOS A LA BRASA"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "SV. MZ. B LT. 3 ASOC. VIV. LOS GIRASOLES DE CAMPOY",
+  "GIro": "BODEGA, BAZAR"
+ },
+ {
+  "Latitud": -12.0020889,
+  "Longitud": -76.9989911,
+  "Dirección": "AV. SANTA ROSA N°1722 MZ. J-V LT. 01 - APV. INCA MANCO CAPAC",
+  "GIro": "RESTAURANT CHIFA LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.024337,
+  "Longitud": -76.9895126,
+  "Dirección": "AV. GRAN CHIMU N°1388 - URB. ZARATE",
+  "GIro": "AVICOLA"
+ },
+ {
+  "Latitud": -11.9772331,
+  "Longitud": -77.0006985999999,
+  "Dirección": "SV. MZ. F LT. 25 - APV. GARAGAY",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": 19.3869163,
+  "Longitud": -98.9958404,
+  "Dirección": "JR. OMBULES, LOS N°614 MZ. 134 LT. 3 - URB. LAS FLORES",
+  "GIro": "VENTA DE COMIDA AL PASO"
+ },
+ {
+  "Latitud": -11.9987773,
+  "Longitud": -77.0001984,
+  "Dirección": "AV. SANTA ROSA DE LIMA N°1954 MZ. A-5 LT. 8 - APV. INCA MANCO CAPAC",
+  "GIro": "BODEGA, BEBIDAS GASEOSAS"
+ },
+ {
+  "Latitud": -12.0136166,
+  "Longitud": -77.0039062,
+  "Dirección": "JR. LOS HINOJOS NRO: 1260 MZ. S LT. 42 URB. LOS JARDINES DE SAN JUAN",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": 34.0549076,
+  "Longitud": -118.242643,
+  "Dirección": "SV. MZ. P LT. 17 COOP. VIV. LOS ANGELES",
+  "GIro": "VENTA DE SOPORTE DE LLANTAS"
+ },
+ {
+  "Latitud": -12.0098706,
+  "Longitud": -77.0113623,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1163 MZ. 83 LT. 26 COOP. LAS FLORES",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -11.9897962,
+  "Longitud": -77.0099013,
+  "Dirección": "AV. BASADRE, JORGE ESTE N°129 MZ. W LT. 17 - APV. JORGE BASADRE",
+  "GIro": "RESTAURANT, LICOR"
+ },
+ {
+  "Latitud": -12.1528553,
+  "Longitud": -77.0159635999999,
+  "Dirección": "JR. PERLAS LAS, MZ. D2 LT.1 - URB. SAN CARLOS",
+  "GIro": "PANADERIA, PASTELERIA, BODEGA"
+ },
+ {
+  "Latitud": 38.3277791,
+  "Longitud": -0.5109224,
+  "Dirección": "SV. MZ. R LT. 22 URB. SAN GABRIEL",
+  "GIro": "LIBRERIA, BAZAR"
+ },
+ {
+  "Latitud": -14.0851094,
+  "Longitud": -75.7427609,
+  "Dirección": "SV. MZ. H LY 20 - URB. SAN CARLOS",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -11.9861126,
+  "Longitud": -76.9986297,
+  "Dirección": "AV LOS ALAMOS N° 362 MZ E SUBLOTE 1C UNID INMOB 1-C - URB CANTO GRANDE",
+  "GIro": "VENTA AL POR MAYOR DE OTROS PRODUCTOS N.E (FABRICACION DE SUELAS Y PLANTILLAS)"
+ },
+ {
+  "Latitud": -11.9777474,
+  "Longitud": -77.0139841,
+  "Dirección": "JR LOS AMANCAES N° 280 MZ J SUBLOTE 21B - UTB CANTO BELLO",
+  "GIro": "ELABORACION DE ALIMENTOS PARA DESAYUNOS, TOSTADOS, INSUFLADOS, ETC. (NIVEL ARTESANAL)"
+ },
+ {
+  "Latitud": 38.3277791,
+  "Longitud": -0.5109224,
+  "Dirección": "SV. MZ. R LT. 22 URB. SAN GABRIEL",
+  "GIro": "LIBRERIA, BAZAR"
+ },
+ {
+  "Latitud": -12.0244285,
+  "Longitud": -76.9964519,
+  "Dirección": "AV. GRAN CHIMU 1005 ZARATE",
+  "GIro": "VENTA DE MAQUINARIAS, ACCESORIOS E INSUMOS TEXTILES, SERVICIOS"
+ },
+ {
+  "Latitud": -11.990950699999999,
+  "Longitud": -77.0035985,
+  "Dirección": "AV. JORGE BASADRE ESTE MZ. F LT. 01 URB. SAN CARLOS",
+  "GIro": "RESTAURANT, LICORES COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -34.0951512,
+  "Longitud": -59.0240826,
+  "Dirección": "SV. MZ. G LT. 28 - URB. RESIDENSIAL HORIZONTE ZARATE",
+  "GIro": "TIENDA DE ABARROTES BEBIDAS GASEOSA VERDURAS FRUTAS"
+ },
+ {
+  "Latitud": -12.0245381,
+  "Longitud": -76.9956844,
+  "Dirección": "AV. GRAN CHIMU N° 1028 LT. N5 URB. ZARATE",
+  "GIro": "SALON DE BELLEZA SPA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "CALLE LOS MANGOS N° 170 MZ G LT 18-B - SEMI RUSTICA CANTO GRANDE",
+  "GIro": "VENTA DE CARBON"
+ },
+ {
+  "Latitud": -12.0061458,
+  "Longitud": -77.0067631,
+  "Dirección": "AV JARDINES OESTE N° 126 MZ V LT 19 - APV SAN HILARION",
+  "GIro": "GALERIA FERIAL"
+ },
+ {
+  "Latitud": -12.0168684,
+  "Longitud": -76.9998875,
+  "Dirección": "AV. LURIGANCHO 997-999 ALMACEN N° BOD-08 SOTANO 03 MALL AVENTURA",
+  "GIro": "ALMACENES PARA MERCANCIAS VARIAS"
+ },
+ {
+  "Latitud": -12.0238762,
+  "Longitud": -76.9731272,
+  "Dirección": "CALLE LOS PINOS MZ. S LT. 3 TIENDA 03 URB. LOTIZACION CAMPOY",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -12.0228982,
+  "Longitud": -76.9683678999999,
+  "Dirección": "AV. BELLAS ARTES N° 210 MZ. B LT. 6 APV. SAN HILARION DE CAMPOY",
+  "GIro": "OTROS TIPOS DE ENSEÑANZA NCP (ACADEMIA DE TAEKWONDO)"
+ },
+ {
+  "Latitud": 43.6006492,
+  "Longitud": -72.7469276,
+  "Dirección": "SV. MZ. G-1 LT. 02 1ER. PISO APV. COMPR. TERRENO CAMPOY III ETAPA",
+  "GIro": "PANADERIA"
+ },
+ {
+  "Latitud": -12.0048012,
+  "Longitud": -77.0036183,
+  "Dirección": "AV. LOS JARDINES ESTE N° 320-324 MZ C LT 3 - URB INDUSTRIAL LAS FLORES 81 - 1ERA ETAPA",
+  "GIro": "GALERIA COMERCIAL"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "MZ. B LT. 3 ASOC. VIV. LOS GIRASOLES DE CAMPOY",
+  "GIro": "BODEGA, BAZAR"
+ },
+ {
+  "Latitud": -11.9969787,
+  "Longitud": -77.0007736,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 2067 -APV INCA MANCO CAPAC",
+  "GIro": "BOTICA BAZAR"
+ },
+ {
+  "Latitud": -12.0181041,
+  "Longitud": -77.0100461,
+  "Dirección": "JR. LAS ALCAPARRAS N° 453 MZ. 45 LT. 08 COOP. LAS FLORES",
+  "GIro": "VENTA DE ALIMENTOS (ANIMALES) BAZAR"
+ },
+ {
+  "Latitud": -12.0020889,
+  "Longitud": -76.9989911,
+  "Dirección": "AV. SANTA ROSA N° 1722 MZ. J-V LT. 01 APV INCA MANCO CAPAC",
+  "GIro": "RESTAURANTE, CHIFA, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.025226,
+  "Longitud": -76.9911905,
+  "Dirección": "AV. LAS LOMAS N° 274 URB. ZARATE",
+  "GIro": "LAVANDERIA"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "SV MZ A LT 3 - PUE. JOVEN CRUZ DE MOTUPE",
+  "GIro": "POLLERIA"
+ },
+ {
+  "Latitud": -11.9950111,
+  "Longitud": -77.0104189,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA MZ. J LT. 04 APV. SAN HILARION",
+  "GIro": "SERVICIO DE TORNERIA"
+ },
+ {
+  "Latitud": -12.0128933,
+  "Longitud": -77.0040294,
+  "Dirección": "JR LOS HINOJOS N° 1439 MZ G LT 12 - URB LOS JARDINES DE SAN JUAN",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -31.5351074,
+  "Longitud": -68.5385941,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA MZ L LT 08 - URB JARDINES DE SAN JUAN",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -12.024337,
+  "Longitud": -76.9895126,
+  "Dirección": "AV. GRAN CHIMU N° 1388 URB. ZARATE",
+  "GIro": "AVICOLA"
+ },
+ {
+  "Latitud": -11.9897962,
+  "Longitud": -77.0099013,
+  "Dirección": "AV BASADRE, JORGE ESTE N° 129 MZ W LT 17 - APV JORGE BASADRE",
+  "GIro": "RESTAURANT, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -11.9772331,
+  "Longitud": -77.0006985999999,
+  "Dirección": "MZ. F LT. 25 APV. GARAGAY",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0277114,
+  "Longitud": -77.0084759,
+  "Dirección": "AV. GRAN CHIMU N° 356 MZ. O-1 LT. 12 - URB. ZARATE",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9996731,
+  "Longitud": -77.014439,
+  "Dirección": "JR. LOS OMBUES N° 614 MZ. 134 LT. 03 URB. LAS FLORES",
+  "GIro": "VENTA DE COMIDA AL PASO"
+ },
+ {
+  "Latitud": -11.9858595,
+  "Longitud": -77.006699,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA 2766 MZ I-1 LT 9 - URB SAN CARLOS",
+  "GIro": "VENTA DE LUBRICANTES, REPUESTOS, SERVICIOS Y LAVADO DE VEHICULOS"
+ },
+ {
+  "Latitud": -12.0041657,
+  "Longitud": -77.003355,
+  "Dirección": "AV JARDINES ESTE N° 341- 347 MZ. 4 LT 6 URB. FLORES 78",
+  "GIro": "BAZAR, VENTA DE CELULARES, ACCESORIOS Y SERVICIOS"
+ },
+ {
+  "Latitud": -33.6104379,
+  "Longitud": -70.6262646,
+  "Dirección": "AV. SANTA ROSA N° 1311 MZ. B LT. 02 - APV INCA MANCO CAPAC",
+  "GIro": "COMPRA-VENTA DE ARTICULOS USADOS"
+ },
+ {
+  "Latitud": 56.130366,
+  "Longitud": -106.346771,
+  "Dirección": "MZ. H LT. 5 ASOC. DE VIV. CANADA",
+  "GIro": "PROYECTO DE TELECOMUNICACIONES"
+ },
+ {
+  "Latitud": -12.0098706,
+  "Longitud": -77.0113623,
+  "Dirección": "AV. LAS FLORES DE PRIMAVERA N° 1163, MZ 83 LT 26 - 1ER PISO - COOP LAS FLORES",
+  "GIro": "RESTAURANTE, LICORES COMO COMPLEMENTARIO"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "MZ. F LT. 17 PUEBLO JOVEN CRUZ DE MOTUPE",
+  "GIro": "RESTAURANT, FUENTE DE SODA LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0172456,
+  "Longitud": -76.9924407,
+  "Dirección": "AV LURIGANCHO MZ Q LT 4 SUB LOTE 2 - URB ZARATE",
+  "GIro": "ALMACEN PARA MERCANCIAS VARIAS"
+ },
+ {
+  "Latitud": -11.9940467,
+  "Longitud": -77.0039062,
+  "Dirección": "AV ENERO 13 DE N° 2140-  COOP LA HUAYRONA",
+  "GIro": "RESTAURANT, CEVICHERIA, LICORES COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -13.7577876,
+  "Longitud": -73.5270333,
+  "Dirección": "SV MZ C LT 40 - COOP VIVIENDA HUANCARAY",
+  "GIro": "MINIMARKET (BODEGA, ABARR-BAZ-LIBR-ESPEC-JUGOS-COMIDAS-VERD-FRUT-CARNES)"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ H4 CDRA 1 LADO DER - PROGRAMA CIUDAD MARISCAL CACERES SECTOR III COMUNA 25",
+  "GIro": "POLLERIA, RESTAURANT"
+ },
+ {
+  "Latitud": -12.0075782,
+  "Longitud": -77.0054557,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1629-1631 URB. FLORES DE LIMA",
+  "GIro": "VENTA DE PRENDAS DE VESTIR, BAZAR, ZAPATERIA Y REGALOS"
+ },
+ {
+  "Latitud": -12.0220048,
+  "Longitud": -77.0039062,
+  "Dirección": "AV TUSILAGOS, LOS N° 431 LT OU - APV URBANIZADORA AZCARRUNZ",
+  "GIro": "POLLERIA, RESTAURANT"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "SV MZ C LT 9 - URB CANTO GRANDE",
+  "GIro": "COMPRA-VENTA DE ARTICULOS USADOS SIN ATENCION AL PUBLICO"
+ },
+ {
+  "Latitud": -12.0004658,
+  "Longitud": -77.0091085999999,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA N° 1965 MZ Z-1 LT 21 - APV SAN HILARION",
+  "GIro": "VENTA DE SANITARIOS Y MAYOLICAS, ALMACEN PARA MERCANCIAS VARIAS"
+ },
+ {
+  "Latitud": -11.9994523,
+  "Longitud": -77.0001655,
+  "Dirección": "AV. SANTA ROSA DE LIMA MZ. A-5 LT. 13 APV. INCA MANCO CAPAC",
+  "GIro": "BODEGA, VERDULERIA, FRUTERIA"
+ },
+ {
+  "Latitud": -12.0041657,
+  "Longitud": -77.003355,
+  "Dirección": "AV JARDINES ESTE N° 341- 347 MZ. 4 LT 6 URB. FLORES 78",
+  "GIro": "BAZAR, VENTA DE CELULARES, ACCESORIOS Y SERVICIOS"
+ },
+ {
+  "Latitud": -12.0133399,
+  "Longitud": -77.0114806,
+  "Dirección": "AV LAS FLORES DE PRIMAVERA 950 MZ 65. LT. 11",
+  "GIro": "CONSULTORIO OBSTETRICO"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "MZ. G-6 LT. 09 PP.JJ. CRUZ DE MOTUPE",
+  "GIro": "CEBICHERIA, RESTAURANT, PICANTERIA, GASEOSAS, LICORES COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0122228,
+  "Longitud": -77.0115402,
+  "Dirección": "AV. FLORES DE PRIMAVERA MZ. 120 LT. 23 COOP. LAS FLORES",
+  "GIro": "PASTELERIA, JUGUERIA"
+ },
+ {
+  "Latitud": -12.0120525,
+  "Longitud": -77.0119615999999,
+  "Dirección": "AV. TUSILAGOS OESTE 620 MZ. 79 LT. 14 COOP. LAS FLORES",
+  "GIro": "BARBERIA"
+ },
+ {
+  "Latitud": -12.0241083,
+  "Longitud": -76.9886453,
+  "Dirección": "AV. GRAN CHIMU N° 1407 URB. ZARATE",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -12.0039276,
+  "Longitud": -77.0068309,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1772 UNI. INMOB. N° 01 LAS FLORES 78",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -11.9795551,
+  "Longitud": -77.0047289,
+  "Dirección": "AV. WIESSE MZ. A LT. 01 -URB CANTO GRANDE",
+  "GIro": "JUGUERIA SANDWICHERIA"
+ },
+ {
+  "Latitud": -12.0242999,
+  "Longitud": -76.9635859,
+  "Dirección": "MZ. C LT. 24 - AA.HH. RIMAC DE CAMPOY",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0253975,
+  "Longitud": -77.0010757,
+  "Dirección": "AV. GAN CHIMU N° 838 MZ. B4 LT. 09 URB. ZARATE",
+  "GIro": "AREAS COMUNES"
+ },
+ {
+  "Latitud": -11.9934657,
+  "Longitud": -77.010487,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2290, MZ X LT 03 - APV SAN HILARION",
+  "GIro": "DISTRIBUIDORA PINTURAS"
+ },
+ {
+  "Latitud": -12.0247087,
+  "Longitud": -76.9978943999999,
+  "Dirección": "AV. GRAN CHIMU N° 933 URB. ZARATE",
+  "GIro": "GALERIA COMERCIAL"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA MZ. K15 LT. 13 - PROG CIUDAD MARISCAL CACERES",
+  "GIro": "VENTA DE COMIDA AL PASO"
+ },
+ {
+  "Latitud": -12.0179824,
+  "Longitud": -76.9698675,
+  "Dirección": "AV. LOS PROCERES MZ. M LT. 13B APV COMP. TERRENOS DE CAMPOY",
+  "GIro": "VENTA DE GOLOSINAS Y CONFITERIA"
+ },
+ {
+  "Latitud": -12.0179907,
+  "Longitud": -77.0097672,
+  "Dirección": "JR. LAS ALCAPARRAS MZ. 17 SUB LOTE 10B COOP. LAS FLORES",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0164765,
+  "Longitud": -76.9849457999999,
+  "Dirección": "JR TEMPLO DE ASPERO N° 370 - URB MANGOMARCA",
+  "GIro": "CABINA DE INTERNET, LOCUTORIO, LIBRERIA, COPIAS"
+ },
+ {
+  "Latitud": -12.02833,
+  "Longitud": -77.00286,
+  "Dirección": "JR. EL LANZON N° 274 MZ. M-2 LT. 22 URB. ZARATE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0073688,
+  "Longitud": -77.0083815,
+  "Dirección": "AV. JARDINES OESTE 225 MZ. M LT. 2 URB. LAS FLORES DE LIMA",
+  "GIro": "RESTAURANT, LICORES COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0225242,
+  "Longitud": -77.0046634,
+  "Dirección": "SV. JR. CAJAMARQUILLA N° 608-610 MZ. N LT. 17 URB. AZCARRUNZ 1ER. PISO",
+  "GIro": "CONFECCIONES DE PRENDAS DE VESTIR, TEÑIDO DE PRODUCTOS TEXTILES, LAVANDERIA"
+ },
+ {
+  "Latitud": -12.0225242,
+  "Longitud": -77.0046634,
+  "Dirección": "SV. JR. CAJAMARQUILLA N° 608-610 MZ. N LT. 17 URB. AZCARRUNZ 2DO. PISO",
+  "GIro": "CONFECCIONES DE PRENDAS DE VESTIR, CONTRATISTAS GENERALES (OFICINAS ADMINISTRATIVAS)"
+ },
+ {
+  "Latitud": 38.440429,
+  "Longitud": -122.7140548,
+  "Dirección": "MZ. B LT. 17 AA.HH. SANTA ROSA DEL SAUCE",
+  "GIro": "VENTA DE ALIMENTOS (ANIMALES), BAZAR"
+ },
+ {
+  "Latitud": -12.0262836,
+  "Longitud": -77.0076589999999,
+  "Dirección": "JR WIRACOCHA N° 452 MZ L-1 LT 34 - URB ZARATE",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -11.991707,
+  "Longitud": -77.106008,
+  "Dirección": "AV CTO BELLO N° 476 MZ D LT 3 - URB CTO BELLO",
+  "GIro": "FABRICACION DE PRODUCTOS PLASTICOS"
+ },
+ {
+  "Latitud": -11.9662394,
+  "Longitud": -77.0025524,
+  "Dirección": "AV. CANTO GRANDE 3822 MZ. M LT. 5 PP.JJ. JESUS OROPEZA DE CHONTA",
+  "GIro": "POLICLINICO"
+ },
+ {
+  "Latitud": -12.024316,
+  "Longitud": -76.9736831,
+  "Dirección": "AV. PRINCIPAL S\/N MZ. C SUB LOTE 3B - URB LOTIZACION CAMPOY",
+  "GIro": "CONVERTIDORA DE PAPEL"
+ },
+ {
+  "Latitud": -11.9476796,
+  "Longitud": -76.9851134,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA 5030 MZ. J 15 LT. 28 - PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "MADERERA"
+ },
+ {
+  "Latitud": -12.0130032,
+  "Longitud": -77.0108807,
+  "Dirección": "JR. LOS RUIBARDOS N° 569 MZ. 64 LT. 18 COOP. LAS FLORES",
+  "GIro": "CASA DE HUESPEDES"
+ },
+ {
+  "Latitud": -12.0096016,
+  "Longitud": -77.0108442,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1222-A MZ. J LT. 03 URB. LAS FLORES DE LIMA",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -12.008066,
+  "Longitud": -77.0099585999999,
+  "Dirección": "AV. JARDINES OESTE N° 301 MZ. J LT. 21 URB. LAS FLORES DE LIMA",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9338288,
+  "Longitud": -77.067736,
+  "Dirección": "AV. CANTO GRANDE MZ. B LT. 16 - URB CANTO GRANDE",
+  "GIro": "RESTAURANT, LICORES COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -11.9737135,
+  "Longitud": -77.0027973,
+  "Dirección": "AV. LAS FLORES N° 253 URB. LOS JAZMINES",
+  "GIro": "ESTUDIO FOTOGRAFICO"
+ },
+ {
+  "Latitud": 13.8936291,
+  "Longitud": -90.4809097999999,
+  "Dirección": "MZ. G LT. 1 ASOC. VIVIENDA MONTERRICO DE CAMPOY",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -12.0169302,
+  "Longitud": -76.9851877,
+  "Dirección": "JR. TEMPLO DE ASPERO MZ P-1 TIENDA 9-A URB. MANGOMARCA",
+  "GIro": "VERDULERIA - FRUTERIA"
+ },
+ {
+  "Latitud": -12.0241452,
+  "Longitud": -76.9832414999999,
+  "Dirección": "AV. GRAN CHIMU N° 1837 URB. ZARATE",
+  "GIro": "TALLER DE MECANICA, SERVICIO DE LAVADO DE VEHICULOS, VENTA DE ACEITES Y LUBRICANTES"
+ },
+ {
+  "Latitud": -11.9815915,
+  "Longitud": -77.0055337,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA MZ K PISO 5 URB LOS JARDINES",
+  "GIro": "ACADEMIA DE IDIOMAS"
+ },
+ {
+  "Latitud": -9.189967,
+  "Longitud": -75.015152,
+  "Dirección": "MZ 14 LT 10 - PP.JJ. ARRIBA PERU TIENDA 3",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -9.189967,
+  "Longitud": -75.015152,
+  "Dirección": "MZ 14 LT 10 - PP.JJ. ARRIBA PERU",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9475252,
+  "Longitud": -76.9800990999999,
+  "Dirección": "AV. WIESSE MZ. K-15 LT. 14 MARISCAL CACERES",
+  "GIro": "OPTICA, BAZAR, PERFUMERIA"
+ },
+ {
+  "Latitud": -12.0041634,
+  "Longitud": -77.0123062999999,
+  "Dirección": "JR. MARTICARIAS N° 611 1ER. Y 2DO. PISO COOP. LAS FLORES",
+  "GIro": "RESTAURANTE, POLLERIA"
+ },
+ {
+  "Latitud": -11.9940467,
+  "Longitud": -77.0039062,
+  "Dirección": "JR. LAS TURMALINAS MZ. H-1 LT. 03 COOP. LA HUAYRONA",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -11.8201806,
+  "Longitud": -75.3936808,
+  "Dirección": "SV. MZ. C\/LT. 16-COOP. EL MANTARO",
+  "GIro": "PANADERIA, PASTELERIA, BODEGA, NIVEL ARTESANAL"
+ },
+ {
+  "Latitud": -12.1750078,
+  "Longitud": -77.0003604,
+  "Dirección": "AV. EL SOL N° 542-544 MZ D-1 LT 22-23 - URB SAN CARLOS",
+  "GIro": "SERVICIOS DE MECANICA Y VENTA DE REPUESTOS AUTOMOTRICES"
+ },
+ {
+  "Latitud": -12.0239849,
+  "Longitud": -76.9869756,
+  "Dirección": "AV. GRAN CHIMU 1522 MZ. J-6 LT. 15 - URB ZARATE",
+  "GIro": "PELUQUERIA"
+ },
+ {
+  "Latitud": -12.0243399,
+  "Longitud": -76.9954721,
+  "Dirección": "AV. GRAN CHIMU N° 1035 MZ. H-5 LT. 51 URB. ZARATE",
+  "GIro": "PELUQUERIA Y OTROS TRATAMIENTOS DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0252467,
+  "Longitud": -77.0112037,
+  "Dirección": "AV. LIMA N° 103, MZ B LT 28 - URB. CAJA DE AGUA",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0035519,
+  "Longitud": -77.007189,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1780 MZ. G LT. 01 - URB. FLORES 78",
+  "GIro": "VENTA Y DISTRIBUCION DE LLANTAS, REPUESTOS Y SERV. AUTOMOTRIZ"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "AV. EL PARQUE N° 780 MZ. P LT. 5 URB. CANTO GRANDE",
+  "GIro": "MOLIENDO DE PLASTICOS A NIVEL ARTESANAL"
+ },
+ {
+  "Latitud": -12.0284851,
+  "Longitud": -77.0131390999999,
+  "Dirección": "AV. PERU N° 170 URB. CAJA DE AGUA",
+  "GIro": "SERVICIO DE RECOLECCION Y DISTRIBUCION DE ROPA POR LAS LAVANDERIAS"
+ },
+ {
+  "Latitud": -12.0257051,
+  "Longitud": -77.0025423,
+  "Dirección": "AV. TIAHUANACO N° 694 MZ. F-2 LT. 25 URB. ZARATE",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -12.006858,
+  "Longitud": -77.007364,
+  "Dirección": "AV. JARDINES OESTE 155 MZ. U LT. 11 - URB LAS FLORES DE LIMA",
+  "GIro": "OPTICA"
+ },
+ {
+  "Latitud": -11.9998019,
+  "Longitud": -77.0143602999999,
+  "Dirección": "JR. LOS OMBUES N° 607 COOP. LAS FLORES",
+  "GIro": "FARMACIA, VENTA DE ART. DE TOCADOR Y PERFUMERIA"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "MZ J LT 17 -A1 URB CANTO GRANDE",
+  "GIro": "CONFECCION DE PRENDAS DE VESTIR A NIVEL ARTESANAL"
+ },
+ {
+  "Latitud": -12.0217237,
+  "Longitud": -77.0092368,
+  "Dirección": "AV. TUPAC AMARU 260 URB. CHACARILLA DE OTERO",
+  "GIro": "PANADERIA, PASTELERIA, BODEGA Y FUENTE DE SODA"
+ },
+ {
+  "Latitud": -11.9841624,
+  "Longitud": -76.9993877,
+  "Dirección": "AV EL BOSQUE N°799 MZ P LT 9- URB. CANTO GRANDE",
+  "GIro": "VENTA DE REPUESTOS Y TALLER DE REPARACION DE MOTOS Y BICICLETAS"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "CALLE LOS NOGALES MZ. E SUB LOTE 4 - URB CANTO GRANDE UNIDAD 42 - 1ERA ETAPA - URB CANTO GRANDE",
+  "GIro": "ALMACEN Y DISTRIBUCION DE PRODUCTOS PLASTICOS, FABRICACION"
+ },
+ {
+  "Latitud": -12.0175207,
+  "Longitud": -77.0112173,
+  "Dirección": "JR. LOS ELEBOROS N°539 A- UNID. INMOB. 1 URB LAS FLORES",
+  "GIro": "PANADERIA, PASTELERIA, BODEGA"
+ },
+ {
+  "Latitud": -11.9940467,
+  "Longitud": -77.0039062,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 2215 - COOP LA HUAYRONA",
+  "GIro": "PANADERIA, PASTELERIA, BODEGA"
+ },
+ {
+  "Latitud": -12.0204382,
+  "Longitud": -77.0038048999999,
+  "Dirección": "JR. SANTA AMELIA N° 639 URB. AZCARRUNZ BAJO",
+  "GIro": "ESTAMPADO DE PRODUCTOS TEXTILES"
+ },
+ {
+  "Latitud": -12.0254616,
+  "Longitud": -77.013683,
+  "Dirección": "AV. LAS FLORES 181 URB. UNIDAD 6 CANTO GRANDE",
+  "GIro": "ALMACEN DE PRODUCTOS DE CONSUMO MASIVO"
+ },
+ {
+  "Latitud": -11.9983471,
+  "Longitud": -77.0148052,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1849 MZ. D LT. 16 SAN HILARION",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -11.968907399999999,
+  "Longitud": -77.0041744,
+  "Dirección": "AV CANTO GRANDE 3676 - MZ A-6 LT 24 - URB LOS JAZMINES",
+  "GIro": "VENTA DE ARTICULOS OPTICOS"
+ },
+ {
+  "Latitud": -11.985469,
+  "Longitud": -77.0033933,
+  "Dirección": "AV. EL SOL N° 527 A MZ. F - URB. CANTO GRANDE",
+  "GIro": "VENTA Y ACCESORIOS DE VEHICULOS"
+ },
+ {
+  "Latitud": -12.0087626,
+  "Longitud": -77.0096401999999,
+  "Dirección": "JR. LAS CRUCINELAS N° 1301 MZ. L LT. 48",
+  "GIro": "INICIAL -PRIMARIA"
+ },
+ {
+  "Latitud": -12.0269293,
+  "Longitud": -77.0053068,
+  "Dirección": "AV. GRAN CHIMU N° 517-519-519A MZ. G LT. 43 URB. ZARATE",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -12.0269293,
+  "Longitud": -77.0053068,
+  "Dirección": "AV. GRAN CHIMU N° 517-519-519A MZ. G LT. 43 URB. ZARATE",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -11.9786682,
+  "Longitud": -76.9907666,
+  "Dirección": "AV. SAN MARTIN N° 845 MZ. C LT. 2 URB. CANTO GRANDE",
+  "GIro": "CENTRO RECREACIONAL, PISCINAS, SALON DE EVENTOS"
+ },
+ {
+  "Latitud": -12.025294,
+  "Longitud": -76.9997621,
+  "Dirección": "AV. GRAN CHIMU N° 828 MZ. B-4 LT. 06 URB. ZARATE",
+  "GIro": "AGENCIA BANCARIA"
+ },
+ {
+  "Latitud": -12.0253525,
+  "Longitud": -76.999764,
+  "Dirección": "AV. GRAN CHIMU N° 826-828 MZ. B-4 LT. 06 URB. ZARATE",
+  "GIro": "OFICINA ADMINISTRATIVA"
+ },
+ {
+  "Latitud": -11.9722523,
+  "Longitud": -77.0044235,
+  "Dirección": "AV. LAS FLORES 178 - URB SAN RAFAEL",
+  "GIro": "SALON DE BELLEZA, PELUQUERIA"
+ },
+ {
+  "Latitud": -12.0140504,
+  "Longitud": -77.0127038,
+  "Dirección": "JR LAS ALHUCEMAS MZ 81 LT 19-20 URB. LAS FLORES",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -12.0175881,
+  "Longitud": -77.0027142,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA N°1015 MZ G LT 11 AL 25 URB. JARDINES DE SAN JUAN",
+  "GIro": "LLANTERIA"
+ },
+ {
+  "Latitud": -11.9987688,
+  "Longitud": -77.0002706,
+  "Dirección": "AV SANTA ROSA DE LIMA N° 1958 MZ A-V LT 9 APV INCA MANCO CAPAC",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0254831,
+  "Longitud": -77.0097241,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 276 URB. CHACARILLA DE OTERO",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -12.0143254,
+  "Longitud": -77.0130824,
+  "Dirección": "AV CANTO GRANDE N° 908 MZ 71 SUBLOTE 5B COOP LAS FLORES",
+  "GIro": "BAZAR, VENTA DE ROPA"
+ },
+ {
+  "Latitud": -12.0223253,
+  "Longitud": -77.0023006,
+  "Dirección": "JR. SAN LUIS GONZAGA S\/N MZ. L LT. 19-A AZCARRUNZ BAJO",
+  "GIro": "VENTA DE PRODUCTOS DIVERSOS (COLORANTES Y E INSUMOS TEXTILES)"
+ },
+ {
+  "Latitud": -12.0015641,
+  "Longitud": -76.9992767999999,
+  "Dirección": "AV. SANTA ROSA N° 1744 URB. INCA MANCO CAPAC",
+  "GIro": "VENTA DE CERVEZAS POR MAYOY Y MENOR"
+ },
+ {
+  "Latitud": -12.0002341,
+  "Longitud": -77.0017331,
+  "Dirección": "JR. PIEDRA BIGUA 1853 APV. INCA MANCO CAPAC",
+  "GIro": "GUARDERIA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "JR. INTERMEDIO MZ. M -B LT. 17 PROG. CIUDAD MARISCAL",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -12.0278272,
+  "Longitud": -77.0070662999999,
+  "Dirección": "JR. WIRACOCHA 258 ZARATE",
+  "GIro": "BODEGA, BAZAR"
+ },
+ {
+  "Latitud": -12.0160484,
+  "Longitud": -76.9664664,
+  "Dirección": "MZ. M LT. 17 APV. COMPRADORES DE TERRENOS DE CAMPOY",
+  "GIro": "FABRICA DE MADERA - VENTA DE MUEBLES (MADERA)"
+ },
+ {
+  "Latitud": -12.0220048,
+  "Longitud": -77.0039062,
+  "Dirección": "SV. MZ. Y SUB-LOTE 1A APV URBANIZADORA AZCARRUNZ",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9966725,
+  "Longitud": -77.0153057,
+  "Dirección": "AV. LAS FLORES DE PRIMAVERA N° 1986 APV. SAN HILARION",
+  "GIro": "PLAYA DE ESTACIONAMIENTO"
+ },
+ {
+  "Latitud": -12.0083722,
+  "Longitud": -77.01483,
+  "Dirección": "JR. LAS VERDOLAGAS N° 899 COOP. LAS FLORES",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -12.0252379,
+  "Longitud": -77.0002485999999,
+  "Dirección": "AV. GRAN CHIMU N° 807 - URB. ZARATE",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9845446,
+  "Longitud": -76.8976905,
+  "Dirección": "MZ. C LT. 10 AA.HH. SOMOS LIBRES",
+  "GIro": "PIZZERIA"
+ },
+ {
+  "Latitud": -11.9805182,
+  "Longitud": -77.0097009,
+  "Dirección": "AV. LOS MANGOS MZ. H LT. 07 SUB LOTE N° 2 URB. CANTO GRANDE",
+  "GIro": "VENTA DE PINTURAS, BARNICES Y LACAS (ELABORACION DE PINTURAS, BARNICES Y DERIVADOS QUIMICOS)"
+ },
+ {
+  "Latitud": -12.0263248,
+  "Longitud": -77.0037293,
+  "Dirección": "AV. GRAN CHIMU N° 607 - URB. ZARATE",
+  "GIro": "FUENTE DE SODA"
+ },
+ {
+  "Latitud": -11.940543,
+  "Longitud": -76.9952672,
+  "Dirección": "MZ. M11 LT. 03 SU SANTIDAD JUAN PABLO II",
+  "GIro": "PANADERIA, PASTELERIA Y BODEGA"
+ },
+ {
+  "Latitud": -12.0285697,
+  "Longitud": -77.0070229999999,
+  "Dirección": "JR. WIRACOCHA N° 188 UNID. INMOB. N° 2 - 1ER PISO - URB. ZARATE",
+  "GIro": "CASA DE PRESTAMOS"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "JR INTERMEDIO MZ. B20 LT. 01 - PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "BODEGA, BAZAR"
+ },
+ {
+  "Latitud": -11.9475252,
+  "Longitud": -76.9800990999999,
+  "Dirección": "AV. DEL MURO MZ. M-15 LT. 37 TIENDA 16 PROGRAMA CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "VENTA DE ACCESORIOS DE CELULARES Y REPARACION, BAZAR"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. D2 LT. 05 PROGRAMA CIUDAD MARISCAL CACERES SECTOR III",
+  "GIro": "JUEGOS DE AZAR Y APUESTAS DEPORTIVAS"
+ },
+ {
+  "Latitud": -12.0269288,
+  "Longitud": -77.0057252,
+  "Dirección": "JR. AYAR MANCO N° 363 URB. ZARATE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9475252,
+  "Longitud": -76.9800990999999,
+  "Dirección": "AV. LOS HEROES DEL CENEPA MZ. 349-353 MZ. B-18 LT. 18 2DO. PISO PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. Q8 LT. 06 PROGRAMA CIUDAD MARISCAL CACERES (2° PISO)",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "MZ. B LT. 7 COOP. VIV. SAN MIGUEL DE PALLANCHACRA LTDA 50",
+  "GIro": "LIBRERIA, BAZAR"
+ },
+ {
+  "Latitud": -11.9927244,
+  "Longitud": -77.1100313,
+  "Dirección": "MZ. D LT. 27 -ASOC. VIV. LOS GIRASOLES DE CAMPOY",
+  "GIro": "CAFETERIA"
+ },
+ {
+  "Latitud": -12.0162831,
+  "Longitud": -76.99735,
+  "Dirección": "AV. 13 DE ENERO N° 903 - URB RESIDENCIAL HORIZONTE DE ZARATE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.038441,
+  "Longitud": -76.9570002,
+  "Dirección": "MZ. G-5 SUB LOTE 34 A - URB. ZARATE",
+  "GIro": "VENTA DE MENU, CALDO DE GALLINA"
+ },
+ {
+  "Latitud": -11.9525105,
+  "Longitud": -76.9874178,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 4841 MZ. I-1 LT. 7 PROGRAMA CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "FABRICACION Y VENTA DE MUEBLES"
+ },
+ {
+  "Latitud": -11.9897244,
+  "Longitud": -77.010532,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2506 MZ. W LT. 21-22 APV JORGE BASADRE",
+  "GIro": "RESTAURANT, POLLOS A LA BRASA, LICORES COMO COMPLEMENTARIO"
+ },
+ {
+  "Latitud": -11.9475252,
+  "Longitud": -76.9800990999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 4262 -4266 MZ. K15 LT. 8,9 - 33 III Y IV ETAPA - PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "PLAYA DE ESTACIONAMIENTO"
+ },
+ {
+  "Latitud": -12.0072371,
+  "Longitud": -77.0084587,
+  "Dirección": "AV. JARDINES OESTE MZ. C LT. 29 APV SAN HILARION",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -12.1750078,
+  "Longitud": -77.0003604,
+  "Dirección": "AV. EL SOL MZ. Z-1 LT. 17 - URB. SAN CARLOS",
+  "GIro": "CAMPO DEPORTIVO-ACADEMIA"
+ },
+ {
+  "Latitud": 47.574064,
+  "Longitud": -70.398597,
+  "Dirección": "JR ORTIGAS, LAS N° 1794 MZ A-1 LT 28-A - APV SAN HILARION",
+  "GIro": "CENTRO EDUCATIVO NIVEL INICIAL PRIMARIA SECUNDARIA"
+ },
+ {
+  "Latitud": -12.0245716,
+  "Longitud": -76.9957519,
+  "Dirección": "AV. GRAN CHIMU N° 1030 URB. ZARATE",
+  "GIro": "VENTA DE PASTELES, TORTAS, JUGUERIA, CAFETERIA"
+ },
+ {
+  "Latitud": -12.0172332,
+  "Longitud": -76.9996025,
+  "Dirección": "AV. LURIGANCHO N° 970 URB. AZCARRUNZ",
+  "GIro": "VENTA DE JUGUETES, BAZAR, LIBRERIA"
+ },
+ {
+  "Latitud": -12.0287501,
+  "Longitud": -77.0102819,
+  "Dirección": "JR. LOS AMAUTAS N° 221 URB. ZARATE",
+  "GIro": "IMPRESIONES, COPIAS Y VENTA ART. DE OFICINA"
+ },
+ {
+  "Latitud": -12.0278869,
+  "Longitud": -77.0095975999999,
+  "Dirección": "AV. GRAN CHIMU N° 298 URB. ZARATE",
+  "GIro": "SERVICIOS PROFESIONALES DIVERSOS"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "MZ. E LT. 8 Y 2 URB. CANTO GRANDE",
+  "GIro": "TALLER DE MECANICA, PLAYA DE ESTACIONAMIENTO, CONTRATISTAS GENERALES (OFICINA ADMINISTRATIVA)"
+ },
+ {
+  "Latitud": -12.0271854,
+  "Longitud": -77.0062267,
+  "Dirección": "AV. GRAN CHIMU N° 461-463, MZ F-1 LT 28 - 1ER, 2DO Y 3ER PISO - URB. ZARATE",
+  "GIro": "FINANCIERA"
+ },
+ {
+  "Latitud": -12.0253781,
+  "Longitud": -77.0012395,
+  "Dirección": "AV. GRAN CHIMU N° 739 - URB. ZARATE (2DO PISO)",
+  "GIro": "POLICLINICO"
+ },
+ {
+  "Latitud": -12.0243399,
+  "Longitud": -76.9954721,
+  "Dirección": "AV. GRAN CHIMU N° 1035 DPTO. A MZ. H-5 LT. 51 - URB. ZARATE",
+  "GIro": "SALON DE BELLEZA UNISEX, ART. DE TOCADOR"
+ },
+ {
+  "Latitud": -12.0302498,
+  "Longitud": -77.0108425,
+  "Dirección": "AV. GRAN CHIMU N° 132 - ZARATE",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -12.0155791,
+  "Longitud": -76.9931849,
+  "Dirección": "CALLE LOS REGADORES MZ. A LT. 19 URB. ZARATE INDUSTRIAL",
+  "GIro": "BAZAR, LIBRERIA"
+ },
+ {
+  "Latitud": -12.025355,
+  "Longitud": -77.002134,
+  "Dirección": "AV. PIRAMIDE DEL SOL N° 431 - URB ZARATE",
+  "GIro": "CHIFA, RESTAURANTE"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. LAS FLORES N° 113 MZ. DL-1 LT. 15 URB. UNIDAD 6 DE CANTO GRANDE",
+  "GIro": "RESTAURANTE, POLLERIA, PARRILLAS (LICORES COMO COMPLEMENTO)"
+ },
+ {
+  "Latitud": -11.9815915,
+  "Longitud": -77.0055337,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA MZ. K-15 LT. 18-A PROGRAMA CIUDAD MARISCAL CACERES III JOSE CARLOS MARIATEGUI",
+  "GIro": "ENSEÑANZA PREESCOLAR, PRIMARIA, SECUNDARIA PRIVADA"
+ },
+ {
+  "Latitud": -12.1529515,
+  "Longitud": -77.0077704999999,
+  "Dirección": "MZ. K LT. 4 PROGRAMA CIUDAD MARISCAL CACERES SECTOR 1 3ERA Y 4TA ETAPA",
+  "GIro": "BOTICA, BAZAR, PERFUMERIA"
+ },
+ {
+  "Latitud": -12.0220048,
+  "Longitud": -77.0039062,
+  "Dirección": "AV. PIRAMIDE DEL SOL MZ. F LT. 12, 13 Y 16 URB. AZCARRUNZ BAJO",
+  "GIro": "CONTRATISTAS GENERALES (OFICINA ADMINISTRATIVA)"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "SV. INTERIOR VIV. 1 MZ. F2 PP.JJ. EL ARENAL DE CANTO GRANDE",
+  "GIro": "BOTICA, BAZAR"
+ },
+ {
+  "Latitud": -11.9712217,
+  "Longitud": -76.9924439999999,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 484 URB. CANTO GRANDE",
+  "GIro": "CHIFA"
+ },
+ {
+  "Latitud": -11.9888409,
+  "Longitud": -77.0152444,
+  "Dirección": "AV. CANTO GRANDE 2464 MZ. C LT. 28 APV. SANTA ELIZABETH",
+  "GIro": "LAVADO DE AUTOS Y VENTA DE LUBRICANTES"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. D11 LT. 3 PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -8.05526699999999,
+  "Longitud": -79.0735089,
+  "Dirección": "SV MZ. N-11 LT. 04 AA.HH. SU SANTIDAD JUAN PABLO II",
+  "GIro": "MERCADO MINORISTA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "SV. MZ. D-1 LT. 09 APV. LOS ALAMOS DE CANTO GRANDE",
+  "GIro": "OFICINA ADMINISTRATIVA"
+ },
+ {
+  "Latitud": -12.0984471,
+  "Longitud": -76.9624948,
+  "Dirección": "MZ. F LT. 15 SECCION C1 2DO PISO PP.JJ. SEÑOR DE LOS MILAGROS",
+  "GIro": "VENTA DE ARTICULOS OPTICOS"
+ },
+ {
+  "Latitud": -12.0038643,
+  "Longitud": -77.0125219999999,
+  "Dirección": "AV FLORES DE PRIMAVERA N° 1501 MZ 120 LT 26 - 1ER PISO - COOP LAS FLORES",
+  "GIro": "VENTA DE ARTICULOS OPTICOS"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV BOSQUE, EL N° 426-428-430 MZ C - PARC. SEM. R CANTO GRANDE",
+  "GIro": "BODEGA, BAZAR, LICORES PARA LLEVAR (SIN CONSUMO)"
+ },
+ {
+  "Latitud": -12.0042212,
+  "Longitud": -77.0088442999999,
+  "Dirección": "JR. LAS OXALIDAS 2077-2081 - APV SAN HILARION",
+  "GIro": "EDUCACION INICIAL"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "AV CENTRAL MZ F5 LT 7 PROGRAMACION CIUDAD MARISCAL CACERES",
+  "GIro": "BOTICA BAZAR PERFUMERIA"
+ },
+ {
+  "Latitud": -11.9983709,
+  "Longitud": -77.0049511,
+  "Dirección": "JR. LAS BLENDAS N° 400 APV. INCA MANCO CAPAC",
+  "GIro": "VENTA DE REPUESTOS, VEHICULOS MENORES Y SERVICIO"
+ },
+ {
+  "Latitud": -12.0984471,
+  "Longitud": -76.9624948,
+  "Dirección": "MZ. F LT. 15 SECCION C1 2DO PISO PP.JJ. SEÑOR DE LOS MILAGROS",
+  "GIro": "VENTA DE ARTICULOS OPTICOS"
+ },
+ {
+  "Latitud": -11.9973531,
+  "Longitud": -77.0108683,
+  "Dirección": "AV. LOS POSTES OESTE N° 146 MZ. U LT. 22 APV SAN HILARION",
+  "GIro": "RESTAURANT, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0280427,
+  "Longitud": -77.0095106,
+  "Dirección": "JR. PACHAMAMA N° 339 URB. ZARATE",
+  "GIro": "BODEGA, BAZAR"
+ },
+ {
+  "Latitud": -11.993917,
+  "Longitud": -77.1092986,
+  "Dirección": "MZ. D LT. 20 - URB. MAEHARA",
+  "GIro": "BODEGA, LICORES PARA LLEVAR"
+ },
+ {
+  "Latitud": -11.985774,
+  "Longitud": -77.0066439,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2770-2770A-2772 MZ. I-1 LT. 10 URB. SAN CARLOS",
+  "GIro": "RESTAURANT, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -11.9749085,
+  "Longitud": -77.0004074,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 3349 URB. LOS PINOS",
+  "GIro": "RESTAURANT, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "AV. A MZ. J SUB LOTE 3 TDA. T2-05 SEGUNDO PISO - URB. CAMPOY",
+  "GIro": "CONTRATISTA GENERALES (OFICINAS)"
+ },
+ {
+  "Latitud": -11.9953828,
+  "Longitud": -77.0009528,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 2153-2159-2169, MZ. F-1 LT. 14 URB. LA HUAYRONA",
+  "GIro": "TALLER DE REPARACION DE MOTOCICLETAS Y VENTA DE REPUESTOS"
+ },
+ {
+  "Latitud": 35.8800364,
+  "Longitud": -106.3031138,
+  "Dirección": "AV. LOS ALAMOS MZ. N LT. 23 PARC. SEM. R. CANTO GRANDE",
+  "GIro": "AVICOLA BENEFICIO DE AVES"
+ },
+ {
+  "Latitud": -11.9579034,
+  "Longitud": -76.9861438,
+  "Dirección": "AV. WIESSE N°4400 MZ. A-1 LT. 37 - PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -9.189967,
+  "Longitud": -75.015152,
+  "Dirección": "MZ 14 LT 10 PP.JJ. ARRIBA PERU",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -33.6754417,
+  "Longitud": -65.4580687999999,
+  "Dirección": "MZ D LT 1 PUEBLO JOVEN VILLA MERCEDES",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "JR EL COLLAR MZ B LT 12 URB. UNIDAD 12 DE CANTO GRANDE",
+  "GIro": "PLAYA DE ESTACIONAMIENTO"
+ },
+ {
+  "Latitud": -12.0125332,
+  "Longitud": -76.9808676999999,
+  "Dirección": "MZ B LT 2-3 URB MANGOMARCA ALTA",
+  "GIro": "VENTA DE TELAS Y TEJIDOS"
+ },
+ {
+  "Latitud": -18.0117717,
+  "Longitud": -70.2478221,
+  "Dirección": "AV. SAN MARTIN N° 710",
+  "GIro": "POLLADAS Y PARRILLAS"
+ },
+ {
+  "Latitud": -11.9968096,
+  "Longitud": -77.0101052999999,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA N°2121 APV SAN HILARION",
+  "GIro": "CABINAS DE INTERNET"
+ },
+ {
+  "Latitud": 35.8800364,
+  "Longitud": -106.3031138,
+  "Dirección": "AV. REPUBLICA DE POLONIA N°1192 MZ B LT 33 APV LOS ALAMOS",
+  "GIro": "RESTAURANT CEVICHERIA"
+ },
+ {
+  "Latitud": 13.8936291,
+  "Longitud": -90.4809097999999,
+  "Dirección": "AV A MZ. A LT. 1 ASOC. VIV. MONTERRICO DE CAMPOY",
+  "GIro": "FERRETERIA Y VENTA DE MATERIAL DE CONSTRUCCION"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "AV. D MZ. B LT. 02 ASOC. VIV. MONTERRICO DE CAMPOY",
+  "GIro": "ZAPATERIA"
+ },
+ {
+  "Latitud": -12.0238762,
+  "Longitud": -76.9731272,
+  "Dirección": "SV. MZ. LL LT. 5 URB. LOTIZACION CAMPOY",
+  "GIro": "BODEGA, LIBRERIA, BAZAR"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "MZ. C LT. 5 AGRUP. FAMI LOS EUCALIPTOS DE CAMPOY",
+  "GIro": "RESTAURANTE, LICOR COMO COMPLEMENTARIO"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "AV. PRINCIPAL MZ. G LT. 11 ASOC. VIV MONTERRICO DE CAMPOY",
+  "GIro": "VIDRIERIA"
+ },
+ {
+  "Latitud": -12.0287786,
+  "Longitud": -77.0111385,
+  "Dirección": "PJE. QUIPUCAMAYOC N° 131 MZ. B1 LT. 14 URB. ZARATE",
+  "GIro": "TIPEOS, COPIAS IMPRESIONES Y RECARGAS DE TINTAS"
+ },
+ {
+  "Latitud": -12.0002877,
+  "Longitud": -77.0107915999999,
+  "Dirección": "JR. LOS HUERTOS N° 1961 MZ. V LT. 27 APV. SAN HILARION",
+  "GIro": "FRUTERIA Y VERDULERIA"
+ },
+ {
+  "Latitud": -12.0269906,
+  "Longitud": -77.0053874,
+  "Dirección": "AV. GRAN CHIMU N° 511, TIENDA 04 - URB ZARATE",
+  "GIro": "CAFETERIA"
+ },
+ {
+  "Latitud": -12.02659,
+  "Longitud": -77.0033887,
+  "Dirección": "JR. LOS PUTUTOS N° 289 URB. ZARATE",
+  "GIro": "PELUQUERIA"
+ },
+ {
+  "Latitud": -12.0246932,
+  "Longitud": -76.9978351,
+  "Dirección": "AV. GRAN CHIMU N° 935 - URB. ZARATE",
+  "GIro": "VENTA DE CELULARES Y ACCESORIOS, SERVICIO TECNICO, BEBIDAS GASEOSAS, GOLOSINAS"
+ },
+ {
+  "Latitud": -12.0246423,
+  "Longitud": -76.9977605999999,
+  "Dirección": "AV. GRAN CHIMU N° 939 URB. ZARATE",
+  "GIro": "VENTA DE ACCESORIOS PARA CELULARES, SERVICIO TECNICO"
+ },
+ {
+  "Latitud": -12.0155791,
+  "Longitud": -76.9931849,
+  "Dirección": "CALLE LOS REGADORES B LT. 13 3ER. PISO - URB ZARATE INDUSTRIAL",
+  "GIro": "SERVICIOS DE AMBULANCIAS Y ACTIVIDAD DE ENFERMERIA"
+ },
+ {
+  "Latitud": -12.0277448,
+  "Longitud": -77.007674,
+  "Dirección": "JR. LOS CHULPAS N° 288 MZ. P-1 LT. 01 URB. ZARATE",
+  "GIro": "SERVICIOS MEDICO Y CLINICOS"
+ },
+ {
+  "Latitud": -12.0271439,
+  "Longitud": -77.0063596999999,
+  "Dirección": "AV. GRAN CHIMU N° 457-459 DPTO A -URB ZARATE",
+  "GIro": "VENTA DE APARATOS TELEFONICOS Y ACCESORIOS, VENTA DE COMPUTADORAS Y SERVICIO TECNICO"
+ },
+ {
+  "Latitud": -12.0162957,
+  "Longitud": -76.9962132,
+  "Dirección": "CALLE LOS TORDOS 1132 - URB. HORIZONTE DE ZARATE",
+  "GIro": "AGENCIA DE VIAJES"
+ },
+ {
+  "Latitud": -12.0166931,
+  "Longitud": -76.9990274,
+  "Dirección": "AV. LURIGANCHO N° 993-997-999-999A URB. ZARATE INDUSTRIAL MA-102",
+  "GIro": "VENTA DE PRODUCTOS DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9933583,
+  "Longitud": -77.1104605,
+  "Dirección": "MZ. C LT. 11 Y 12 AA.HH. KAWACHI",
+  "GIro": "ENSEÑANZA PREESCOLAR, PRIMARIA Y SECUNDARIA PRIVADA"
+ },
+ {
+  "Latitud": -11.9917238,
+  "Longitud": -77.0139841,
+  "Dirección": "AV. JOSE BASADRE OESTE N° 397 DPTO 399 MZ A LT 33 - URB SAN IGNACIO - 1ER Y 2DO PISO",
+  "GIro": "PARRILLAS, POLLERIA"
+ },
+ {
+  "Latitud": -11.2873344,
+  "Longitud": -40.2744873,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 1160 URB. RESIDENCIAL HORIZONTE",
+  "GIro": "ACADEMIA DE FUTBOL-CAMPO DEPORTIVO"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. CANTO GRANDE N° 3647 MZ. H 4 LT. 15 PARC. SEMI R. CANTO GRANDE",
+  "GIro": "FINANCIERA"
+ },
+ {
+  "Latitud": -11.9897185,
+  "Longitud": -77.0010266,
+  "Dirección": "MZ. F LT. 24 URB. SAN GABRIEL",
+  "GIro": "SERVICIO DE LAVADO DE VEHICULOS"
+ },
+ {
+  "Latitud": 18.4665266,
+  "Longitud": -66.1117754,
+  "Dirección": "CALLE SAN FRANCISCO 784, MZ B LT 08 - URB AZCARRUNZ",
+  "GIro": "ELABORACION DE PRODUCTOS DE MOLINERIA - ALMACEN - ELABORACION DE PRODUCTOS - ALIMENTOS PARA EL DESAYUNO"
+ },
+ {
+  "Latitud": -11.9983515,
+  "Longitud": -77.0131941,
+  "Dirección": "AV. LOS POSTES OESTE MZ. U LT. 27-A - APV SAN HILARION",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -7.4188494,
+  "Longitud": -77.010385,
+  "Dirección": "MZ. K2 LT. 3 UNI. INMOB. N° 1 - PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -12.0245172,
+  "Longitud": -76.9934025,
+  "Dirección": "AV. GRAN CHIMU N° 1114 MZ. O-5 LT. 01 URB. ZARATE",
+  "GIro": "BODEGA, BAZAR, LIBRERIA"
+ },
+ {
+  "Latitud": -12.0229346,
+  "Longitud": -76.9864752,
+  "Dirección": "JR. CAJAMARQUILLA N° 1578 MZ. B-6 LT. 30 URB. ZARATE",
+  "GIro": "BODEGA Y LICORES ENVASADOS"
+ },
+ {
+  "Latitud": -12.0238762,
+  "Longitud": -76.9731272,
+  "Dirección": "MZ. LL LT. 04 LOTIZACION CAMPOY",
+  "GIro": "LIBRERIA BAZAR BODEGA LICORES PARA LLEVAR (SIN CONSUMO)"
+ },
+ {
+  "Latitud": -16.3454877,
+  "Longitud": -71.5540082,
+  "Dirección": "AV. C MZ. LL LT. 04 SUB LOTE 3 CAMPOY",
+  "GIro": "BODEGA, BAZAR"
+ },
+ {
+  "Latitud": -12.004214,
+  "Longitud": -77.0125542,
+  "Dirección": "JR LAS MARTICARIAS N° 617 MZ 115 LT 13 - COOP LAS FLORES",
+  "GIro": "POLLOS A LA BRASA (POLLERIA), CHIFA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. P-15 LT. 02 - PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "LICORERIA"
+ },
+ {
+  "Latitud": -12.0060457,
+  "Longitud": -77.0670604,
+  "Dirección": "SV. MZ. E LT. 8 COOP. VIVI EL VALLE",
+  "GIro": "LIBRERIA BAZAR (VENTA DE PRODUCTOS ELECTRONICOS)"
+ },
+ {
+  "Latitud": -12.0237972,
+  "Longitud": -76.997427,
+  "Dirección": "JR. LOS VARAYOC S\/N MZ. G-5 LT. 23 URB. ZARATE SECTOR B-2",
+  "GIro": "VENTA DE PRODUCTOS DIVERSOS (COLORANTES E INSUMOS TEXTILES)"
+ },
+ {
+  "Latitud": -12.0220071,
+  "Longitud": -77.0125233,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 438 MZ. 15 LT. 02 - OOP. LAS FLORES",
+  "GIro": "RESTAURANT, CEVICHERIA, LICORES COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": 34.0549076,
+  "Longitud": -118.242643,
+  "Dirección": "SV. MZ. D LT. 35 URB. LOS ANGELES CALLE 2",
+  "GIro": "TALLER DE CONFECCIONES Y OFICINA ADMINISTRATIVA"
+ },
+ {
+  "Latitud": -12.0277983,
+  "Longitud": -77.0089794,
+  "Dirección": "AV. GRAN CHIMU N° 328 MZ. O-1 LT. O-5 URB. ZARATE",
+  "GIro": "PELUQUERIA, BAZAR"
+ },
+ {
+  "Latitud": -12.0267667,
+  "Longitud": -77.0064515999999,
+  "Dirección": "JR. LOS QUIPUS N° 280 URB. ZARATE",
+  "GIro": "BODEGA, LICORES PARA LLEVAR"
+ },
+ {
+  "Latitud": -12.0245526,
+  "Longitud": -76.9966456,
+  "Dirección": "AV. GRAN CHIMU SECCION N° 01 PRIMER PISO MZ. F-1 LT. 32 URB. ZARATE",
+  "GIro": "BAZAR ( VENTA DE ACCESORIOS PARA CELULAR)"
+ },
+ {
+  "Latitud": -11.9940467,
+  "Longitud": -77.0039062,
+  "Dirección": "MZ. B LT. 09 COOP. LA HUAYRONA",
+  "GIro": "BODEGA - BAZAR"
+ },
+ {
+  "Latitud": -11.9961854,
+  "Longitud": -77.0060417999999,
+  "Dirección": "AV. LOS POSTES ESTE N° 357 MZ. D-1 LT. 18 COOP. LA HUAYRONA",
+  "GIro": "CEVICHERIA - RESTAURANT"
+ },
+ {
+  "Latitud": -11.9999904,
+  "Longitud": -77.009261,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1981 - MZ Z-1 LT 19 - APV SAN HILARION",
+  "GIro": "VENTA DE SANITARIO - MAYOLICAS"
+ },
+ {
+  "Latitud": -11.9954074,
+  "Longitud": -77.0149501,
+  "Dirección": "AV. CANTO GRANDE N° 2100 MZ. O LT. 20 URB. SAN IGNACIO",
+  "GIro": "CASAS DE JUEGOS DE AZAR APUESTAS DEPORTIVAS"
+ },
+ {
+  "Latitud": -12.00077,
+  "Longitud": -77.0090254,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA 1947-A MZ. Z LT. 23-A APV. SAN HILARION",
+  "GIro": "OFICINA ADMINISTRATIVA"
+ },
+ {
+  "Latitud": -11.9976258,
+  "Longitud": -77.0159503,
+  "Dirección": "AV. CANTO GRANDE N° 2052 - 2098 MZ. B LT. 3 APV. SAN HILARION",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9977947,
+  "Longitud": -77.0109214,
+  "Dirección": "AV. LOS POSTES OESTE N° 165 MZ. E LT. 05 APV. SAN HILARION",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9966315,
+  "Longitud": -77.0096064,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2114 MZ T LT. 19 APV. SAN HILARION",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "MZ. I1 LT. 18 PP. JJ. EL ARENAL DE CANTO GRANDE",
+  "GIro": "PELUQUERIA (CANINA)"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "MZ. G-3 LT. 01 CDRA. 1 PP.JJ. EL ARENAL DE CANTO GRANDE",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -11.9475252,
+  "Longitud": -76.9800990999999,
+  "Dirección": "JR. INTERMEDIO MZ. B-18 LT. 9 PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "LAVANDERIA"
+ },
+ {
+  "Latitud": -11.9475252,
+  "Longitud": -76.9800990999999,
+  "Dirección": "JR. INTERMEDIO MZ. B-18 LT. 9 PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "LAVANDERIA"
+ },
+ {
+  "Latitud": -11.9734406,
+  "Longitud": -77.0073481,
+  "Dirección": "AV. COMERCIAL SUR N° 112 URB. SAN RAFAEL",
+  "GIro": "SERVICIOS DE MASAJES FACIALES, ARREGLOS DE MANOS Y PIES PODOLOGIA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. H5 LT. 5 PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "PRESTACION DE CONSULTORIA Y ASESORAMIENTO EN GENERAL"
+ },
+ {
+  "Latitud": -12.025048,
+  "Longitud": -76.9993619,
+  "Dirección": "AV. GRAN CHIMU N° 851 MZ. S -3 LT. 34 URB. ZARATE",
+  "GIro": "ZAPATERIA, BAZAR, VENTA DE ARTICULOS DEPORTIVOS"
+ },
+ {
+  "Latitud": -12.1503297,
+  "Longitud": -77.0146180999999,
+  "Dirección": "MZ. A LT. 7 LT. 8 1ER. PISO URB. SAN IGNACIO AMPLIACION",
+  "GIro": "ELABORACION DE MEZCLA EN POLVO PARA GELATINA, MAZAMORRA Y FLAN"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "MZ. M LT. 13 P.J CRUZ DE MOTUPE",
+  "GIro": "PANADERIA, PASTELERIA, BODEGA, FUENTE DE SODA"
+ },
+ {
+  "Latitud": -12.0059533,
+  "Longitud": -77.0117495,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1423 DPTO. A MZ. 99 LT. 36 - COOP. LAS FLORES",
+  "GIro": "FERRERIA Y VENTA DE MATERIALES DE CONSTRUCCION"
+ },
+ {
+  "Latitud": 47.574064,
+  "Longitud": -70.398597,
+  "Dirección": "SV. UND. INMOB. N° 2 MZ. W LT. 30A APV. SAN HILARION 2DO. PISO",
+  "GIro": "CONSULTORIO MEDICINA GENERAL"
+ },
+ {
+  "Latitud": -12.0192576,
+  "Longitud": -76.9555134,
+  "Dirección": "SV. MZ. A LT. 03 AA.HH. SAN JUAN DE CAMPOY",
+  "GIro": "TALLER DE MECANICA-VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -11.9994705,
+  "Longitud": -77.0138334,
+  "Dirección": "AV. LAS FLORES DE PRIMAVERA N° 1766 MZ. O-1 LT. 17 APV. SAN HILARION",
+  "GIro": "BOTICA, BAZAR, PERFUMERIA"
+ },
+ {
+  "Latitud": -4.5884784,
+  "Longitud": -81.2675428,
+  "Dirección": "MZ. C LT. 19 APV. SANTA ELIZABETH",
+  "GIro": "VENTA DE PASTELES, TORTAS Y JUGUERIA"
+ },
+ {
+  "Latitud": -12.0073683,
+  "Longitud": -77.0120728,
+  "Dirección": "JR. LAS VERDOLAGAS N° 684 COOP. LAS FLORES 1ER. PISO",
+  "GIro": "COMIDAS RAPIDAS"
+ },
+ {
+  "Latitud": -9.189967,
+  "Longitud": -75.015152,
+  "Dirección": "MZ. 14 LT. 10 PP.JJ. ARRIBA PERU",
+  "GIro": "VENTA DE COMIDA AL PASO"
+ },
+ {
+  "Latitud": -9.189967,
+  "Longitud": -75.015152,
+  "Dirección": "MZ. 14 LT. 10 PP.JJ. ARRIBAA PERU",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0057753,
+  "Longitud": -77.0122021,
+  "Dirección": "JR. LAS CALENDULAS MZ. 81 SUB LT. 21-B COOP. LAS FLORES",
+  "GIro": "FUENTE DE SODA"
+ },
+ {
+  "Latitud": -11.9994523,
+  "Longitud": -77.0001655,
+  "Dirección": "AV. SANTA ROSA S-3 LT. 32 APV. INCA MANCO CAPAC",
+  "GIro": "VENTA DE ARTICULOS OPTICOS, BAZAR"
+ },
+ {
+  "Latitud": -12.0269993,
+  "Longitud": -77.0074147999999,
+  "Dirección": "JR. WIRACOCHA N° 395 MZ. G-1 SUB LT. 23A URB. ZARATE",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0283661,
+  "Longitud": -77.0107493,
+  "Dirección": "AV. GRAN CHIMU N° 183 MZ B-1 LT 22 - URB ZARATE",
+  "GIro": "SALON, BELLEZA, SPA"
+ },
+ {
+  "Latitud": -12.0245261,
+  "Longitud": -76.9935802999999,
+  "Dirección": "AV. GRAN CHIMU N° 1108 MZ. S LT. 26 URB. ZARATE",
+  "GIro": "BODEGA, BAZAR, LIBRERIA"
+ },
+ {
+  "Latitud": -12.0146762,
+  "Longitud": -76.9967071,
+  "Dirección": "AV. 13 DE ENERO MZ. A LT. 16 URB. RESIDENCIAL HORIZONTE DE ZARATE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "SV. MZ. Ñ3B LT. 14A ASOC. VIV. BELLAS ARTES DE CAMPOY",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -14.1969482,
+  "Longitud": -49.3381708999999,
+  "Dirección": "MZ. B LT. 12 AA.HH. ALTO HORIZONTE",
+  "GIro": "BODEGA, BAZAR"
+ },
+ {
+  "Latitud": -12.0220048,
+  "Longitud": -77.0039062,
+  "Dirección": "AV. LOS TUSILAGOS N° 423 LT. OU APV. URBANIZADORA AZCARRUNZ",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -12.0272706,
+  "Longitud": -77.0055900999999,
+  "Dirección": "AV. GRAN CHIMU N° 498 - URB ZARATE",
+  "GIro": "ACADEMIA DE KARATE Y VENTA DE ARTICULOS DEPORTIVOS"
+ },
+ {
+  "Latitud": -11.8646794,
+  "Longitud": -77.131185,
+  "Dirección": "MZ. S LT. 5 CAMPOY - APV. COMP. TERRENOS DE CAMPOY",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "MZ Y SUB LOTE 5D APV COMP. TERRENOS DE CAMPOY",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -11.9815915,
+  "Longitud": -77.0055337,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA MZ. G-1 LT. 05 APV. COMPRADORES DE TERRENOS DE CAMPOY",
+  "GIro": "BODEGA Y LIBRERIA"
+ },
+ {
+  "Latitud": -12.0238762,
+  "Longitud": -76.9731272,
+  "Dirección": "CALLE LOS PINOS MZ. S LT. 03 URB. LOTIZACION CAMPOY",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0979613,
+  "Longitud": -76.9620947,
+  "Dirección": "MZ. A LOTE. 02 - AA.HH. SAN JUAN DE PACHECO DE CAMPOY",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "MZ. G LT. 01 CAMPOY - COOP.  VIV. SAN MIGUEL DE PALLANCHACRA LTDA 50",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0207768,
+  "Longitud": -77.0015237,
+  "Dirección": "AV. PIRAMIDE DEL SOL MZ. G LT. 01 URB. AZCARRUNZ BAJO",
+  "GIro": "VENTA DE ARTEFACTOS ELECTRODOMENTICOS"
+ },
+ {
+  "Latitud": -12.0231833,
+  "Longitud": -77.0016593,
+  "Dirección": "AV. PIRAMIDE DEL SOL N° 560 MZ M-3 LT 12 - URB ZARATE",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -12.0231833,
+  "Longitud": -77.0016593,
+  "Dirección": "AV. PIRAMIDE DEL SOL N° 560 - MZ M-3 LT 12 - URB ZARATE",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -12.000263,
+  "Longitud": -77.0091640999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA 1977 MZ Z LT 19-A - APV SAN HILARION",
+  "GIro": "VENTA DE SANITARIOS\/ MAYOLICAS"
+ },
+ {
+  "Latitud": -12.0000471,
+  "Longitud": -77.0081894,
+  "Dirección": "JR. LAS AMATISTAS N° 124, MZ LL-2 LT 04 - SAN HILARION",
+  "GIro": "LIBRERIA, BAZAR, COPIAS, TIPEOS"
+ },
+ {
+  "Latitud": -12.0161829,
+  "Longitud": -76.9991453,
+  "Dirección": "AV. LURIGANCHO N° 997-999 MA-002 NIVEL 1 - URB ZARATE INDUSTRIAL",
+  "GIro": "VENTAS DE APARATOS TELEFONICOS"
+ },
+ {
+  "Latitud": -12.0130859,
+  "Longitud": -77.0053806,
+  "Dirección": "AV. LOS TUSILAGOS OESTE N° 281 URB. LOS JARDINES DE SAN JUAN MODULO 2",
+  "GIro": "VENTA DE APARATOS TELEFONICOS"
+ },
+ {
+  "Latitud": -12.0244491,
+  "Longitud": -76.9921719,
+  "Dirección": "AV. GRAN CHIMU 1162-A URB. ZARATE",
+  "GIro": "HELADERIA"
+ },
+ {
+  "Latitud": -12.0248023,
+  "Longitud": -77.0018616999999,
+  "Dirección": "AV. PIRAMIDE DEL SOL N° 452-A -URB ZARATE",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -12.0265767,
+  "Longitud": -77.0040321,
+  "Dirección": "JR. EL LANZON N° 288 - 292 DPTO. 290 - URB. ZARATE",
+  "GIro": "SALON SPA"
+ },
+ {
+  "Latitud": -12.0253845,
+  "Longitud": -77.0094240999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 308 - URB CHACARILLA DE OTERO",
+  "GIro": "VENTA DE REPUESTOS PARA MOTOCICLETAS"
+ },
+ {
+  "Latitud": -12.0179046,
+  "Longitud": -76.9989344,
+  "Dirección": "AV. PORTADA DEL SOL N° 901 URB. AZCARRUNZ",
+  "GIro": "OFICINA ADMINISTRATIVA, ALMACEN Y DISTRIBUCION DE PRODUCTOS FARMACEUTICOS Y DISPOSITIVOS MEDICOS"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "SV. MZ. A LT. 13 APV. SAN HILARION DE CAMPOY",
+  "GIro": "CENTRO DE ESTIMULACION TEMPRANA"
+ },
+ {
+  "Latitud": -12.0073688,
+  "Longitud": -77.0083815,
+  "Dirección": "AV. JARDINES OESTE N° 225 M LT. 2 URB. LAS FLORES DE LIMA",
+  "GIro": "RESTAURANT Y LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0282217,
+  "Longitud": -77.0067604,
+  "Dirección": "JR. LOS QUIPUS N° 245, MZ Q-1 LT 01 - URB ZARATE",
+  "GIro": "CHIFA, RESTAURANT"
+ },
+ {
+  "Latitud": -12.0253243,
+  "Longitud": -76.9998928999999,
+  "Dirección": "AV. GRAN CHIMU N° 822-824-824A MZ. B4-LT.5 URB. ZARATE",
+  "GIro": "CASA DE JUEGOS DE AZAR Y APUESTA - CASINO DE JUEGO -RESTAURANT"
+ },
+ {
+  "Latitud": -12.0050009,
+  "Longitud": -77.0136517,
+  "Dirección": "JR. LOS EBANOS MZ. I LT. 21 APV SAN HILARION",
+  "GIro": "PANADERIA , PASTELERIA Y BODEGA"
+ },
+ {
+  "Latitud": 11.2403547,
+  "Longitud": -74.2110227,
+  "Dirección": "SV. MZ. P-2 LT. 24 1ER. PISO COOP. SANTA MARTHA",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9815915,
+  "Longitud": -77.0055337,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA ALT. AV. CANTO REY",
+  "GIro": "TRANSPORTE URBANO DE PASAJEROS-FERROCARRIL"
+ },
+ {
+  "Latitud": -11.9815915,
+  "Longitud": -77.0055337,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA ALT. AV. EL SOL",
+  "GIro": "TRANSPORTE URBANO DE PASAJEROS-FERROCARRIL"
+ },
+ {
+  "Latitud": -12.0321356,
+  "Longitud": -77.0121396,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA ALT. OVALO DE ZARATE",
+  "GIro": "TRANSPORTE URBANO DE PASAJEROS-FERROCARRIL"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "JR. INTERMEDIO N° 296 DPTO. A MZ. P-2 LT. 15 - PROGRAMA CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "LAVANDERIA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "JR. LA HERMITA MZ. E LT. 01 PARC. SEM. CANTO GRANDE UNIDAD 12",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -11.974533300000001,
+  "Longitud": -77.0087653,
+  "Dirección": "AV. CANTO GRANDE N° 3197 MZ. A1 LT. 21 SUB LOTE 21 B - URB. CANTO NUEVO",
+  "GIro": "PASTELERIA (VENTA), FUENTE DE SODA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. B-20 LT. 26 PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -11.9772331,
+  "Longitud": -77.0006985999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA MZ. K-2 LT. 2-A APV. GARAGAY CANTO REY",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -12.0384329,
+  "Longitud": -76.9570244,
+  "Dirección": "AV. EL SOL DPTO. 162 MZ. G LT. 5 - APV GANIMEDES",
+  "GIro": "CASA DE JUEGOS DE AZAR Y APUESTAS DEPORTIVAS"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "SV.  MZ. D LT. 15 - PUEBLO JOVEN CRUZ DE MOTUPE",
+  "GIro": "ESPECTACULOS DE CARACTER RECREATIVO (JUEGOS DE AZAR Y APUESTAS)"
+ },
+ {
+  "Latitud": -12.0126942,
+  "Longitud": -77.0298641999999,
+  "Dirección": "MZ. A LT. 28 AA.HH. JESUS OROPEZA CHONTA",
+  "GIro": "FRUTERIA"
+ },
+ {
+  "Latitud": -12.0260624,
+  "Longitud": -76.9979421,
+  "Dirección": "JR. CHAVIN DE HUANTAR N° 888 - URB. ZARATE",
+  "GIro": "VENTA DE FRUTAS"
+ },
+ {
+  "Latitud": -11.9772553,
+  "Longitud": -76.99183120000001,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 664 MZ. F LT. 06 - URB. CANTO GRANDE",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "CALLE LAS GARDENIAS UNID. INMOB. MZ. U LT. 11 URB. CANTO GRANDE UNIDAD 6",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -34.5867976,
+  "Longitud": -58.3863909,
+  "Dirección": "MZ. A LT. 14 - APV. BUENOS AIRES",
+  "GIro": "FINANCIERA"
+ },
+ {
+  "Latitud": -11.9835445,
+  "Longitud": -77.0092337999999,
+  "Dirección": "AV. EL SOL N° 235 MZ. G LT. 15 - URB. CANTO GRANDE",
+  "GIro": "LIBRERIA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "SV. MZ. G-3 LT. 1 - PUE. JOVEN EL ARENAL DE CANTO GRANDE",
+  "GIro": "BODEGA, BAZAR, LICORES PARA LLEVAR"
+ },
+ {
+  "Latitud": -12.0122228,
+  "Longitud": -77.0115402,
+  "Dirección": "AV. FLORES DE PRIMAVERA MZ. 121 SUBLOTE 19B COOP. LAS FLORES",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "MZ S LT 1 - APV COMPRADORES TERRENOS DE CAMPOY",
+  "GIro": "TALLER DE ACABADOS GRAFICOS"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV ALAMOS, LOS MZ N LT 23 - PARC. SEM. R CANTO GRANDE",
+  "GIro": "AVICOLA BENEFICIO DE AVES"
+ },
+ {
+  "Latitud": -12.0085985,
+  "Longitud": -77.0070219,
+  "Dirección": "JR. LOS HUERTOS N° 225 MZ. Q LT. 18 URB. LAS FLORES DE LIMA",
+  "GIro": "OFICINA ADMINISTRATIVA DE IMPORTACION"
+ },
+ {
+  "Latitud": -12.0080047,
+  "Longitud": -77.0098715,
+  "Dirección": "AV. JARDINES OESTE N° 233, MZ K LT 14 - URB. FLORES DE LIMA",
+  "GIro": "BOTICA, BAZAR REGALOS"
+ },
+ {
+  "Latitud": -12.00712,
+  "Longitud": -77.0078372,
+  "Dirección": "AV. JARDINES OESTE 181 MZ U LT 4 - URB LAS FLORES DE LIMA",
+  "GIro": "TERAPIA FISICA"
+ },
+ {
+  "Latitud": -12.0004828,
+  "Longitud": -77.0001200999999,
+  "Dirección": "AV. SANTA ROSA N° 1785 - URB INCA MANCO CAPAC",
+  "GIro": "VETERINARIA"
+ },
+ {
+  "Latitud": -11.9999355,
+  "Longitud": -76.9995842,
+  "Dirección": "JR. LOS MINERALES N° 714 APV. INCA MANCO CAPAC",
+  "GIro": "BODEGA, BEBIDAS GASEOSAS, LICOR PARA LLEVAR(SIN CONSUMO)"
+ },
+ {
+  "Latitud": -12.0013141,
+  "Longitud": -76.9998504,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 1743 APV. INCA MANCO CAPAC",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.8201806,
+  "Longitud": -75.3936808,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA 2301 MZ. B LT. 49 - COOP EL MANTARO",
+  "GIro": "BODEGA, BAZAR, LICORES PARA LLEVAR"
+ },
+ {
+  "Latitud": 19.462881,
+  "Longitud": -102.0668294,
+  "Dirección": "JR. LOS ZAFIROS N° 1788, MZ J LT 25 - URB LA BASILIA",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULARES"
+ },
+ {
+  "Latitud": -11.9730234,
+  "Longitud": -76.9969402999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 3564 MZ K LT 01 - APV CANTO REY",
+  "GIro": "VENTA DE COMIDA AL PASO"
+ },
+ {
+  "Latitud": -12.025892,
+  "Longitud": -77.0026231,
+  "Dirección": "AV. GRAN CHIMU N° 693 - URB ZARATE",
+  "GIro": "OPTOMETRISTA Y VENTA DE ARTICULOS OPTICOS"
+ },
+ {
+  "Latitud": -12.0258182,
+  "Longitud": -77.0025802,
+  "Dirección": "AV. GRAN CHIMU N° 691 - URB ZARATE",
+  "GIro": "OPTICA"
+ },
+ {
+  "Latitud": -12.02627,
+  "Longitud": -77.00298,
+  "Dirección": "AV. GRAN CHIMU N° 638 MZ. N-2 LT. 5 URB. ZARATE",
+  "GIro": "VENTA DE PRODUCTOS NATURALES"
+ },
+ {
+  "Latitud": -12.0259464,
+  "Longitud": -77.0099486,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA N° 194 MZ. F LT. 4 URB. SANTA ROSA",
+  "GIro": "RESTAURANT, CEVICHERIA"
+ },
+ {
+  "Latitud": -12.0263901,
+  "Longitud": -77.0041075,
+  "Dirección": "AV. GRAN CHIMU 597-A, MZ G-2, LT 25 - URB. ZARATE",
+  "GIro": "CABINA DE INTERNET, ART. DE LIBRERIA"
+ },
+ {
+  "Latitud": -12.0181629,
+  "Longitud": -77.0020236,
+  "Dirección": "AV. LURIGANCHO N° 794 URB. AZCARRUNZ",
+  "GIro": "CHIFA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "MZ. A LT. 1 APV. LOS ALAMOS DE CANTO GRANDE",
+  "GIro": "BOTICA, BAZAR, PERFUMERIA"
+ },
+ {
+  "Latitud": -11.9716083,
+  "Longitud": -77.0049825,
+  "Dirección": "AV. LAS FLORES 146, MZ B LT 7 - URB. SAN RAFAEL DE CANTO GRANDE",
+  "GIro": "CAFE, SALON DE TE, RESTAURANT, JUGUERIA, LICORES ENVASADOS"
+ },
+ {
+  "Latitud": -11.9740238,
+  "Longitud": -77.0029172,
+  "Dirección": "AV. LAS FLORES 266 MZ. G-7 LT. 2 URB. SAN RAFAEL",
+  "GIro": "FOTO ESTUDIO"
+ },
+ {
+  "Latitud": -12.013001,
+  "Longitud": -77.0070618,
+  "Dirección": "AV. LOS TUSILAGOS OESTE N° 339 MZ. U LT 12 APV. URBANIZADORA AZCARRUNZ",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0102123,
+  "Longitud": -77.0038983,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1487 MZ. K LT. 4-B URB. JARDINES DE SAN JUAN",
+  "GIro": "SERVICIOS ADMINISTRATIVOS RELACIONADOS CON COMERCIO"
+ },
+ {
+  "Latitud": -12.0247727,
+  "Longitud": -76.9964729,
+  "Dirección": "AV PORTADA DEL SOL N° 360 - URB ZARATE",
+  "GIro": "GIMNASIO, VENTA DE BEBIDAS ENERGIZANTES"
+ },
+ {
+  "Latitud": -12.0245166,
+  "Longitud": -76.9918249999999,
+  "Dirección": "AV GRAN CHIMU N° 1172-B MZ P 5 LT 16 - URB ZARATE",
+  "GIro": "RESTAURANT, POLLERIA, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -11.9957821,
+  "Longitud": -77.0111048,
+  "Dirección": "MZ. Z LT. 13 URB. SAN HILARION",
+  "GIro": "HELADERIA, JUGUERIA, DULCERIA"
+ },
+ {
+  "Latitud": -12.0128081,
+  "Longitud": -77.0058327,
+  "Dirección": "AV TUSILAGOS, LOS N° 292 MZ Y LT 3 - APV URBANIZADORA AZCARRUNZ",
+  "GIro": "RESTAURANT"
+ },
+ {
+  "Latitud": -11.9766694,
+  "Longitud": -77.0144847999999,
+  "Dirección": "CALLE LOS EUCALIPTOS 361 URB. CANTO BELLO",
+  "GIro": "SERVICIOS PROFESIONALES DIVERSOS (ESTAMPADO TEXTIL) Y PRESTACION DE CONSULTORIA Y ASESORAMIENTO EN GENERAL (OFINA ADMINISTRATIVA)"
+ },
+ {
+  "Latitud": -12.0244204,
+  "Longitud": -77.0020674,
+  "Dirección": "AV. PIRAMIDE DEL SOL N° 471 MZ. B2 LT. 12 URB. ZARATE",
+  "GIro": "VENTA DE COMPUTADORAS, ACCESORIOS Y SERVICIOS"
+ },
+ {
+  "Latitud": -12.0276345,
+  "Longitud": -77.0060883,
+  "Dirección": "JR. LOS AMAUTAS N° 469 MZ. R-1 LT. 22 URB. ZARATE",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0269993,
+  "Longitud": -77.0074147999999,
+  "Dirección": "JR. WIRACOCHA N° 395 MZ. G-1 SUB LT. 23A URB. ZARATE",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 534 MZ C LT 5 - PARC. SEM. R CANTO GRANDE",
+  "GIro": "TALLER MECANICO"
+ },
+ {
+  "Latitud": -12.0219965,
+  "Longitud": -77.0050497,
+  "Dirección": "CALLE SANTA LUISA 643 URB. AZCARRUNZ BAJO",
+  "GIro": "TEXTILERIA, LAVANDERIA, ALMACEN, OFICINAS ADMINISTRATIVA"
+ },
+ {
+  "Latitud": 19.6008785,
+  "Longitud": -99.0209558,
+  "Dirección": "MZ. F-5 LT. 01 APV. RAMON CASTILLA",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -12.0160484,
+  "Longitud": -76.9664664,
+  "Dirección": "MZ. E LT. 10B APV. COMPRADORES DE TERRENOS DE CAMPOY",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "MZ. E LT. 08 COOP VIV SAN MIGUEL DE PALLANCHACRA SECCION B",
+  "GIro": "JUGUERIA, DULCERIA"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "MZ. B LT. 19 COOP. VIV. SAN MIGUEL DE PALLANCHACRA LTDA 50",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "MZ. E LT. 24 - ASOC. LOS GIRASOLES DE CAMPOY",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -16.3924767,
+  "Longitud": -71.5423502,
+  "Dirección": "AV. TUSILAGOS OESTE N° 281 INT. 2 URB. JARDINES DE SAN JUAN",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -11.940145,
+  "Longitud": -76.7070703999999,
+  "Dirección": "MZ. N LT. 2 AA.HH. JESUS OROPEZA CHONTA",
+  "GIro": "BOTICA, BAZAR, PERFUMERIA"
+ },
+ {
+  "Latitud": -13.4015557,
+  "Longitud": -76.1214854999999,
+  "Dirección": "SV. MZ. Q-8 LT. 4 AA.HH. JOSE CARLOS MARIATEGUI",
+  "GIro": "BOTICA, PERFUMERIA"
+ },
+ {
+  "Latitud": -11.9903212,
+  "Longitud": -77.0132911,
+  "Dirección": "SV. MZ. A LT. 20 PP.JJ. JESUS OROPEZA CHONTA",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -11.9736063,
+  "Longitud": -77.0077443,
+  "Dirección": "AV. CANTO GRANDE N° 3860 A 1 ER. PISO URB. UNIDAD 6 DE CANTO GRANDE",
+  "GIro": "BAZAR, VENTA DE ARTICULOS OPTICOS, OPTOMETRIA"
+ },
+ {
+  "Latitud": -12.0275974,
+  "Longitud": -77.0079138999999,
+  "Dirección": "AV GRAN CHIMU N° 386 MZ O-1 LT 19-20 - URB ZARATE",
+  "GIro": "BANCO COMERCIAL"
+ },
+ {
+  "Latitud": -11.9991219,
+  "Longitud": -77.0090039999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2034-B MZ. F LT. 07 APV. SAN HILARION",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -9.189967,
+  "Longitud": -75.015152,
+  "Dirección": "MZ. 05 LT. 03 PUE. JOVEN ARRIBA PERU 1ER. Y 2DO. PISO",
+  "GIro": "EDUCACION INICIAL"
+ },
+ {
+  "Latitud": -12.0269015,
+  "Longitud": -77.0053684,
+  "Dirección": "AV. GRAN CHIMU N° 513-515 MZ. G-2 LT. 44 - URB. ZARATE",
+  "GIro": "ELABORACION DE PRODUCTOS DE PANADERIA"
+ },
+ {
+  "Latitud": -11.9613919,
+  "Longitud": -76.9891512,
+  "Dirección": "AV. WIESSE N° 4161 MZ. N-7 LT. 37 AA.HH. 05 DE NOVIEMBRE",
+  "GIro": "SALA DE BAILE (SALON DE RECEPCIONES)"
+ },
+ {
+  "Latitud": -11.9920112,
+  "Longitud": -77.0075383,
+  "Dirección": "JR. LOS TOPACIOS N° 2532 APV. JORGE BASADRE",
+  "GIro": "PANADERIA Y PASTELERIA"
+ },
+ {
+  "Latitud": -12.0242104,
+  "Longitud": -76.9922315,
+  "Dirección": "AV. GRAN CHIMU 1179 -URB. ZARATE",
+  "GIro": "RESTAURANT, CEVICHERIA"
+ },
+ {
+  "Latitud": -4.5829908,
+  "Longitud": -81.2567016,
+  "Dirección": "JR. LOS TOMILLOS N° 444 MZ. 62 LT. 9 URB. POPULAR LA FLORES",
+  "GIro": "ALBERGUE INFANTIL"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "SV. MZ. A LT. 11 ASOC. VIV. MONTERRICO DE CAMPOY",
+  "GIro": "VENTA DE MATERIALES DRYWALL"
+ },
+ {
+  "Latitud": -11.9438958,
+  "Longitud": -76.9799852,
+  "Dirección": "JR DIEGO FERRE MZ. B-17 LT. 12 PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9462964,
+  "Longitud": -76.9841599,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 5323-5325-5327, MZ. G-8 SUBLOTE 39A - AA.HH. JOSE CARLOS MARIATEGUI",
+  "GIro": "BANCOS COMERCIALES (INCLUYE CAJEROS AUTOMATICOS)"
+ },
+ {
+  "Latitud": 19.6008785,
+  "Longitud": -99.0209558,
+  "Dirección": "MZ. F-5 LT. 30 APV. RAMON CASTILLA",
+  "GIro": "POLICLINICO"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "AV. CENTRAL MZ. B LT. 09 PP.JJ. CRUZ DE MOTUPE",
+  "GIro": "VENTA DE COMIDAS AL PASO"
+ },
+ {
+  "Latitud": -11.9846679,
+  "Longitud": -77.0125444999999,
+  "Dirección": "JR. PLUTON MZ. E LT. 1 URB. GANIMIDES",
+  "GIro": "BODEGA, BAZAR, LIBRERIA"
+ },
+ {
+  "Latitud": -12.0178529,
+  "Longitud": -77.0012795,
+  "Dirección": "AV. LURIGANCHO N° 850 MZ. F LT. 15 SUB LOTE 15 A URB. AZCARRUNZ",
+  "GIro": "VENTA DE ARTICULOS DE FERRETERIA"
+ },
+ {
+  "Latitud": -11.9772331,
+  "Longitud": -77.0006985999999,
+  "Dirección": "AV. LOS CIRUELOS MZ. C LT. 17 - APV. GARAGAY",
+  "GIro": "BAZAR, PERFUMERIA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. J-1 LT. 7 PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "BODEGA, BAZAR, LICOR PARA LLEVAR"
+ },
+ {
+  "Latitud": -12.0242611,
+  "Longitud": -76.992024,
+  "Dirección": "AV GRAN CHIMU N° 1189 - URB ZARATE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. G8 LT. 15 - PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -11.9739746,
+  "Longitud": -77.0017979,
+  "Dirección": "AV. REPUBLICA DE POLONIA 721 MZ. DL-4 LT. 09 URB. LOS JAZMINES",
+  "GIro": "BAZAR, LIBRERIA, VENTA DE REGALOS, VENTA DE JUGUETES"
+ },
+ {
+  "Latitud": -11.9968679,
+  "Longitud": -77.0003821999999,
+  "Dirección": "AV. SANTA ROSA DE LIMA 2060-2066 MZ. A-5 LT. 30 APV. INCA MANCO CAPAC",
+  "GIro": "VENTA DE PRODUCTOS DIVERSOS PARA EL HOGAR"
+ },
+ {
+  "Latitud": -34.6106617,
+  "Longitud": -58.5143934,
+  "Dirección": "S\/N VIA S\/N MZ 5 LT. 6 B - URBANIZACION LAS FLORES 78 COMUNA 11",
+  "GIro": "CASA DE JUEGOS DE AZAR Y APUESTAS DEPORTIVAS"
+ },
+ {
+  "Latitud": -12.005352,
+  "Longitud": -77.001409,
+  "Dirección": "AV. 13 DE ENERO N° 1630 MZ R-3 LT 03 - APV. INCA MANCO CAPAC",
+  "GIro": "VENTA DE ACCESORIOS DE VEHICULOS"
+ },
+ {
+  "Latitud": -12.0087859,
+  "Longitud": -77.005119,
+  "Dirección": "JR. LOS PELITRES 1628 MZ. T LT. 24 URB. LAS FLORES DE LIMA",
+  "GIro": "VENTA DE COMIDA AL PASO"
+ },
+ {
+  "Latitud": -12.0261518,
+  "Longitud": -76.9977976,
+  "Dirección": "JR. YACHAYHUASI N° 199A MZ. E-4 LT. 01 URB. ZARATE",
+  "GIro": "BAZAR"
+ },
+ {
+  "Latitud": 36.8437478,
+  "Longitud": -121.5360078,
+  "Dirección": "MZ. U LT. 32NURB. JARDINES DE SAN JUAN",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0290408,
+  "Longitud": -77.010823,
+  "Dirección": "PJE. QUIPUCAMAYOC N° 128 MZ. B1 LT. 13 URB. ZARATE",
+  "GIro": "FOTOCOPIADORAS Y TIPEOS EN COMPUTADORAS"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "JR. INTERMEDIO MZ. J-15 LT. 26B PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "VENTA DE ARTICULOS ARTESANALES"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "P.J. CRUZ DE MOTUPE COMUNA 23 GRUPO 4 MZ. I LT. 29 INT. 1",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "JR. INTERMEDIO MZ. J-3 LT. 02 PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0220048,
+  "Longitud": -77.0039062,
+  "Dirección": "JR. LOS ALCONES MZ. S LT. 29 AA.HH. AZCARRUNZ ALTO",
+  "GIro": "HOSTAL - SAUNA"
+ },
+ {
+  "Latitud": -12.0243776,
+  "Longitud": -75.2199531999999,
+  "Dirección": "SV MZ T1 LT 5A - AA.HH. SAN PEDRO",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "SV. MZ. A LT. 06 AGRUP. FAM. LAS FLORES DE CAMPOY",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "MZ. C LT. 1 COOP. VIV. SAN MIGUEL DE PALLANCHACRA LTDA 50",
+  "GIro": "LIBRERIA"
+ },
+ {
+  "Latitud": -12.0277759,
+  "Longitud": -77.0092967,
+  "Dirección": "AV. GRAN CHIMU N° 312 MZ N-1 LT 1 - URB. ZARATE",
+  "GIro": "RESTAURANTE, CHIFA"
+ },
+ {
+  "Latitud": -11.9859538,
+  "Longitud": -77.0069826,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2744A MZ I -1 LT 03 - SAN CARLOS",
+  "GIro": "CONSULTORIO VETENRINARIO, VENTA DE PRODUCTOS VETERINARIOS"
+ },
+ {
+  "Latitud": 38.3272023,
+  "Longitud": -0.5117946,
+  "Dirección": "SV MZ  M LT 20 - URB SAN GABRIEL",
+  "GIro": "BODEGA, LIBRERIA, BAZAR"
+ },
+ {
+  "Latitud": -12.0243234,
+  "Longitud": -76.992803,
+  "Dirección": "AV. GRAN CHIMU N° 1149 MZ. G-5 LT. 37 URB. ZARATE",
+  "GIro": "FUENTE DE SODA"
+ },
+ {
+  "Latitud": -12.0079429,
+  "Longitud": -77.0135494,
+  "Dirección": "JR. LAS VERDOLAGAS MZ. 97 LT. 10 COOP. LAS FLORES",
+  "GIro": "DULCERIA, CAFETERIA"
+ },
+ {
+  "Latitud": -12.0122262,
+  "Longitud": -77.010395,
+  "Dirección": "AV. LOS TUSILAGOS OESTE N° 566 DPTO. 568 MZ. A LT. 39 URB. LAS FLORES DE LIMA",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -12.028322,
+  "Longitud": -77.0112388,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 180 MZ. I LT. 05 - URB. CAJA DE AGUA",
+  "GIro": "BOTICA PERFUMERIA"
+ },
+ {
+  "Latitud": -11.9876346,
+  "Longitud": -77.0041462,
+  "Dirección": "AV. 13 DE ENERO N° 2625 - URB. SAN CARLOS",
+  "GIro": "VENTA DE REPUESTOS Y ACCESORIOS PARA VEHICULOS, SERVICIO"
+ },
+ {
+  "Latitud": -11.9851394,
+  "Longitud": -77.0117868,
+  "Dirección": "AV. CONSTELACION MZ. I LT. 15 ASOC. PROP. URB. GANIMEDES",
+  "GIro": "CONTRATISTAS GENERALES (OFICINAS)"
+ },
+ {
+  "Latitud": -11.974222,
+  "Longitud": -77.0029574,
+  "Dirección": "JR. ANDRES RAZURI N° 695 PRIMER PISO UNI. INMOB. SECCION N° 3 URB. CANTO GRANDE",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -12.0379679,
+  "Longitud": -76.9559509,
+  "Dirección": "JR. LAS HEBEAS MZ. E LT. 1-A ASOC. DE POBLADORES DE LURIGANCHO BAJO",
+  "GIro": "PRESTACION DE CONSULTORIA Y ASESORAMIENTO EN GENERAL"
+ },
+ {
+  "Latitud": -12.0179369,
+  "Longitud": -77.0098005999999,
+  "Dirección": "JR. LAS ALCAPARRAS N° 400 - 408 - OOP. LAS FLORES",
+  "GIro": "BOTICA, PERFUMERIA, BAZAR"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. CORDOVA, GENERAL N° 101-103 MZ. A-7 LT. 16 URB. SAN RAFAEL DE CANTO GRANDE",
+  "GIro": "BANCOS COMERCIALES (INCLUYE CAJEROS AUTOMATICOS)"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "SV. MZ. G LT. 11 COOP. VIV. SAN MIGUEL DE PALLANCHACRA LTDA 50",
+  "GIro": "AVICOLA (VENTA)"
+ },
+ {
+  "Latitud": -12.0034931,
+  "Longitud": -76.9967071,
+  "Dirección": "JR. LOS OLIVINOS N° 1618 URB. VILLA FLORES",
+  "GIro": "ABARROTES, GASEOSAS, LIC. ENV., ART. DE BAZAR Y LIBRERIA"
+ },
+ {
+  "Latitud": -12.0146458,
+  "Longitud": -76.9972689,
+  "Dirección": "AV. 13 DE ENERO 1039 MZ. F LT. 23 - URB RESIDENCIAL HORIZONTE DE ZARATE",
+  "GIro": "BODEGA, LICORERIA"
+ },
+ {
+  "Latitud": -12.0962065,
+  "Longitud": -77.0335291999999,
+  "Dirección": "CALLE TRADICIONES N° 180 APV. RICARDO PALMA",
+  "GIro": "BODEGA BAZAR"
+ },
+ {
+  "Latitud": -12.0192576,
+  "Longitud": -76.9555134,
+  "Dirección": "SV. MZ. D LT. 2 AA.HH. SAN JUAN DE CAMPOY",
+  "GIro": "ABARROTES, ART DE BAZAR, LIBRERIA GASEOSAS, VERDURAS Y LICORES ENVASADOS"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "SV. MZ. A LT. 10 COOP. VIV. SAN MIGUEL DE PALLANCHACRA LTDA. 50",
+  "GIro": "VENTA DE PLASTICOS, VENTA DE BOLSAS DESCARTABLES"
+ },
+ {
+  "Latitud": -11.9737869,
+  "Longitud": -77.0029941,
+  "Dirección": "AV. LAS FLORES N° 252 URB. SAN RAFAEL",
+  "GIro": "RESTAURANT, POLLERIA"
+ },
+ {
+  "Latitud": -11.9748555,
+  "Longitud": -77.0018927,
+  "Dirección": "AV. LAS FLORES N° 339 MZ. D-1 LT. 11 1ER PISO APV LOS PINOS",
+  "GIro": "BOTICA, BAZAR, PERFUMERIA"
+ },
+ {
+  "Latitud": -12.0510088,
+  "Longitud": -77.0557268,
+  "Dirección": "JR. JOSE GALVEZ N° 605-607 MZ. F7 SUBLOTE 14A URB. SAN RAFAEL",
+  "GIro": "VENTA DE EMBUTIDOS"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. SAN MARTIN N° 124 MZ. CL-1 LT. 26 - URB. UNIDAD 6 DE CANTO GRANDE",
+  "GIro": "RESTAURANT, POLLERIA LICOR COMO COMPLEMENTARIO"
+ },
+ {
+  "Latitud": -11.9772331,
+  "Longitud": -77.0006985999999,
+  "Dirección": "JR. AMAZONAS N° 3366 MZ I LT 02 - APV GARAGAY",
+  "GIro": "BODEGA, BAZAR, LIBRERIA, LICORES PARA LLEVAR"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "SV. MZ. A LT. 07 - UPCV. SAN MIGUEL DE PALLANCHACRA LTDA. 50 LIMA IV",
+  "GIro": "VERDULERIA, FRUTERIA"
+ },
+ {
+  "Latitud": -22.7159875,
+  "Longitud": -47.1641467,
+  "Dirección": "AV. A MZ. B LT. 05 SUB LOTE 5-A URB. CAMPOY",
+  "GIro": "MINIMARKET, VENTA DE ARTICULOS DE FERRETERIA (NO AGREGADOS, NO QUIMICOS)"
+ },
+ {
+  "Latitud": -12.0212464,
+  "Longitud": -76.9988819,
+  "Dirección": "JR. CORICANCHA N° 835 MZ. B-3 LT. 05 - URB ZARATE",
+  "GIro": "BODEGA, BAZAR, (LICORES PARA LLEVAR)"
+ },
+ {
+  "Latitud": -12.0237691,
+  "Longitud": -76.9862435,
+  "Dirección": "AV. GRAN CHIMU N° 1597 - URB. ZARATE",
+  "GIro": "BOTICA, PERFUMERIA, BAZAR"
+ },
+ {
+  "Latitud": -11.9994523,
+  "Longitud": -77.0001655,
+  "Dirección": "AV. SANTA ROSA DE LIMA MZ. C -IV LT. 25 APV. INCA MANCO CAPAC (1ER Y 2DO PISO)",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -12.0151191,
+  "Longitud": -76.9931701,
+  "Dirección": "CALLE LOS REGADORES N° 390 TDA. 3 ASOC. VIV. VALLE DEL MANTERO",
+  "GIro": "BODEGA BAZAR"
+ },
+ {
+  "Latitud": -12.012964,
+  "Longitud": -76.9964169,
+  "Dirección": "LOS BENGALIES N° 676 MZ Q LT 02 - URB RESIDENCIAL HORIZONTE DE ZARATE",
+  "GIro": "HOSPEDAJE"
+ },
+ {
+  "Latitud": -11.9705352,
+  "Longitud": -77.0044398,
+  "Dirección": "CALLE LOS HELIOTROPOS N° 128 - URB. LOS JAZMINES",
+  "GIro": "LIBRERIA BAZAR"
+ },
+ {
+  "Latitud": -12.0226372,
+  "Longitud": -76.9891266,
+  "Dirección": "JR CAJAMARQUILLA N° 1435 INT 102 MZ R LT 8B - URB ZARATE",
+  "GIro": "OFICINA ADMINISTRATIVA Y ACABADOS DE PRENDAS DE VESTIR"
+ },
+ {
+  "Latitud": -12.0237972,
+  "Longitud": -76.997427,
+  "Dirección": "JR. EL LANZON N° 318 MZ. F-2 LT. 49 URB. ZARATE",
+  "GIro": "BAZAR, BOTICA, PERFUMERIA"
+ },
+ {
+  "Latitud": -12.0082703,
+  "Longitud": -77.0112285,
+  "Dirección": "AV. LAS FLORES DE PRIMAVERA N° 1257-1259 LAS FLORES",
+  "GIro": "RESTAURANTE PEÑA Y ESPECTACULOS"
+ },
+ {
+  "Latitud": -12.0438086,
+  "Longitud": -77.0305214,
+  "Dirección": "JR. SANTA LUISA N° 605 MZ. S LOTE 1-B URB. AZCARRUNZ BAJO",
+  "GIro": "LAVANDERIA"
+ },
+ {
+  "Latitud": -12.0037236,
+  "Longitud": -77.0124901,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1515 MZ. 120 LT. 25 URB. LAS FLORES",
+  "GIro": "BOTICA BAZAR"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "PROGRAMA CIUDAD MARISCAL CACERES SECTOR II MZ O-10 LT. 01",
+  "GIro": "RESTAURANTE CHIFA"
+ },
+ {
+  "Latitud": -12.0945109,
+  "Longitud": -77.0359771999999,
+  "Dirección": "AV. JORGE BASADRE OESTE N° 336 MZ. F LT. 11 APV. SANTA ELIZABETH",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -12.0128376,
+  "Longitud": -77.0054584,
+  "Dirección": "AV TUSILAGOS OESTE N° 284 INT 102 CDRA 2 LADO DERECHO - URB LOS JARDINES DE SAN JUAN",
+  "GIro": "LICORERIA"
+ },
+ {
+  "Latitud": -12.0020749,
+  "Longitud": -77.0088328,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA 1835 APV. SAN HILARION",
+  "GIro": "VIDRIERIA CARPINTERIA DE ALUMINIO"
+ },
+ {
+  "Latitud": -12.0260493,
+  "Longitud": -77.0031456,
+  "Dirección": "AV. GRAN CHIMU N° 641 - URB. ZARATE",
+  "GIro": "BOTICA, REGALOS Y PERFUMERIA Y ARTICULOS DE TOCADOR"
+ },
+ {
+  "Latitud": -12.02295,
+  "Longitud": -76.9939582,
+  "Dirección": "JR. LA CANTUTA 477-483 MZ K-5 LT 2 - URB. ZARATE",
+  "GIro": "BODEGA, BAZAR, LICORES PARA LLEVAR, FRUTAS"
+ },
+ {
+  "Latitud": -11.9755417,
+  "Longitud": -77.0006289,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 3370 APV. GARAGAY",
+  "GIro": "SERVICIO DE MASAJES FACIALES, ARREGLO DE MANOS Y PIES PODOLOGIA"
+ },
+ {
+  "Latitud": -11.9828901,
+  "Longitud": -77.0139008,
+  "Dirección": "AV. CANTO GRANDE N° 2739 MZ. A LT. 11 - APV. SANTA ELIZABETH",
+  "GIro": "FRUTERIA, VERDULERIA"
+ },
+ {
+  "Latitud": -11.9846679,
+  "Longitud": -77.0125444999999,
+  "Dirección": "MZ. J LT. 34 - URB. GANIMEDES",
+  "GIro": "VENTA DE ALIMENTOS ENLATADOS Y ENVASADOS"
+ },
+ {
+  "Latitud": -12.0040881,
+  "Longitud": -76.997899,
+  "Dirección": "JR. LOS JASPES MZ. A-5 LT. 53 - APV INCA MANCO CAPAC",
+  "GIro": "VENTA DE VIVERES, ROPA, VERDULERIA, FRUTAS"
+ },
+ {
+  "Latitud": -12.0028424,
+  "Longitud": -77.0028488,
+  "Dirección": "AV. 13 DE ENERO N° 1740 APV. INCA MANCO CAPAC",
+  "GIro": "VENTA DE VIDRIOS Y ARTICULOS DE VIDRIO - VIDRIERIAS"
+ },
+ {
+  "Latitud": -12.0010566,
+  "Longitud": -76.9999354999999,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 1757 APV INCA MANCO CAPAC",
+  "GIro": "VENTA DE REPUESTO PARA VEHICULO"
+ },
+ {
+  "Latitud": -11.9987699,
+  "Longitud": -77.0003067,
+  "Dirección": "AV. LOS TERRAZOZ MZ. L -3 LT. 37 APV. INCA MANCO CAPAC",
+  "GIro": "OFICINA ADMINISTRATIVA"
+ },
+ {
+  "Latitud": -12.0235212,
+  "Longitud": -76.9659833,
+  "Dirección": "AV. PRINCIPAL MZ. L SUB LOTE 1-1A URB. CAMPOY",
+  "GIro": "SERVICIO DE TRANSFERENCIA DE DINERO, PAGO SERVICIOS, CASA DE CAMBIO"
+ },
+ {
+  "Latitud": -12.0241256,
+  "Longitud": -76.9841728,
+  "Dirección": "AV. GRAN CHIMU N° 1779 - URB ZARATE",
+  "GIro": "ESTUDIO JURIDICO"
+ },
+ {
+  "Latitud": -18.0115988,
+  "Longitud": -70.2481565,
+  "Dirección": "AV SAN MARTIN N° 706 MZ V LT 35B",
+  "GIro": "ELABORACION DE POSTRES, REFRESCOS, ENVASADOS DE HARINA"
+ },
+ {
+  "Latitud": 34.0759367,
+  "Longitud": -118.3483018,
+  "Dirección": "AV. 13 DE ENERO N° 2115 MZ. W LT. 21 COOP. LA HUYARONA",
+  "GIro": "EDUCACION INICIAL, PRIMARIA, SECUNDARIA"
+ },
+ {
+  "Latitud": -12.0017125,
+  "Longitud": -76.9996601,
+  "Dirección": "AV. SANTA ROSA N° 1729 MZ. A-IV LT. 41 APV. INCA MANCO CAPAC",
+  "GIro": "CASA DE PRESTAMOS Y EMPEÑO"
+ },
+ {
+  "Latitud": -12.0037236,
+  "Longitud": -77.0124901,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1515 MZ. 120 LT. 25 URB. LAS FLORES",
+  "GIro": "BOTICA BAZAR"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. CANTO GRANDE 3618 MZ. B LT. 18 UNI INMOB. A URB. UNID. 06 DE CANTO GRANDE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "AV. LAS FLORES N° 225 MZ. DL-3 LT. 18 URB. CANTO GRANDE",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -12.0029322,
+  "Longitud": -77.0128354,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1585 COOP. LAS FLORES",
+  "GIro": "VENTA DE MUEBLES"
+ },
+ {
+  "Latitud": -11.9994705,
+  "Longitud": -77.0138334,
+  "Dirección": "AV. FLORES PRIMAVERA N° 1766 MZ. 01 LT. 12 SAN HILARION",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0243134,
+  "Longitud": -76.9840289999999,
+  "Dirección": "AV. GRAN CHIMU N° 1814 URB. ZARATE",
+  "GIro": "ESTUDIO JURIDICO CENTRO CONCILIACION"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "AV. WIESSE MZ. F11 LT. 44 PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "ACADEMIA PRE UNIVERSITARIA"
+ },
+ {
+  "Latitud": -11.9475252,
+  "Longitud": -76.9800990999999,
+  "Dirección": "SV. MZ. E-9 LT. 18 2DO Y 3ER. PISO MARISCAL CACERES",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0279935,
+  "Longitud": -77.0099223,
+  "Dirección": "AV. GRAN CHIMU N° 272 URB. ZARATE",
+  "GIro": "BARBERIA"
+ },
+ {
+  "Latitud": -12.0278043,
+  "Longitud": -77.0101257,
+  "Dirección": "AV. GAN CHIMU N° 207 URB. ZARATE",
+  "GIro": "SASTRERIA, RECEPCION DE ROPA PARA LAVANDERIA"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "CALLE 8 MZ. G LT. 7 UPCV SAN MIGUEL DE PALLANCHACRA LTDA.",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "MZ. O-1 LT. 11 APV. COMPR. TERRENO DE CAMPOY",
+  "GIro": "ASESORAMIENTO PARA MEJORAR IMAGEN DE LA EMPRESA"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "MZ. A LT. 31 PUEBLO JOVEN CRUZ DE MOTUPE",
+  "GIro": "CONSULTORIO ODONTOLOGICO"
+ },
+ {
+  "Latitud": -11.9647165,
+  "Longitud": -77.001881,
+  "Dirección": "AV. SAN MARTIN MZ. H LT. 12 URB. UNIDAD 12 DE CANTO GRANDE",
+  "GIro": "VENTA DE PRODUCTOS DIVERSOS PARA EL HOGAR, BAZAR Y REGALOS"
+ },
+ {
+  "Latitud": -12.0947734,
+  "Longitud": -77.0388164,
+  "Dirección": "AV. JORGE BASADRE N° 622 URB. SAN CARLOS",
+  "GIro": "VENTA DE ARTICULOS USADOS"
+ },
+ {
+  "Latitud": -11.9943036,
+  "Longitud": -77.0117121999999,
+  "Dirección": "AV. SAN HILARION OESTE N° 131 APV. SAN HILARION",
+  "GIro": "VENTA DE MENU"
+ },
+ {
+  "Latitud": -11.9861126,
+  "Longitud": -76.9986297,
+  "Dirección": "AV. LOS ALAMOS N° 362 MZ. E SUB LOTE 1C-UNID INMOB. 1C-UNID INMOB. 1-C-A URB. CANTO GRANDE",
+  "GIro": "VENTA AL POR MAYOR DE OTROS PRODUCTOS NE (FABRICAFCION DE SUELAS Y PLANTILLAS)"
+ },
+ {
+  "Latitud": -13.1638737,
+  "Longitud": -74.2235640999999,
+  "Dirección": "MZ. E LT. 10 APV. AYACUCHO",
+  "GIro": "GIMNASIO, VENTA DE OTROS PRODUCTOS N.E SUPLEMENTOS, CAFETERIA"
+ },
+ {
+  "Latitud": -11.7936048,
+  "Longitud": -75.4848118,
+  "Dirección": "JR. FRANCISCO N° 863 AZCARRUNZ",
+  "GIro": "FABRICA DE OTROS TEJIDOS ESPECIALES"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "SV. GRUPO 4 MZ. I LT. 21 1ER. PISO - PUE. JOVEN CRUZ DE MOTUPE",
+  "GIro": "CONSULTORIO MEDICO"
+ },
+ {
+  "Latitud": -12.0220048,
+  "Longitud": -77.0039062,
+  "Dirección": "JR. SANTA MONICA N° 659-653 URB. AZCARRUNZ",
+  "GIro": "LAVANDERIA, TEÑIDO DE PRODUCTOS TEXTILES"
+ },
+ {
+  "Latitud": -11.9455801,
+  "Longitud": -76.9790049,
+  "Dirección": "AV. AMPLIACION S\/N MZ. 59 LT. 01 PROG. CIUDAD MARISCAL CACERES SECTOR II",
+  "GIro": "BODEGA, BAZAR Y LICORES PARA LLEVAR"
+ },
+ {
+  "Latitud": -11.9521861,
+  "Longitud": -76.9871687999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 4870 MZ. E-8 LT. 43 PROGRAMA CIUDAD MARISCAL CACERES SECTOR 2",
+  "GIro": "TALLER DE MECANICA (CONVERISONES GLP-GNV)"
+ },
+ {
+  "Latitud": 47.574064,
+  "Longitud": -70.398597,
+  "Dirección": "MZ. E-1 LT. 16 PUEBLO JOVEN SAN HILARION",
+  "GIro": "EDUCACION INICIAL, PRIMARIA"
+ },
+ {
+  "Latitud": -12.0199493,
+  "Longitud": -76.9905625999999,
+  "Dirección": "AV. EL SANTUARIO N° 1301-1311 ESQ. CON AV. LAS LOMAS 730-738A URB. LOTIZACION ZARATE",
+  "GIro": "FABRICA DE ENVASES DE PLASTICOS (TAPAS), ALMACEN PARA MERCANCIAS VARIAS, CONTRATISTAS GENERALES (OFICINAS ADMINISTRATIVAS)"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "CALLE EL ROSARIO N° 659 MZ. F LT. 10 URB. CANTO GRANDE",
+  "GIro": "FABRICA DE CUBIERTOS, VAJILLAS Y VENTA DE PLASTICOS"
+ },
+ {
+  "Latitud": -12.0237972,
+  "Longitud": -76.997427,
+  "Dirección": "AV. LURIGANCHO MZ. Q LT. 4 SUB LOTE 2 ZARATE",
+  "GIro": "ALMACEN PARA MERCANCIAS VARIAS"
+ },
+ {
+  "Latitud": -12.0036054,
+  "Longitud": -76.9989255,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 1667 MZ. N-3 LT. 26 APV. INCA MANCO CAPAC",
+  "GIro": "EDUCACION INICIAL"
+ },
+ {
+  "Latitud": -12.024316,
+  "Longitud": -76.9736831,
+  "Dirección": "AV. PRINCIPAL MZ. B LT. 1-A LOTIZACION CAMPOY",
+  "GIro": "ALMACEN DE PRODUCTOS TEXTILES"
+ },
+ {
+  "Latitud": -12.0213753,
+  "Longitud": -76.9682665999999,
+  "Dirección": "SV. MZ. B-8 LT. 98 - AA.HH. CERRO LOS ANGELES DE CAMPOY",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "SV. MZ. A LT. 15 PARC. SEM. R. CANTO GRANDE TDA. 104",
+  "GIro": "FUENTE DE SODA-CAFETERIA"
+ },
+ {
+  "Latitud": -12.0024783,
+  "Longitud": -77.0130289,
+  "Dirección": "AV. FLORES DE PRIMAVERA N° 1617 MZ. 121 LT. 28 COOP. LAS FLORES",
+  "GIro": "LIBRERIA, BAZAR, BODEGA Y VENTA DE LICORES PARA LLEVAR"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "SV. GRUPO 4 MZ. I LT. 21 1ER. PISO - PUE. JOVEN CRUZ DE MOTUPE",
+  "GIro": "CONSULTORIO MEDICCO"
+ },
+ {
+  "Latitud": -13.4015557,
+  "Longitud": -76.1214854999999,
+  "Dirección": "AV. PAMPA ALTA MZ. X1 LT. 31 AA.HH. JOSE CARLOS MARIATEGUI",
+  "GIro": "OFICINA ADMINISTRATIVA DE AHORRO Y CREDITO"
+ },
+ {
+  "Latitud": -12.0043337,
+  "Longitud": -77.0128417999999,
+  "Dirección": "JR. LAS MARTICARIAS N° 643 MZ. 115 LT. 10 LAS FLORES",
+  "GIro": "CHIFA, POLLERIA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. B-2 LT. 2 PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. B-14 LT. 14 PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "FERRETERIA"
+ },
+ {
+  "Latitud": 51.919438,
+  "Longitud": 19.145136,
+  "Dirección": "AV. REPUBLICA DE POLONIA MZ. M LT. 41 COOP. VIV. MARISCAL LUZURIAGA LTDA. 551",
+  "GIro": "CHICHARRONERIA RESTAURANTE"
+ },
+ {
+  "Latitud": -12.0035642,
+  "Longitud": -77.0079059,
+  "Dirección": "AV PROCERES DE LA INDEPENDENCIA N° 1785-A MZ W LT 31 - APV SAN HILARION",
+  "GIro": "VENTA DE ACCESORIOS AUTOMOTRICES"
+ },
+ {
+  "Latitud": -12.0231867,
+  "Longitud": -76.9937374,
+  "Dirección": "JR. LAS PURURAUCAS N° 465 MZ. L - 5 LT. 04 - URB. ZARATE",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0275944,
+  "Longitud": -77.0084159,
+  "Dirección": "GRAN CHIMU 360 INT. 201 SECCION N° 02 URB. ZARATE",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -12.0048709,
+  "Longitud": -77.0039065,
+  "Dirección": "AV. JARDINES ESTE N° 304 MZ. C LT. 1 URB. LAS FLORES 81",
+  "GIro": "GALERIA COMERCIAL"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "SV MZ. I LT. 2 COOP. VIV SAN MIGUEL DE PALLANCHACRA LTDA. 50",
+  "GIro": "BAZAR, REGALOS"
+ },
+ {
+  "Latitud": -12.0258807,
+  "Longitud": -77.0019069,
+  "Dirección": "AV. GRAN CHIMU 698 MZ. N-2 LT. 19 URB. ZARATE",
+  "GIro": "BOTICA"
+ },
+ {
+  "Latitud": -12.0260338,
+  "Longitud": -76.9914269,
+  "Dirección": "AV. LAS LOMAS N° 183 MZ. Q-5 LT. 25 URB. ZARATE",
+  "GIro": "VENTA DE REPUESTOS PARA VEHICULOS"
+ },
+ {
+  "Latitud": -12.0155791,
+  "Longitud": -76.9931849,
+  "Dirección": "AV. LOS REGADORES MZ. A LT. 19 - URB ZARATE INDUSTRIAL",
+  "GIro": "BODEGA, LIBRERIA, BAZAR, LIC. ENVASADO PARA LLAVER, SERVICIO DE COPIA DE LLAVES"
+ },
+ {
+  "Latitud": 18.4153108,
+  "Longitud": -66.0593509,
+  "Dirección": "AV. SAN JUAN I MZ. A LT. 01 INT. A - ASOC. DE VIV. SAN JUAN",
+  "GIro": "FARMACIA"
+ },
+ {
+  "Latitud": -12.02118,
+  "Longitud": -77.0053571,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 690 MZ. J-3 LT. 20 URB. CHACARILLA DE OTERO",
+  "GIro": "VENTA DE TRIPLAY, PUERTAS, MATERIAL DE DRYWALL"
+ },
+ {
+  "Latitud": -11.9910543,
+  "Longitud": -77.0037239,
+  "Dirección": "AV JORGE BASADRE ESTE N° 498 INT AY B - URB SAN CARLOS",
+  "GIro": "DROGUERIA"
+ },
+ {
+  "Latitud": -12.0283274,
+  "Longitud": -77.0103271,
+  "Dirección": "AV. GRAN CHIMU 240-242 MZ. Ñ-1 LT. 11 URB. ZARATE",
+  "GIro": "RESTAURANTE, CEVICHERIA, LICOR COMO COMPLEMENTO"
+ },
+ {
+  "Latitud": -12.0237596,
+  "Longitud": -76.9844093999999,
+  "Dirección": "JR. TIAHUANACO N° 1760 - URB ZARATE",
+  "GIro": "SERVICIOS EDUCATIVOS INICIAL, JARDIN DE NIÑOS"
+ },
+ {
+  "Latitud": -12.0070396,
+  "Longitud": -76.9977246,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 1507 MA. J-III LT. 41-42 APV. INCA MANCO CAPAC",
+  "GIro": "ENSEÑANZA PRE ESCOLAR PRIVADA"
+ },
+ {
+  "Latitud": -11.9993619,
+  "Longitud": -77.0143215,
+  "Dirección": "AV. LAS FLORES DE PRIMAVERA 1787 COOP. LAS FLORES",
+  "GIro": "SALA DE BAILE (SALON DE RECEPCION)"
+ },
+ {
+  "Latitud": -7.17660619999999,
+  "Longitud": -78.4936501,
+  "Dirección": "AV. HEROES DEL CENEPA N° 349 MZ. B18 LT. 18 PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "INSTRUCTOR DE DANZA (AEROBICOS)"
+ },
+ {
+  "Latitud": -11.9856702,
+  "Longitud": -77.0074784,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 2759-2761 MZ. K1 LT. 37 1ER. PISO - URB. SAN CARLOS",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -12.0242774,
+  "Longitud": -76.9841648,
+  "Dirección": "AV. GRAN CHIMU N° 1826 1ER. PISO ZARATE",
+  "GIro": "ESTUDIO JURIDICO"
+ },
+ {
+  "Latitud": -12.0181791,
+  "Longitud": -76.9671865,
+  "Dirección": "MZ. C LT. 5 AGRUP. FAM. LOS EUCALIPTOS DE CAMPOY",
+  "GIro": "BAZAR (VENTA DE ACCESORIOS PARA CELULARES)"
+ },
+ {
+  "Latitud": -6.1512014,
+  "Longitud": -79.7147468,
+  "Dirección": "MZ. G LT. 24 CDRA. 1 LADO DER. LUGAR PP.JJ. CRUZ DE MOTUPE COMUNA 23",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.1664994,
+  "Longitud": -76.9574755,
+  "Dirección": "MZ. A LT. 18 AA.HH. VILLA CAMPOY",
+  "GIro": "SERVICIOS DE MASAJES FACIALES, ARREGLO DE MANOS PIES Y PODOLOGIA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. G-7 LT. 25 PROG. CIUDAD MARISCAL CACERES",
+  "GIro": "MINIMARKET"
+ },
+ {
+  "Latitud": -12.0248637,
+  "Longitud": -76.9825584,
+  "Dirección": "JR. TAHUANTINSUYO N° 1968 URB. ZARATE",
+  "GIro": "PRESTACION DE CONSULTORIA Y ASESORAMIENTO EN GENERAL (OFICINA ADMINISTRATIVA)"
+ },
+ {
+  "Latitud": -12.0237972,
+  "Longitud": -76.997427,
+  "Dirección": "AV. MALECON MIGUEL CHECA EGUIGUREN MZ. A4-C LT. 04 URB. ZARATE",
+  "GIro": "MINIMARKET, CAFETERIA"
+ },
+ {
+  "Latitud": -12.0262822,
+  "Longitud": -77.0002593,
+  "Dirección": "JR. CHINCHAYSUYO N° 255 MZ. J-4 LT. 04 URB. ZARATE",
+  "GIro": "CONSULTORIO DE MEDICINA GENERAL"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ Q1 LT. 22 - PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "ENVASADO DE COLA SINTETICA ESCOLAR A NIVEL ARTESANAL"
+ },
+ {
+  "Latitud": -12.0292094,
+  "Longitud": -77.0111084,
+  "Dirección": "AV. GRAN CHIMU N° 137 URB. ZARATE",
+  "GIro": "CONTRATISTAS GENERALES ARQUITECTURA, INGENIERIA Y CONSULTORIA (OFICINA ADMINISTRATIVA)"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. CANTO GRANDE N° 228 PARC. SEMI R. CANTO GRANDE",
+  "GIro": "VENTAS DE PRODUCTOS DE BELLEZA Y SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9792218,
+  "Longitud": -76.9917998,
+  "Dirección": "AV SANTA ROSA N° 719 MZ D LT 2 Y 3 - URB CANTO GRANDE U-17",
+  "GIro": "ALMACEN"
+ },
+ {
+  "Latitud": -11.9817279,
+  "Longitud": -76.9945473,
+  "Dirección": "AV SANTA ROSA DE LIMA SUR N° 827 MZ E LT 09 - URB CANTO GRANDE",
+  "GIro": "FABRICACION Y DISTRIBUCION DE HELADOS"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "SV. MZ. H-1 LT. 10 COOP. VIV. CANTO GRANDE VALLE SHARON",
+  "GIro": "FUENTE DE SODA CAFETERIA"
+ },
+ {
+  "Latitud": -11.961586,
+  "Longitud": -77.0041991,
+  "Dirección": "MZ. 126 LT. 21 AA.HH. UPIS HUASCAR",
+  "GIro": "RESTAURANTE"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "SV. MZ. DL-2 LT. 21 URB. CANTO GRANDE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9746217,
+  "Longitud": -77.008597,
+  "Dirección": "AV. CANTO GRANDE N° 3265 URB. CANTO NUEVO",
+  "GIro": "BARBERIA"
+ },
+ {
+  "Latitud": -11.9957821,
+  "Longitud": -77.0111048,
+  "Dirección": "SV. MZ. Z LT. 13 URB. SAN HILARION",
+  "GIro": "CEVICHERIA"
+ },
+ {
+  "Latitud": -12.0004136,
+  "Longitud": -77.0084183,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1980 MZ. LL LT. 01 SAN HILARION",
+  "GIro": "VENTA DE MAYOLICAS, SANITARIOS"
+ },
+ {
+  "Latitud": -12.0031918,
+  "Longitud": -77.0075363,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 1810A MZ. F LT. 16 URB. FLORES 78",
+  "GIro": "VENTA DE MAYOLICAS, SANITARIOS"
+ },
+ {
+  "Latitud": -12.0058076,
+  "Longitud": -77.0049770999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA 1632 MZ. PAR LT. A-2 URB. LAS FLORES 81",
+  "GIro": "OFICINA DE SISTEMA DE PROMOCION DE VENTA DE BIENES Y SERVICIOS"
+ },
+ {
+  "Latitud": -12.0287959,
+  "Longitud": -77.0102978,
+  "Dirección": "PJ. QUIPUCAMAYOC N° 194, MZ N-1 LT SUB-21 - URB. ZARATE",
+  "GIro": "OFICINA ADMINISTRATIVA"
+ },
+ {
+  "Latitud": -12.1399047,
+  "Longitud": -76.9897586,
+  "Dirección": "JR. CESAR VALLEJO N° 218 MZ. D-3 LT. 31 - 1ER PISO - URB CHACARILLA DE OTERO",
+  "GIro": "BODEGA"
+ },
+ {
+  "Latitud": -12.0180249,
+  "Longitud": -77.0101549,
+  "Dirección": "JR. LAS ALCAPARRAS N° 467 COOP. LAS FLORES",
+  "GIro": "CASAS DE JUEGOS DE AZAR Y APUESTAS"
+ },
+ {
+  "Latitud": -12.0087867,
+  "Longitud": -77.0051185,
+  "Dirección": "JR. LOS PELITRES N° 1668 MZ. T LT. 44 - URB LAS FLORES",
+  "GIro": "FUENTE DE SODA, CAFETERIA"
+ },
+ {
+  "Latitud": -12.0124434,
+  "Longitud": -77.0113098,
+  "Dirección": "AV. LOS TUSILAGOS OESTE 585 MZ. 66 LT. 6 COOP. LAS FLORES",
+  "GIro": "BODEGA, LICORERIA (SIN CONSUMO)"
+ },
+ {
+  "Latitud": -12.025372,
+  "Longitud": -77.0002757,
+  "Dirección": "JR. CHINCHAYSUYO N° 368 URB. ZARATE",
+  "GIro": "CASA DE CAMBIO, RECEPCION POSTAL Y CURRRIER"
+ },
+ {
+  "Latitud": -12.0253984,
+  "Longitud": -77.0013378,
+  "Dirección": "AV. GRAN CHIMU N° 731-733 - URB ZARATE",
+  "GIro": "BODEGA, BAZAR, LICORES PARA LLEVAR"
+ },
+ {
+  "Latitud": -12.0247784,
+  "Longitud": -76.9986449,
+  "Dirección": "JR. VARA DE ORO N° 351 URB. ZARATE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -12.0273841,
+  "Longitud": -77.0063189999999,
+  "Dirección": "AV. GRAN CHIMU N° 454 - URB. ZARATE",
+  "GIro": "VENTA DE PRODUCTOS NATURALES"
+ },
+ {
+  "Latitud": -12.0085069,
+  "Longitud": -77.0148825,
+  "Dirección": "JR. LAS VERDOLAGAS N° 905 MZ. 94 LT. 14 COOP. LAS FLORES",
+  "GIro": "BODEGA, PANADERIA"
+ },
+ {
+  "Latitud": -12.0267157,
+  "Longitud": -77.0072766,
+  "Dirección": "JR. WIRACOCHA N° 410 URB. ZARATE",
+  "GIro": "SALON DE BELLEZA"
+ },
+ {
+  "Latitud": -11.9974927,
+  "Longitud": -77.0099379,
+  "Dirección": "AV. LOS POSTES OESTE 101 MZ. E LT. 15 APV. SAN HILARION",
+  "GIro": "FUENTE DE SODA, JUGUERIA"
+ },
+ {
+  "Latitud": -12.0146762,
+  "Longitud": -76.9967071,
+  "Dirección": "AV. LURIGANCHO MZ. A LT. 22 URB. RESIDENCIAL HORIZONTE DE ZARATE",
+  "GIro": "RESTAURANT, CEVICHERIA LICOR COMO COMPLEMENTARIO ANTICUCHERIA"
+ },
+ {
+  "Latitud": -12.0242409,
+  "Longitud": -76.9878691,
+  "Dirección": "AV. GRAN CHIMU N° 1436 URB. ZARATE",
+  "GIro": "LAVANDERIA"
+ },
+ {
+  "Latitud": -12.0244916,
+  "Longitud": -76.9931912,
+  "Dirección": "AV. GRAN CHIMU N° 1116 URB. ZARATE",
+  "GIro": "TAPICERIA"
+ },
+ {
+  "Latitud": -12.0266309,
+  "Longitud": -77.0040289,
+  "Dirección": "AV. GRAN CHIMU N° 580 MZ. L-2 LT. 1 URB. ZARATE",
+  "GIro": "CASA DE CAMBIO SERVICIO DE PAGO"
+ },
+ {
+  "Latitud": -12.0278177,
+  "Longitud": -77.0099931,
+  "Dirección": "AV. GRAN CHIMU N° 215 - URB ZARATE",
+  "GIro": "VENTA DE APARATOS TELEFONICOS, ACCESORIOS Y SERVICIO TECNICO"
+ },
+ {
+  "Latitud": 38.3316438,
+  "Longitud": -0.5132833,
+  "Dirección": "SV. MZ. U SUB LOTE 1B URB. SAN GABRIEL",
+  "GIro": "HOSTAL"
+ },
+ {
+  "Latitud": -12.0166931,
+  "Longitud": -76.9990274,
+  "Dirección": "AV. LURIGANCHO N° 993-997-999-999-A, MODULO MC-012 - ZARATE INDUSTRIAL",
+  "GIro": "SERVICIO DE MASAJES FACIALES, ARREGLO DE MANOS Y PIES, PODOLOGIA"
+ },
+ {
+  "Latitud": -12.0257989,
+  "Longitud": -77.0004362999999,
+  "Dirección": "JR. CHINCHAYSUYO 301 URB. ZARATE",
+  "GIro": "VENTA DE COMIDA AL PASO, SANDWICHERIA"
+ },
+ {
+  "Latitud": -11.9766008,
+  "Longitud": -77.0019976999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 3312-A MZ. G LT. 07 GARAGAY",
+  "GIro": "SANDWICHERIAS, JUGUERIA"
+ },
+ {
+  "Latitud": -12.0262545,
+  "Longitud": -77.0027588,
+  "Dirección": "AV. GRAN CHIMU N° 644A MZ. N-2 LT. 07 - URB. ZARATE",
+  "GIro": "VENTA DE ARTICULOS OPTICOS"
+ },
+ {
+  "Latitud": -12.0188818,
+  "Longitud": -77.0118246,
+  "Dirección": "JR. LAS GROSELLAS N° 683 MZ. 30 LT. 10 URB. LAS FLORES",
+  "GIro": "RESTAURANTE - CHIFA"
+ },
+ {
+  "Latitud": -12.0264969,
+  "Longitud": -76.9976502,
+  "Dirección": "JR. YACHAYHUASY N° 143 URB. ZARATE",
+  "GIro": "VERDULERIA FRUTERIA"
+ },
+ {
+  "Latitud": -12.0204047,
+  "Longitud": -76.9625057,
+  "Dirección": "SV. MZ. E LT. SUB 12-A -  COOP VIV SAN MIGUEL DE PALLANCHACRA LTDA 50",
+  "GIro": "FUENTE DE SODA- CAFETERIA"
+ },
+ {
+  "Latitud": -12.0230033,
+  "Longitud": -76.9896089,
+  "Dirección": "JR. CAJAMARQUILLA N° 1374 URB. ZARATE",
+  "GIro": "OTRAS ESPECIALIDADES (TERAPIA DE LENGUAJE)"
+ },
+ {
+  "Latitud": -12.0252707,
+  "Longitud": -76.9820552,
+  "Dirección": "AV. MALECON CHECA EGUIGUREN MIGUEL 1125 URB. ZARATE",
+  "GIro": "ABARROTES, GASEOSAS, VERDURAS Y LIC. ENV"
+ },
+ {
+  "Latitud": -12.0217546,
+  "Longitud": -77.0059924999999,
+  "Dirección": "AV. PROCERES DE LA INDEPENDENCIA N° 626 MZ. J-3 LT. 5 URB. CHACARILLA DE OTERO",
+  "GIro": "TALLER MECANICA, VENTA DE REPUESTOS AUTOMOTRIZ"
+ },
+ {
+  "Latitud": -34.0951512,
+  "Longitud": -59.0240826,
+  "Dirección": "SV. MZ. R LT. 05-06 URB. LOTIZACION RUSTICA-ZARATE",
+  "GIro": "FINANCIERA"
+ },
+ {
+  "Latitud": -11.9995787,
+  "Longitud": -76.9999591999999,
+  "Dirección": "AV. SANTA ROSA DE LIMA N° 1874 APV INCA MANCO CAPAC",
+  "GIro": "BODEGA, BAZAR"
+ },
+ {
+  "Latitud": -12.0279935,
+  "Longitud": -77.0099223,
+  "Dirección": "AV. GRAN CHIMU N° 272 URB. ZARATE",
+  "GIro": "BARBERIA"
+ },
+ {
+  "Latitud": -11.9730423,
+  "Longitud": -77.0034168,
+  "Dirección": "AV. LAS FLORES N° 201 MZ. DL-3 LT.22A URB. LOS JAZMINES",
+  "GIro": "FUENTE DE SODA"
+ },
+ {
+  "Latitud": -11.9513019,
+  "Longitud": -76.9773081,
+  "Dirección": "MZ. M-8 LT. 29 PROGRAMA CIUDAD MARISCAL CACERES",
+  "GIro": "SERVICIOS DE MASAJES, FACIALES, ARREGLO DE MANOS Y PIES PODOLOGIA"
+ },
+ {
+  "Latitud": -27.187636,
+  "Longitud": -48.5035746,
+  "Dirección": "AV. CANTO GRANDE S\/N MZ. A LT. 15 PARC. SEMI R. CANTO GRANDE",
+  "GIro": "VENTA DE COMIDAS AL PASO (EMPANADAS Y BEBIDAS)"
+ },
+ {
+  "Latitud": -12.0272053,
+  "Longitud": -76.9995584,
+  "Dirección": "AV. MALECON MIGUEL CHECA EGUIGUREN N° 821 MZ. F - 4 LT. 44 CDRA. 8 URB. ZARATE",
+  "GIro": "VENTA DE GOLOSINAS Y CONFITERIA"
+ },
+ {
+  "Latitud": -12.0237972,
+  "Longitud": -76.997427,
+  "Dirección": "JR. CHULPAS N° 299 UNID. INMOB. 01 MZ. 01 LT. 19 Y 20 URB. ZARATE",
+  "GIro": "CONSULTORIOS DE MEDICINA EN GENERAL"
+ }
+]
