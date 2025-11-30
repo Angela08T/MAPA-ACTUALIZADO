@@ -2,10 +2,16 @@
 import { useEffect, useState, useRef } from "react";
 import { GeoJSON } from "react-leaflet";
 
-const CapaJurisdiccion = ({ ubicadorActivo = false }) => {
+const CapaJurisdiccion = ({ ubicadorActivo = false, camaraConVision = null, camaraSeleccionada = null }) => {
   const [data, setData] = useState(null);
   const [key, setKey] = useState(0); // Para forzar re-render
   const geoJsonRef = useRef(null);
+
+  // Jurisdicciones deben estar inactivas si:
+  // 1. El ubicador está activo
+  // 2. Una cámara tiene campo de visión activo
+  // 3. Una cámara está seleccionada desde la búsqueda
+  const esInactivo = ubicadorActivo || camaraConVision !== null || camaraSeleccionada !== null;
 
   useEffect(() => {
     fetch("/data/juridiccion.geojson")
@@ -17,26 +23,26 @@ const CapaJurisdiccion = ({ ubicadorActivo = false }) => {
   const estiloPorDefecto = (feature) => ({
     color: feature.properties.color || "#34b429",
     weight: 2,
-    fillOpacity: ubicadorActivo ? 0.1 : 0.2, // Menos opacidad cuando ubicador está activo
-    interactive: !ubicadorActivo, // Control directo de interactividad
-    bubblingMouseEvents: ubicadorActivo ? false : true, // Prevenir bubbling cuando ubicador activo
+    fillOpacity: esInactivo ? 0.1 : 0.2, // Menos opacidad cuando está inactivo
+    interactive: !esInactivo, // Control directo de interactividad
+    bubblingMouseEvents: esInactivo ? false : true, // Prevenir bubbling cuando inactivo
   });
 
   const popupJurisdiccion = (feature, layer) => {
     const nombre = feature.properties.name || "Jurisdicción";
 
-    if (!ubicadorActivo) {
+    if (!esInactivo) {
       layer.bindPopup(`<b>${nombre}</b>`);
-      
+
       layer.on('click', function() {
         layer.openPopup();
       });
     } else {
-      // Cuando ubicador está activo, remover completamente todos los eventos
+      // Cuando está inactivo (ubicador o cámara activa), remover completamente todos los eventos
       layer.off();
       layer.unbindPopup();
       layer.unbindTooltip();
-      
+
       // Hacer la capa completamente no interactiva
       if (layer.setStyle) {
         layer.setStyle({
@@ -47,23 +53,25 @@ const CapaJurisdiccion = ({ ubicadorActivo = false }) => {
     }
   };
 
-  // Efecto para manejar cambios en el estado del ubicador
+  // Efecto para manejar cambios en el estado de interactividad
   useEffect(() => {
     if (data) {
-      // Forzar re-render cuando cambie el estado del ubicador
+      // Forzar re-render cuando cambie el estado
       setKey(prev => prev + 1);
-      console.log(`🗺️ Jurisdicciones - Ubicador ${ubicadorActivo ? 'ACTIVO' : 'INACTIVO'}`);
+      const razon = camaraConVision ? `(Cámara ${camaraConVision} con visión)` :
+                   camaraSeleccionada ? `(Cámara ${camaraSeleccionada.name} seleccionada)` : '';
+      console.log(`🗺️ Jurisdicciones - ${esInactivo ? 'INACTIVAS' : 'ACTIVAS'}`, razon);
     }
-  }, [ubicadorActivo, data]);
+  }, [esInactivo, data, camaraConVision, camaraSeleccionada]);
 
-  // Efecto para aplicar estilos CSS cuando el ubicador esté activo
+  // Efecto para aplicar estilos CSS cuando esté inactivo
   useEffect(() => {
-    if (ubicadorActivo) {
-      // Agregar clase CSS para hacer las jurisdicciones no clickeables
+    if (esInactivo) {
+      // Hacer las jurisdicciones no clickeables
       const jurisdiccionElements = document.querySelectorAll('.leaflet-interactive');
       jurisdiccionElements.forEach(el => {
         el.style.pointerEvents = 'none';
-        el.style.cursor = 'crosshair';
+        el.style.cursor = ubicadorActivo ? 'crosshair' : 'default';
       });
     } else {
       // Restaurar interactividad
@@ -82,7 +90,7 @@ const CapaJurisdiccion = ({ ubicadorActivo = false }) => {
         el.style.cursor = '';
       });
     };
-  }, [ubicadorActivo]);
+  }, [esInactivo, ubicadorActivo]);
 
   if (!data) return null;
 
@@ -93,9 +101,9 @@ const CapaJurisdiccion = ({ ubicadorActivo = false }) => {
       data={data}
       style={estiloPorDefecto}
       onEachFeature={popupJurisdiccion}
-      interactive={!ubicadorActivo}
-      bubblingMouseEvents={!ubicadorActivo}
-      pane={ubicadorActivo ? 'shadowPane' : 'overlayPane'} // Mover a capa inferior cuando ubicador activo
+      interactive={!esInactivo}
+      bubblingMouseEvents={!esInactivo}
+      pane={esInactivo ? 'shadowPane' : 'overlayPane'} // Mover a capa inferior cuando inactivo
     />
   );
 };

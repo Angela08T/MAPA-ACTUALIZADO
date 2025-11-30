@@ -12,7 +12,7 @@
   "dependencies": {
     "@googlemaps/react-wrapper": "^1.2.0",
     "@react-google-maps/api": "^2.20.7",
-    "@tanstack/react-query": "^5.83.0",
+    "@tanstack/react-query": "^5.90.5",
     "@tmcw/togeojson": "^7.1.2",
     "heatmap.js": "^2.0.5",
     "jszip": "^3.10.1",
