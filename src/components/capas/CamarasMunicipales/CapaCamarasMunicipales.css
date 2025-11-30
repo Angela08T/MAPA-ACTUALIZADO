@@ -55,3 +55,75 @@ Tooltip para círculos de seguimiento */
 .seguimiento-tooltip::before {
   border-top-color: rgba(16, 185, 129, 0.9) !important;
 }
+
+/* Estilos para campos de visión de cámaras */
+
+/* Animaciones para los campos de visión */
+@keyframes expandVision {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes shrinkVision {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+/* Cámara 360° - Círculo completo */
+.vision-gradient {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 0, 0, 0.4) 0%, rgba(255, 165, 0, 0.3) 50%, rgba(46, 204, 113, 0) 100%);
+  position: absolute;
+  pointer-events: none;
+  animation: expandVision 1s ease-out;
+  z-index: -1 !important;
+}
+
+/* Cámara 180° - Semicírculo */
+.vision-gradient-180 {
+  width: 300px;
+  height: 150px;
+  background: radial-gradient(
+    ellipse at center bottom,
+    rgba(255, 0, 0, 0.5) 0%,
+    rgba(255, 165, 0, 0.3) 40%,
+    rgba(46, 204, 113, 0) 100%
+  );
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  animation: expandVision 1s ease-out;
+  transform-origin: center bottom;
+  z-index: -1 !important;
+}
+
+/* Contenedor rotado para cámaras 180° */
+.rotated-container {
+  width: 300px;
+  height: 150px;
+  position: relative;
+  pointer-events: none;
+  transform-origin: center bottom;
+}
+
+/* Clase para marcadores de campo de visión */
+.vision-field-marker {
+  z-index: -999 !important;
+}

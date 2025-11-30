@@ -1,8 +1,14 @@
 import { useEffect, useState } from "react";
 
-const GoogleCapaJurisdiccion = ({ map, google, ubicadorActivo = false }) => {
+const GoogleCapaJurisdiccion = ({ map, google, ubicadorActivo = false, camaraConVision = null, camaraSeleccionada = null }) => {
   const [data, setData] = useState(null);
   const [polygons, setPolygons] = useState([]);
+
+  // Jurisdicciones deben estar inactivas si:
+  // 1. El ubicador está activo
+  // 2. Una cámara tiene campo de visión activo
+  // 3. Una cámara está seleccionada desde la búsqueda
+  const esInactivo = ubicadorActivo || camaraConVision !== null || camaraSeleccionada !== null;
 
   useEffect(() => {
     fetch("/data/juridiccion.geojson")
@@ -37,8 +43,8 @@ const GoogleCapaJurisdiccion = ({ map, google, ubicadorActivo = false }) => {
 
         polygon.setMap(map);
 
-        // Agregar info window solo si el ubicador no está activo
-        if (!ubicadorActivo) {
+        // Agregar info window solo si está activo (no ubicador ni cámara)
+        if (!esInactivo) {
           const infoWindow = new google.maps.InfoWindow({
             content: `<b>${feature.properties.name || "Jurisdicción"}</b>`
           });
@@ -51,7 +57,7 @@ const GoogleCapaJurisdiccion = ({ map, google, ubicadorActivo = false }) => {
 
         // Configurar si el polígono es clickeable
         polygon.setOptions({
-          clickable: !ubicadorActivo
+          clickable: !esInactivo
         });
 
         newPolygons.push(polygon);
@@ -64,7 +70,7 @@ const GoogleCapaJurisdiccion = ({ map, google, ubicadorActivo = false }) => {
     return () => {
       newPolygons.forEach(polygon => polygon.setMap(null));
     };
-  }, [map, google, data, ubicadorActivo]);
+  }, [map, google, data, esInactivo, camaraConVision, camaraSeleccionada]);
 
   return null; // Este componente no renderiza JSX
 };

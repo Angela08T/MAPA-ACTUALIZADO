@@ -67,6 +67,7 @@ const App = () => {
   const [filtrosCamaras, setFiltrosCamaras] = useState(null);
   const [seguimientoCamara, setSeguimientoCamara] = useState(null);
   const [limpiarSeguimiento, setLimpiarSeguimiento] = useState(null);
+  const [camaraConVision, setCamaraConVision] = useState(null); // Track camera with vision field active
 
   const payloadVacio = {
     Año: "",
@@ -241,13 +242,19 @@ const App = () => {
           style={mapStyle}
         >
           <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-          <CapaJurisdiccion ubicadorActivo={capasVisibles.ubicadorPunto || capasVisibles.busquedaDirecciones || capasVisibles.coordenadasNuevas || capasVisibles.rutas} />
+          <CapaJurisdiccion
+            ubicadorActivo={capasVisibles.ubicadorPunto || capasVisibles.busquedaDirecciones || capasVisibles.coordenadasNuevas || capasVisibles.rutas}
+            camaraConVision={camaraConVision}
+            camaraSeleccionada={camaraSeleccionada}
+          />
           <CapaCamarasMunicipales
             visible={capasVisibles.camaras}
             camaraSeleccionada={camaraSeleccionada}
             camarasFiltradas={camarasFiltradas}
             seguimientoCamara={seguimientoCamara}
             limpiarSeguimiento={limpiarSeguimiento}
+            camaraConVision={camaraConVision}
+            setCamaraConVision={setCamaraConVision}
           />
           <CapaCamarasVecinales visible={capasVisibles.camarasVecinales} />
           <CapaParaderosAutorizados visible={capasVisibles.paraderosAutorizados} />
@@ -280,21 +287,24 @@ const App = () => {
           zoom={mapZoom}
           style={mapStyle}
         >
-          <GoogleCapaJurisdiccion ubicadorActivo={
-            capasVisibles.ubicadorPunto ||
-            capasVisibles.busquedaDirecciones ||
-            capasVisibles.coordenadasNuevas ||
-            capasVisibles.camaras ||
-            capasVisibles.robos ||
-            capasVisibles.extorsiones ||
-            capasVisibles.rutas
-          } />
-          <GoogleCapaCamarasMunicipales 
+          <GoogleCapaJurisdiccion
+            ubicadorActivo={
+              capasVisibles.ubicadorPunto ||
+              capasVisibles.busquedaDirecciones ||
+              capasVisibles.coordenadasNuevas ||
+              capasVisibles.rutas
+            }
+            camaraConVision={camaraConVision}
+            camaraSeleccionada={camaraSeleccionada}
+          />
+          <GoogleCapaCamarasMunicipales
             visible={capasVisibles.camaras}
             camaraSeleccionada={camaraSeleccionada}
             camarasFiltradas={camarasFiltradas}
             seguimientoCamara={seguimientoCamara}
             limpiarSeguimiento={limpiarSeguimiento}
+            camaraConVision={camaraConVision}
+            setCamaraConVision={setCamaraConVision}
           />
           <GoogleCapaCamarasVecinales visible={capasVisibles.camarasVecinales} />
           <GoogleCapaRobos visible={capasVisibles.robos} filtros={filtrosRobos} />

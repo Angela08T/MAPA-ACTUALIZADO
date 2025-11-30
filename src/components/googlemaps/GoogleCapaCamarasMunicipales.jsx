@@ -1,4 +1,85 @@
 import { useEffect, useState, useRef } from "react";
+import { getAngleFromCoords, isValidReferencia, parseReferencia } from "../../utils";
+import "../capas/CamarasMunicipales/CapaCamarasMunicipales.css"; // Importar estilos de campos de visión
+
+// Función para crear el campo de visión de una cámara en Google Maps
+const createVisionFieldOverlay = (google, map, feature, lat, lng) => {
+  const camara = feature.properties.camara;
+
+  if (!camara || (camara !== '360' && camara !== '180')) {
+    return null;
+  }
+
+  // Crear un overlay customizado
+  class VisionOverlay extends google.maps.OverlayView {
+    constructor(position, html) {
+      super();
+      this.position = position;
+      this.html = html;
+      this.div = null;
+    }
+
+    onAdd() {
+      const div = document.createElement('div');
+      div.style.position = 'absolute';
+      div.style.pointerEvents = 'none';
+      div.style.zIndex = '-1';
+      div.innerHTML = this.html;
+
+      this.div = div;
+      const panes = this.getPanes();
+      panes.overlayLayer.appendChild(div);
+    }
+
+    draw() {
+      const overlayProjection = this.getProjection();
+      const pos = overlayProjection.fromLatLngToDivPixel(this.position);
+
+      if (this.div) {
+        // Centrar el overlay en la posición de la cámara
+        // Para 360°: centrar en el medio del círculo (300x300) = offset -150
+        // Para 180°: centrar en la parte inferior (300x150) = offset x=-150, y=-150
+        this.div.style.left = pos.x - 150 + 'px';
+        this.div.style.top = pos.y - 150 + 'px';
+      }
+    }
+
+    onRemove() {
+      if (this.div) {
+        this.div.parentNode.removeChild(this.div);
+        this.div = null;
+      }
+    }
+  }
+
+  let html;
+  const position = new google.maps.LatLng(lat, lng);
+
+  if (camara === '360') {
+    html = '<div class="vision-gradient"></div>';
+  } else if (camara === '180') {
+    const referencia = feature.properties.referencia;
+
+    if (!isValidReferencia(referencia)) {
+      console.warn(`Cámara ${feature.properties.name} tiene referencia inválida:`, referencia);
+      return null;
+    }
+
+    const [refLat, refLng] = parseReferencia(referencia);
+    const direccion = getAngleFromCoords(lat, lng, refLat, refLng);
+
+    html = `
+      <div class="rotated-container" style="transform: rotate(${direccion}deg); transform-origin: center bottom;">
+        <div class="vision-gradient-180"></div>
+      </div>
+    `;
+  }
+
+  const overlay = new VisionOverlay(position, html);
+  overlay.setMap(map);
+
+  return overlay;
+};
 
 // Función utilitaria para animación suave en Google Maps
 const smoothPanTo = (map, targetPosition, targetZoom, duration = 1500) => {
@@ -34,10 +115,21 @@ const smoothPanTo = (map, targetPosition, targetZoom, duration = 1500) => {
   requestAnimationFrame(animate);
 };
 
-const GoogleCapaCamarasMunicipales = ({ visible, map, google, camaraSeleccionada, camarasFiltradas, seguimientoCamara, limpiarSeguimiento }) => {
+const GoogleCapaCamarasMunicipales = ({
+  visible,
+  map,
+  google,
+  camaraSeleccionada,
+  camarasFiltradas,
+  seguimientoCamara,
+  limpiarSeguimiento,
+  camaraConVision,
+  setCamaraConVision
+}) => {
   const [camaras, setCamaras] = useState([]);
   const [markers, setMarkers] = useState([]);
   const [circles, setCircles] = useState([]);
+  const [visionOverlays, setVisionOverlays] = useState([]);
   const [seguimientoActivo, setSeguimientoActivo] = useState(false);
   const [circuloSeguimiento, setCirculoSeguimiento] = useState(null);
   const [circulosAnteriores, setCirculosAnteriores] = useState([]);
@@ -53,6 +145,34 @@ const GoogleCapaCamarasMunicipales = ({ visible, map, google, camaraSeleccionada
         console.error("Error cargando cámaras municipales:", err)
       );
   }, []);
+
+  // Agregar listener para obtener coordenadas con Ctrl+Click (herramienta de ayuda)
+  useEffect(() => {
+    if (!map || !google) return;
+
+    const handleMapClick = (e) => {
+      // Detectar si Ctrl está presionado
+      if (e.domEvent && e.domEvent.ctrlKey) {
+        const lat = e.latLng.lat();
+        const lng = e.latLng.lng();
+        console.log('📍 Coordenadas para referencia:', `"${lat}, ${lng}"`);
+        console.log('📋 Copia esto en la propiedad "referencia" del GeoJSON');
+
+        // Copiar al portapapeles automáticamente
+        navigator.clipboard.writeText(`"${lat}, ${lng}"`).then(() => {
+          console.log('✅ Coordenadas copiadas al portapapeles!');
+        });
+      }
+    };
+
+    const listener = map.addListener('click', handleMapClick);
+
+    return () => {
+      if (listener) {
+        google.maps.event.removeListener(listener);
+      }
+    };
+  }, [map, google]);
 
   // Efecto para navegar a la cámara seleccionada
   useEffect(() => {
@@ -356,20 +476,30 @@ const GoogleCapaCamarasMunicipales = ({ visible, map, google, camaraSeleccionada
 
   useEffect(() => {
     if (!map || !google || !visible) {
-      // Limpiar markers y circles si no visible
+      // Limpiar markers, circles y vision overlays si no visible
       markers.forEach(marker => marker.setMap(null));
       circles.forEach(circle => circle.setMap(null));
+      visionOverlays.forEach(overlay => overlay.setMap(null));
       setMarkers([]);
       setCircles([]);
+      setVisionOverlays([]);
       return;
     }
 
-    // Limpiar markers y circles anteriores
+    // Limpiar markers, circles y vision overlays anteriores
     markers.forEach(marker => marker.setMap(null));
-    circles.forEach(circle => circle.setMap(null));
+    circles.forEach(circle => {
+      if (circle) circle.setMap(null);
+    });
+    visionOverlays.forEach(overlay => {
+      if (overlay && overlay.setMap) {
+        overlay.setMap(null);
+      }
+    });
 
     const newMarkers = [];
     const newCircles = [];
+    const newVisionOverlays = [];
 
     // Determinar qué cámaras mostrar (seguimiento, filtradas o todas)
     let camarasAMostrar;
@@ -405,9 +535,10 @@ const GoogleCapaCamarasMunicipales = ({ visible, map, google, camaraSeleccionada
       const [lng, lat] = coords;
       const markerId = `marker-${idx}`;
 
-      // Determinar si esta cámara está seleccionada
-      const esSeleccionada = camaraSeleccionada &&
-        (camaraSeleccionada.name === props.name || camaraSeleccionada.id === idx);
+      // Determinar si esta cámara está seleccionada (por prop o por click local)
+      const esSeleccionada = (camaraSeleccionada &&
+        (camaraSeleccionada.name === props.name || camaraSeleccionada.id === idx)) ||
+        (camaraConVision === props.name);
 
       // Determinar si esta cámara está en modo seguimiento
       const enSeguimiento = seguimientoActivo && camarasCercanas.some(item =>
@@ -416,23 +547,39 @@ const GoogleCapaCamarasMunicipales = ({ visible, map, google, camaraSeleccionada
 
       console.log('🔍 Procesando marcador:', {
         name: props.name,
+        esSeleccionada,
+        camaraConVision,
         enSeguimiento,
         seguimientoActivo,
-        camarasCercanasLength: camarasCercanas.length
+        camarasCercanasLength: camarasCercanas.length,
+        tipoCamara: props.camara
       });
 
-      // Crear círculo
-      const circle = new google.maps.Circle({
-        strokeColor: esSeleccionada ? "#667eea" : "#6c5ce7",
-        strokeOpacity: 1,
-        strokeWeight: esSeleccionada ? 2 : 1,
-        fillColor: esSeleccionada ? "#667eea" : "#a29bfe",
-        fillOpacity: esSeleccionada ? 0.4 : 0.25,
-        map: map,
-        center: { lat, lng },
-        radius: 120,
-        zIndex: 1000
-      });
+      // Crear campo de visión (overlay con gradiente) SOLO si la cámara está seleccionada
+      if (esSeleccionada) {
+        console.log('🎯 Mostrando campo de visión para:', props.name, 'Tipo:', props.camara);
+
+        const visionOverlay = createVisionFieldOverlay(google, map, feature, lat, lng);
+        if (visionOverlay) {
+          newVisionOverlays.push(visionOverlay);
+        }
+      }
+
+      // Crear círculo SOLO si hay seguimiento activo
+      let circle = null;
+      if (seguimientoActivo) {
+        circle = new google.maps.Circle({
+          strokeColor: esSeleccionada ? "#667eea" : "#6c5ce7",
+          strokeOpacity: 1,
+          strokeWeight: esSeleccionada ? 2 : 1,
+          fillColor: esSeleccionada ? "#667eea" : "#a29bfe",
+          fillOpacity: esSeleccionada ? 0.4 : 0.25,
+          map: map,
+          center: { lat, lng },
+          radius: 120,
+          zIndex: 1000
+        });
+      }
 
       // Crear marker con icono apropiado según el tipo
       let iconConfig;
@@ -629,13 +776,29 @@ const GoogleCapaCamarasMunicipales = ({ visible, map, google, camaraSeleccionada
 
         // Si no estaba abierto, abrirlo (comportamiento toggle)
         if (!isCurrentlyOpen) {
+          console.log('📍 Abriendo InfoWindow para:', props.name);
+
+          // Hacer zoom hacia la cámara con animación suave
+          smoothPanTo(map, { lat, lng }, 18, 1200);
+
           infoWindow.open(map, marker);
           marker.infoWindowOpen = true;
 
+          // Mostrar campo de visión
+          setCamaraConVision(props.name);
+          console.log('✅ camaraConVision actualizada a:', props.name);
+
           // Agregar listener para detectar cuando se cierra manualmente
           infoWindow.addListener('closeclick', () => {
+            console.log('❌ Cerrando InfoWindow para:', props.name);
             marker.infoWindowOpen = false;
+            // Ocultar campo de visión cuando se cierra el InfoWindow
+            setCamaraConVision(null);
           });
+        } else {
+          console.log('❌ Cerrando InfoWindow (toggle) para:', props.name);
+          // Si se cierra el InfoWindow, ocultar campo de visión
+          setCamaraConVision(null);
         }
       });
 
@@ -648,20 +811,30 @@ const GoogleCapaCamarasMunicipales = ({ visible, map, google, camaraSeleccionada
       markersRef.current[markerId] = marker;
 
       newMarkers.push(marker);
-      newCircles.push(circle);
+      if (circle) {
+        newCircles.push(circle);
+      }
     });
 
     setMarkers(newMarkers);
     setCircles(newCircles);
+    setVisionOverlays(newVisionOverlays);
 
     // Cleanup function
     return () => {
       newMarkers.forEach(marker => {
         marker.setMap(null);
       });
-      newCircles.forEach(circle => circle.setMap(null));
+      newVisionOverlays.forEach(overlay => {
+        if (overlay && overlay.setMap) {
+          overlay.setMap(null);
+        }
+      });
+      newCircles.forEach(circle => {
+        if (circle) circle.setMap(null);
+      });
     };
-  }, [map, google, visible, camaras]);
+  }, [map, google, visible, camaras, camaraSeleccionada, camarasFiltradas, seguimientoActivo, camarasCercanas, circuloSeguimiento, camaraConVision]);
 
   return null; // Este componente no renderiza JSX
 };

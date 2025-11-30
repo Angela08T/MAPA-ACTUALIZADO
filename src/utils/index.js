@@ -12,3 +12,10 @@ export {
   formatDateForDisplay
 } from './dateUtils.js';
 
+// Exportar todas las funciones de cámaras
+export {
+  getAngleFromCoords,
+  isValidReferencia,
+  parseReferencia
+} from './cameraUtils.js';
+
