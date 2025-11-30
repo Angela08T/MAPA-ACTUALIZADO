@@ -2145,15 +2145,15 @@
                 "camara": "180",
                 "megafono": false,
                 "boton": false,
-                "referencia": "-11.9949482866408, -77.0168413655198",
-                "direccion": "AV. CANTO GRANDE / JR. MAGNESIO",
-                "WKT": "POINT Z (-77.016513 -11.994677 0)"
+                "referencia": "-11.994171, -77.016599",
+                "direccion": "JR. GERMANIO / JR. CROMO",
+                "WKT": "POINT Z (-77.016531 -11.994379 0)"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -77.016513,
-                    -11.994677,
+                    -77.016531,
+                    -11.994379,
                     0.0
                 ]
             }
@@ -8417,13 +8417,13 @@
                 "boton": false,
                 "referencia": "-11.9897670724739, -77.0115117743248",
                 "direccion": "JR. PELITRES / JR. ZUMANQUES",
-                "WKT": "POINT Z (-77.011699 -11.990003 0)"
+                "WKT": "POINT Z (-77.012198 -11.989388 0)"
             },
             "geometry": {
                 "type": "Point",
                 "coordinates": [
-                    -77.011699,
-                    -11.990003,
+                    -77.012198,
+                    -11.989388,
                     0.0
                 ]
             }
