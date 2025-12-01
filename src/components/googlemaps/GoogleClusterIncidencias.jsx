@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useRobosQuery, useExtorsionesQuery } from '../../hooks/useIncidenciasQuery';
-import { logger } from '../../../utils/logger';
+import { logger } from '../../../utils/logger.js';
 
 // Función para calcular distancia entre dos puntos en metros usando fórmula de Haversine
 const calcularDistancia = (lat1, lon1, lat2, lon2) => {

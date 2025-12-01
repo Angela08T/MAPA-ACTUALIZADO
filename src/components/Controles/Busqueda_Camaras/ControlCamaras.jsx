@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronUp, ChevronDown, Search, Filter, MapPin, Zap, AlertTriangle } from 'lucide-react';
 import './ControlCamaras.css';
-import { logger } from '../../../utils/logger';
+import { logger } from '../../../utils/logger.js';
 
 const ControlCamaras = ({
   visible,
