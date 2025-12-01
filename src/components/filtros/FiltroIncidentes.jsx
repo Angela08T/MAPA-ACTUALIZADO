@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState } from 'react';
 import { DateRange } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main style file
 import 'react-date-range/dist/theme/default.css'; // theme css file
+import { logger } from '../../../utils/logger';
 import {
   Filter,
   RotateCcw,
@@ -11,18 +12,15 @@ import {
   ChevronUp,
   ChevronDown,
   Calendar,
-} from "lucide-react";
+} from 'lucide-react';
 
-const FiltroIncidentes = ({
-  onFiltrar,
-  onLimpiar,
-}) => {
+const FiltroIncidentes = ({ onFiltrar, onLimpiar }) => {
   const [filtros, setFiltros] = useState({
-    fechaInicio: "",
-    fechaFin: "",
-    Turno: "",
-    Horario: "",
-    Jurisdiccion: "",
+    fechaInicio: '',
+    fechaFin: '',
+    Turno: '',
+    Horario: '',
+    Jurisdiccion: '',
   });
 
   const [contadores, setContadores] = useState({
@@ -33,49 +31,49 @@ const FiltroIncidentes = ({
 
   const [isCollapsed, setIsCollapsed] = useState(false);
   const [dateRangeOpen, setDateRangeOpen] = useState(false);
-  
+
   // Estado para el date range
   const [dateRange, setDateRange] = useState([
     {
       startDate: null,
       endDate: null,
-      key: 'selection'
-    }
+      key: 'selection',
+    },
   ]);
 
   const [tempDateRange, setTempDateRange] = useState([
     {
       startDate: null,
       endDate: null,
-      key: 'selection'
-    }
+      key: 'selection',
+    },
   ]);
 
   const opciones = {
-    Turno: ["Turno Mañana", "Turno Tarde", "Turno Noche"],
+    Turno: ['Turno Mañana', 'Turno Tarde', 'Turno Noche'],
     Horario: [
-      "00:00 - 01:59",
-      "02:00 - 03:59",
-      "04:00 - 05:59",
-      "06:00 - 07:59",
-      "08:00 - 09:59",
-      "10:00 - 11:59",
-      "12:00 - 13:59",
-      "14:00 - 15:59",
-      "16:00 - 17:59",
-      "18:00 - 19:59",
-      "20:00 - 21:59",
-      "22:00 - 23:59"
+      '00:00 - 01:59',
+      '02:00 - 03:59',
+      '04:00 - 05:59',
+      '06:00 - 07:59',
+      '08:00 - 09:59',
+      '10:00 - 11:59',
+      '12:00 - 13:59',
+      '14:00 - 15:59',
+      '16:00 - 17:59',
+      '18:00 - 19:59',
+      '20:00 - 21:59',
+      '22:00 - 23:59',
     ],
     Jurisdiccion: [
-      "10 de Octubre",
-      "Bayovar",
-      "Caja de Agua",
-      "Canto Rey",
-      "Huayrona",
-      "Mariscal Caceres",
-      "Santa Elizabeth",
-      "Zarate",
+      '10 de Octubre',
+      'Bayovar',
+      'Caja de Agua',
+      'Canto Rey',
+      'Huayrona',
+      'Mariscal Caceres',
+      'Santa Elizabeth',
+      'Zarate',
     ],
   };
 
@@ -86,7 +84,7 @@ const FiltroIncidentes = ({
       getRange: () => {
         const today = new Date();
         return { startDate: today, endDate: today };
-      }
+      },
     },
     {
       label: 'Últimos 7 días',
@@ -95,7 +93,7 @@ const FiltroIncidentes = ({
         const startDate = new Date();
         startDate.setDate(startDate.getDate() - 6);
         return { startDate, endDate };
-      }
+      },
     },
     {
       label: 'Últimos 30 días',
@@ -104,7 +102,7 @@ const FiltroIncidentes = ({
         const startDate = new Date();
         startDate.setDate(startDate.getDate() - 29);
         return { startDate, endDate };
-      }
+      },
     },
     {
       label: 'Este mes',
@@ -113,7 +111,7 @@ const FiltroIncidentes = ({
         const startDate = new Date(now.getFullYear(), now.getMonth(), 1);
         const endDate = new Date(now.getFullYear(), now.getMonth() + 1, 0);
         return { startDate, endDate };
-      }
+      },
     },
     {
       label: 'Mes anterior',
@@ -122,35 +120,35 @@ const FiltroIncidentes = ({
         const startDate = new Date(now.getFullYear(), now.getMonth() - 1, 1);
         const endDate = new Date(now.getFullYear(), now.getMonth(), 0);
         return { startDate, endDate };
-      }
-    }
+      },
+    },
   ];
 
   useEffect(() => {
-    const handleRobos = (e) => {
-      console.log("🔷 Recibido robosTotal:", e.detail);
-      setContadores((prev) => ({
+    const handleRobos = e => {
+      logger.log('🔷 Recibido robosTotal:', e.detail);
+      setContadores(prev => ({
         ...prev,
         robos: e.detail,
         total: e.detail + prev.extorsion,
       }));
     };
 
-    const handleExtorsion = (e) => {
-      console.log("🟠 Recibido extorsionTotal:", e.detail);
-      setContadores((prev) => ({
+    const handleExtorsion = e => {
+      logger.log('🟠 Recibido extorsionTotal:', e.detail);
+      setContadores(prev => ({
         ...prev,
         extorsion: e.detail,
         total: e.detail + prev.robos,
       }));
     };
 
-    window.addEventListener("robosTotal", handleRobos);
-    window.addEventListener("extorsionTotal", handleExtorsion);
+    window.addEventListener('robosTotal', handleRobos);
+    window.addEventListener('extorsionTotal', handleExtorsion);
 
     return () => {
-      window.removeEventListener("robosTotal", handleRobos);
-      window.removeEventListener("extorsionTotal", handleExtorsion);
+      window.removeEventListener('robosTotal', handleRobos);
+      window.removeEventListener('extorsionTotal', handleExtorsion);
     };
   }, []);
 
@@ -160,7 +158,7 @@ const FiltroIncidentes = ({
 
   // Cerrar date range cuando se hace click fuera
   useEffect(() => {
-    const handleClickOutside = (event) => {
+    const handleClickOutside = event => {
       if (dateRangeOpen && !event.target.closest('.date-range-container')) {
         setDateRangeOpen(false);
       }
@@ -173,18 +171,18 @@ const FiltroIncidentes = ({
   }, [dateRangeOpen]);
 
   // Funciones para formatear fechas
-  const formatDateToString = (date) => {
-    if (!date) return "";
+  const formatDateToString = date => {
+    if (!date) return '';
     return date.toISOString().split('T')[0]; // formato YYYY-MM-DD
   };
 
-  const handleChange = (e) => {
+  const handleChange = e => {
     const { name, value } = e.target;
-    setFiltros((prev) => ({ ...prev, [name]: value }));
+    setFiltros(prev => ({ ...prev, [name]: value }));
   };
 
   // Manejar cambios en el date range temporal
-  const handleRangeChange = (ranges) => {
+  const handleRangeChange = ranges => {
     setTempDateRange([ranges.selection]);
   };
 
@@ -194,44 +192,50 @@ const FiltroIncidentes = ({
     const newFiltros = {
       ...filtros,
       fechaInicio: formatDateToString(range.startDate),
-      fechaFin: formatDateToString(range.endDate)
+      fechaFin: formatDateToString(range.endDate),
     };
-    
+
     setFiltros(newFiltros);
     setDateRange([...tempDateRange]);
     setDateRangeOpen(false);
   };
 
   // Selección rápida de fechas
-  const handleQuickSelect = (option) => {
+  const handleQuickSelect = option => {
     const range = option.getRange();
-    const newRange = [{
-      startDate: range.startDate,
-      endDate: range.endDate,
-      key: 'selection'
-    }];
+    const newRange = [
+      {
+        startDate: range.startDate,
+        endDate: range.endDate,
+        key: 'selection',
+      },
+    ];
     setTempDateRange(newRange);
   };
 
   const limpiar = () => {
     const filtrosVacios = {
-      fechaInicio: "",
-      fechaFin: "",
-      Turno: "",
-      Horario: "",
-      Jurisdiccion: "",
+      fechaInicio: '',
+      fechaFin: '',
+      Turno: '',
+      Horario: '',
+      Jurisdiccion: '',
     };
     setFiltros(filtrosVacios);
-    setDateRange([{
-      startDate: null,
-      endDate: null,
-      key: 'selection'
-    }]);
-    setTempDateRange([{
-      startDate: null,
-      endDate: null,
-      key: 'selection'
-    }]);
+    setDateRange([
+      {
+        startDate: null,
+        endDate: null,
+        key: 'selection',
+      },
+    ]);
+    setTempDateRange([
+      {
+        startDate: null,
+        endDate: null,
+        key: 'selection',
+      },
+    ]);
     onLimpiar();
   };
 
@@ -239,16 +243,16 @@ const FiltroIncidentes = ({
   const getDateRangeText = () => {
     const range = dateRange[0];
     if (!range.startDate || !range.endDate) {
-      return "Seleccionar fechas";
+      return 'Seleccionar fechas';
     }
-    
+
     const start = range.startDate.toLocaleDateString('es-ES');
     const end = range.endDate.toLocaleDateString('es-ES');
-    
+
     if (start === end) {
       return start;
     }
-    
+
     return `${start} - ${end}`;
   };
 
@@ -278,7 +282,7 @@ const FiltroIncidentes = ({
       minHeight: dateRangeOpen ? '630px' : 'auto',
       maxHeight: dateRangeOpen ? 'none' : '400px',
     },
-    
+
     filtrosHeader: {
       display: 'flex',
       justifyContent: 'space-between',
@@ -287,7 +291,7 @@ const FiltroIncidentes = ({
       userSelect: 'none',
       marginBottom: isCollapsed ? '0' : '10px',
     },
-    
+
     filtrosTitulo: {
       display: 'flex',
       alignItems: 'center',
@@ -296,7 +300,7 @@ const FiltroIncidentes = ({
       fontSize: '15px',
       color: '#333',
     },
-    
+
     collapseBtn: {
       background: 'none',
       border: 'none',
@@ -308,7 +312,7 @@ const FiltroIncidentes = ({
       display: 'flex',
       alignItems: 'center',
     },
-    
+
     resetBtn: {
       background: '#ff4757',
       color: 'white',
@@ -322,7 +326,7 @@ const FiltroIncidentes = ({
       alignItems: 'center',
       gap: '4px',
     },
-    
+
     contadoresPanel: {
       display: 'flex',
       justifyContent: 'space-between',
@@ -337,7 +341,7 @@ const FiltroIncidentes = ({
       transition: 'all 0.3s ease',
       transformOrigin: 'top',
     },
-    
+
     contadorItem: {
       display: 'flex',
       flexDirection: 'column',
@@ -345,20 +349,20 @@ const FiltroIncidentes = ({
       minWidth: '80px',
       textAlign: 'center',
     },
-    
+
     contadorNumero: {
       fontSize: '22px',
       fontWeight: 'bold',
       lineHeight: 1,
     },
-    
+
     contadorLabel: {
       fontSize: '11px',
       textTransform: 'uppercase',
       marginTop: '2px',
       opacity: 0.9,
     },
-    
+
     filtrosContent: {
       display: 'flex',
       flexDirection: 'column',
@@ -369,13 +373,13 @@ const FiltroIncidentes = ({
       transition: 'all 0.3s ease',
       transformOrigin: 'top',
     },
-    
+
     filtrosRow: {
       display: 'flex',
       flexWrap: 'wrap',
       gap: '12px',
     },
-    
+
     filtroLabel: {
       display: 'flex',
       flexDirection: 'column',
@@ -384,7 +388,7 @@ const FiltroIncidentes = ({
       minWidth: '100px',
       flex: 1,
     },
-    
+
     filtroSelect: {
       padding: '5px 8px',
       borderRadius: '6px',
@@ -392,7 +396,7 @@ const FiltroIncidentes = ({
       background: 'white',
       fontSize: '13px',
     },
-    
+
     // Estilos responsive
     '@media (max-width: 768px)': {
       filtroPanel: {
@@ -448,7 +452,10 @@ const FiltroIncidentes = ({
       <div style={styles.filtrosContent}>
         {/* Selector de rango de fechas */}
         <div style={styles.filtrosRow}>
-                    <div style={{...styles.filtroLabel, position: 'relative'}} className="date-range-container">
+          <div
+            style={{ ...styles.filtroLabel, position: 'relative' }}
+            className="date-range-container"
+          >
             <span>Rango de fechas:</span>
             <button
               onClick={() => {
@@ -466,44 +473,53 @@ const FiltroIncidentes = ({
                 cursor: 'pointer',
                 background: 'white',
                 border: '1px solid #ccc',
-                textAlign: 'left'
+                textAlign: 'left',
               }}
             >
               <span>{getDateRangeText()}</span>
               <Calendar size={16} />
             </button>
-            
+
             {dateRangeOpen && (
-               <div style={{
-                 position: 'absolute',
-                 top: '100%',
-                 left: 0,
-                 zIndex: 1500,
-                 backgroundColor: 'white',
-                 border: '1px solid #d1d5db',
-                 borderRadius: '10px',
-                 marginTop: '1px',
-                 overflow: 'hidden',
-                 boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
-                 minWidth: '300px',
-               }}>
-                <div style={{
-                  padding: '8px 12px 5px 12px',
-                  borderBottom: '1px solid #e5e7eb'
-                }}>
-                  <div style={{
-                    fontSize: '11px',
-                    color: '#6b7280',
-                    marginBottom: '8px',
-                    fontWeight: '600'
-                  }}>
+              <div
+                style={{
+                  position: 'absolute',
+                  top: '100%',
+                  left: 0,
+                  zIndex: 1500,
+                  backgroundColor: 'white',
+                  border: '1px solid #d1d5db',
+                  borderRadius: '10px',
+                  marginTop: '1px',
+                  overflow: 'hidden',
+                  boxShadow:
+                    '0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)',
+                  minWidth: '300px',
+                }}
+              >
+                <div
+                  style={{
+                    padding: '8px 12px 5px 12px',
+                    borderBottom: '1px solid #e5e7eb',
+                  }}
+                >
+                  <div
+                    style={{
+                      fontSize: '11px',
+                      color: '#6b7280',
+                      marginBottom: '8px',
+                      fontWeight: '600',
+                    }}
+                  >
                     Selección rápida:
                   </div>
-                  <div style={{
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    gap: '1px'
-                  }}>
+                  <div
+                    style={{
+                      display: 'flex',
+                      flexWrap: 'wrap',
+                      gap: '1px',
+                    }}
+                  >
                     {quickSelectOptions.map((option, index) => (
                       <button
                         key={index}
@@ -516,13 +532,13 @@ const FiltroIncidentes = ({
                           background: 'white',
                           cursor: 'pointer',
                           color: '#374151',
-                          transition: 'all 0.2s ease'
+                          transition: 'all 0.2s ease',
                         }}
-                        onMouseEnter={(e) => {
+                        onMouseEnter={e => {
                           e.target.style.borderColor = '#4052af';
                           e.target.style.backgroundColor = '#f8f9ff';
                         }}
-                        onMouseLeave={(e) => {
+                        onMouseLeave={e => {
                           e.target.style.borderColor = '#d1d5db';
                           e.target.style.backgroundColor = 'white';
                         }}
@@ -545,13 +561,15 @@ const FiltroIncidentes = ({
                   showDateDisplay={false}
                 />
 
-                <div style={{
-                  padding: '8px 12px',
-                  borderTop: '1px solid #e5e7eb',
-                  display: 'flex',
-                  justifyContent: 'space-between',
-                  gap: '8px'
-                }}>
+                <div
+                  style={{
+                    padding: '8px 12px',
+                    borderTop: '1px solid #e5e7eb',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    gap: '8px',
+                  }}
+                >
                   <button
                     onClick={() => setDateRangeOpen(false)}
                     style={{
@@ -561,7 +579,7 @@ const FiltroIncidentes = ({
                       borderRadius: '4px',
                       background: 'white',
                       cursor: 'pointer',
-                      color: '#6b7280'
+                      color: '#6b7280',
                     }}
                   >
                     Cancelar
@@ -575,7 +593,7 @@ const FiltroIncidentes = ({
                       borderRadius: '4px',
                       background: '#4052af',
                       color: 'white',
-                      cursor: 'pointer'
+                      cursor: 'pointer',
                     }}
                   >
                     Aplicar Filtro
@@ -585,19 +603,19 @@ const FiltroIncidentes = ({
             )}
           </div>
         </div>
-        
+
         <div style={styles.filtrosRow}>
-          {["Turno", "Horario", "Jurisdiccion"].map(campo => (
+          {['Turno', 'Horario', 'Jurisdiccion'].map(campo => (
             <label key={campo} style={styles.filtroLabel}>
-              <span>{campo === "Jurisdiccion" ? "Jurisdicción" : campo}:</span>
-              <select 
-                name={campo} 
-                value={filtros[campo]} 
+              <span>{campo === 'Jurisdiccion' ? 'Jurisdicción' : campo}:</span>
+              <select
+                name={campo}
+                value={filtros[campo]}
                 onChange={handleChange}
                 style={styles.filtroSelect}
               >
                 <option value="">Todos</option>
-                {opciones[campo].map((op) => (
+                {opciones[campo].map(op => (
                   <option key={op} value={op}>
                     {op}
                   </option>
@@ -606,7 +624,7 @@ const FiltroIncidentes = ({
             </label>
           ))}
         </div>
-        
+
         <div style={{ display: 'flex', justifyContent: 'flex-end' }}>
           <button style={styles.resetBtn} onClick={limpiar}>
             <RotateCcw size={14} />
