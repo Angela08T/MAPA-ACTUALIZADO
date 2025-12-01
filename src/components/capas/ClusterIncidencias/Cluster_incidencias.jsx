@@ -1,7 +1,7 @@
 import { useEffect, useState, useMemo } from 'react';
 import { Circle, Popup } from 'react-leaflet';
 import * as turf from '@turf/turf';
-import { logger } from '../../../utils/logger';
+import { logger } from '../../utils/logger';
 
 const Cluster_incidencias = ({ visible }) => {
   const [robosData, setRobosData] = useState([]);

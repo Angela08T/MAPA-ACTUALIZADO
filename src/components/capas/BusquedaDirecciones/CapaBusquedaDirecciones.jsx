@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react';
 import { LayerGroup, useMap } from 'react-leaflet';
 import L from 'leaflet';
-import { logger } from '../../../utils/logger';
+import { logger } from '../../utils/logger';
 
 // Configuración del icono personalizado para búsquedas
 const iconoBusqueda = new L.Icon({

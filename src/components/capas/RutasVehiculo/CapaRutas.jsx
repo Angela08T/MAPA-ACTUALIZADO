@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useMap, Marker, Polyline, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import { logger } from '../../../utils/logger';
+import { logger } from '../../utils/logger';
 
 const CapaRutas = ({ visible, onRutaCalculada }) => {
   const map = useMap();
