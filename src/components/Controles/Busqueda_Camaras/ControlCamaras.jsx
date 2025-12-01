@@ -1,436 +1,452 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronUp, ChevronDown, Search, Filter, MapPin, Zap, AlertTriangle } from 'lucide-react';
 import './ControlCamaras.css';
+import { logger } from '../../../utils/logger.js';
 
-const ControlCamaras = ({ visible, onCamaraSeleccionada, onFiltroAplicado, onSeguimientoCamara, onLimpiarSeguimiento, onLimpiarSeleccion, mapType = 'leaflet' }) => {
-    const [isCollapsed, setIsCollapsed] = useState(false);
-    const [busqueda, setBusqueda] = useState('');
-    const [camaras, setCamaras] = useState([]);
-    const [filtros, setFiltros] = useState({
-        megafono: false,
-        boton: false,
-        jurisdicciones: []
+const ControlCamaras = ({
+  visible,
+  onCamaraSeleccionada,
+  onFiltroAplicado,
+  onSeguimientoCamara,
+  onLimpiarSeguimiento,
+  onLimpiarSeleccion,
+  mapType = 'leaflet',
+}) => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+  const [busqueda, setBusqueda] = useState('');
+  const [camaras, setCamaras] = useState([]);
+  const [filtros, setFiltros] = useState({
+    megafono: false,
+    boton: false,
+    jurisdicciones: [],
+  });
+  const [cargando, setCargando] = useState(true);
+  const [error, setError] = useState(null);
+  const [ultimaBusqueda, setUltimaBusqueda] = useState('');
+  const [jurisdiccionesCollapsed, setJurisdiccionesCollapsed] = useState(false);
+
+  // Helpers de búsqueda robusta
+  const normalize = str =>
+    (str || '')
+      .toString()
+      .normalize('NFD')
+      .replace(/\p{Diacritic}+/gu, '')
+      .toLowerCase()
+      .trim()
+      .replace(/\s+/g, ' ');
+
+  const compactAlnum = str => normalize(str).replace(/[^a-z0-9]/g, '');
+
+  const tokenize = str =>
+    normalize(str)
+      .split(/[^a-z0-9]+/)
+      .filter(Boolean);
+
+  const escapeRegex = str => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+  const findCamaraByTerm = (term, lista) => {
+    const nterm = normalize(term);
+    if (!nterm) return null;
+
+    const termCompact = compactAlnum(nterm);
+    const termBoundaryRe = new RegExp(`(^|[^a-z0-9])${escapeRegex(nterm)}(?=$|[^a-z0-9])`, 'i');
+
+    // 1) Coincidencias fuertes sobre el nombre
+    const candidatasFuertes = lista.filter(c => {
+      const nameNorm = normalize(c.name);
+      const nameCompact = compactAlnum(c.name);
+      const nameTokens = tokenize(c.name);
+
+      return (
+        nameNorm === nterm ||
+        nameCompact === termCompact ||
+        nameTokens.includes(nterm) ||
+        nameNorm.startsWith(nterm) ||
+        termBoundaryRe.test(nameNorm)
+      );
     });
-    const [cargando, setCargando] = useState(true);
-    const [error, setError] = useState(null);
-    const [ultimaBusqueda, setUltimaBusqueda] = useState('');
-    const [jurisdiccionesCollapsed, setJurisdiccionesCollapsed] = useState(false);
 
-    // Helpers de búsqueda robusta
-    const normalize = (str) => (str || '')
-        .toString()
-        .normalize('NFD')
-        .replace(/\p{Diacritic}+/gu, '')
-        .toLowerCase()
-        .trim()
-        .replace(/\s+/g, ' ');
+    if (candidatasFuertes.length > 0) {
+      // Ordenar por prioridad: exacta, compacta, token, startsWith, boundary
+      const score = c => {
+        const nameNorm = normalize(c.name);
+        const nameCompact = compactAlnum(c.name);
+        const nameTokens = tokenize(c.name);
+        if (nameNorm === nterm) return 100;
+        if (nameCompact === termCompact) return 95;
+        if (nameTokens.includes(nterm)) return 90;
+        if (nameNorm.startsWith(nterm)) return 85;
+        if (termBoundaryRe.test(nameNorm)) return 80;
+        return 0;
+      };
+      return candidatasFuertes.sort((a, b) => score(b) - score(a))[0];
+    }
 
-    const compactAlnum = (str) => normalize(str).replace(/[^a-z0-9]/g, '');
+    // 2) Fallbacks: dirección y jurisdicción por palabra completa
+    const candidatasCampos = lista.filter(c => {
+      const dirNorm = normalize(c.direccion);
+      const jurNorm = normalize(c.jurisdiccion);
+      return termBoundaryRe.test(dirNorm) || termBoundaryRe.test(jurNorm);
+    });
+    if (candidatasCampos.length > 0) return candidatasCampos[0];
 
-    const tokenize = (str) => normalize(str).split(/[^a-z0-9]+/).filter(Boolean);
+    // 3) Último recurso: includes en otros campos (no usar includes en name para evitar falsos positivos como 578A vs 78A)
+    const candidatasSuaves = lista.filter(c => {
+      const dirNorm = normalize(c.direccion);
+      const jurNorm = normalize(c.jurisdiccion);
+      return dirNorm.includes(nterm) || jurNorm.includes(nterm);
+    });
+    if (candidatasSuaves.length > 0) return candidatasSuaves[0];
 
-    const escapeRegex = (str) => str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return null;
+  };
 
-    const findCamaraByTerm = (term, lista) => {
-        const nterm = normalize(term);
-        if (!nterm) return null;
+  // Lista de jurisdicciones disponibles
+  const jurisdiccionesDisponibles = [
+    '10 de Octubre',
+    'Zarate',
+    'Mariscal Caceres',
+    'Bayovar',
+    'Santa Elizabeth',
+    'Canto Rey',
+    'Huayrona',
+    'Caja de Agua',
+  ];
 
-        const termCompact = compactAlnum(nterm);
-        const termBoundaryRe = new RegExp(`(^|[^a-z0-9])${escapeRegex(nterm)}(?=$|[^a-z0-9])`, 'i');
+  // Cargar datos de cámaras al montar el componente
+  useEffect(() => {
+    if (visible) {
+      cargarCamaras();
+    }
+  }, [visible]);
 
-        // 1) Coincidencias fuertes sobre el nombre
-        const candidatasFuertes = lista.filter(c => {
-            const nameNorm = normalize(c.name);
-            const nameCompact = compactAlnum(c.name);
-            const nameTokens = tokenize(c.name);
+  // Aplicar filtros cuando cambien los filtros
+  useEffect(() => {
+    aplicarFiltros();
+  }, [camaras, filtros]);
 
-            return (
-                nameNorm === nterm ||
-                nameCompact === termCompact ||
-                nameTokens.includes(nterm) ||
-                nameNorm.startsWith(nterm) ||
-                termBoundaryRe.test(nameNorm)
-            );
-        });
+  const cargarCamaras = async () => {
+    setCargando(true);
+    setError(null);
 
-        if (candidatasFuertes.length > 0) {
-            // Ordenar por prioridad: exacta, compacta, token, startsWith, boundary
-            const score = (c) => {
-                const nameNorm = normalize(c.name);
-                const nameCompact = compactAlnum(c.name);
-                const nameTokens = tokenize(c.name);
-                if (nameNorm === nterm) return 100;
-                if (nameCompact === termCompact) return 95;
-                if (nameTokens.includes(nterm)) return 90;
-                if (nameNorm.startsWith(nterm)) return 85;
-                if (termBoundaryRe.test(nameNorm)) return 80;
-                return 0;
-            };
-            return candidatasFuertes.sort((a, b) => score(b) - score(a))[0];
-        }
+    try {
+      const response = await fetch('/data/610_updated.geojson');
+      if (!response.ok) {
+        throw new Error(`Error al cargar datos: ${response.status}`);
+      }
 
-        // 2) Fallbacks: dirección y jurisdicción por palabra completa
-        const candidatasCampos = lista.filter(c => {
-            const dirNorm = normalize(c.direccion);
-            const jurNorm = normalize(c.jurisdiccion);
-            return termBoundaryRe.test(dirNorm) || termBoundaryRe.test(jurNorm);
-        });
-        if (candidatasCampos.length > 0) return candidatasCampos[0];
+      const data = await response.json();
+      const camarasData = (data.features || [])
+        .map((feature, index) => ({
+          id: index,
+          name: feature.properties?.name || `Cámara ${index + 1}`,
+          direccion: feature.properties?.direccion || 'Sin dirección',
+          tipo: feature.properties?.tipo || 'Municipal',
+          jurisdiccion: feature.properties?.jurisdiccion || 'Sin jurisdicción',
+          megafono: Boolean(feature.properties?.megafono),
+          boton: Boolean(feature.properties?.boton),
+          lat: feature.geometry?.coordinates?.[1],
+          lng: feature.geometry?.coordinates?.[0],
+          properties: feature.properties,
+        }))
+        .filter(camara => camara.lat && camara.lng);
 
-        // 3) Último recurso: includes en otros campos (no usar includes en name para evitar falsos positivos como 578A vs 78A)
-        const candidatasSuaves = lista.filter(c => {
-            const dirNorm = normalize(c.direccion);
-            const jurNorm = normalize(c.jurisdiccion);
-            return dirNorm.includes(nterm) || jurNorm.includes(nterm);
-        });
-        if (candidatasSuaves.length > 0) return candidatasSuaves[0];
+      setCamaras(camarasData);
+      logger.log(`📷 Cargadas ${camarasData.length} cámaras municipales`);
+    } catch (err) {
+      logger.error('❌ Error cargando cámaras:', err);
+      setError(`Error: ${err.message}`);
+    } finally {
+      setCargando(false);
+    }
+  };
 
-        return null;
-    };
+  const aplicarFiltros = () => {
+    let resultado = [...camaras];
 
-    // Lista de jurisdicciones disponibles
-    const jurisdiccionesDisponibles = [
-        "10 de Octubre",
-        "Zarate",
-        "Mariscal Caceres",
-        "Bayovar",
-        "Santa Elizabeth",
-        "Canto Rey",
-        "Huayrona",
-        "Caja de Agua"
-    ];
+    // Filtros por características
+    if (filtros.megafono) {
+      resultado = resultado.filter(camara => camara.megafono);
+    }
 
-    // Cargar datos de cámaras al montar el componente
-    useEffect(() => {
-        if (visible) {
-            cargarCamaras();
-        }
-    }, [visible]);
+    if (filtros.boton) {
+      resultado = resultado.filter(camara => camara.boton);
+    }
 
-    // Aplicar filtros cuando cambien los filtros
-    useEffect(() => {
-        aplicarFiltros();
-    }, [camaras, filtros]);
+    // Filtro por jurisdicciones
+    if (filtros.jurisdicciones.length > 0) {
+      resultado = resultado.filter(camara => filtros.jurisdicciones.includes(camara.jurisdiccion));
+    }
 
-    const cargarCamaras = async () => {
-        setCargando(true);
-        setError(null);
+    // Notificar al componente padre sobre el filtro aplicado
+    if (onFiltroAplicado) {
+      onFiltroAplicado(resultado, filtros);
+    }
+  };
 
-        try {
-            const response = await fetch("/data/610_updated.geojson");
-            if (!response.ok) {
-                throw new Error(`Error al cargar datos: ${response.status}`);
-            }
+  const buscarCamara = () => {
+    if (!busqueda.trim()) {
+      setError('Ingresa el número de la cámara');
+      return;
+    }
 
-            const data = await response.json();
-            const camarasData = (data.features || []).map((feature, index) => ({
-                id: index,
-                name: feature.properties?.name || `Cámara ${index + 1}`,
-                direccion: feature.properties?.direccion || 'Sin dirección',
-                tipo: feature.properties?.tipo || 'Municipal',
-                jurisdiccion: feature.properties?.jurisdiccion || 'Sin jurisdicción',
-                megafono: Boolean(feature.properties?.megafono),
-                boton: Boolean(feature.properties?.boton),
-                lat: feature.geometry?.coordinates?.[1],
-                lng: feature.geometry?.coordinates?.[0],
-                properties: feature.properties
-            })).filter(camara => camara.lat && camara.lng);
+    const camaraEncontrada = findCamaraByTerm(busqueda, camaras);
 
-            setCamaras(camarasData);
-            console.log(`📷 Cargadas ${camarasData.length} cámaras municipales`);
-        } catch (err) {
-            console.error('❌ Error cargando cámaras:', err);
-            setError(`Error: ${err.message}`);
-        } finally {
-            setCargando(false);
-        }
-    };
+    if (camaraEncontrada) {
+      setUltimaBusqueda(busqueda);
+      setError(null);
 
-    const aplicarFiltros = () => {
-        let resultado = [...camaras];
+      // Notificar al componente padre para navegar a la cámara
+      if (onCamaraSeleccionada) {
+        onCamaraSeleccionada(camaraEncontrada);
+      }
+    } else {
+      setError(`No se encontró la cámara: "${busqueda}"`);
+    }
+  };
 
-        // Filtros por características
-        if (filtros.megafono) {
-            resultado = resultado.filter(camara => camara.megafono);
-        }
+  const handleKeyPress = e => {
+    if (e.key === 'Enter') {
+      e.preventDefault();
+      buscarCamara();
+    }
+  };
 
-        if (filtros.boton) {
-            resultado = resultado.filter(camara => camara.boton);
-        }
+  const limpiarBusqueda = () => {
+    setBusqueda('');
+    setUltimaBusqueda('');
+    setError(null);
+    setFiltros({ megafono: false, boton: false, jurisdicciones: [] });
 
-        // Filtro por jurisdicciones
-        if (filtros.jurisdicciones.length > 0) {
-            resultado = resultado.filter(camara =>
-                filtros.jurisdicciones.includes(camara.jurisdiccion)
-            );
-        }
+    // Limpiar la cámara seleccionada
+    if (onLimpiarSeleccion) {
+      onLimpiarSeleccion();
+    }
 
-        // Filtro por jurisdicciones
-        if (filtros.jurisdicciones.length > 0) {
-            resultado = resultado.filter(camara =>
-                filtros.jurisdicciones.includes(camara.jurisdiccion)
-            );
-        }
+    // Limpiar seguimiento si existe
+    if (onLimpiarSeguimiento) {
+      onLimpiarSeguimiento();
+    }
+  };
 
-        // Notificar al componente padre sobre el filtro aplicado
-        if (onFiltroAplicado) {
-            onFiltroAplicado(resultado, filtros);
-        }
-    };
+  const iniciarSeguimiento = () => {
+    if (!ultimaBusqueda) return;
 
-    const buscarCamara = () => {
-        if (!busqueda.trim()) {
-            setError('Ingresa el número de la cámara');
-            return;
-        }
+    // Buscar la cámara por el término de búsqueda (misma lógica robusta)
+    const camaraEncontrada = findCamaraByTerm(ultimaBusqueda, camaras);
 
-        const camaraEncontrada = findCamaraByTerm(busqueda, camaras);
+    if (camaraEncontrada && onSeguimientoCamara) {
+      // Notificar al componente padre para iniciar el seguimiento
+      onSeguimientoCamara(camaraEncontrada);
+    } else {
+      setError('No se pudo iniciar el seguimiento para esta cámara');
+    }
+  };
 
-        if (camaraEncontrada) {
-            setUltimaBusqueda(busqueda);
-            setError(null);
+  const toggleFiltro = tipo => {
+    setFiltros(prev => ({
+      ...prev,
+      [tipo]: !prev[tipo],
+    }));
+  };
 
-            // Notificar al componente padre para navegar a la cámara
-            if (onCamaraSeleccionada) {
-                onCamaraSeleccionada(camaraEncontrada);
-            }
-        } else {
-            setError(`No se encontró la cámara: "${busqueda}"`);
-        }
-    };
+  const handleJurisdiccionChange = e => {
+    const value = e.target.value;
+    const isChecked = e.target.checked;
 
-    const handleKeyPress = (e) => {
-        if (e.key === 'Enter') {
-            e.preventDefault();
-            buscarCamara();
-        }
-    };
+    setFiltros(prev => ({
+      ...prev,
+      jurisdicciones: isChecked
+        ? [...prev.jurisdicciones, value]
+        : prev.jurisdicciones.filter(j => j !== value),
+    }));
+  };
 
-    const limpiarBusqueda = () => {
-        setBusqueda('');
-        setUltimaBusqueda('');
-        setError(null);
-        setFiltros({ megafono: false, boton: false, jurisdicciones: [], jurisdicciones: [] });
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+  };
 
-        // Limpiar la cámara seleccionada
-        if (onLimpiarSeleccion) {
-            onLimpiarSeleccion();
-        }
+  const toggleJurisdiccionesCollapse = () => {
+    setJurisdiccionesCollapsed(!jurisdiccionesCollapsed);
+  };
 
-        // Limpiar seguimiento si existe
-        if (onLimpiarSeguimiento) {
-            onLimpiarSeguimiento();
-        }
-    };
+  if (!visible) return null;
 
-    const iniciarSeguimiento = () => {
-        if (!ultimaBusqueda) return;
+  return (
+    <div className={`control-camaras ${mapType}-mode ${isCollapsed ? 'collapsed' : ''}`}>
+      <div className="control-camaras-header" onClick={toggleCollapse}>
+        <div className="header-content">
+          <h3>📷 Búsqueda de Cámaras</h3>
+          <button className="collapse-btn">
+            {isCollapsed ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
+          </button>
+        </div>
+      </div>
 
-        // Buscar la cámara por el término de búsqueda (misma lógica robusta)
-        const camaraEncontrada = findCamaraByTerm(ultimaBusqueda, camaras);
-
-        if (camaraEncontrada && onSeguimientoCamara) {
-            // Notificar al componente padre para iniciar el seguimiento
-            onSeguimientoCamara(camaraEncontrada);
-        } else {
-            setError('No se pudo iniciar el seguimiento para esta cámara');
-        }
-    };
-
-    const toggleFiltro = (tipo) => {
-        setFiltros(prev => ({
-            ...prev,
-            [tipo]: !prev[tipo]
-        }));
-    };
-
-    const handleJurisdiccionChange = (e) => {
-        const value = e.target.value;
-        const isChecked = e.target.checked;
-
-        setFiltros(prev => ({
-            ...prev,
-            jurisdicciones: isChecked
-                ? [...prev.jurisdicciones, value]
-                : prev.jurisdicciones.filter(j => j !== value)
-        }));
-    };
-
-    const toggleCollapse = () => {
-        setIsCollapsed(!isCollapsed);
-    };
-
-    const toggleJurisdiccionesCollapse = () => {
-        setJurisdiccionesCollapsed(!jurisdiccionesCollapsed);
-    };
-
-    if (!visible) return null;
-
-    return (
-        <div className={`control-camaras ${mapType}-mode ${isCollapsed ? 'collapsed' : ''}`}>
-            <div className="control-camaras-header" onClick={toggleCollapse}>
-                <div className="header-content">
-                    <h3>📷 Búsqueda de Cámaras</h3>
-                    <button className="collapse-btn">
-                        {isCollapsed ? <ChevronUp size={18} /> : <ChevronDown size={18} />}
-                    </button>
-                </div>
+      <div className={`control-camaras-content ${isCollapsed ? 'hidden' : ''}`}>
+        {/* Barra de búsqueda principal */}
+        <div className="busqueda-principal">
+          <div className="input-group">
+            <div className="input-container">
+              <Search size={18} className="search-icon" />
+              <input
+                type="text"
+                value={busqueda}
+                onChange={e => setBusqueda(e.target.value)}
+                onKeyPress={handleKeyPress}
+                placeholder="Ingresa el nombre o número de cámara..."
+                className="busqueda-input"
+                disabled={cargando}
+              />
             </div>
+            <button
+              onClick={buscarCamara}
+              disabled={cargando || !busqueda.trim()}
+              className="btn-buscar"
+              title="Buscar cámara (Enter)"
+            >
+              <MapPin size={16} />
+            </button>
+          </div>
 
-            <div className={`control-camaras-content ${isCollapsed ? 'hidden' : ''}`}>
-                {/* Barra de búsqueda principal */}
-                <div className="busqueda-principal">
-                    <div className="input-group">
-                        <div className="input-container">
-                            <Search size={18} className="search-icon" />
-                            <input
-                                type="text"
-                                value={busqueda}
-                                onChange={(e) => setBusqueda(e.target.value)}
-                                onKeyPress={handleKeyPress}
-                                placeholder="Ingresa el nombre o número de cámara..."
-                                className="busqueda-input"
-                                disabled={cargando}
-                            />
-                        </div>
-                        <button
-                            onClick={buscarCamara}
-                            disabled={cargando || !busqueda.trim()}
-                            className="btn-buscar"
-                            title="Buscar cámara (Enter)"
-                        >
-                            <MapPin size={16} />
-                        </button>
-                    </div>
+          {ultimaBusqueda && (
+            <div className="ultima-busqueda">
+              <span className="busqueda-label">Última búsqueda:</span>
+              <span className="busqueda-valor">"{ultimaBusqueda}"</span>
+            </div>
+          )}
+        </div>
 
-                    {ultimaBusqueda && (
-                        <div className="ultima-busqueda">
-                            <span className="busqueda-label">Última búsqueda:</span>
-                            <span className="busqueda-valor">"{ultimaBusqueda}"</span>
-                        </div>
-                    )}
-                </div>
+        {/* Filtros compactos */}
+        <div className="filtros-compactos">
+          <div className="filtros-titulo">
+            <Filter size={14} />
+            <span>Filtros rápidos</span>
+          </div>
+          <div className="filtros-botones">
+            <button
+              className={`filtro-btn ${filtros.megafono ? 'activo' : ''}`}
+              onClick={() => toggleFiltro('megafono')}
+              title="Mostrar solo cámaras con megáfono"
+            >
+              <Zap size={14} />
+              <span>Megáfono</span>
+              {filtros.megafono && (
+                <span className="filtro-count">{camaras.filter(c => c.megafono).length}</span>
+              )}
+            </button>
 
-                {/* Filtros compactos */}
-                <div className="filtros-compactos">
-                    <div className="filtros-titulo">
-                        <Filter size={14} />
-                        <span>Filtros rápidos</span>
-                    </div>
-                    <div className="filtros-botones">
-                        <button
-                            className={`filtro-btn ${filtros.megafono ? 'activo' : ''}`}
-                            onClick={() => toggleFiltro('megafono')}
-                            title="Mostrar solo cámaras con megáfono"
-                        >
-                            <Zap size={14} />
-                            <span>Megáfono</span>
-                            {filtros.megafono && <span className="filtro-count">{camaras.filter(c => c.megafono).length}</span>}
-                        </button>
+            <button
+              className={`filtro-btn ${filtros.boton ? 'activo' : ''}`}
+              onClick={() => toggleFiltro('boton')}
+              title="Mostrar solo cámaras con botón de pánico"
+            >
+              <AlertTriangle size={14} />
+              <span>Botón Pánico</span>
+              {filtros.boton && (
+                <span className="filtro-count">{camaras.filter(c => c.boton).length}</span>
+              )}
+            </button>
+          </div>
+        </div>
 
-                        <button
-                            className={`filtro-btn ${filtros.boton ? 'activo' : ''}`}
-                            onClick={() => toggleFiltro('boton')}
-                            title="Mostrar solo cámaras con botón de pánico"
-                        >
-                            <AlertTriangle size={14} />
-                            <span>Botón Pánico</span>
-                            {filtros.boton && <span className="filtro-count">{camaras.filter(c => c.boton).length}</span>}
-                        </button>
-                    </div>
-                </div>
+        {/* Filtro por Jurisdicciones */}
+        <div className={`filtro-jurisdicciones ${jurisdiccionesCollapsed ? 'collapsed' : ''}`}>
+          <div className="filtros-titulo">
+            <div className="titulo-left">
+              <MapPin size={14} />
+              <span>Jurisdicciones</span>
+              {filtros.jurisdicciones.length > 0 && (
+                <span className="filtro-count">{filtros.jurisdicciones.length}</span>
+              )}
+            </div>
+            <button
+              className="collapse-jurisdicciones-btn"
+              onClick={toggleJurisdiccionesCollapse}
+              title={
+                jurisdiccionesCollapsed ? 'Expandir jurisdicciones' : 'Colapsar jurisdicciones'
+              }
+            >
+              {jurisdiccionesCollapsed ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
+            </button>
+          </div>
+          <div className={`jurisdicciones-container ${jurisdiccionesCollapsed ? 'hidden' : ''}`}>
+            {jurisdiccionesDisponibles.map(jurisdiccion => (
+              <label key={jurisdiccion} className="jurisdiccion-checkbox">
+                <input
+                  type="checkbox"
+                  value={jurisdiccion}
+                  checked={filtros.jurisdicciones.includes(jurisdiccion)}
+                  onChange={handleJurisdiccionChange}
+                />
+                <span className="checkbox-custom"></span>
+                <span className="jurisdiccion-nombre">{jurisdiccion}</span>
+                <span className="jurisdiccion-count">
+                  ({camaras.filter(c => c.jurisdiccion === jurisdiccion).length})
+                </span>
+              </label>
+            ))}
+          </div>
+        </div>
 
-                {/* Filtro por Jurisdicciones */}
-                <div className={`filtro-jurisdicciones ${jurisdiccionesCollapsed ? 'collapsed' : ''}`}>
-                    <div className="filtros-titulo">
-                        <div className="titulo-left">
-                            <MapPin size={14} />
-                            <span>Jurisdicciones</span>
-                            {filtros.jurisdicciones.length > 0 && (
-                                <span className="filtro-count">{filtros.jurisdicciones.length}</span>
-                            )}
-                        </div>
-                        <button
-                            className="collapse-jurisdicciones-btn"
-                            onClick={toggleJurisdiccionesCollapse}
-                            title={jurisdiccionesCollapsed ? "Expandir jurisdicciones" : "Colapsar jurisdicciones"}
-                        >
-                            {jurisdiccionesCollapsed ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
-                        </button>
-                    </div>
-                    <div className={`jurisdicciones-container ${jurisdiccionesCollapsed ? 'hidden' : ''}`}>
-                        {jurisdiccionesDisponibles.map((jurisdiccion) => (
-                            <label key={jurisdiccion} className="jurisdiccion-checkbox">
-                                <input
-                                    type="checkbox"
-                                    value={jurisdiccion}
-                                    checked={filtros.jurisdicciones.includes(jurisdiccion)}
-                                    onChange={handleJurisdiccionChange}
-                                />
-                                <span className="checkbox-custom"></span>
-                                <span className="jurisdiccion-nombre">{jurisdiccion}</span>
-                                <span className="jurisdiccion-count">
-                                    ({camaras.filter(c => c.jurisdiccion === jurisdiccion).length})
-                                </span>
-                            </label>
-                        ))}
-                    </div>
-                </div>
+        {/* Estado de carga */}
+        {cargando && (
+          <div className="estado-carga">
+            <div className="spinner"></div>
+            <span>Cargando cámaras...</span>
+          </div>
+        )}
 
-                {/* Estado de carga */}
-                {cargando && (
-                    <div className="estado-carga">
-                        <div className="spinner"></div>
-                        <span>Cargando cámaras...</span>
-                    </div>
-                )}
+        {/* Error */}
+        {error && (
+          <div className="mensaje-error">
+            <div className="error-icon">⚠️</div>
+            <div className="error-texto">{error}</div>
+          </div>
+        )}
 
-                {/* Error */}
-                {error && (
-                    <div className="mensaje-error">
-                        <div className="error-icon">⚠️</div>
-                        <div className="error-texto">{error}</div>
-                    </div>
-                )}
+        {/* Estadísticas compactas */}
+        {!cargando && !error && (
+          <div className="stats-compactas">
+            <div className="stat-item">
+              <span className="stat-numero">{camaras.length}</span>
+              <span className="stat-label">Total</span>
+            </div>
+            {filtros.megafono && (
+              <div className="stat-item activo">
+                <span className="stat-numero">{camaras.filter(c => c.megafono).length}</span>
+                <span className="stat-label">📢 Megáfono</span>
+              </div>
+            )}
+            {filtros.boton && (
+              <div className="stat-item activo">
+                <span className="stat-numero">{camaras.filter(c => c.boton).length}</span>
+                <span className="stat-label">🚨 Botón</span>
+              </div>
+            )}
+          </div>
+        )}
 
-                {/* Estadísticas compactas */}
-                {!cargando && !error && (
-                    <div className="stats-compactas">
-                        <div className="stat-item">
-                            <span className="stat-numero">{camaras.length}</span>
-                            <span className="stat-label">Total</span>
-                        </div>
-                        {filtros.megafono && (
-                            <div className="stat-item activo">
-                                <span className="stat-numero">{camaras.filter(c => c.megafono).length}</span>
-                                <span className="stat-label">📢 Megáfono</span>
-                            </div>
-                        )}
-                        {filtros.boton && (
-                            <div className="stat-item activo">
-                                <span className="stat-numero">{camaras.filter(c => c.boton).length}</span>
-                                <span className="stat-label">🚨 Botón</span>
-                            </div>
-                        )}
-                    </div>
-                )}
+        {/* Botones de acción */}
+        {(busqueda ||
+          ultimaBusqueda ||
+          filtros.megafono ||
+          filtros.boton ||
+          filtros.jurisdicciones.length > 0) && (
+          <div className="acciones-container">
+            <button onClick={limpiarBusqueda} className="btn-limpiar-todo">
+              🧹 Limpiar Todo
+            </button>
+            {ultimaBusqueda && (
+              <button onClick={iniciarSeguimiento} className="btn-seguimiento">
+                🎯 Seguimiento
+              </button>
+            )}
+          </div>
+        )}
 
-                {/* Botones de acción */}
-                {(busqueda || ultimaBusqueda || filtros.megafono || filtros.boton || filtros.jurisdicciones.length > 0) && (
-                    <div className="acciones-container">
-                        <button onClick={limpiarBusqueda} className="btn-limpiar-todo">
-                            🧹 Limpiar Todo
-                        </button>
-                        {ultimaBusqueda && (
-                            <button onClick={iniciarSeguimiento} className="btn-seguimiento">
-                                🎯 Seguimiento
-                            </button>
-                        )}
-                    </div>
-                )}
-
-                {/* Botón para limpiar seguimiento activo */}
-                {/*  {onLimpiarSeguimiento && (
+        {/* Botón para limpiar seguimiento activo */}
+        {/*  {onLimpiarSeguimiento && (
           <div className="seguimiento-activo">
             <button onClick={onLimpiarSeguimiento} className="btn-limpiar-seguimiento">
               🧹 Limpiar Seguimiento
@@ -438,8 +454,8 @@ const ControlCamaras = ({ visible, onCamaraSeleccionada, onFiltroAplicado, onSeg
           </div>
         )} */}
 
-                {/* Instrucciones */}
-                 {/* {/* {!ultimaBusqueda && !error && !cargando && (
+        {/* Instrucciones */}
+        {/* {/* {!ultimaBusqueda && !error && !cargando && (
                     <div className="instrucciones">
                         <div className="instruccion-item">
                             <span className="instruccion-numero">1</span>
@@ -455,9 +471,9 @@ const ControlCamaras = ({ visible, onCamaraSeleccionada, onFiltroAplicado, onSeg
                         </div>
                     </div>
                 )}  */}
-            </div>
-        </div>
-    );
+      </div>
+    </div>
+  );
 };
 
 export default ControlCamaras;

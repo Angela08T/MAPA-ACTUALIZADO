@@ -1,8 +1,13 @@
 // CapaJurisdiccion.jsx
-import { useEffect, useState, useRef } from "react";
-import { GeoJSON } from "react-leaflet";
+import { useEffect, useState, useRef } from 'react';
+import { GeoJSON } from 'react-leaflet';
+import { logger } from '../../../utils/logger.js';
 
-const CapaJurisdiccion = ({ ubicadorActivo = false, camaraConVision = null, camaraSeleccionada = null }) => {
+const CapaJurisdiccion = ({
+  ubicadorActivo = false,
+  camaraConVision = null,
+  camaraSeleccionada = null,
+}) => {
   const [data, setData] = useState(null);
   const [key, setKey] = useState(0); // Para forzar re-render
   const geoJsonRef = useRef(null);
@@ -14,14 +19,14 @@ const CapaJurisdiccion = ({ ubicadorActivo = false, camaraConVision = null, cama
   const esInactivo = ubicadorActivo || camaraConVision !== null || camaraSeleccionada !== null;
 
   useEffect(() => {
-    fetch("/data/juridiccion.geojson")
-      .then((res) => res.json())
+    fetch('/data/juridiccion.geojson')
+      .then(res => res.json())
       .then(setData)
-      .catch((err) => console.error("Error cargando jurisdicción:", err));
+      .catch(err => logger.error('Error cargando jurisdicción:', err));
   }, []);
 
-  const estiloPorDefecto = (feature) => ({
-    color: feature.properties.color || "#34b429",
+  const estiloPorDefecto = feature => ({
+    color: feature.properties.color || '#34b429',
     weight: 2,
     fillOpacity: esInactivo ? 0.1 : 0.2, // Menos opacidad cuando está inactivo
     interactive: !esInactivo, // Control directo de interactividad
@@ -29,12 +34,12 @@ const CapaJurisdiccion = ({ ubicadorActivo = false, camaraConVision = null, cama
   });
 
   const popupJurisdiccion = (feature, layer) => {
-    const nombre = feature.properties.name || "Jurisdicción";
+    const nombre = feature.properties.name || 'Jurisdicción';
 
     if (!esInactivo) {
       layer.bindPopup(`<b>${nombre}</b>`);
 
-      layer.on('click', function() {
+      layer.on('click', function () {
         layer.openPopup();
       });
     } else {
@@ -47,7 +52,7 @@ const CapaJurisdiccion = ({ ubicadorActivo = false, camaraConVision = null, cama
       if (layer.setStyle) {
         layer.setStyle({
           interactive: false,
-          bubblingMouseEvents: false
+          bubblingMouseEvents: false,
         });
       }
     }
@@ -58,9 +63,12 @@ const CapaJurisdiccion = ({ ubicadorActivo = false, camaraConVision = null, cama
     if (data) {
       // Forzar re-render cuando cambie el estado
       setKey(prev => prev + 1);
-      const razon = camaraConVision ? `(Cámara ${camaraConVision} con visión)` :
-                   camaraSeleccionada ? `(Cámara ${camaraSeleccionada.name} seleccionada)` : '';
-      console.log(`🗺️ Jurisdicciones - ${esInactivo ? 'INACTIVAS' : 'ACTIVAS'}`, razon);
+      const razon = camaraConVision
+        ? `(Cámara ${camaraConVision} con visión)`
+        : camaraSeleccionada
+          ? `(Cámara ${camaraSeleccionada.name} seleccionada)`
+          : '';
+      logger.log(`🗺️ Jurisdicciones - ${esInactivo ? 'INACTIVAS' : 'ACTIVAS'}`, razon);
     }
   }, [esInactivo, data, camaraConVision, camaraSeleccionada]);
 

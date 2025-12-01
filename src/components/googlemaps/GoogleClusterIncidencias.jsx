@@ -1,40 +1,43 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useRobosQuery, useExtorsionesQuery } from '../../hooks/useIncidenciasQuery';
+import { logger } from '../../utils/logger';
 
 // Función para calcular distancia entre dos puntos en metros usando fórmula de Haversine
 const calcularDistancia = (lat1, lon1, lat2, lon2) => {
   const R = 6371000; // Radio de la Tierra en metros
-  const dLat = (lat2 - lat1) * Math.PI / 180;
-  const dLon = (lon2 - lon1) * Math.PI / 180;
-  const a = 
-    Math.sin(dLat/2) * Math.sin(dLat/2) +
-    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
-    Math.sin(dLon/2) * Math.sin(dLon/2);
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+  const dLat = ((lat2 - lat1) * Math.PI) / 180;
+  const dLon = ((lon2 - lon1) * Math.PI) / 180;
+  const a =
+    Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+    Math.cos((lat1 * Math.PI) / 180) *
+      Math.cos((lat2 * Math.PI) / 180) *
+      Math.sin(dLon / 2) *
+      Math.sin(dLon / 2);
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
   return R * c;
 };
 
 // Función para calcular el centroide de un conjunto de puntos
-const calcularCentroide = (puntos) => {
+const calcularCentroide = puntos => {
   if (puntos.length === 0) return { lat: 0, lng: 0 };
-  
+
   const sumLat = puntos.reduce((sum, punto) => sum + punto.Latitud, 0);
   const sumLng = puntos.reduce((sum, punto) => sum + punto.Longitud, 0);
-  
+
   return {
     lat: sumLat / puntos.length,
-    lng: sumLng / puntos.length
+    lng: sumLng / puntos.length,
   };
 };
 
 // Función para calcular el radio del cluster basado en la dispersión de puntos
 const calcularRadioCluster = (puntos, centroide) => {
   if (puntos.length === 0) return 50;
-  
-  const distanciasAlCentroide = puntos.map(punto => 
+
+  const distanciasAlCentroide = puntos.map(punto =>
     calcularDistancia(centroide.lat, centroide.lng, punto.Latitud, punto.Longitud)
   );
-  
+
   const maxDistancia = Math.max(...distanciasAlCentroide);
   // Añadir un pequeño buffer para asegurar que todos los puntos estén dentro
   return Math.max(maxDistancia + 10, 30); // Mínimo 30 metros
@@ -42,33 +45,38 @@ const calcularRadioCluster = (puntos, centroide) => {
 
 // Algoritmo de clustering basado en densidad (DBSCAN mejorado)
 const realizarClustering = (puntos, radioMaximo = 50) => {
-  console.log('🔧 Iniciando algoritmo de clustering...', { puntos: puntos.length, radio: radioMaximo });
+  logger.log('🔧 Iniciando algoritmo de clustering...', {
+    puntos: puntos.length,
+    radio: radioMaximo,
+  });
   const clusters = [];
   const visitados = new Set();
-  
+
   for (let i = 0; i < puntos.length; i++) {
     if (visitados.has(i)) continue;
-    
+
     const puntoActual = puntos[i];
     const cluster = [puntoActual];
     visitados.add(i);
-    
+
     // Buscar todos los puntos cercanos al punto actual
     const cola = [i];
-    
+
     while (cola.length > 0) {
       const indiceActual = cola.shift();
       const puntoBase = puntos[indiceActual];
-      
+
       // Buscar vecinos del punto base
       for (let j = 0; j < puntos.length; j++) {
         if (visitados.has(j)) continue;
-        
+
         const distancia = calcularDistancia(
-          puntoBase.Latitud, puntoBase.Longitud,
-          puntos[j].Latitud, puntos[j].Longitud
+          puntoBase.Latitud,
+          puntoBase.Longitud,
+          puntos[j].Latitud,
+          puntos[j].Longitud
         );
-        
+
         if (distancia <= radioMaximo) {
           cluster.push(puntos[j]);
           visitados.add(j);
@@ -76,64 +84,62 @@ const realizarClustering = (puntos, radioMaximo = 50) => {
         }
       }
     }
-    
+
     // Solo crear cluster si tiene al menos 2 puntos
     if (cluster.length >= 2) {
       const centroide = calcularCentroide(cluster);
       const radio = calcularRadioCluster(cluster, centroide);
-      
+
       clusters.push({
         id: clusters.length + 1,
         puntos: cluster,
         centroide,
         radio,
-        cantidad: cluster.length
+        cantidad: cluster.length,
       });
-      
-      console.log(`📍 Cluster ${clusters.length} creado:`, {
+
+      logger.log(`📍 Cluster ${clusters.length} creado:`, {
         puntos: cluster.length,
         centroide: `${centroide.lat.toFixed(6)}, ${centroide.lng.toFixed(6)}`,
-        radio: Math.round(radio)
+        radio: Math.round(radio),
       });
     }
   }
-  
-  console.log('🎯 Clustering completado:', clusters.length, 'clusters creados');
+
+  logger.log('🎯 Clustering completado:', clusters.length, 'clusters creados');
   return clusters;
 };
 
-
-
 // Función para obtener color según la cantidad de incidencias
-const obtenerColorCluster = (cantidad) => {
-  console.log('🎨 Calculando color para cluster con cantidad:', cantidad);
-  
+const obtenerColorCluster = cantidad => {
+  logger.log('🎨 Calculando color para cluster con cantidad:', cantidad);
+
   if (cantidad <= 3) {
-    console.log('→ Asignando color AMARILLO (cantidad <= 3)');
+    logger.log('→ Asignando color AMARILLO (cantidad <= 3)');
     return {
       strokeColor: '#FFB000', // Amarillo más intenso
       fillColor: '#FFD700',
-      fillOpacity: 0.3
+      fillOpacity: 0.3,
     };
   } else if (cantidad <= 6) {
-    console.log('→ Asignando color NARANJA (cantidad <= 6)');
+    logger.log('→ Asignando color NARANJA (cantidad <= 6)');
     return {
       strokeColor: '#FF6600', // Naranja más intenso
       fillColor: '#FF8C00',
-      fillOpacity: 0.4
+      fillOpacity: 0.4,
     };
   } else if (cantidad >= 7) {
-    console.log('→ Asignando color ROJO (cantidad > 6)');
+    logger.log('→ Asignando color ROJO (cantidad > 6)');
     return {
       strokeColor: '#CC0000', // Rojo más intenso
       fillColor: '#FF4500',
-      fillOpacity: 0.5
+      fillOpacity: 0.5,
     };
   } else {
     return {
       strokeColor: '#FFB000', // Amarillo más intenso
       fillColor: '#FFD700',
-      fillOpacity: 0.3
+      fillOpacity: 0.3,
     };
   }
 };
@@ -150,7 +156,7 @@ const GoogleClusterIncidencias = ({ visible, radioCluster = 50, map, google, fil
     const newInfoWindow = new google.maps.InfoWindow({
       disableAutoPan: false,
       maxWidth: 300,
-      pixelOffset: new google.maps.Size(0, -30)
+      pixelOffset: new google.maps.Size(0, -30),
     });
 
     setInfoWindow(newInfoWindow);
@@ -173,20 +179,20 @@ const GoogleClusterIncidencias = ({ visible, radioCluster = 50, map, google, fil
   };
 
   // Función para crear círculos usando Google Maps Circle
-  const crearCirculosCluster = (clustersData) => {
+  const crearCirculosCluster = clustersData => {
     if (!map || !google || !infoWindow) return;
 
     limpiarCirculos();
 
     clustersData.forEach(cluster => {
-      console.log(`🖼️ Creando círculo Google Maps para cluster ${cluster.id}:`, {
+      logger.log(`🖼️ Creando círculo Google Maps para cluster ${cluster.id}:`, {
         cantidad: cluster.cantidad,
         puntos: cluster.puntos?.length,
-        centroide: cluster.centroide
+        centroide: cluster.centroide,
       });
-      
+
       const colores = obtenerColorCluster(cluster.cantidad);
-      
+
       // Crear el círculo usando Google Maps Circle
       const circle = new google.maps.Circle({
         strokeColor: colores.strokeColor,
@@ -198,19 +204,23 @@ const GoogleClusterIncidencias = ({ visible, radioCluster = 50, map, google, fil
         center: { lat: cluster.centroide.lat, lng: cluster.centroide.lng },
         radius: cluster.radio, // Radio en metros
         clickable: true,
-        zIndex: 900 // Prioridad alta pero menor que los marcadores individuales
+        zIndex: 900, // Prioridad alta pero menor que los marcadores individuales
       });
 
       // Agregar evento click al círculo para mostrar info en el InfoWindow compartido
-      circle.addListener('click', (event) => {
+      circle.addListener('click', event => {
         // Cerrar InfoWindow anterior si está abierto
         infoWindow.close();
-        
+
         // Crear contenido del popup/InfoWindow
-        const tiposIncidencias = Object.entries(cluster.puntos.reduce((tipos, punto) => {
-          tipos[punto.Tipo] = (tipos[punto.Tipo] || 0) + 1;
-          return tipos;
-        }, {})).map(([tipo, cantidad]) => `${tipo}: ${cantidad}`).join(' | ');
+        const tiposIncidencias = Object.entries(
+          cluster.puntos.reduce((tipos, punto) => {
+            tipos[punto.Tipo] = (tipos[punto.Tipo] || 0) + 1;
+            return tipos;
+          }, {})
+        )
+          .map(([tipo, cantidad]) => `${tipo}: ${cantidad}`)
+          .join(' | ');
 
         // Configurar contenido para este cluster específico
         infoWindow.setContent(`
@@ -250,7 +260,7 @@ const GoogleClusterIncidencias = ({ visible, radioCluster = 50, map, google, fil
             </div>
           </div>
         `);
-        
+
         // Posicionar y abrir InfoWindow
         infoWindow.setPosition(event.latLng);
         infoWindow.open(map);
@@ -268,7 +278,7 @@ const GoogleClusterIncidencias = ({ visible, radioCluster = 50, map, google, fil
               closeBtn.style.backgroundColor = 'transparent';
               closeBtn.style.color = '#666';
             });
-            
+
             // Agregar evento de clic para cerrar
             closeBtn.addEventListener('click', () => {
               infoWindow.close();
@@ -314,18 +324,20 @@ const GoogleClusterIncidencias = ({ visible, radioCluster = 50, map, google, fil
 
     // Si hay errores, limpiar y salir
     if (hasErrors) {
-      console.error('❌ Error cargando datos:', {
+      logger.error('❌ Error cargando datos:', {
         robosError: robosQuery.error,
-        extorsionesError: extorsionesQuery.error
+        extorsionesError: extorsionesQuery.error,
       });
       limpiarCirculos();
-      window.dispatchEvent(new CustomEvent('clustersGenerados', {
-        detail: {
-          totalClusters: 0,
-          totalPuntos: 0,
-          puntosClusteados: 0
-        }
-      }));
+      window.dispatchEvent(
+        new CustomEvent('clustersGenerados', {
+          detail: {
+            totalClusters: 0,
+            totalPuntos: 0,
+            puntosClusteados: 0,
+          },
+        })
+      );
       return;
     }
 
@@ -336,18 +348,18 @@ const GoogleClusterIncidencias = ({ visible, radioCluster = 50, map, google, fil
     const datosRobos = robosQuery.data || [];
     const datosExtorsiones = extorsionesQuery.data || [];
 
-    console.log('🎯 Datos obtenidos de la API:', {
+    logger.log('🎯 Datos obtenidos de la API:', {
       robos: datosRobos.length,
-      extorsiones: datosExtorsiones.length
+      extorsiones: datosExtorsiones.length,
     });
 
     // Combinar ambos tipos de datos
     const todosLosDatos = [
       ...datosRobos.map(item => ({ ...item, Tipo: 'Robo' })),
-      ...datosExtorsiones.map(item => ({ ...item, Tipo: 'Extorsion' }))
+      ...datosExtorsiones.map(item => ({ ...item, Tipo: 'Extorsion' })),
     ];
 
-    console.log('📊 Total de datos combinados:', todosLosDatos.length, 'registros');
+    logger.log('📊 Total de datos combinados:', todosLosDatos.length, 'registros');
 
     // Convertir datos al formato esperado por el algoritmo de clustering
     // Solo incluir registros con coordenadas válidas
@@ -361,28 +373,30 @@ const GoogleClusterIncidencias = ({ visible, radioCluster = 50, map, google, fil
         Id: item.Id || index + 1,
         Latitud: parseFloat(item.Latitud),
         Longitud: parseFloat(item.Longitud),
-        Tipo: item.Tipo
+        Tipo: item.Tipo,
       }));
 
-    console.log('📊 Datos procesados para clustering:', data.length, 'puntos válidos');
+    logger.log('📊 Datos procesados para clustering:', data.length, 'puntos válidos');
 
     if (data.length === 0) {
-      console.log('⚠️ No hay datos válidos para clustering');
+      logger.log('⚠️ No hay datos válidos para clustering');
       limpiarCirculos();
-      window.dispatchEvent(new CustomEvent('clustersGenerados', {
-        detail: {
-          totalClusters: 0,
-          totalPuntos: 0,
-          puntosClusteados: 0
-        }
-      }));
+      window.dispatchEvent(
+        new CustomEvent('clustersGenerados', {
+          detail: {
+            totalClusters: 0,
+            totalPuntos: 0,
+            puntosClusteados: 0,
+          },
+        })
+      );
       return;
     }
 
     // Realizar clustering
-    console.log('🔄 Iniciando proceso de clustering con radio:', radioCluster, 'm');
+    logger.log('🔄 Iniciando proceso de clustering con radio:', radioCluster, 'm');
     const clustersGenerados = realizarClustering(data, radioCluster);
-    console.log('✅ Clustering completado:', clustersGenerados.length, 'clusters generados');
+    logger.log('✅ Clustering completado:', clustersGenerados.length, 'clusters generados');
 
     // Crear círculos usando Google Maps Circle
     crearCirculosCluster(clustersGenerados);
@@ -392,52 +406,72 @@ const GoogleClusterIncidencias = ({ visible, radioCluster = 50, map, google, fil
     const estadisticas = {
       totalClusters: clustersGenerados.length,
       totalPuntos: data.length,
-      puntosClusteados: puntosClusteados
+      puntosClusteados: puntosClusteados,
     };
 
-    console.log('📈 Estadísticas Google Maps:', estadisticas);
+    logger.log('📈 Estadísticas Google Maps:', estadisticas);
 
-    window.dispatchEvent(new CustomEvent('clustersGenerados', {
-      detail: estadisticas
-    }));
-
-  }, [visible, radioCluster, map, google, filtros, infoWindow, robosQuery.data, extorsionesQuery.data, robosQuery.isLoading, extorsionesQuery.isLoading, robosQuery.isError, extorsionesQuery.isError]);
+    window.dispatchEvent(
+      new CustomEvent('clustersGenerados', {
+        detail: estadisticas,
+      })
+    );
+  }, [
+    visible,
+    radioCluster,
+    map,
+    google,
+    filtros,
+    infoWindow,
+    robosQuery.data,
+    extorsionesQuery.data,
+    robosQuery.isLoading,
+    extorsionesQuery.isLoading,
+    robosQuery.isError,
+    extorsionesQuery.isError,
+  ]);
 
   if (!visible) return null;
 
   return (
     <>
       {loading && (
-        <div style={{
-          position: "absolute",
-          top: "70px",
-          left: "50%",
-          transform: "translateX(-50%)",
-          zIndex: 9999,
-          padding: "14px 24px",
-          backdropFilter: "blur(8px)",
-          backgroundColor: "rgba(255, 255, 255, 0.75)",
-          borderRadius: "12px",
-          boxShadow: "0 8px 30px rgba(0,0,0,0.15)",
-          display: "flex",
-          alignItems: "center",
-          fontFamily: "Segoe UI, sans-serif",
-          border: "1px solid rgba(200, 200, 200, 0.6)",
-        }}>
-          <div style={{
-            width: "20px",
-            height: "20px",
-            border: "2px solid #3498db",
-            borderTop: "2px solid transparent",
-            borderRadius: "50%",
-            animation: "spin 1s linear infinite"
-          }}></div>
-          <span style={{
-            marginLeft: 12,
-            fontSize: "15px",
-            fontWeight: "500",
-            color: "#2c3e50"
-          }}>
+        <div
+          style={{
+            position: 'absolute',
+            top: '70px',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            zIndex: 9999,
+            padding: '14px 24px',
+            backdropFilter: 'blur(8px)',
+            backgroundColor: 'rgba(255, 255, 255, 0.75)',
+            borderRadius: '12px',
+            boxShadow: '0 8px 30px rgba(0,0,0,0.15)',
+            display: 'flex',
+            alignItems: 'center',
+            fontFamily: 'Segoe UI, sans-serif',
+            border: '1px solid rgba(200, 200, 200, 0.6)',
+          }}
+        >
+          <div
+            style={{
+              width: '20px',
+              height: '20px',
+              border: '2px solid #3498db',
+              borderTop: '2px solid transparent',
+              borderRadius: '50%',
+              animation: 'spin 1s linear infinite',
+            }}
+          ></div>
+          <span
+            style={{
+              marginLeft: 12,
+              fontSize: '15px',
+              fontWeight: '500',
+              color: '#2c3e50',
+            }}
+          >
             Generando clusters...
           </span>
         </div>
@@ -446,4 +480,4 @@ const GoogleClusterIncidencias = ({ visible, radioCluster = 50, map, google, fil
   );
 };
 
-export default GoogleClusterIncidencias; 
+export default GoogleClusterIncidencias;

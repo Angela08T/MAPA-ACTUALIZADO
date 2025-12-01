@@ -1,6 +1,7 @@
-import { useEffect, useState, useMemo } from "react";
-import { Circle, Popup } from "react-leaflet";
-import * as turf from "@turf/turf";
+import { useEffect, useState, useMemo } from 'react';
+import { Circle, Popup } from 'react-leaflet';
+import * as turf from '@turf/turf';
+import { logger } from '../../../utils/logger.js';
 
 const Cluster_incidencias = ({ visible }) => {
   const [robosData, setRobosData] = useState([]);
@@ -13,8 +14,8 @@ const Cluster_incidencias = ({ visible }) => {
       try {
         setLoading(true);
         const [robosRes, extorsionRes] = await Promise.all([
-          fetch("/data/Robos.json"),
-          fetch("/data/extorsion.json")
+          fetch('/data/Robos.json'),
+          fetch('/data/extorsion.json'),
         ]);
 
         const robos = await robosRes.json();
@@ -23,7 +24,7 @@ const Cluster_incidencias = ({ visible }) => {
         setRobosData(robos);
         setExtorsionData(extorsiones);
       } catch (error) {
-        console.error("Error cargando datos de incidencias:", error);
+        logger.error('Error cargando datos de incidencias:', error);
       } finally {
         setLoading(false);
       }
@@ -35,17 +36,17 @@ const Cluster_incidencias = ({ visible }) => {
   }, [visible]);
 
   // Función para determinar color según cantidad de incidencias
-  const getColorByCount = (count) => {
+  const getColorByCount = count => {
     if (count >= 50) return '#8b0000'; // Rojo muy oscuro
     if (count >= 30) return '#dc143c'; // Rojo crimson
     if (count >= 20) return '#ff4500'; // Rojo naranja
     if (count >= 10) return '#ff6347'; // Tomate
-    if (count >= 5) return '#ffa500';  // Naranja
+    if (count >= 5) return '#ffa500'; // Naranja
     return '#ffd700'; // Dorado
   };
 
   // Función para determinar opacidad según cantidad
-  const getOpacityByCount = (count) => {
+  const getOpacityByCount = count => {
     if (count >= 10) return 0.5;
     if (count >= 6) return 0.4;
     if (count >= 3) return 0.3;
@@ -53,7 +54,7 @@ const Cluster_incidencias = ({ visible }) => {
   };
 
   // Función de validación de coordenadas reales
-  const validarCoordenadasReales = (cluster) => {
+  const validarCoordenadasReales = cluster => {
     if (!cluster || !cluster.puntos || cluster.puntos.length === 0) {
       return false;
     }
@@ -63,9 +64,9 @@ const Cluster_incidencias = ({ visible }) => {
       const coords = punto.geometry.coordinates;
       const props = punto.properties;
       return (
-        coords && 
-        coords.length === 2 && 
-        !isNaN(coords[0]) && 
+        coords &&
+        coords.length === 2 &&
+        !isNaN(coords[0]) &&
         !isNaN(coords[1]) &&
         props &&
         (props.tipo === 'robo' || props.tipo === 'extorsion') &&
@@ -76,9 +77,9 @@ const Cluster_incidencias = ({ visible }) => {
   };
 
   // Función para calcular centro de masa de los puntos
-  const calcularCentroMasa = (puntos) => {
+  const calcularCentroMasa = puntos => {
     if (!puntos || puntos.length === 0) return null;
-    
+
     if (puntos.length === 1) {
       const coords = puntos[0].geometry.coordinates;
       return turf.point(coords);
@@ -87,7 +88,7 @@ const Cluster_incidencias = ({ visible }) => {
     // Calcular centro de masa usando coordenadas ponderadas
     let sumaLng = 0;
     let sumaLat = 0;
-    let totalPuntos = puntos.length;
+    const totalPuntos = puntos.length;
 
     puntos.forEach(punto => {
       const [lng, lat] = punto.geometry.coordinates;
@@ -117,21 +118,23 @@ const Cluster_incidencias = ({ visible }) => {
   const createAdvancedClusters = (incidencias, radiusKm = 0.2) => {
     if (incidencias.length === 0) return [];
 
-    console.log(`🔍 Iniciando clustering de ${incidencias.length} incidencias`);
+    logger.log(`🔍 Iniciando clustering de ${incidencias.length} incidencias`);
 
     // Convertir incidencias a puntos Turf con validación
     const puntos = incidencias
       .filter(inc => !isNaN(inc.lat) && !isNaN(inc.lng) && inc.lat !== 0 && inc.lng !== 0)
-      .map((inc, idx) => turf.point(
-        [inc.lng, inc.lat], // [longitude, latitude]
-        { 
-          ...inc,
-          originalIndex: idx,
-          coordenadasOriginales: `${inc.lat}, ${inc.lng}`
-        }
-      ));
+      .map((inc, idx) =>
+        turf.point(
+          [inc.lng, inc.lat], // [longitude, latitude]
+          {
+            ...inc,
+            originalIndex: idx,
+            coordenadasOriginales: `${inc.lat}, ${inc.lng}`,
+          }
+        )
+      );
 
-    console.log(`✅ ${puntos.length} puntos válidos después de filtrado`);
+    logger.log(`✅ ${puntos.length} puntos válidos después de filtrado`);
 
     const clusters = [];
     const visitados = new Set();
@@ -142,7 +145,7 @@ const Cluster_incidencias = ({ visible }) => {
       // Crear un nuevo cluster comenzando con este punto
       const cluster = {
         puntos: [punto],
-        indices: [index]
+        indices: [index],
       };
 
       // Buscar todos los puntos dentro del radio especificado
@@ -150,7 +153,7 @@ const Cluster_incidencias = ({ visible }) => {
         if (otroIndex === index || visitados.has(otroIndex)) return;
 
         const distancia = turf.distance(punto, otroPunto, { units: 'kilometers' });
-        
+
         if (distancia <= radiusKm) {
           cluster.puntos.push(otroPunto);
           cluster.indices.push(otroIndex);
@@ -163,11 +166,11 @@ const Cluster_incidencias = ({ visible }) => {
         visitados.add(index);
         clusters.push(cluster);
       } else {
-        console.warn(`❌ Cluster inválido descartado en índice ${index}`);
+        logger.warn(`❌ Cluster inválido descartado en índice ${index}`);
       }
     });
 
-    console.log(`🎯 ${clusters.length} clusters válidos creados`);
+    logger.log(`🎯 ${clusters.length} clusters válidos creados`);
     return clusters.filter(cluster => cluster.puntos.length > 0);
   };
 
@@ -186,10 +189,10 @@ const Cluster_incidencias = ({ visible }) => {
           lat: parseFloat(item.Latitud),
           lng: parseFloat(item.Longitud),
           descripcion: item.Descripcion,
-          fecha: item["Fecha de Incidencia"] || item.Fecha,
+          fecha: item['Fecha de Incidencia'] || item.Fecha,
           jurisdiccion: item.Jurisdiccion,
           turno: item.Turno,
-          año: item.Año
+          año: item.Año,
         })),
         ...extorsionData.map((item, index) => ({
           id: `extorsion-${index}`,
@@ -200,8 +203,8 @@ const Cluster_incidencias = ({ visible }) => {
           fecha: item.Fecha,
           jurisdiccion: item.Jurisdiccion,
           turno: item.Turno,
-          año: item.Año
-        }))
+          año: item.Año,
+        })),
       ].filter(item => !isNaN(item.lat) && !isNaN(item.lng));
 
       if (incidenciasCombinadas.length === 0) {
@@ -211,116 +214,130 @@ const Cluster_incidencias = ({ visible }) => {
       // Crear clusters usando nuestro algoritmo avanzado
       const clustersRaw = createAdvancedClusters(incidenciasCombinadas, 0.2); // 200m
 
-             // Procesar clusters para renderizado con validación estricta
-       return clustersRaw
-         .filter(clusterData => {
-           // Validación 1: Verificar que el cluster tenga puntos válidos
-           if (!clusterData || !clusterData.puntos || clusterData.puntos.length === 0) {
-             console.warn('❌ Cluster descartado: sin puntos');
-             return false;
-           }
+      // Procesar clusters para renderizado con validación estricta
+      return clustersRaw
+        .filter(clusterData => {
+          // Validación 1: Verificar que el cluster tenga puntos válidos
+          if (!clusterData || !clusterData.puntos || clusterData.puntos.length === 0) {
+            logger.warn('❌ Cluster descartado: sin puntos');
+            return false;
+          }
 
-           // Validación 2: Verificar que todos los puntos tengan coordenadas válidas
-           const esValido = validarCoordenadasReales(clusterData);
-           if (!esValido) {
-             console.warn('❌ Cluster descartado: coordenadas inválidas');
-             return false;
-           }
+          // Validación 2: Verificar que todos los puntos tengan coordenadas válidas
+          const esValido = validarCoordenadasReales(clusterData);
+          if (!esValido) {
+            logger.warn('❌ Cluster descartado: coordenadas inválidas');
+            return false;
+          }
 
-           return true;
-         })
-         .map((clusterData, index) => {
-           const incidenciasDelCluster = clusterData.puntos.map(punto => punto.properties);
-           const cantidadIncidencias = incidenciasDelCluster.length;
+          return true;
+        })
+        .map((clusterData, index) => {
+          const incidenciasDelCluster = clusterData.puntos.map(punto => punto.properties);
+          const cantidadIncidencias = incidenciasDelCluster.length;
 
-           // Calcular el centro de masa real de todas las coordenadas
-           const centroMasa = calcularCentroMasa(clusterData.puntos);
-           
-           if (!centroMasa) {
-             console.error('❌ Error calculando centro de masa');
-             return null;
-           }
+          // Calcular el centro de masa real de todas las coordenadas
+          const centroMasa = calcularCentroMasa(clusterData.puntos);
 
-           const [centroLng, centroLat] = centroMasa.geometry.coordinates;
+          if (!centroMasa) {
+            logger.error('❌ Error calculando centro de masa');
+            return null;
+          }
 
-           // Calcular el radio que garantice que todos los puntos estén dentro
-           let radioCalculado = 5; // Radio mínimo en metros
+          const [centroLng, centroLat] = centroMasa.geometry.coordinates;
 
-           if (cantidadIncidencias > 1) {
-             // Calcular la distancia máxima desde el centro de masa a cualquier punto
-             const distancias = clusterData.puntos.map(punto => {
-               return turf.distance(centroMasa, punto, { units: 'meters' });
-             });
-             
-             const distanciaMaxima = Math.max(...distancias);
-             // Añadir un margen de seguridad del 30% para garantizar cobertura visual completa
-             radioCalculado = Math.max(distanciaMaxima * 1.3, 5);
-             // Limitar el radio máximo
-             radioCalculado = Math.min(radioCalculado, 100);
-           }
+          // Calcular el radio que garantice que todos los puntos estén dentro
+          let radioCalculado = 5; // Radio mínimo en metros
 
-           // Validación 3: Verificar que el radio calculado cubra todos los puntos
-           const coberturaCompleta = verificarCobertura(centroMasa, clusterData.puntos, radioCalculado);
-           if (!coberturaCompleta) {
-             console.warn(`⚠️ Cluster ${index}: Cobertura incompleta, ajustando radio`);
-             // Recalcular con margen mayor si es necesario
-             const distancias = clusterData.puntos.map(punto => 
-               turf.distance(centroMasa, punto, { units: 'meters' })
-             );
-             radioCalculado = Math.max(...distancias) * 1.5; // 50% extra de margen
-           }
+          if (cantidadIncidencias > 1) {
+            // Calcular la distancia máxima desde el centro de masa a cualquier punto
+            const distancias = clusterData.puntos.map(punto => {
+              return turf.distance(centroMasa, punto, { units: 'meters' });
+            });
 
-           // Información adicional para validación
-           const boundingBox = turf.bbox(turf.featureCollection(clusterData.puntos));
-           const area = turf.area(turf.bboxPolygon(boundingBox));
+            const distanciaMaxima = Math.max(...distancias);
+            // Añadir un margen de seguridad del 30% para garantizar cobertura visual completa
+            radioCalculado = Math.max(distanciaMaxima * 1.3, 5);
+            // Limitar el radio máximo
+            radioCalculado = Math.min(radioCalculado, 100);
+          }
 
-           // Validación 4: Contar coordenadas reales de robos y extorsiones
-           const coordenadasRobos = incidenciasDelCluster.filter(inc => inc.tipo === 'robo').length;
-           const coordenadasExtorsiones = incidenciasDelCluster.filter(inc => inc.tipo === 'extorsion').length;
+          // Validación 3: Verificar que el radio calculado cubra todos los puntos
+          const coberturaCompleta = verificarCobertura(
+            centroMasa,
+            clusterData.puntos,
+            radioCalculado
+          );
+          if (!coberturaCompleta) {
+            logger.warn(`⚠️ Cluster ${index}: Cobertura incompleta, ajustando radio`);
+            // Recalcular con margen mayor si es necesario
+            const distancias = clusterData.puntos.map(punto =>
+              turf.distance(centroMasa, punto, { units: 'meters' })
+            );
+            radioCalculado = Math.max(...distancias) * 1.5; // 50% extra de margen
+          }
 
-           const clusterValidado = {
-             id: `cluster-validated-${index}`,
-             center: [centroLat, centroLng],
-             radius: radioCalculado,
-             count: cantidadIncidencias,
-             incidencias: incidenciasDelCluster,
-             color: getColorByCount(cantidadIncidencias),
-             opacity: getOpacityByCount(cantidadIncidencias),
-             isCluster: cantidadIncidencias > 1,
-             // Información de validación detallada
-             boundingBox: boundingBox,
-             area: area,
-             maxDistanceFromCenter: cantidadIncidencias > 1 ? Math.max(...clusterData.puntos.map(punto => 
-               turf.distance(centroMasa, punto, { units: 'meters' })
-             )) : 0,
-             // Lista de coordenadas para verificación
-             coordinates: clusterData.puntos.map(punto => punto.geometry.coordinates),
-             // Información de validación específica
-             coordenadasRobos: coordenadasRobos,
-             coordenadasExtorsiones: coordenadasExtorsiones,
-             coordenadasTotales: coordenadasRobos + coordenadasExtorsiones,
-             centroMasaCalculado: true,
-             coberturaVerificada: coberturaCompleta,
-             // Coordenadas originales para debugging
-             coordenadasOriginales: clusterData.puntos.map(punto => punto.properties.coordenadasOriginales)
-           };
+          // Información adicional para validación
+          const boundingBox = turf.bbox(turf.featureCollection(clusterData.puntos));
+          const area = turf.area(turf.bboxPolygon(boundingBox));
 
-           console.log(`✅ Cluster ${index} validado: ${coordenadasRobos} robos + ${coordenadasExtorsiones} extorsiones = ${cantidadIncidencias} total`);
-           
-           return clusterValidado;
-         })
-         .filter(cluster => cluster !== null); // Eliminar clusters nulos después del procesamiento
+          // Validación 4: Contar coordenadas reales de robos y extorsiones
+          const coordenadasRobos = incidenciasDelCluster.filter(inc => inc.tipo === 'robo').length;
+          const coordenadasExtorsiones = incidenciasDelCluster.filter(
+            inc => inc.tipo === 'extorsion'
+          ).length;
 
+          const clusterValidado = {
+            id: `cluster-validated-${index}`,
+            center: [centroLat, centroLng],
+            radius: radioCalculado,
+            count: cantidadIncidencias,
+            incidencias: incidenciasDelCluster,
+            color: getColorByCount(cantidadIncidencias),
+            opacity: getOpacityByCount(cantidadIncidencias),
+            isCluster: cantidadIncidencias > 1,
+            // Información de validación detallada
+            boundingBox: boundingBox,
+            area: area,
+            maxDistanceFromCenter:
+              cantidadIncidencias > 1
+                ? Math.max(
+                    ...clusterData.puntos.map(punto =>
+                      turf.distance(centroMasa, punto, { units: 'meters' })
+                    )
+                  )
+                : 0,
+            // Lista de coordenadas para verificación
+            coordinates: clusterData.puntos.map(punto => punto.geometry.coordinates),
+            // Información de validación específica
+            coordenadasRobos: coordenadasRobos,
+            coordenadasExtorsiones: coordenadasExtorsiones,
+            coordenadasTotales: coordenadasRobos + coordenadasExtorsiones,
+            centroMasaCalculado: true,
+            coberturaVerificada: coberturaCompleta,
+            // Coordenadas originales para debugging
+            coordenadasOriginales: clusterData.puntos.map(
+              punto => punto.properties.coordenadasOriginales
+            ),
+          };
+
+          logger.log(
+            `✅ Cluster ${index} validado: ${coordenadasRobos} robos + ${coordenadasExtorsiones} extorsiones = ${cantidadIncidencias} total`
+          );
+
+          return clusterValidado;
+        })
+        .filter(cluster => cluster !== null); // Eliminar clusters nulos después del procesamiento
     } catch (error) {
-      console.error("Error procesando clusters:", error);
+      logger.error('Error procesando clusters:', error);
       return [];
     }
   }, [robosData, extorsionData, visible, loading]);
 
   // Generar contenido del popup para clusters
-  const generatePopupContent = (cluster) => {
+  const generatePopupContent = cluster => {
     const { count, incidencias, isCluster } = cluster;
-    
+
     if (!isCluster) {
       // Popup para punto individual
       const inc = incidencias[0];
@@ -351,10 +368,10 @@ const Cluster_incidencias = ({ visible }) => {
     // Popup para cluster
     const roboCount = incidencias.filter(inc => inc.tipo === 'robo').length;
     const extorsionCount = incidencias.filter(inc => inc.tipo === 'extorsion').length;
-    
+
     // Obtener jurisdicciones únicas
     const jurisdicciones = [...new Set(incidencias.map(inc => inc.jurisdiccion).filter(Boolean))];
-    
+
     // Obtener años únicos
     const años = [...new Set(incidencias.map(inc => inc.año).filter(Boolean))].sort();
 
@@ -372,7 +389,10 @@ const Cluster_incidencias = ({ visible }) => {
         </div>
         <div style="margin-bottom: 8px;">
           <strong>Jurisdicciones:</strong><br/>
-          ${jurisdicciones.slice(0, 3).map(j => `• ${j}`).join('<br/>')}
+          ${jurisdicciones
+            .slice(0, 3)
+            .map(j => `• ${j}`)
+            .join('<br/>')}
           ${jurisdicciones.length > 3 ? '<br/>• Y más...' : ''}
         </div>
         <div style="margin-bottom: 8px;">
@@ -398,7 +418,7 @@ const Cluster_incidencias = ({ visible }) => {
 
   return (
     <>
-      {clusters.map((cluster) => (
+      {clusters.map(cluster => (
         <Circle
           key={cluster.id}
           center={cluster.center}
@@ -409,13 +429,15 @@ const Cluster_incidencias = ({ visible }) => {
             fillOpacity: cluster.opacity,
             weight: cluster.isCluster ? 3 : 2,
             opacity: 0.8,
-            dashArray: cluster.isCluster ? null : '5, 5' // Línea punteada para puntos individuales
+            dashArray: cluster.isCluster ? null : '5, 5', // Línea punteada para puntos individuales
           }}
         >
           <Popup maxWidth={350}>
-            <div dangerouslySetInnerHTML={{ 
-              __html: generatePopupContent(cluster) 
-            }} />
+            <div
+              dangerouslySetInnerHTML={{
+                __html: generatePopupContent(cluster),
+              }}
+            />
           </Popup>
         </Circle>
       ))}

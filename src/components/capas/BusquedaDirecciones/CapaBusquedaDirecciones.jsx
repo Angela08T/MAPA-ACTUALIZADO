@@ -1,13 +1,14 @@
 import React, { useRef, useEffect } from 'react';
 import { LayerGroup, useMap } from 'react-leaflet';
 import L from 'leaflet';
+import { logger } from '../../../utils/logger.js';
 
 // Configuración del icono personalizado para búsquedas
 const iconoBusqueda = new L.Icon({
   iconUrl: '/icon/robo.png', // Reutilizando icono existente
   iconSize: [32, 32],
   iconAnchor: [16, 32],
-  popupAnchor: [0, -32]
+  popupAnchor: [0, -32],
 });
 
 const CapaBusquedaDirecciones = ({ visible, resultados = [], resultadoSeleccionado = null }) => {
@@ -25,24 +26,26 @@ const CapaBusquedaDirecciones = ({ visible, resultados = [], resultadoSelecciona
   };
 
   // Función para crear marcadores de resultados
-  const crearMarcadores = (resultadosData) => {
+  const crearMarcadores = resultadosData => {
     limpiarMarcadores();
 
     if (!resultadosData || resultadosData.length === 0) return;
 
     // Filtrar resultados según la selección
-    const resultadosAMostrar = resultadoSeleccionado 
+    const resultadosAMostrar = resultadoSeleccionado
       ? resultadosData.filter(resultado => resultado.id === resultadoSeleccionado)
       : resultadosData;
 
-    console.log(`📌 Creando ${resultadosAMostrar.length} marcadores${resultadoSeleccionado ? ` (solo resultado seleccionado: ${resultadoSeleccionado})` : ''}`);
+    logger.log(
+      `📌 Creando ${resultadosAMostrar.length} marcadores${resultadoSeleccionado ? ` (solo resultado seleccionado: ${resultadoSeleccionado})` : ''}`
+    );
 
     resultadosAMostrar.forEach((resultado, index) => {
-      console.log(`📌 Creando marcador ${index + 1}:`, resultado.direccion);
+      logger.log(`📌 Creando marcador ${index + 1}:`, resultado.direccion);
 
       // Crear marcador
       const marcador = L.marker([resultado.lat, resultado.lng], {
-        icon: iconoBusqueda
+        icon: iconoBusqueda,
       });
 
       // Contenido del popup - agregar indicador si está seleccionado
@@ -65,18 +68,18 @@ const CapaBusquedaDirecciones = ({ visible, resultados = [], resultadoSelecciona
       marcador.bindPopup(popupContent);
 
       // Tooltip con dirección resumida
-      const direccionCorta = resultado.direccion.length > 50 
-        ? resultado.direccion.substring(0, 50) + '...' 
-        : resultado.direccion;
+      const direccionCorta =
+        resultado.direccion.length > 50
+          ? resultado.direccion.substring(0, 50) + '...'
+          : resultado.direccion;
 
-      const tooltipText = resultadoSeleccionado === resultado.id 
-        ? `✅ ${direccionCorta}` 
-        : `📍 ${direccionCorta}`;
+      const tooltipText =
+        resultadoSeleccionado === resultado.id ? `✅ ${direccionCorta}` : `📍 ${direccionCorta}`;
 
       marcador.bindTooltip(tooltipText, {
         direction: 'top',
         offset: [0, -32],
-        opacity: 0.9
+        opacity: 0.9,
       });
 
       // Agregar al mapa
@@ -130,4 +133,4 @@ const CapaBusquedaDirecciones = ({ visible, resultados = [], resultadoSelecciona
   );
 };
 
-export default CapaBusquedaDirecciones; 
+export default CapaBusquedaDirecciones;
