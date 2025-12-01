@@ -1,7 +1,7 @@
 // CapaJurisdiccion.jsx
 import { useEffect, useState, useRef } from 'react';
 import { GeoJSON } from 'react-leaflet';
-import { logger } from '../../../utils/logger';
+import { logger } from '../../../utils/logger.js';
 
 const CapaJurisdiccion = ({
   ubicadorActivo = false,

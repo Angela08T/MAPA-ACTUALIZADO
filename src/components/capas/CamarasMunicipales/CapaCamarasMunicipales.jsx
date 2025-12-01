@@ -5,7 +5,7 @@ import './CapaCamarasMunicipales.css';
 import './LocationCopyPopup.css';
 import { useMapLocationCopy } from '../../../hooks/useMapLocationCopy';
 import { getAngleFromCoords, isValidReferencia, parseReferencia } from '../../../utils';
-import { logger } from '../../../utils/logger';
+import { logger } from '../../../utils/logger.js';
 
 import L from 'leaflet';
 

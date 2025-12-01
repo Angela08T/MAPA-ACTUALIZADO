@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronUp, ChevronDown, Search, Trash2 } from 'lucide-react';
 import './ControlBusqueda.css';
-import { logger } from '../../../utils/logger';
+import { logger } from '../../../utils/logger.js';
 
 const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
