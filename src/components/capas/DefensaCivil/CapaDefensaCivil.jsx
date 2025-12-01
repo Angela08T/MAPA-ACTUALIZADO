@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Marker, Popup, LayerGroup, Tooltip } from 'react-leaflet';
 import L from 'leaflet';
 import FiltroGiro from '../../filtros/FiltroGiro';
-import { logger } from '../../utils/logger';
+import { logger } from '../../../utils/logger';
 
 const iconoDefensa = new L.Icon({
   iconUrl: '/icon/defensa.png',

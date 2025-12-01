@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { LayerGroup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import './CapaUbicadorPunto.css';
-import { logger } from '../../utils/logger';
+import { logger } from '../../../utils/logger';
 
 // Configuración del icono personalizado para puntos ubicados
 const iconoUbicacion = new L.Icon({
