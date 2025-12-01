@@ -1,0 +1,11 @@
+# Ignorar archivos que no deben formatearse
+node_modules
+dist
+build
+coverage
+.git
+*.min.js
+*.min.css
+package-lock.json
+public/data/*.json
+public/data/*.geojson

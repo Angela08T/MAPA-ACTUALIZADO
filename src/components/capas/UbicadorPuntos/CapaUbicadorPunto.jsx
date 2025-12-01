@@ -2,13 +2,15 @@ import React, { useRef, useEffect, useState, useCallback } from 'react';
 import { LayerGroup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import './CapaUbicadorPunto.css';
+import { logger } from '../../../utils/logger';
 
 // Configuración del icono personalizado para puntos ubicados
 const iconoUbicacion = new L.Icon({
-  iconUrl: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIj4KICA8IS0tIFBpbiBwcmluY2lwYWwgLS0+CiAgPHBhdGggZD0iTTE2IDRjLTQuNCAwLTggMy42LTggOCAwIDQuNCA2LjIgMTIuOCA3LjIgMTQuMS40LjUgMS4yLjUgMS42IDAgMS0xLjMgNy4yLTkuNyA3LjItMTQuMSAwLTQuNC0zLjYtOC04LTh6IiBmaWxsPSIjZTc0YzNjIiBzdHJva2U9IiNjMDM5MmIiIHN0cm9rZS13aWR0aD0iMSIvPgogIDwhLS0gQ8OtcmN1bG8gaW50ZXJpb3IgLS0+CiAgPGNpcmNsZSBjeD0iMTYiIGN5PSIxMiIgcj0iMyIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8IS0tIFB1bnRvIGNlbnRyYWwgLS0+CiAgPGNpcmNsZSBjeD0iMTYiIGN5PSIxMiIgcj0iMS41IiBmaWxsPSIjYzAzOTJiIi8+CiAgPCEtLSBTb21icmEgLS0+CiAgPGVsbGlwc2UgY3g9IjE2IiBjeT0iMjgiIHJ4PSI0IiByeT0iMS41IiBmaWxsPSIjMDAwMDAwIiBvcGFjaXR5PSIwLjIiLz4KPC9zdmc+', // Data URI del SVG
+  iconUrl:
+    'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIj4KICA8IS0tIFBpbiBwcmluY2lwYWwgLS0+CiAgPHBhdGggZD0iTTE2IDRjLTQuNCAwLTggMy42LTggOCAwIDQuNCA2LjIgMTIuOCA3LjIgMTQuMS40LjUgMS4yLjUgMS42IDAgMS0xLjMgNy4yLTkuNyA3LjItMTQuMSAwLTQuNC0zLjYtOC04LTh6IiBmaWxsPSIjZTc0YzNjIiBzdHJva2U9IiNjMDM5MmIiIHN0cm9rZS13aWR0aD0iMSIvPgogIDwhLS0gQ8OtcmN1bG8gaW50ZXJpb3IgLS0+CiAgPGNpcmNsZSBjeD0iMTYiIGN5PSIxMiIgcj0iMyIgZmlsbD0iI2ZmZmZmZiIgc3Ryb2tlPSIjYzAzOTJiIiBzdHJva2Utd2lkdGg9IjEiLz4KICA8IS0tIFB1bnRvIGNlbnRyYWwgLS0+CiAgPGNpcmNsZSBjeD0iMTYiIGN5PSIxMiIgcj0iMS41IiBmaWxsPSIjYzAzOTJiIi8+CiAgPCEtLSBTb21icmEgLS0+CiAgPGVsbGlwc2UgY3g9IjE2IiBjeT0iMjgiIHJ4PSI0IiByeT0iMS41IiBmaWxsPSIjMDAwMDAwIiBvcGFjaXR5PSIwLjIiLz4KPC9zdmc+', // Data URI del SVG
   iconSize: [32, 32],
   iconAnchor: [16, 28],
-  popupAnchor: [0, -28]
+  popupAnchor: [0, -28],
 });
 
 const CapaUbicadorPunto = ({ visible }) => {
@@ -23,14 +25,14 @@ const CapaUbicadorPunto = ({ visible }) => {
         `https://nominatim.openstreetmap.org/reverse?format=json&lat=${lat}&lon=${lng}&accept-language=es`
       );
       const data = await response.json();
-      
+
       if (data && data.display_name) {
         return data.display_name;
       } else {
         return 'Dirección no encontrada';
       }
     } catch (error) {
-      console.error('Error al obtener dirección:', error);
+      logger.error('Error al obtener dirección:', error);
       return 'Error al obtener dirección';
     }
   };
@@ -52,7 +54,7 @@ const CapaUbicadorPunto = ({ visible }) => {
   };
 
   // Función para deshabilitar/habilitar interceptor
-  const toggleInterceptor = (habilitar) => {
+  const toggleInterceptor = habilitar => {
     const interceptor = document.getElementById('ubicador-click-interceptor');
     if (interceptor) {
       if (habilitar) {
@@ -66,36 +68,37 @@ const CapaUbicadorPunto = ({ visible }) => {
   };
 
   // Función para crear marcador con información
-  const crearMarcador = useCallback(async (lat, lng) => {
-    // Limpiar marcador anterior (solo mantener uno a la vez)
-    limpiarMarcador();
+  const crearMarcador = useCallback(
+    async (lat, lng) => {
+      // Limpiar marcador anterior (solo mantener uno a la vez)
+      limpiarMarcador();
 
-    // Deshabilitar interceptor mientras hay popup abierto
-    toggleInterceptor(false);
+      // Deshabilitar interceptor mientras hay popup abierto
+      toggleInterceptor(false);
 
-    // Crear marcador temporal mientras se obtiene la dirección
-    const marcador = L.marker([lat, lng], {
-      icon: iconoUbicacion
-    });
+      // Crear marcador temporal mientras se obtiene la dirección
+      const marcador = L.marker([lat, lng], {
+        icon: iconoUbicacion,
+      });
 
-    marcador.addTo(map);
-    marcador.openPopup();
-    marcadorRef.current = marcador;
+      marcador.addTo(map);
+      marcador.openPopup();
+      marcadorRef.current = marcador;
 
-    // Obtener dirección de forma asíncrona
-    const direccion = await obtenerDireccion(lat, lng);
+      // Obtener dirección de forma asíncrona
+      const direccion = await obtenerDireccion(lat, lng);
 
-    // Crear función personalizada para cerrar popup
-    const cerrarPopup = () => {
-      marcador.closePopup();
-      // Rehabilitar interceptor después de cerrar popup
-      setTimeout(() => {
-        toggleInterceptor(true);
-      }, 100);
-    };
+      // Crear función personalizada para cerrar popup
+      const cerrarPopup = () => {
+        marcador.closePopup();
+        // Rehabilitar interceptor después de cerrar popup
+        setTimeout(() => {
+          toggleInterceptor(true);
+        }, 100);
+      };
 
-    // Actualizar popup con la dirección
-    const popupCompleto = `
+      // Actualizar popup con la dirección
+      const popupCompleto = `
       <div class="popup-ubicador" style="font-size: 13px; max-width: 300px; position: relative;">
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
           <strong style="color: #e74c3c;">📍 Punto Ubicado</strong>
@@ -112,57 +115,62 @@ const CapaUbicadorPunto = ({ visible }) => {
       </div>
     `;
 
-    // Hacer función global para el botón de cerrar
-    window.cerrarPopupUbicador = cerrarPopup;
+      // Hacer función global para el botón de cerrar
+      window.cerrarPopupUbicador = cerrarPopup;
 
-    // Actualizar popup con opciones para deshabilitar botón predeterminado
-    marcador.unbindPopup();
-    marcador.bindPopup(popupCompleto, {
-      closeButton: false, // Deshabilitar el botón de cerrar predeterminado
-      autoClose: false,   // No cerrar automáticamente al hacer click en el mapa
-      closeOnClick: false // No cerrar al hacer click en el popup
-    });
-    marcador.openPopup();
+      // Actualizar popup con opciones para deshabilitar botón predeterminado
+      marcador.unbindPopup();
+      marcador.bindPopup(popupCompleto, {
+        closeButton: false, // Deshabilitar el botón de cerrar predeterminado
+        autoClose: false, // No cerrar automáticamente al hacer click en el mapa
+        closeOnClick: false, // No cerrar al hacer click en el popup
+      });
+      marcador.openPopup();
 
-    // Escuchar cuando se cierre el popup por otros medios
-    marcador.on('popupclose', () => {
-      setTimeout(() => {
-        toggleInterceptor(true);
-      }, 100);
-    });
-  }, [map]);
+      // Escuchar cuando se cierre el popup por otros medios
+      marcador.on('popupclose', () => {
+        setTimeout(() => {
+          toggleInterceptor(true);
+        }, 100);
+      });
+    },
+    [map]
+  );
 
   // Manejador de click en el mapa
-  const handleMapClick = useCallback((e) => {
-    console.log('🎯 Click detectado en ubicador:', { isActive, visible });
-    
-    if (!isActive || !visible) {
-      console.log('🚫 Ubicador no está activo, ignorando click');
-      return;
-    }
-    
-    // Prevenir que el evento se propague a otras capas
-    if (e.originalEvent) {
-      e.originalEvent.stopPropagation();
-      e.originalEvent.preventDefault();
-    }
-    
-    // Detener propagación del evento de Leaflet
-    L.DomEvent.stopPropagation(e);
-    
-    const { lat, lng } = e.latlng;
-    console.log(`📍 Punto ubicado en: ${lat}, ${lng}`);
-    crearMarcador(lat, lng);
-  }, [isActive, visible, crearMarcador]);
+  const handleMapClick = useCallback(
+    e => {
+      logger.log('🎯 Click detectado en ubicador:', { isActive, visible });
+
+      if (!isActive || !visible) {
+        logger.log('🚫 Ubicador no está activo, ignorando click');
+        return;
+      }
+
+      // Prevenir que el evento se propague a otras capas
+      if (e.originalEvent) {
+        e.originalEvent.stopPropagation();
+        e.originalEvent.preventDefault();
+      }
+
+      // Detener propagación del evento de Leaflet
+      L.DomEvent.stopPropagation(e);
+
+      const { lat, lng } = e.latlng;
+      logger.log(`📍 Punto ubicado en: ${lat}, ${lng}`);
+      crearMarcador(lat, lng);
+    },
+    [isActive, visible, crearMarcador]
+  );
 
   // Efecto para agregar/quitar el evento de click
   useEffect(() => {
     if (visible) {
       setIsActive(true);
-      
+
       // Quitar todos los listeners existentes primero
       map.off('click', handleMapClick);
-      
+
       // Crear un overlay invisible de máxima prioridad para capturar todos los clicks
       const mapContainer = map.getContainer();
       const clickInterceptor = document.createElement('div');
@@ -176,47 +184,47 @@ const CapaUbicadorPunto = ({ visible }) => {
         cursor: crosshair;
         pointer-events: auto;
       `;
-      
+
       // Agregar el interceptor
       mapContainer.style.position = 'relative';
       mapContainer.appendChild(clickInterceptor);
-      
+
       // Agregar listener al interceptor con máxima prioridad
-      const interceptorClickHandler = (e) => {
+      const interceptorClickHandler = e => {
         e.preventDefault();
         e.stopPropagation();
-        
+
         // Convertir coordenadas del click a coordenadas del mapa
         const rect = mapContainer.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
         const latlng = map.containerPointToLatLng([x, y]);
-        
+
         // Simular evento de Leaflet
         const mockEvent = {
           latlng: latlng,
-          originalEvent: e
+          originalEvent: e,
         };
-        
+
         handleMapClick(mockEvent);
       };
-      
+
       clickInterceptor.addEventListener('click', interceptorClickHandler);
-      
+
       // Cambiar cursor para indicar que se puede hacer clic
       map.getContainer().style.cursor = 'crosshair';
-      
-      console.log('📍 Modo ubicador de puntos activado con interceptor de máxima prioridad');
-      
+
+      logger.log('📍 Modo ubicador de puntos activado con interceptor de máxima prioridad');
+
       // Guardar el handler para cleanup
       clickInterceptor._handler = interceptorClickHandler;
     } else {
       setIsActive(false);
       map.off('click', handleMapClick);
-      
+
       // Limpiar TODOS los marcadores cuando se desmarca el checkbox
       limpiarMarcador();
-      
+
       // Remover interceptor si existe
       const interceptor = document.getElementById('ubicador-click-interceptor');
       if (interceptor) {
@@ -225,17 +233,17 @@ const CapaUbicadorPunto = ({ visible }) => {
         }
         interceptor.remove();
       }
-      
+
       // Restaurar cursor normal
       map.getContainer().style.cursor = '';
-      
-      console.log('📍 Modo ubicador de puntos desactivado - Todos los puntos eliminados');
+
+      logger.log('📍 Modo ubicador de puntos desactivado - Todos los puntos eliminados');
     }
 
     return () => {
       map.off('click', handleMapClick);
       map.getContainer().style.cursor = '';
-      
+
       // Cleanup del interceptor
       const interceptor = document.getElementById('ubicador-click-interceptor');
       if (interceptor) {
@@ -265,4 +273,4 @@ const CapaUbicadorPunto = ({ visible }) => {
   );
 };
 
-export default CapaUbicadorPunto; 
+export default CapaUbicadorPunto;

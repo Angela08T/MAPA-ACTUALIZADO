@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ChevronUp, ChevronDown, Search, Trash2 } from 'lucide-react';
 import './ControlBusqueda.css';
+import { logger } from '../../../utils/logger';
 
 const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
@@ -11,7 +12,7 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
   const [resultadoSeleccionado, setResultadoSeleccionado] = useState(null);
 
   // Función para realizar geocodificación usando Nominatim
-  const buscarDireccion = async (direccion) => {
+  const buscarDireccion = async direccion => {
     if (!direccion.trim()) {
       setError('Por favor ingresa una dirección válida');
       return;
@@ -19,19 +20,19 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
 
     setCargando(true);
     setError(null);
-    
+
     try {
-      console.log('🔍 Buscando dirección en Lima:', direccion);
-      
+      logger.log('🔍 Buscando dirección en Lima:', direccion);
+
       // Usar Nominatim API para geocodificación restringida a Lima, Perú
       // Bounding box aproximado para Lima Metropolitana:
       // Oeste: -77.2, Sur: -12.4, Este: -76.7, Norte: -11.7
       const url = `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(direccion + ', San Juan de Lurigancho, Lima Metropolitana, Perú')}&limit=5&addressdetails=1&countrycodes=pe&bounded=1&viewbox=-77.2,-11.7,-76.7,-12.4`;
-      
+
       const response = await fetch(url, {
         headers: {
-          'User-Agent': 'MapaPrediccion/1.0'
-        }
+          'User-Agent': 'MapaPrediccion/1.0',
+        },
       });
 
       if (!response.ok) {
@@ -39,7 +40,7 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
       }
 
       const data = await response.json();
-      console.log('📍 Resultados encontrados en Lima:', data.length);
+      logger.log('📍 Resultados encontrados en Lima:', data.length);
 
       if (data.length === 0) {
         setError('No se encontraron resultados para esta dirección en Lima, Perú');
@@ -51,7 +52,7 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
       const resultadosLima = data.filter(item => {
         const address = item.address || {};
         const displayName = (item.display_name || '').toLowerCase();
-        
+
         // Verificar que mencione Lima en la dirección o en los detalles
         return (
           address.city === 'Lima' ||
@@ -63,7 +64,7 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
         );
       });
 
-      console.log('📍 Resultados filtrados para Lima:', resultadosLima.length);
+      logger.log('📍 Resultados filtrados para Lima:', resultadosLima.length);
 
       if (resultadosLima.length === 0) {
         setError('No se encontraron resultados en Lima para esta dirección');
@@ -80,18 +81,17 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
         tipo: item.type || 'lugar',
         categoria: item.class || 'general',
         importancia: item.importance || 0,
-        detalles: item.address || {}
+        detalles: item.address || {},
       }));
 
       setResultados(resultadosProcesados);
-      
+
       // Notificar al componente padre con los resultados
       if (onBusquedaRealizada) {
         onBusquedaRealizada(resultadosProcesados, null); // null = ninguno seleccionado inicialmente
       }
-
     } catch (err) {
-      console.error('❌ Error en búsqueda:', err);
+      logger.error('❌ Error en búsqueda:', err);
       setError(`Error: ${err.message}`);
       setResultados([]);
     } finally {
@@ -100,7 +100,7 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
   };
 
   // Manejar envío del formulario
-  const manejarBusqueda = (e) => {
+  const manejarBusqueda = e => {
     e.preventDefault();
     buscarDireccion(busqueda);
   };
@@ -117,7 +117,7 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
   };
 
   // Manejar selección de resultado específico
-  const seleccionarResultado = (resultado) => {
+  const seleccionarResultado = resultado => {
     setResultadoSeleccionado(resultado.id);
     if (onBusquedaRealizada) {
       onBusquedaRealizada(resultados, resultado.id);
@@ -149,30 +149,26 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
           </button>
         </div>
       </div>
-      
+
       <div className={`control-busqueda-content ${isCollapsed ? 'hidden' : ''}`}>
         <form onSubmit={manejarBusqueda} className="busqueda-form">
           <div className="input-container">
             <input
               type="text"
               value={busqueda}
-              onChange={(e) => setBusqueda(e.target.value)}
+              onChange={e => setBusqueda(e.target.value)}
               placeholder="Ej: Av. Universitaria 1801, San Martin de Porres"
               className="busqueda-input"
               disabled={cargando}
             />
           </div>
-          
+
           <div className="botones-container">
-            <button
-              type="submit"
-              disabled={cargando || !busqueda.trim()}
-              className="btn-buscar"
-            >
+            <button type="submit" disabled={cargando || !busqueda.trim()} className="btn-buscar">
               <Search size={16} />
               {cargando ? 'Buscando...' : 'Buscar'}
             </button>
-            
+
             <button
               type="button"
               onClick={limpiarBusqueda}
@@ -186,16 +182,13 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
         </form>
 
         {/* Mostrar error */}
-        {error && (
-          <div className="error-message">
-            ⚠️ {error}
-          </div>
-        )}
+        {error && <div className="error-message">⚠️ {error}</div>}
 
         {/* Mostrar estadísticas de resultados */}
         {resultados.length > 0 && (
           <div className="resultados-stats">
-            ✅ {resultados.length} resultado{resultados.length !== 1 ? 's' : ''} encontrado{resultados.length !== 1 ? 's' : ''}
+            ✅ {resultados.length} resultado{resultados.length !== 1 ? 's' : ''} encontrado
+            {resultados.length !== 1 ? 's' : ''}
           </div>
         )}
 
@@ -205,7 +198,7 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
             <div className="resultados-header">
               <h4>📍 Resultados:</h4>
               {resultadoSeleccionado && (
-                <button 
+                <button
                   onClick={mostrarTodos}
                   className="btn-mostrar-todos"
                   title="Mostrar todos los resultados"
@@ -215,8 +208,8 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
               )}
             </div>
             {resultados.map((resultado, index) => (
-              <div 
-                key={resultado.id} 
+              <div
+                key={resultado.id}
                 className={`resultado-item ${resultadoSeleccionado === resultado.id ? 'seleccionado' : ''}`}
                 onClick={() => seleccionarResultado(resultado)}
                 title="Clic para mostrar solo este marcador"
@@ -224,8 +217,8 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
                 <div className="resultado-numero">{index + 1}</div>
                 <div className="resultado-info">
                   <div className="resultado-direccion">
-                    {resultado.direccion.length > 60 
-                      ? resultado.direccion.substring(0, 60) + '...' 
+                    {resultado.direccion.length > 60
+                      ? resultado.direccion.substring(0, 60) + '...'
                       : resultado.direccion}
                   </div>
                   <div className="resultado-detalles">
@@ -236,9 +229,7 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
                   </div>
                 </div>
                 {resultadoSeleccionado === resultado.id && (
-                  <div className="resultado-seleccionado-icono">
-                    ✅
-                  </div>
+                  <div className="resultado-seleccionado-icono">✅</div>
                 )}
               </div>
             ))}
@@ -249,4 +240,4 @@ const ControlBusqueda = ({ visible, onBusquedaRealizada, mapType = 'leaflet' }) 
   );
 };
 
-export default ControlBusqueda; 
+export default ControlBusqueda;
